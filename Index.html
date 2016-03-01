@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Biblioteca Virtual</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,400' rel='stylesheet' type='text/css'/>
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="resources/css/jquery.fullPage.css"/>
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
+    <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
+	<link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
+    <link rel="stylesheet" type="text/css" href="resources/font-awesome-4.5.0/css/font-awesome.min.css"/>
+	
+    
+<!-- Script
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--<script src="js/jquery-1.12.0.js"></script>-->
+    <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/js/jquery-ui.min.js"></script>
+    <script src="resources/js/jquery.mobile.custom.min.js"></script>
+    <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
+	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
+	<script src="resources/js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.fullPage.js"></script>
+    <script>
+	var auxTypeIt = 0;
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				
+				//Design
+				sectionsColor: [/*Slides*/'#FFF', /*Catálogo*/'#FFF', /*Novedades*/'#7BAABE', /*Colecciones*/'#ff9900', /*Digitalización*/'#065DA4', /*Convenios*/'#FFF'], 
+				navigation: true,
+				navigationPosition: 'left',
+				navigationTooltips: ['Buscar', 'Catálogo', 'Novedades', 'Colecciones', 'Digitalización', 'Convenios'],
+				scrollOverflow: true,
+				//Scrolling
+				scrollingSpeed: 600,
+				afterLoad: function(anchorLink, index){
+
+				////Section 2
+				if(index == 2){
+					$('#section1').find('.intro').delay(0).animate({
+						left: '0%',
+						opacity: '1',
+					}, 2000, 'easeOutExpo');
+											
+					}
+				
+				//Section 3
+				if(index == 3){
+						//moving the image
+						$('#section2').find('img').delay(0).animate({
+							left: '0%'
+						}, 1200, 'easeInOutElastic');
+
+						$('#section2').find('p').first().fadeIn(1800, function(){
+						$('#section2').find('p').last().fadeIn(1800);
+						});;
+
+					}
+				
+				//Section 4	
+				}
+			});
+			
+		});
+		
+	</script>
+
+</head>
+<body>
+
+
+<header class="cd-main-header">
+		
+        <a class="cd-logo" href="#"></a>
+
+		<ul class="cd-header-buttons">
+			<!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
+			<li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+		</ul> <!-- cd-header-buttons -->
+</header>
+
+<main class="cd-main-content">
+		
+        
+        <!--
+        ---- FULLPAGE CONTENIDO --------
+        -->
+        <div id="fullpage">
+            <div id="cd-search" class="cd-search">
+                <form class="margen-principal">
+                    <input type="search" placeholder="Catálogo..." id="barra-buscar">
+                    <input type="submit" value="Buscar" id="btn-buscar"><!-- <i class="fa fa-search"></i> -->
+                </form>
+            </div>
+    <div class="section" id="section0">
+            <div class="slide" id="slide1">
+                	<h1>Echemos un vistazo a la lima de antaño</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="slide" id="slide2">
+                    <h1>Un recorrido por nuestras salas de lectura de la Biblioteca Nacional del Perú - BNP</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="slide" id="slide3">
+                <h1>Campaña libros perdidos<br>30 millones de peruanos agradecidos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+    </div>
+    <div class="section" id="section1">
+    	<div class="margen-principal">
+        	<h1 class="titulo">Catálogo</h1>
+        	<div class="intro">
+        	<div class="catalogo-item">
+                <a href="#"><i class="fa fa-book"></i>
+                <p>Libros</p></a>
+            </div>
+            
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-newspaper-o"></i>
+                <p>Publicaciones</p></a>
+            </div>
+            
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-video-camera"></i>
+                <p>Videos</p></a>
+            </div>
+            
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-camera"></i>
+                <p>Fotografia</p></a>
+            </div>
+            
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-volume-up"></i>
+                <p>Audio</p></a>
+            </div>
+            
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-pencil-square-o"></i>
+                <p>Manuscritos</p></a>
+            </div>
+            
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-map-o"></i>
+                <p>Folletos</p></a>
+            </div>
+            
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-map-marker"></i>
+                <p>Mapas</p></a>
+            </div>
+            
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-music"></i>
+                <p>Partituras</p></a>
+            </div>
+            <div class="catalogo-item">
+                <a href="#"><i class="fa fa-camera"></i>
+                <p>Fotografia</p></a>
+            </div>
+        </div>
+        
+        </div>
+        
+        
+    </div>
+    <div class="section" id="section2">
+    	<div class="intro">
+            <img src="resources/img/wow-1.gif"/>
+        	<h1 class="titulo">Novedades</h1>
+            <p>Novedades</p>
+        </div>
+    </div>
+    <div class="section" id="section3">
+    	<h1 class="titulo">Colecciones</h1> 
+    </div>
+    
+    
+    <div class="section" id="section4">
+    	<div class="margen-principal">
+        	<aside class="digitalizacion-texto">
+            	<h1 class="titulo">Digitalización</h1>
+            	<p>La Biblioteca Nacional del Perú facilita el acceso a diversos eventos culturales, entre Conferencia y Exposiciones, que se han dado lugar dentro de sus instalaciones dando la oportunidad, al público usuario.</p>
+            </aside>
+            <aside class="digitalizacion-video">
+            	<div class="video-responsive">
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/nbUxkulaKrc?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+            </aside>
+            
+        </div>
+        
+    </div>
+    
+    
+    <div class="section" id="section5">
+    	<div class="margen-principal">
+            <h1 class="titulo">Convenios</h1>
+            <div class="page_content">
+            <br>
+            <div class="space"> </div>
+            <div class="clear"> </div>
+            <ul id="clients" class="grid">
+              <li class="altoids"><a href="http://bibliotecadigitalhispanica.bne.es/" target="_blank" rel="BDH"> <img src="resources/img/clients/logo-biblioteca-hispanica.png" alt="Biblioteca Digital Hispanica"/></a></li>
+              
+              <li class="facebook"><a href="https://www.wdl.org/es/" target="_blank" rel="WDL"> <img src="resources/img/clients/logo-biblioteca-mundial.png" alt="Biblioteca Digital Mundial"/></a></li>
+              
+              <li class="ge"><a href="http://www.clacso.org.ar/" target="_blank" rel="clacso"> <img src="resources/img/clients/logo-clacso.png" alt="CLACSO"/></a></li>
+              
+              <li class="orbit"><a href="http://cybertesis.unmsm.edu.pe/" target="_blank" rel="cybertesis"> <img src="resources/img/clients/logo-cybertesis.png" alt="Cybertesis"/></a></li>
+              
+              <li class="skittles"><a href="http://www.europeana.eu/" target="_blank" rel="europeana"> <img src="resources/img/clients/logo-europana.png" alt="Europeana Collections"/></a></li>
+              
+              <li class="jameson"><a href="http://gallica.bnf.fr/" target="_blank" rel="bnf"> <img src="resources/img/clients/logo-gallica.png" alt="BnF Gallica"/></a></li>
+              
+              <li class="juicy_fruit"><a href="http://www.unesco.org/" target="_blank" rel="unesco"> <img src="resources/img/clients/logo-memoria.png" alt="UNESCO"/></a></li>
+              
+              <li class="microsoft"><a href="http://www.theeuropeanlibrary.org/" target="_blank" rel="europeanlibrary"> <img src="resources/img/clients/tehe-european.png" alt="The European Library"/></a></li>
+            </ul>
+            <div class="clear"> </div>
+          </div>
+        </div>
+        
+    </div>
+    
+</div>
+        <!-- 
+        ------ FIN FULL PAGE CONETENIDO
+        -->
+        
+</main>
+
+<div class="cd-overlay"></div>
+
+<!-- 
+-------------------------------------------------MENU Navegador  ----------------------------------------------------
+--->
+<nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+			
+            <li><a href="index.html">Inicio</a></li>
+            
+            <li class="has-children">
+				<a href="#">Catálogo</a>
+
+				<ul class="cd-nav-gallery is-hidden" id="color-catalogo">
+					<li class="go-back"><a href="#">Menu</a></li>
+					<li>
+						<a class="cd-nav-item" href="general.html">
+							<img src="resources/img/img01.png" alt="Product Image">
+							<h3>General</h3>
+                            <p class="texto-menu">Aquí podrás encontrar todo tipo de material en nuestros archivos.</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item" href="#">
+							<img src="resources/img/img02.png" alt="Product Image">
+							<h3>Documentos</h3>
+                            <p class="texto-menu">Aquí podrás encontrar todo tipo de material en nuestros archivos.</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item" href="#">
+							<img src="resources/img/img03.png" alt="Product Image">
+							<h3>Multimedia</h3>
+                            <p class="texto-menu">Aquí podrás encontrar todo tipo de material en nuestros archivos.</p>
+						</a>
+					</li>
+
+					<li>
+						<a class="cd-nav-item" href="#">
+							<img src="resources/img/img04.png" alt="Product Image">
+							<h3>Joyas BNP</h3>
+                            <p class="texto-menu">Aquí podrás encontrar todo tipo de material en nuestros archivos.</p>
+						</a>
+					</li>
+				</ul>
+			</li>
+            
+            <li class="has-children">
+				<a href="#">Servicios</a>
+
+				<ul class="cd-nav-gallery is-hidden" id="color-servicios">
+					<li class="go-back"><a href="#">Menu</a></li>
+					<li class="li-doble">
+						<a class="cd-nav-item" href="#">
+							<img src="resources/img/img02.png" alt="Product Image">
+							<h3>Digitalización Archivos</h3>
+                            <p class="texto-menu">Aquí podrás encontrar todo tipo de material en nuestros archivos.</p>
+						</a>
+					</li>
+
+					<li class="li-doble">
+						<a class="cd-nav-item" href="#">
+							<img src="resources/img/img03.png" alt="Product Image">
+							<h3>Digitalización Multimedia</h3>
+                            <p class="texto-menu">Aquí podrás encontrar todo tipo de material en nuestros archivos.</p>
+						</a>
+					</li> 
+
+				</ul>
+			</li>
+            
+			<li class="has-children">
+				<a href="#">Eventos</a>
+
+				<ul class="cd-nav-gallery is-hidden" id="color-eventos">
+					<li class="go-back"><a href="#">Menu</a></li>
+					<li class="li-doble">
+						<a class="cd-nav-item" href="#">
+							<img src="resources/img/img02.png" alt="Product Image">
+							<h3>Conferencias</h3>
+                            <p class="texto-menu">Aquí podrás encontrar todo tipo de material en nuestros archivos.</p>
+						</a>
+					</li>
+
+					<li class="li-doble">
+						<a class="cd-nav-item" href="#">
+							<img src="resources/img/img03.png" alt="Product Image">
+							<h3>Exposiciones</h3>
+                            <p class="texto-menu">Aquí podrás encontrar todo tipo de material en nuestros archivos.</p>
+						</a>
+					</li> 
+				</ul>
+			</li>
+
+			<li><a href="#">Noticias</a></li>
+
+		</ul> <!-- primary-nav -->
+	</nav>
+<!-- 
+-------------------------------------------------FIN MENU Navegador  ----------------------------------------------------
+--->
+
+
+
+
+<!-- End Document
+––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+
+</body>
+</html>
