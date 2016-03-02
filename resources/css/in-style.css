@@ -68,8 +68,16 @@ header {
 	color: #fff;
 }
 
+.portada-cabecera{
+    width: 100%;
+    height: 400px;
+    background: #663465;	
+}
 
-
+.titulo {
+    font-family: 'CaviarDreams';
+    font-size: 40px;
+}
 @media only screen and (max-width: 1169px) {
  
 }
