@@ -450,7 +450,7 @@ Main components
 }
 .cd-primary-nav .see-all a {
   /* different style for the See all button on mobile and tablet */
-  color: #69aa6f;
+  color: #737373;
 }
 .cd-primary-nav .cd-nav-gallery .cd-nav-item, .cd-primary-nav .cd-nav-icons .cd-nav-item {
   /* items with picture (or icon) and title */
@@ -604,11 +604,11 @@ Main components
     transition: color 0.3s, box-shadow 0.3s;
   }
   .cd-primary-nav > li > a:hover {
-    color: #69aa6f;
+    color: #737373;
   }
   .cd-primary-nav > li > a.selected {
-    color: #69aa6f;
-    box-shadow: inset 0 -2px 0 #69aa6f;
+    color: #737373;
+    /*box-shadow: inset 0 -2px 0 #737373;*/
   }
   .cd-primary-nav .go-back, .cd-primary-nav .see-all {
     display: none;
@@ -618,9 +618,33 @@ Main components
 	  background: #663465;
   }
   
+  #color-catalogo:before{
+	content: "";
+    width: 30px;
+    height: 30px;
+    background: #663465;
+    position: inherit;
+    top: -9px;
+    right: 620px;
+    transform: rotate(45deg);
+}
+
+  
    #color-servicios{
 	  background: #017604;
   }
+  
+   #color-servicios:before{
+	content: "";
+    width: 30px;
+    height: 30px;
+    background: #017604;
+    position: inherit;
+    top: -9px;
+    right: 462px;
+    transform: rotate(45deg);
+}
+
   
    #color-novedades{
 	  background: #FF9801;
@@ -629,6 +653,19 @@ Main components
    #color-eventos{
 	  background: #CC0001;
   }
+  
+   #color-eventos:before{
+	content: "";
+    width: 30px;
+    height: 30px;
+    background: #CC0001;
+    position: inherit;
+    top: -9px;
+    right: 315px;
+    transform: rotate(45deg);
+}
+
+  
   .cd-primary-nav .cd-secondary-nav, .cd-primary-nav .cd-nav-gallery, .cd-primary-nav .cd-nav-icons {
     /* dropdown menu style */
     position: absolute;
@@ -717,7 +754,7 @@ Main components
   }
   .cd-primary-nav .cd-secondary-nav > li > a {
     /* secondary nav title */
-    color: #FFFFFF;/*#69aa6f;*/
+    color: #FFFFFF;/*#737373;*/
     font-weight: bold;
     font-size: 1.6rem;
     margin-bottom: .6em;
@@ -731,7 +768,7 @@ Main components
     font-size: 1.4rem;
   }
   .cd-primary-nav .cd-secondary-nav a:hover {
-    color: #69aa6f;
+    color: #737373;
   }
   .cd-primary-nav .cd-secondary-nav ul {
     /* Force Hardware Acceleration in WebKit */
@@ -880,7 +917,7 @@ Main components
     background: #c9cbc4;
   }
   .has-children > a:hover::before, .has-children > a:hover::after, .go-back a:hover::before, .go-back a:hover::after {
-    background: #69aa6f;
+    background: #737373;
   }
 }
 
