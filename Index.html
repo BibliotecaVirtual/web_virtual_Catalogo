@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
 	<link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
     <link rel="stylesheet" type="text/css" href="resources/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="resources/css/flickity.css" media="screen"/>
 	
     
 <!-- Script
@@ -35,6 +36,7 @@
     <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
 	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
 	<script src="resources/js/jquery.slimscroll.min.js"></script>
+    <script src="resources/js/flickity.pkgd.min.js"></script>
 	<script type="text/javascript" src="resources/js/jquery.fullPage.js"></script>
     <script>
 	var auxTypeIt = 0;
@@ -44,7 +46,7 @@
 				//Design 
 				navigation: true,
 				navigationPosition: 'left',
-				navigationTooltips: ['Buscar', 'Catálogo', 'Novedades', 'Colecciones', 'Digitalización', 'Convenios'],
+				navigationTooltips: ['Buscar', 'Destacados', 'Catálogo', 'Servicios', 'Novedades', 'Convenios'],
 				scrollOverflow: true,
 				//Scrolling
 				scrollingSpeed: 600,
@@ -190,10 +192,24 @@
     </div>
     
     <div class="section" id="section3">
-    	<div class="margen-principal">
-        	<aside class="digitalizacion-texto">
-            	<h1 class="titulo">Digitalización</h1>
-            	<p>La Biblioteca Nacional del Perú facilita el acceso a diversos eventos culturales, entre Conferencia y Exposiciones, que se han dado lugar dentro de sus instalaciones dando la oportunidad, al público usuario.</p>
+    	<script>
+			$('.main-gallery').flickity({
+			  // options
+			  cellAlign: 'left',
+			  contain: true,
+			  pageDots: false,
+			  wrapAround: true,
+			});
+        </script>
+        
+        <div class="margen-principal">
+<!-- Flickity HTML init -->
+<div class="main-gallery">
+ 	<div class="servicios-cell">
+    	<aside class="digitalizacion-texto">
+            	<h1 class="titulo">Digitalización de audio-visual</h1>
+            	<p>La Biblioteca Virtual de la BNP, gestiona proyectos de digitalización y difusión electronica del patrimonio documental y bibliográfico.</p>
+                <a href="#" class="ver-mas">ver más</a>
             </aside>
             <aside class="digitalizacion-video">
             	<div class="video-responsive">
@@ -201,6 +217,33 @@
                 </div>
                 
             </aside>
+     </div>
+      <div class="servicios-cell">
+    	<aside class="digitalizacion-texto">
+            	<h1 class="titulo">Digitalización de Documentos</h1>
+            	<p>La Biblioteca Virtual de la BNP, gestiona proyectos de digitalización y difusión electronica del patrimonio documental y bibliográfico.</p>
+                 <a href="#" class="ver-mas">ver más</a>
+            </aside>
+            <aside class="digitalizacion-video">
+            	<div class="video-responsive">
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/nbUxkulaKrc?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+            </aside>
+     </div>
+</div>
+           <!--
+            <aside class="digitalizacion-texto">
+            	<h1 class="titulo">Digitalización de audio-visual</h1>
+            	<p>La Biblioteca Virtual de la BNP, gestiona proyectos de digitalización y difusión electronica del patrimonio documental y bibliográfico.</p>
+            </aside>
+            <aside class="digitalizacion-video">
+            	<div class="video-responsive">
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/nbUxkulaKrc?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+            </aside>
+            -->
             
         </div>
         
