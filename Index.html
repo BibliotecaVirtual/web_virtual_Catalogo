@@ -42,7 +42,7 @@
 			$('#fullpage').fullpage({
 				
 				//Design
-				sectionsColor: [/*Slides*/'#FFF', /*Catálogo*/'#FFF', /*Novedades*/'#7BAABE', /*Colecciones*/'#ff9900', /*Digitalización*/'#065DA4', /*Convenios*/'#FFF'], 
+				sectionsColor: [/*Slides*/'#FFF', /*Colecciones*/'#0A61A8', /*Catálogo*/'#EBEBEB', /*Servicios*/'#ff9900', /*Novedades*/'#6E3C6D', /*Convenios*/'#EBEBEB'], 
 				navigation: true,
 				navigationPosition: 'left',
 				navigationTooltips: ['Buscar', 'Catálogo', 'Novedades', 'Colecciones', 'Digitalización', 'Convenios'],
@@ -52,8 +52,8 @@
 				afterLoad: function(anchorLink, index){
 
 				////Section 2
-				if(index == 2){
-					$('#section1').find('.intro').delay(0).animate({
+				if(index == 3){
+					$('#section2').find('.intro').delay(0).animate({
 						left: '0%',
 						opacity: '1',
 					}, 2000, 'easeOutExpo');
@@ -61,14 +61,14 @@
 					}
 				
 				//Section 3
-				if(index == 3){
+				if(index == 5){
 						//moving the image
-						$('#section2').find('img').delay(0).animate({
+						$('#section4').find('img').delay(0).animate({
 							left: '0%'
 						}, 1200, 'easeInOutElastic');
 
-						$('#section2').find('p').first().fadeIn(1800, function(){
-						$('#section2').find('p').last().fadeIn(1800);
+						$('#section4').find('p').first().fadeIn(1800, function(){
+						$('#section4').find('p').last().fadeIn(1800);
 						});;
 
 					}
@@ -121,7 +121,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
     </div>
+    
     <div class="section" id="section1">
+    	<h1 class="titulo">Colecciones</h1> 
+    </div>
+    
+    <div class="section" id="section2">
     	<div class="margen-principal">
         	<h1 class="titulo">Catálogo</h1>
         	<div class="intro">
@@ -179,19 +184,8 @@
         
         
     </div>
-    <div class="section" id="section2">
-    	<div class="intro">
-            <img src="resources/img/wow-1.gif"/>
-        	<h1 class="titulo">Novedades</h1>
-            <p>Novedades</p>
-        </div>
-    </div>
+    
     <div class="section" id="section3">
-    	<h1 class="titulo">Colecciones</h1> 
-    </div>
-    
-    
-    <div class="section" id="section4">
     	<div class="margen-principal">
         	<aside class="digitalizacion-texto">
             	<h1 class="titulo">Digitalización</h1>
@@ -208,6 +202,13 @@
         
     </div>
     
+    <div class="section" id="section4">
+    	<div class="intro">
+            <img src="resources/img/wow-1.gif"/>
+        	<h1 class="titulo">Novedades</h1>
+            <p>Novedades</p>
+        </div>
+    </div>
     
     <div class="section" id="section5">
     	<div class="margen-principal">

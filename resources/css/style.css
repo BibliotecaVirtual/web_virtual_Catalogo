@@ -172,7 +172,11 @@ header {
 /* SECTION 1
 --------------------------------*/
 
-#section1 .intro {
+
+/* SECTION 2
+--------------------------------*/
+
+#section2 .intro {
 	left: -100%;
 	position: relative;
 	opacity: 0;
@@ -198,7 +202,7 @@ header {
 }
 
 .catalogo-item i{
-	color: #FF9900;
+	color: #0A61A8;
     font-size: 40px;	
 }
 
@@ -291,25 +295,12 @@ header {
     float: left;	
 }
 }
-/* SECTION 2
---------------------------------*/
 
 
-#section2 img {
-	left: -100%;
-	position: relative;
-}
-
-#section2 p {
-	display: none;
-}
 
 /* SECTION 3
 --------------------------------*/
 
-
-/* SECTION 4
--------------------------------*/
 .digitalizacion-texto{
 	width: 50%;
     float: left;
@@ -355,6 +346,18 @@ header {
 
 @media only screen and (max-width: 480px) {
  
+}
+
+
+/* SECTION 4
+-------------------------------*/
+#section4 img {
+	left: -100%;
+	position: relative;
+}
+
+#section4 p {
+	display: none;
 }
 
 /* SECTION 5
