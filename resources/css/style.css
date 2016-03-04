@@ -8,11 +8,20 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'OpenSans Regular';
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
 
-p {
-	font-family: "CaviarDreams";
-	font-weight: 400;
-	font-size: 1.3em;
+@font-face {
+	font-family: 'OpenSans Light';
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+
+.texto1 {
+	font-family: 'OpenSans Light';
+	font-size: 1.2em;
+	color: #fff;
 }
 
 .margen-principal{
@@ -172,6 +181,22 @@ header {
 /* SECTION 1
 --------------------------------*/
 
+#section1 {
+	/*background: rgba(113,163,203,1);*/
+	background: -moz-radial-gradient(center, ellipse cover, rgba(113,163,203,1) 0%, rgba(10,97,168,1) 75%, rgba(10,97,168,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(113,163,203,1)), color-stop(75%, rgba(10,97,168,1)), color-stop(100%, rgba(10,97,168,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(113,163,203,1) 0%, rgba(10,97,168,1) 75%, rgba(10,97,168,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(113,163,203,1) 0%, rgba(10,97,168,1) 75%, rgba(10,97,168,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(113,163,203,1) 0%, rgba(10,97,168,1) 75%, rgba(10,97,168,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(113,163,203,1) 0%, rgba(10,97,168,1) 75%, rgba(10,97,168,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71a3cb', endColorstr='#0a61a8', GradientType=1 );
+}
+
+.titulo-textos {
+	width: 70%;
+	margin: 0 auto;
+}
+
 
 /* SECTION 2
 --------------------------------*/
@@ -185,7 +210,10 @@ header {
 .titulo{
     font-family:'CaviarDreams';
 	font-size: 40px;
-    	
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	color: #fff;
+	margin-bottom: 3%;
 }
 
 .catalogo-item{
