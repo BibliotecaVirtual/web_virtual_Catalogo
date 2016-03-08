@@ -61,19 +61,6 @@
 											
 					}
 				
-				//Section 3
-				if(index == 5){
-						//moving the image
-						$('#section4').find('img').delay(0).animate({
-							left: '0%'
-						}, 1200, 'easeInOutElastic');
-
-						$('#section4').find('p').first().fadeIn(1800, function(){
-						$('#section4').find('p').last().fadeIn(1800);
-						});;
-
-					}
-				
 				//Section 4	
 				}
 			});
@@ -124,11 +111,186 @@
     </div>
     
     <div class="section" id="section1">
-        <div class="margen-principal">
+    	<script>
+			$('.galeria-carousel').flickity({
+			  // options
+			  cellAlign: 'left',
+			  contain: true,
+			  pageDots: false,
+			  wrapAround: true,
+			});
+        </script>
+        <div class="margen-principal margen-secundario">
         	<div class="titulo-textos">
-				<h1 class="titulo">Colecciones</h1>
+				<h1 class="titulo">Destacados</h1>
                 <p class="texto1">Nuestro catálogo virtual gestiona proyectos de digitalización y difusión elctrónica del patrimonio documental y bibliográfico.</p>
             </div>
+          <div class="galeria-contenedor">
+            	<div class="galeria-columna">
+                	<div class="galeria-effect">
+                        <a href="#"><img src="resources/img/img_2.jpg" alt=""/>
+                        <div class="galeria-caption">
+                        	<p>Ricardo Palma</p>
+                        </div>
+                        <div class="caption-color" id="img1">
+                            <h1>Ricardo Palma</h1>
+                            <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div></a>
+                    </div>
+                    <div class="galeria-effect">
+						<a href="#"><img src="resources/img/img_6.jpg" alt=""/>
+                        <div class="galeria-caption">
+                        	<p>Nicolas de Piérola</p>
+                        </div>
+                        <div class="caption-color" id="img2">
+                            <h1>Nicolas de Piérola</h1>
+                            <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div></a>
+                    </div>
+            	</div>
+                <div class="galeria-columna">
+                	<div class="galeria-effect">
+                        <a href="#"><img src="resources/img/img_3.jpg" alt=""/>
+                        <div class="galeria-caption">
+                        	<p>Hipólito Unanue</p>
+                        </div>
+                        <div class="caption-color" id="img3">
+                            <h1>Hipólito Unanue</h1>
+                            <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div></a>
+                    </div>
+                    <div class="galeria-effect">
+                        <a href="#"><img src="resources/img/img_5.jpg" alt=""/>
+                        <div class="galeria-caption">
+                        	<p>Pedro Zulen</p>
+                        </div>
+                        <div class="caption-color" id="img4">
+                            <h1>Pedro Zulen</h1>
+                            <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div></a>
+                    </div>
+            	</div>
+                <div class="galeria-columna">
+                	<div class="galeria-effect">
+                		<a href="#"><img src="resources/img/img_7.jpg" alt=""/>
+                        <div class="galeria-caption">
+                        	<p>Eugenio Courret</p>
+                        </div>
+                        <div class="caption-color" id="img5">
+                            <h1>Eugenio Courret</h1>
+                            <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div></a>
+                    </div>
+                    <div class="galeria-effect">
+                        <a href="#"><img src="resources/img/img_4.jpg" alt=""/>
+                        <div class="galeria-caption">
+                        	<p>Nicolás de Piérola</p>
+                        </div>
+                        <div class="caption-color" id="img6">
+                            <h1>Nicolás de Piérola</h1>
+                            <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div></a>
+                    </div>
+              </div>
+                <div class="galeria-columna" id="columna-responsive">
+                	<div class="galeria-effect">
+                        <a href="#"><img src="resources/img/img_5.jpg" alt=""/>
+                        <div class="galeria-caption">
+                        	<p>Pedro Zulen</p>
+                        </div>
+                        <div class="caption-color" id="img7">
+                            <h1>Pedro Zulen</h1>
+                            <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div></a>
+                    </div>
+                    <div class="galeria-effect">
+                        <a href="#"><img src="resources/img/img_8.jpg" alt=""/>
+                        <div class="galeria-caption">
+                        	<p>Emilio Garreaud</p>
+                        </div>
+                        <div class="caption-color" id="img8">
+                            <h1>Emilio Garreaud</h1>
+                            <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                        </div></a>
+                    </div>
+            </div>
+            </div>
+            
+            <div class="galeria-carousel">
+            	<div class="galeria-celda">
+                	<div class="galeria-descripcion">
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet placerat dui aliquet.</p>
+                    </div>
+                	<img src="resources/img/img_1.jpg" alt=""/>
+                    <div class="caption-text">
+                    	<p>Ricardo Palma</p>
+                    </div>
+                </div>
+                <div class="galeria-celda">
+                	<div class="galeria-descripcion">
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet placerat dui aliquet.</p>
+                    </div>
+                	<img src="resources/img/img_2.jpg" alt=""/>
+                    <div class="caption-text">
+                    	<p>Ricardo Palma</p>
+                    </div>
+                </div>
+                <div class="galeria-celda">
+                	<div class="galeria-descripcion">
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet placerat dui aliquet.</p>
+                    </div>
+                	<img src="resources/img/img_3.jpg" alt=""/>
+                    <div class="caption-text">
+                    	<p>Ricardo Palma</p>
+                    </div>
+                </div>
+                <div class="galeria-celda">
+                	<div class="galeria-descripcion">
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet placerat dui aliquet.</p>
+                    </div>
+                	<img src="resources/img/img_4.jpg" alt=""/>
+                    <div class="caption-text">
+                    	<p>Ricardo Palma</p>
+                    </div>
+                </div>
+                <div class="galeria-celda">
+                	<div class="galeria-descripcion">
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet placerat dui aliquet.</p>
+                    </div>
+                	<img src="resources/img/img_5.jpg" alt=""/>
+                    <div class="caption-text">
+                    	<p>Ricardo Palma</p>
+                    </div>
+                </div>
+                <div class="galeria-celda">
+                	<div class="galeria-descripcion">
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet placerat dui aliquet.</p>
+                    </div>
+                	<img src="resources/img/img_6.jpg" alt=""/>
+                    <div class="caption-text">
+                    	<p>Ricardo Palma</p>
+                    </div>
+                </div>
+                <div class="galeria-celda">
+                	<div class="galeria-descripcion">
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet placerat dui aliquet.</p>
+                    </div>
+                	<img src="resources/img/img_7.jpg" alt=""/>
+                    <div class="caption-text">
+                    	<p>Ricardo Palma</p>
+                    </div>
+                </div>
+                <div class="galeria-celda">
+                	<div class="galeria-descripcion">
+                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet placerat dui aliquet.</p>
+                    </div>
+                	<img src="resources/img/img_8.jpg" alt=""/>
+                    <div class="caption-text">
+                    	<p>Ricardo Palma</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     
@@ -250,11 +412,6 @@
     </div>
     
     <div class="section" id="section4">
-    	<div class="intro">
-            <img src="resources/img/wow-1.gif"/>
-        	<h1 class="titulo">Novedades</h1>
-            <p>Novedades</p>
-        </div>
     </div>
     
     <div class="section" id="section5">
