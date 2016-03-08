@@ -220,12 +220,25 @@ header {
 	position:absolute;
 }
 
+.catalogo-texto{
+	color: #FFF;
+	width: 75%;
+    float: right;
+}
+
 .catalogo-texto-principal{
 	width: 32%;
     float: left;
 	margin-top:10px;
 	border-right: solid #FFFFFF;
 }
+
+.division{
+	border-right: solid #FFFFFF 1px;
+	height: 87px;
+    float: left;
+    vertical-align: middle;
+	}
 
 .catalogo-texto-secundario{
 	width: 32%;
@@ -238,6 +251,11 @@ header {
 	font-size: 50px;
     float: left;
     width: 25%;	
+	color: #FFF;
+}
+
+#catalogo-detalles{
+	background: #2251A6;	
 }
 
 @media only screen and (max-width: 1169px) {
@@ -258,6 +276,8 @@ header {
 	/*position:inherit;*/
 	padding-bottom:20px;
 }
+
+
 
 }
 
@@ -402,13 +422,27 @@ header {
 	width: 65%;
     float: none;
     margin: 0 auto;
-    margin-top: 210px;
+    margin-top: 200px;
 }
 
 }
 
-@media only screen and (max-width: 480px) {
- 
+@media only screen and (max-width: 550px) {
+ .digitalizacion-video{
+	width: 65%;
+    float: none;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+
+.digitalizacion-texto p{
+	display:none;
+}
+
+.titulo{
+    font-size: 25px;
+    margin: 20px 0 30px;	
+}
 }
 
 
@@ -426,6 +460,11 @@ header {
 /* SECTION 5
 -------------------------------*/
 /* GRID */
+
+#section5{
+ background: #FFF;	
+}
+
 .page_content{
 	margin-left:1%;	
 }
@@ -576,6 +615,85 @@ header {
 ---------------- SECTION 6
 */
 
-.footer {
-    padding: 50px 0;
+.gallery {
+  background: #FFF;
+  margin-top: 25px;
+}
+
+.gallery-convenios {
+  width: 28%;
+  height: 175px;
+  margin-right: 10px;
+  
+}
+
+.gallery-convenios.is-selected {
+  /*background: #ED2;*/
+}
+
+/* cell number */
+.gallery-convenios:before {
+  display: block;
+  text-align: center;
+  line-height: 175px;
+  font-size: 80px;
+  color: white;
+}
+
+.flickity-page-dots {
+  display:none;
+}
+
+@media only screen and (max-width: 960px) {
+.gallery-convenios {
+  width: 48%;
+  height: 200px;
+  margin-right: 10px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.gallery-convenios {
+  width: 98%;
+  height: 200px;
+  margin-right: 10px;
+}
+
+}
+
+/*Footer*/
+
+.tercio {
+    width: 33.2%;
+    padding: 2% 1%;
+	float:left;
+}
+
+.titulo-footer{
+	font-size: larger;
+    padding-bottom: 10px;	
+}
+
+.p-footer{
+	text-align:justify;	
+}
+
+/*Copyright*/
+.copyright{
+background:#333232;
+}
+
+.copyright p{
+color: #FFF;
+margin: 10px 0 10px 0;
+font-size: smaller;	
+}
+
+@media only screen and (max-width: 640px) {
+.tercio {
+    width: 100%;
+    padding: 2% 1%;
+	float:left;
+}
+
 }
