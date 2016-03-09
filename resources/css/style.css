@@ -158,6 +158,12 @@ header {
 		background-position: center;
 }
 
+@media only screen and (max-width: 640px) {
+	.fp-slides, fp-controlArrow, .fp-next, .fp-prev{
+		display:none;
+}
+	}
+
 /* Backgrounds for the slides
 -----------------------------*/
 
@@ -180,6 +186,10 @@ header {
 	text-align: center;
 }
 
+#section0{
+ background:url(../img/fondo-cel-home.jpg);
+ background-size:cover;	
+}
 
 
 /* SECTION 1
@@ -447,7 +457,7 @@ header {
 }
 
 .division{
-	border-right: solid #FFFFFF 1px;
+	border-right: solid #143063 1px;
 	height: 87px;
     float: left;
     vertical-align: middle;
@@ -471,6 +481,9 @@ header {
 	background: #2251A6;	
 }
 
+hr{
+	display: none;
+}
 @media only screen and (max-width: 1169px) {
  .catalogo-item{
     width: 30%;
@@ -492,20 +505,34 @@ header {
 
 
 
+
 }
 
 @media only screen and (max-width: 960px) {
  .numero-texto{
-	font-size: 50px;
-    float: none;
+	font-size: 28px;
+    float: left;
     width: 25%;	
 }
 }
 
+@media only screen and (max-width:640px) {
+	.division{
+	display: none;
+	/*width: 32%;
+    float: right;
+	margin-top:10px;
+	border-top: solid #FFFFFF;*/
+	}	
+	
+	hr{
+	display: block;
+}
+}
 @media only screen and (max-width: 480px) {
  .numero-texto{
 	font-size: 35px;
-    float: none;
+    float: left;
 }
 
 .catalogo-texto-principal, .catalogo-texto-secundario{
@@ -892,7 +919,9 @@ header {
 }
 
 .p-footer{
-	text-align:justify;	
+	text-align:justify;
+	width: 85%;
+    margin: 0 auto;	
 }
 
 /*Copyright*/
@@ -906,11 +935,22 @@ margin: 10px 0 10px 0;
 font-size: smaller;	
 }
 
+.margen-footer{
+    margin: 10px 0 10px 0px;	
+}
+.margen-footer img{
+     margin: 10px 0 10px 0px;	
+}
+
 @media only screen and (max-width: 640px) {
 .tercio {
     width: 100%;
     padding: 2% 1%;
 	float:left;
+}
+
+.p-footer{
+ font-size:15px;	
 }
 
 }
