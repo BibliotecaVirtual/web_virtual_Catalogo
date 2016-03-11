@@ -137,6 +137,13 @@ header {
 
 /* CAROUSEL
 ---------------------------------*/
+ #section-movil{
+	display:none; 
+ }
+
+	#sliders, .fp-slides, .fp-controlArrow{
+		display:inherit;
+}
 
 .slide h1 {
 	font-size: 3.5em;
@@ -164,6 +171,26 @@ header {
 		background-position: center;
 }
 
+
+@media only screen and (max-width: 640px) {
+	#sliders, .fp-slides, .fp-controlArrow{
+		display:none;
+}
+
+	#section-movil{
+	 display:inherit;
+	 height:100%,	
+	}
+  
+  #titulo-movil{
+	color:#323131 !important;
+	top: 30%;
+	position: absolute;
+	margin:0 auto;  
+	}
+
+	}
+
 /* Backgrounds for the slides
 -----------------------------*/
 
@@ -186,6 +213,10 @@ header {
 	text-align: center;
 }
 
+#section0{
+ background:url(../img/fondo-cel-home.jpg);
+ background-size:cover;	
+}
 
 
 /* SECTION 1
@@ -205,7 +236,7 @@ header {
 .titulo-textos {
 	width: 70%;
 	margin: 0 auto;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
 
 
@@ -406,7 +437,7 @@ header {
     font-family:'CaviarDreams';
 	font-size: 40px;
 	text-transform: uppercase;
-	letter-spacing: 8px;
+	letter-spacing: 6px;
 	color: #fff;
 	margin-bottom: 3%;
 }
@@ -457,7 +488,7 @@ header {
 }
 
 .division{
-	border-right: solid #FFFFFF 1px;
+	border-right: solid #143063 1px;
 	height: 87px;
     float: left;
     vertical-align: middle;
@@ -481,6 +512,9 @@ header {
 	background: #2251A6;	
 }
 
+hr{
+	display: none;
+}
 @media only screen and (max-width: 1169px) {
  .catalogo-item{
     width: 30%;
@@ -502,20 +536,34 @@ header {
 
 
 
+
 }
 
 @media only screen and (max-width: 960px) {
  .numero-texto{
-	font-size: 50px;
-    float: none;
+	font-size: 28px;
+    float: left;
     width: 25%;	
 }
 }
 
+@media only screen and (max-width:640px) {
+	.division{
+	display: none;
+	/*width: 32%;
+    float: right;
+	margin-top:10px;
+	border-top: solid #FFFFFF;*/
+	}	
+	
+	hr{
+	display: block;
+}
+}
 @media only screen and (max-width: 480px) {
  .numero-texto{
 	font-size: 35px;
-    float: none;
+    float: left;
 }
 
 .catalogo-texto-principal, .catalogo-texto-secundario{
@@ -656,6 +704,7 @@ header {
 .digitalizacion-texto p{
 	margin: 30px auto 30px;
 	width:80%;
+	font-family:'OpenSans Regular';
 }
 
 .digitalizacion-video{
@@ -695,7 +744,7 @@ header {
 	width: 65%;
     float: none;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 }
@@ -713,11 +762,18 @@ header {
 }
 
 .titulo{
-    font-size: 25px;
-    margin: 20px 0 30px;	
+    font-size: 20px;
+    margin: 2px 0 2px;	
 }
 }
 
+@media only screen and (max-width: 480px){
+.servicios-cell{
+    width: 100%;
+    height: 400px;
+    margin-right: 10px;	
+}
+}
 
 /* SECTION 4
 -------------------------------*/
@@ -732,6 +788,7 @@ header {
 	background: radial-gradient(ellipse at center, rgba(142,105,138,1) 0%, rgba(102,52,103,1) 75%, rgba(102,52,103,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e698a', endColorstr='#663467', GradientType=1 );
 }
+
 
 .novedades-galeria {
 	max-width: 1000px;
@@ -1036,6 +1093,9 @@ header {
   display:none;
 }
 
+#titulo-oscuro{
+ color:#333333;	
+}
 @media only screen and (max-width: 960px) {
 .gallery-convenios {
   width: 48%;
@@ -1047,7 +1107,7 @@ header {
 @media only screen and (max-width: 480px) {
 .gallery-convenios {
   width: 98%;
-  height: 200px;
+  height: 190px;
   margin-right: 10px;
 }
 
@@ -1067,7 +1127,10 @@ header {
 }
 
 .p-footer{
-	text-align:justify;	
+	text-align:justify;
+	width: 85%;
+    margin: 0 auto;
+	font-family:'OpenSans Regular'	
 }
 
 /*Copyright*/
@@ -1081,11 +1144,23 @@ margin: 10px 0 10px 0;
 font-size: smaller;	
 }
 
+.margen-footer{
+    margin: 10px 0 10px 0px;
+	text-align:left;	
+}
+.margen-footer img{
+     margin: 10px 0 10px 0px;	
+}
+
 @media only screen and (max-width: 640px) {
 .tercio {
     width: 100%;
     padding: 2% 1%;
 	float:left;
+}
+
+.p-footer{
+ font-size:15px;	
 }
 
 }

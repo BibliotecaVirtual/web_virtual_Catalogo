@@ -1041,12 +1041,14 @@ Main components
 
 #barra-buscar{
 	width:78%;
-	border-radius: 50px 0px 0px 50px;
+	border-radius: 15px 0px 0px 15px;
+	box-shadow: 3px 3px 25px #908F8E;
 }
 #btn-buscar{
 	width:18%;
 	background: #FF9800;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0px 15px 15px 0px;
+	box-shadow: 3px 3px 25px #908F8E;
     color: #FFF;
 }
 .cd-search input::-webkit-input-placeholder {
@@ -1079,7 +1081,7 @@ Main components
 
 @media only screen and (min-width: 1170px) {
   .cd-search {
-    height: 120px;
+    height: 70px;
     top: 65vh;
   }
   .cd-search input {
