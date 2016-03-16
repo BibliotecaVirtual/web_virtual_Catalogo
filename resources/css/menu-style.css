@@ -1052,6 +1052,8 @@ Main components
     padding: 9px;
     border-radius: 0 15px 15px 0;
 	height: 50px;
+	border: none;
+	cursor: pointer;
 }
 
 #btn-lupa {
