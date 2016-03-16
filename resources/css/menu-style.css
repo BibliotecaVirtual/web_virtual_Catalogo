@@ -1013,14 +1013,14 @@ Main components
   top: 50px;
   left: 0;
   z-index: 3;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   top: 70vh;
 
   
 }
 .cd-search form {
   height: 100%;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding:0;
 }
@@ -1040,17 +1040,27 @@ Main components
 }
 
 #barra-buscar{
-	width:78%;
+	width: 88%;
 	border-radius: 15px 0px 0px 15px;
-	box-shadow: 3px 3px 25px #908F8E;
+    box-shadow: 3px 3px 25px rgba(0,0,0,0.25);
+	float: left;
 }
 #btn-buscar{
-	width:18%;
-	background: #FF9800;
-    border-radius: 0px 15px 15px 0px;
-	box-shadow: 3px 3px 25px #908F8E;
-    color: #FFF;
+	float: left;
+    width: 12%;
+    background: #FFB60C;
+    padding: 9px;
+    border-radius: 0 15px 15px 0;
+	height: 50px;
 }
+
+#btn-lupa {
+	height: 100%;
+    margin: 0 auto;
+    display: block;
+	width: 100%;
+}
+
 .cd-search input::-webkit-input-placeholder {
   color: #c9cbc4;
 }
@@ -1080,6 +1090,10 @@ Main components
 
 
 @media only screen and (min-width: 1170px) {
+  #btn-buscar{
+	  height: 70px;
+	  padding: 14px;
+  }
   .cd-search {
     height: 70px;
     top: 65vh;
@@ -1089,6 +1103,15 @@ Main components
     font-size: 3.2rem;
     font-weight: 300;
   }
+}
+
+@media only screen and (max-width: 480px) {
+	#barra-buscar {
+		width: 80%;
+	}
+	#btn-buscar {
+		width: 20%;
+	}
 }
 
 .cd-overlay {

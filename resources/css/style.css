@@ -28,6 +28,8 @@
 	font-size: 1.2em;
 	color: #fff;
 	line-height: 1.3em;
+	width: 70%;
+	margin: 0 auto;
 }
 
 .margen-principal{
@@ -179,14 +181,19 @@ header {
 
 	#section-movil{
 	 display:inherit;
-	 height:100%,	
 	}
   
   #titulo-movil{
 	color:#323131 !important;
-	top: 40%;
+	top: 35%;
 	position: absolute;
 	margin:0 auto;  
+	padding: 0 30px;
+	font-size: 30px;
+	}
+	
+	.cd-search {
+		top: 62vh !important;
 	}
 
 	}
@@ -234,7 +241,6 @@ header {
 }
 
 .titulo-textos {
-	width: 70%;
 	margin: 0 auto;
 	margin-bottom: 25px;
 }
@@ -925,7 +931,6 @@ hr{
 	background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0, 0, 0, 0.85) 100%);
 	color: #fff;
     cursor: pointer;
-    /*display: table;*/
     position: absolute;
     bottom: 0;
     width: 180px;
@@ -969,6 +974,12 @@ hr{
 
 .galeria-descripcion {
 	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	.novedades-color {
+		opacity: 1;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
