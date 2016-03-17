@@ -77,7 +77,7 @@ html.fp-enabled,
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 	/*hide arrows*/
-	/*display:none !important;*/
+	display:none !important;
 }
 .fp-controlArrow.fp-prev {
     left: 15px;
@@ -214,3 +214,4 @@ html.fp-enabled,
 .fp-auto-height .fp-tableCell{
     height: auto !important;
 }
+

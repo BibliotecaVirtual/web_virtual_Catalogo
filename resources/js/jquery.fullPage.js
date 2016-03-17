@@ -96,7 +96,7 @@
         var $htmlBody = $('html, body');
         var $body = $('body');
 
-        var FP = $.fn.fullpage;
+        FP = $.fn.fullpage;
         // Create some defaults, extending them with any options that were provided
         options = $.extend({
             //navigation
@@ -366,6 +366,7 @@
         * Slides right the slider of the active section.
         * Optional `section` param.
         */
+		//ACA ESTA :)
         FP.moveSlideRight = function(section){
             moveSlide('next', section);
         };
@@ -376,6 +377,7 @@
         */
         FP.moveSlideLeft = function(section){
             moveSlide('prev', section);
+			clearInterval(hiloSlider);
         };
 
         /**
@@ -1864,7 +1866,8 @@
                     afterSlideLoads();
                 });
             }
-
+			clearInterval(hiloSlider);
+			hiloSlider = setInterval(function(){ FP.moveSlideRight(); }, 5000);
             slidesNav.find(ACTIVE_SEL).removeClass(ACTIVE);
             slidesNav.find('li').eq(slideIndex).find('a').addClass(ACTIVE);
         }

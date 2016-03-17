@@ -40,6 +40,8 @@
 	<script type="text/javascript" src="resources/js/jquery.fullPage.js"></script>
     <script>
 	var auxTypeIt = 0;
+	var FP = $.fn.fullpage;
+	var hiloSlider;
 		$(document).ready(function() {
 			
 			$('#fullpage').fullpage({
@@ -50,7 +52,7 @@
 				scrollOverflow: true,
 				slidesNavigation: true,
 				slidesNavPosition: 'bottom',
-				controlArrows: false,
+				controlArrows: true,
 				//Scrolling
 				scrollingSpeed: 600,
 				afterLoad: function(anchorLink, index){
@@ -64,6 +66,7 @@
 				//Section 4	
 				}
 			});
+			hiloSlider =  setInterval(function(){ FP.moveSlideRight(); }, 5000);
 			
 		});
 		
