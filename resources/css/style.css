@@ -388,6 +388,10 @@ header {
 
 @media only screen and (max-width: 550px) {
 
+	.galeria-descripcion {
+		display: none;
+	}
+	
 	.galeria-contenedor {
 		display: none;
 	}
@@ -400,14 +404,14 @@ header {
 	
 	.galeria-carousel {
 		width: 280px;
-		height: 400px;
+		height: 290px;
 		margin: 0 auto;
 		display: inherit;
 	}
 	
 	.galeria-celda {
 		width: 280px;
-		height: 400px;
+		height: 290px;
 	}
 	
 	.galeria-carousel img {
@@ -576,6 +580,9 @@ hr{
 .catalogo-texto-principal, .catalogo-texto-secundario{
 	font-size:13px;
 	margin-top:20px;	
+}
+.titulo {
+	font-size: 32px;
 }
 }
 
@@ -921,56 +928,65 @@ hr{
 	margin: 0 auto;
 }
 
-.novedades-effect {
-	display: inline-block;
-	height: auto;
-	width: 200px;
+.novedades-galeria figure img {
 	position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.novedades-galeria figure {
+	position: relative;
+    float: left;
     overflow: hidden;
-	font-family: 'OpenSans Regular';
-	margin-bottom: 15px;
-	float: left;
+    margin: 10px 1%;
+    min-width: 180px;
+    max-width: 180px;
+    max-height: 190px;
+    background: #000;
+    text-align: left;
+    cursor: pointer;
+}
+
+.effect-ruby figcaption {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 100%);
 	padding: 0 10px;
 }
 
-.novedades-color {
-	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
-	color: #fff;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0;
-    width: 180px;
-	height: 190px;
+figure.effect-ruby img{
+	transition: 0.35s;
+}
+
+figure.effect-ruby:hover img {
+	transform: scale(1.2) rotate(-5deg);
+	transition: 0.35s;
+	opacity: 1;
+}
+
+.novedades-galeria figure figcaption > a {
+	z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
     opacity: 1;
-    transition: opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
-    -moz-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    text-align: left;
-
 }
 
-.colm2 .novedades-color {
-	width: 200px
-}
-
-.novedades-color:hover {
-}
-
-.novedades-color p {
+.novedades-galeria figcaption h2 {
+	margin-bottom: 5px;
 	font-family: 'OpenSans Semibold';
-	position: absolute;
-    bottom: 9px;
-    left: 13px;
-	width: 150px;
 }
 
-.novedades-color span {
+.novedades-galeria figcaption p {
 	font-family: 'OpenSans Light';
-    font-size: 0.9em;
-    letter-spacing: 0.5px;
-	line-height: 30px;
 	text-transform: uppercase;
+	font-size: 0.85em;
+	letter-spacing: 1px;
 }
 
 .novedades-carousel {
@@ -1272,7 +1288,7 @@ hr{
 }
 
 .p-footer{
-	line-height: 1.1em;
+	line-height: 1.2em;
 	width: 85%;
 	color: #7B7A77;
 	font-family:'OpenSans Regular';
