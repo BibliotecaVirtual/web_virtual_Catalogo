@@ -41,12 +41,16 @@
     <script>
 	var auxTypeIt = 0;
 		$(document).ready(function() {
+			
 			$('#fullpage').fullpage({
 
 				<!--navigation: true,-->
 				navigationPosition: 'left',
 				navigationTooltips: ['Buscar', 'Destacados', 'Catálogo', 'Servicios', 'Novedades', 'Convenios'],
 				scrollOverflow: true,
+				slidesNavigation: true,
+				slidesNavPosition: 'bottom',
+				controlArrows: false,
 				//Scrolling
 				scrollingSpeed: 600,
 				afterLoad: function(anchorLink, index){

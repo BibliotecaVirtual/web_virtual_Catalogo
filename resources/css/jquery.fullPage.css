@@ -76,6 +76,8 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+	/*hide arrows*/
+	/*display:none !important;*/
 }
 .fp-controlArrow.fp-prev {
     left: 15px;
@@ -165,7 +167,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: rgba(0, 0, 0, 0.44);
+    background: #fff;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
