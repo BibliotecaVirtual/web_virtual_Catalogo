@@ -1063,6 +1063,14 @@ Main components
 	width: 100%;
 }
 
+.redes-sociales{
+	height: 25px;
+    margin: 0 auto;
+    display: block;
+    width: 25px;
+    fill: #fff;
+}
+
 .cd-search input::-webkit-input-placeholder {
   color: #c9cbc4;
 }
@@ -1108,6 +1116,14 @@ Main components
 }
 
 @media only screen and (max-width: 480px) {
+	.redes-sociales{
+	height: 10px;
+    margin: 0 auto;
+    display: block;
+    width: 10px;
+    fill: #fff;
+}
+	
 	#barra-buscar {
 		width: 80%;
 	}
