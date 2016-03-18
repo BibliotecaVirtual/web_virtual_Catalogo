@@ -1359,6 +1359,10 @@ font-size: smaller;
 }
 
 @media only screen and (max-width: 640px) {
+.btn-play-pause, .fp-slidesNav{
+	display: none;	
+}
+
 .tercio {
     width: 100%;
     padding: 2% 1%;
@@ -1371,4 +1375,24 @@ font-size: smaller;
 
 #section6 .margen-footer:nth-child(3) p{display:none;}
 
+}
+
+.btn-play-pause {
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	z-index: 4;
+	bottom: 20px;
+	left: 20px;
+	cursor: pointer;
+}
+
+#pause {
+	position: absolute;
+	left:0;
+}
+
+#play {
+	position: absolute;
+	left: 0;
 }
