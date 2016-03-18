@@ -115,11 +115,11 @@ html.fp-enabled,
 .fp-slidesNav{
     position: absolute;
     z-index: 4;
-    left: 50%;
+    left: 110px;
     opacity: 1;
 }
 .fp-slidesNav.bottom {
-    bottom: 17px;
+    bottom: 19px;
 }
 .fp-slidesNav.top {
     top: 17px;

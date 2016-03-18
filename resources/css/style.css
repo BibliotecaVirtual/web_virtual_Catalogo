@@ -1331,3 +1331,22 @@ font-size: smaller;
 #section6 .margen-footer:nth-child(3) p{display:none;}
 
 }
+
+.btn-play-pause {
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	z-index: 4;
+	bottom: 20px;
+	left: 20px;
+}
+
+#pause {
+	position: absolute;
+	left:0;
+}
+
+#play {
+	position: absolute;
+	left: 0;
+}

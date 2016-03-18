@@ -1868,7 +1868,11 @@
             }
 			clearInterval(hiloSlider);
 			hiloSlider = setInterval(function(){ FP.moveSlideRight(); }, 5000);
-            slidesNav.find(ACTIVE_SEL).removeClass(ACTIVE);
+            if(auxSlider == 1){
+				$("#play").fadeOut();
+				$("#pause").fadeIn();
+			}
+			slidesNav.find(ACTIVE_SEL).removeClass(ACTIVE);
             slidesNav.find('li').eq(slideIndex).find('a').addClass(ACTIVE);
         }
 
