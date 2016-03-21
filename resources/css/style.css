@@ -174,10 +174,10 @@ header {
 
 /* BARRA SOCIAL */
 .social {
-	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	position: absolute; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
 	left: 0; /* Establecemos la barra en la izquierda */
-	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
-	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+	top: 42vh; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 5; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
  
 	.social ul {
@@ -490,7 +490,7 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 6px;
 	color: #fff;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 
 .catalogo-item{
