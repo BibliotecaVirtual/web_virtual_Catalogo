@@ -1,3 +1,42 @@
+/*TODAS LAS PAGINAS*/
+
+@font-face {
+	font-family: 'CaviarDreams';
+	src: url(../fonts/CaviarDreams.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans Regular';
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'OpenSans Light';
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+	font-family: 'OpenSans Semibold';
+	src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+/*
+ESTILOS GENERALES
+-------------------------------*/
+
+header {
+	width: 100%;
+	position: fixed;
+}
+
+.margen-principal{
+	max-width:1200px;
+	margin: 0 auto;	
+	padding:80px 0 0 0 ;
+}
+
 /* -------------------------------- 
 
 Primary style
@@ -496,30 +535,6 @@ Main components
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40px 40px;
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-1::before {
-  background-image: url("../img/line-icon-1.svg");
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-2::before {
-  background-image: url("../img/line-icon-2.svg");
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-3::before {
-  background-image: url("../img/line-icon-3.svg");
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-4::before {
-  background-image: url("../img/line-icon-4.svg");
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-5::before {
-  background-image: url("../img/line-icon-5.svg");
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-6::before {
-  background-image: url("../img/line-icon-6.svg");
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-7::before {
-  background-image: url("../img/line-icon-7.svg");
-}
-.cd-primary-nav .cd-nav-icons .cd-nav-item.item-8::before {
-  background-image: url("../img/line-icon-8.svg");
 }
 @media only screen and (max-width: 1169px) {
   .cd-primary-nav {
