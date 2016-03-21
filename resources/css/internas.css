@@ -12,11 +12,14 @@
 
 .header-img:after {
 	content: '';
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 100px 100px 0 100px;
-	border-color: #007bff transparent transparent transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 50px 0 50px;
+    border-color: #0A61A8 transparent transparent transparent;
+    position: absolute;
+    top: 404px;
+    left: 47vw;
 }
 
 #general-img {
