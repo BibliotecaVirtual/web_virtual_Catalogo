@@ -1,20 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
 
+.margen-internas {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 80px 30px 0 30px;
+}
+
 .titulo-principal {
 	font-family: 'CaviarDreams' !important;
-    text-transform: uppercase;
-    color:#005AA7;
+  text-transform: uppercase;
+  color:#005AA7;
 	text-align: center;
 	font-size: 2.5em !important;
-    letter-spacing: 0.2em;
+  letter-spacing: 0.2em;
 	padding: 10px 0 30px 0px;
 }
 
 .subtitulo{
 	font-family: 'CaviarDreams' !important;
-    text-transform: uppercase;
-    color:#005AA7;
+  text-transform: uppercase;
+  color:#005AA7;
 	text-align: center;
 	letter-spacing: inherit;
 	font-size: 1.2em !important;
@@ -23,12 +29,12 @@
 .texto-general{
     font-family: 'OpenSans Regular';
     color: #777;
-    text-align: center;	
+    text-align: center;
 }
 .header-img {
 	max-width: 100%;
 	height: 25.5vw;
-    min-height: 200px;
+  min-height: 200px;
 	max-height:500px;
 	background-position: top center !important;
 	background-repeat: no-repeat !important;
@@ -37,13 +43,13 @@
 
 .header-img:after {
 	content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 50px 0 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 50px 0 50px;
 	position: absolute;
-    top: 25.5vw;
-    left: 47vw;
+  top: 25.5vw;
+  left: 47vw;
 }
 
 .triangulo-general:after{
@@ -76,14 +82,81 @@
 
 .quinto{
     background: #E6E5E3;
-    width: 20%;
+    width: 19.4%;
     padding: 0 1% 0 1%;
     border-top: 15px solid #005AA7;
     margin: 0 auto;
     float: left;
+	margin-left: 3px;
+    margin-right: 3px;
+	margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 @media only screen and (max-width: 1169px) {
 	.header-img:after {
-		display:none;	
+		display:none;
 	}
+}
+
+/*
+SITE MAP
+------------------------------------*/
+
+.site-map {
+	margin: -25px 0 37px;
+}
+
+.site-map div {
+	float: left;
+	padding: 5px 11px 5px 19px;
+	color: #fff;
+	position: relative;
+	font-family: 'OpenSans Regular';
+}
+
+.site-map .left {
+	background: #a4a4a4;
+}
+
+.site-map .left::before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 16px 0 16px 8px;
+	border-color: transparent transparent transparent #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.site-map .left::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 16px 0 16px 8px;
+	border-color: transparent transparent transparent #A4A4A4;
+	position: absolute;
+	top: 0;
+	right: -8px;
+	z-index: 2;
+}
+
+.site-map .right {
+	background: #005cb1;
+}
+
+.site-map .right::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 16px 0 16px 8px;
+	border-color: transparent transparent transparent #005cb1;
+	position: absolute;
+	top: 0;
+	right: -8px;
+	z-index: 2;
 }
