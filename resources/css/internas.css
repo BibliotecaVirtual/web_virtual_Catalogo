@@ -74,6 +74,25 @@
 	border-bottom: 8px solid #017604;
 }
 
+.contendor-cuadros{
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 100px;		
+}
+
+.quinto{
+    background: #E6E5E3;
+    width: 19.4%;
+    padding: 0 1% 0 1%;
+    border-top: 15px solid #005AA7;
+    margin: 0 auto;
+    float: left;
+	margin-left: 3px;
+    margin-right: 3px;
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 1169px) {
 	.header-img:after {
 		display:none;
