@@ -631,17 +631,17 @@ Main components
   }
   
   #color-catalogo{
-	  background: #663465;
+	  background: #005AA7;
   }
   
   #color-catalogo:before{
 	content: "";
     width: 30px;
     height: 30px;
-    background: #663465;
+    background: #005AA7;
     position: inherit;
     top: -9px;
-    right: 620px;
+    right: 645px;
     transform: rotate(45deg);
 }
 
@@ -657,7 +657,7 @@ Main components
     background: #017604;
     position: inherit;
     top: -9px;
-    right: 462px;
+    right: 490px;
     transform: rotate(45deg);
 }
 
@@ -667,17 +667,17 @@ Main components
   }
   
    #color-eventos{
-	  background: #CC0001;
+	  background: #FF9900;
   }
   
    #color-eventos:before{
 	content: "";
     width: 30px;
     height: 30px;
-    background: #CC0001;
+    background: #FF9900;
     position: inherit;
     top: -9px;
-    right: 315px;
+    right: 340px;
     transform: rotate(45deg);
 }
 
