@@ -32,6 +32,13 @@
     color: #777;
     text-align: center;
 }
+
+.texto-cuadros{
+    font-family: 'OpenSans Regular';
+    color: #777;
+    text-align: center;
+	font-size:0.85em;
+}
 .header-img {
 	max-width: 100%;
 	height: 25.5vw;
@@ -84,7 +91,7 @@
 .quinto{
     background: #E6E5E3;
     width: 19.4%;
-    padding: 0 1% 0 1%;
+    padding: 0 1% 1% 1%;
     border-top: 15px solid #005AA7;
     margin: 0 auto;
     float: left;
@@ -92,6 +99,29 @@
     margin-right: 3px;
 	margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.titulo-cuadros{
+	text-align: center;
+    font-family: 'CaviarDreams';
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: inherit;	
+}
+
+.img-contenedor{
+	margin: 0 auto;
+    position: relative;
+    width: 50%;
+    overflow: visible;
+    margin-bottom: 49px;
+}
+
+.img-cuadro{
+	position: absolute;
+    top: -55px;
+	border: #BACEE0 solid 4px;
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 1169px) {
@@ -169,7 +199,7 @@ SITE MAP
 }
 
 .active-servicios {
-	background: #0A61A8;
+	background: #017604;
 }
 
 .active-servicios::after {
