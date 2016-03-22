@@ -28,9 +28,11 @@
 }
 
 .texto-general{
-    font-family: 'OpenSans Regular';
-    color: #777;
-    text-align: center;
+	font-family: 'OpenSans Regular';
+	color: #777;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
 }
 .header-img {
 	max-width: 100%;
@@ -190,4 +192,57 @@ SITE MAP
 
 .active-novedades::after {
 	border-color: transparent transparent transparent #b06caf;
+}
+
+/* SEARCH BAR
+----------------------------------*/
+.searchBar-interno {
+	height: 50px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.searchBar-interno form {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  padding:0;
+}
+
+.searchBar-interno input {
+  border: none;
+  background: #E6E6E6;
+	width: 88%;
+  height: 100%;
+  padding: 0 5%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+	outline: none;
+	font-family: 'OpenSans Regular';
+	color: #757575;
+}
+
+.searchBar-input {
+	border-radius: 15px 0px 0px 15px;
+	float: left;
+}
+
+.btn-search-interno {
+	float: left;
+  width: 12%;
+  padding: 9px;
+  border-radius: 0 15px 15px 0;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-lupa-interno {
+	height: 100%;
+  margin: 0 auto;
+  display: block;
+	width: 100%;
 }

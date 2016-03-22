@@ -33,11 +33,11 @@ header {
 
 .margen-principal{
 	max-width:1200px;
-	margin: 0 auto;	
+	margin: 0 auto;
 	padding:80px 0 0 0 ;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -89,9 +89,9 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 .cd-main-content, .cd-main-header {
@@ -179,7 +179,7 @@ Main components
     left: auto;
     right: 5%;
   }
-  
+
   .cd-logo {
   position: absolute;
   top: 5px;
@@ -630,11 +630,11 @@ Main components
   .cd-primary-nav .go-back, .cd-primary-nav .see-all {
     display: none;
   }
-  
+
   #color-catalogo{
 	  background: #005AA7;
   }
-  
+
   #color-catalogo:before{
 	content: "";
     width: 30px;
@@ -646,11 +646,11 @@ Main components
     transform: rotate(45deg);
 }
 
-  
+
    #color-servicios{
 	  background: #017604;
   }
-  
+
    #color-servicios:before{
 	content: "";
     width: 30px;
@@ -662,15 +662,15 @@ Main components
     transform: rotate(45deg);
 }
 
-  
+
    #color-novedades{
 	  background: #FF9801;
   }
-  
+
    #color-eventos{
 	  background: #FF9900;
   }
-  
+
    #color-eventos:before{
 	content: "";
     width: 30px;
@@ -682,7 +682,7 @@ Main components
     transform: rotate(45deg);
 }
 
-  
+
   .cd-primary-nav .cd-secondary-nav, .cd-primary-nav .cd-nav-gallery, .cd-primary-nav .cd-nav-icons {
     /* dropdown menu style */
     position: absolute;
@@ -700,7 +700,7 @@ Main components
     -webkit-transition: opacity .3s 0s, visibility 0s 0s;
     -moz-transition: opacity .3s 0s, visibility 0s 0s;
     transition: opacity .3s 0s, visibility 0s 0s;
-	
+
   }
   .cd-primary-nav .cd-secondary-nav::after, .cd-primary-nav .cd-nav-gallery::after, .cd-primary-nav .cd-nav-icons::after {
     clear: both;
@@ -834,7 +834,7 @@ Main components
     /*margin: 0 4% 40px 0;*/
 	margin: 0;
   }
-  
+
   .cd-primary-nav .cd-nav-gallery .li-doble {
     /* set here number of columns - use width percentage */
     width: 46%;
@@ -1033,7 +1033,7 @@ Main components
   /*opacity: 0.8;*/
   top: 70vh;
 
-  
+
 }
 .cd-search form {
   height: 100%;
@@ -1112,7 +1112,7 @@ Main components
 }
 .nav-is-fixed .cd-search {
   position: fixed;
-  
+
 }
 
 
@@ -1140,7 +1140,7 @@ Main components
     width: 15px;
     fill: #fff;
 }
-	
+
 	#barra-buscar {
 		width: 80%;
 	}
@@ -1198,9 +1198,9 @@ Main components
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-support for no js 
+support for no js
 
 -------------------------------- */
 .no-js .cd-primary-nav {
@@ -1241,5 +1241,5 @@ support for no js
 	font-size: small;
     width: 55%;
     display: -webkit-box;
-	padding: 5px 0 0 16px;	
+	padding: 5px 0 0 16px;
 }
