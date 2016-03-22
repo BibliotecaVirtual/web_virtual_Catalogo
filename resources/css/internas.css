@@ -68,6 +68,20 @@
 	border-bottom: 8px solid #017604;
 }
 
+.contendor-cuadros{
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 100px;		
+}
+
+.quinto{
+    background: #E6E5E3;
+    width: 20%;
+    padding: 0 1% 0 1%;
+    border-top: 15px solid #005AA7;
+    margin: 0 auto;
+    float: left;
+}
 @media only screen and (max-width: 1169px) {
 	.header-img:after {
 		display:none;	
