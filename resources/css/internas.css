@@ -4,7 +4,8 @@
 .margen-internas {
 	max-width: 1260px;
 	margin: 0 auto;
-	padding: 80px 30px 0 30px;
+	/*padding: 80px 30px 0 30px;*/
+	padding: 3.5vw 30px 0 30px;
 }
 
 .titulo-principal {
@@ -77,7 +78,7 @@
 .contendor-cuadros{
     margin: 0 auto;
     width: 90%;
-    padding-top: 100px;		
+    padding-top: 100px;
 }
 
 .quinto{
@@ -104,7 +105,8 @@ SITE MAP
 ------------------------------------*/
 
 .site-map {
-	margin: -25px 0 37px;
+	/*margin: -25px 0 37px;*/
+	margin: -1vw 0 37px;
 }
 
 .site-map div {
@@ -120,6 +122,7 @@ SITE MAP
 	background: #a4a4a4;
 }
 
+/* A PEDIDO DE DAYSI 22/03 - 3:00pm
 .site-map .left::before {
 	content: '';
 	width: 0;
@@ -130,7 +133,7 @@ SITE MAP
 	position: absolute;
 	top: 0;
 	left: 0;
-}
+}*/
 
 .site-map .left::after {
 	content: '';
@@ -145,19 +148,46 @@ SITE MAP
 	z-index: 2;
 }
 
-.site-map .right {
-	background: #005cb1;
-}
-
 .site-map .right::after {
 	content: '';
 	width: 0;
 	height: 0;
 	border-style: solid;
 	border-width: 14px 0 14px 8px;
-	border-color: transparent transparent transparent #005cb1;
 	position: absolute;
 	top: 0;
 	right: -8px;
 	z-index: 2;
+}
+
+.active-general {
+	background: #0A61A8;
+}
+
+.active-general::after {
+	border-color: transparent transparent transparent #0A61A8;
+}
+
+.active-servicios {
+	background: #0A61A8;
+}
+
+.active-servicios::after {
+	border-color: transparent transparent transparent #017604;
+}
+
+.active-eventos {
+	background: #CC0001;
+}
+
+.active-eventos::after {
+	border-color: transparent transparent transparent #CC0001;
+}
+
+.active-novedades {
+	background: #b06caf;
+}
+
+.active-novedades::after {
+	border-color: transparent transparent transparent #b06caf;
 }
