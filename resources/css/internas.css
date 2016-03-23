@@ -332,12 +332,14 @@ FOOTER
 .footer-internas {
 	width: 100%;
 	background: #e2e3df;
-	height: 275px;
   margin-top: 70px;
 	font-family: 'OpenSans Regular';
 	color: #7d7d7d;
 	font-size: 0.9em;
 	letter-spacing: normal;
+	display: inline-block;
+	position: relative;
+	margin-bottom: -4px;
 }
 
 .footer-internas h2 {
@@ -351,7 +353,7 @@ FOOTER
 }
 
 .footer-internas .tercio {
-	padding: 30px 50px 0;
+	padding: 30px 50px 20px;
 }
 
 .footer-internas .tercio h2, .tercio p {
@@ -370,6 +372,21 @@ FOOTER
 
 .footer-preguntas a {
 	color: #7d7d7d;
+}
+
+@media only screen and (max-width:800px) {
+	.footer-internas .tercio {
+		padding: 30px 30px 20px;
+	}
+}
+
+@media only screen and (max-width:640px) {
+	.footer-preguntas {
+		display: none;
+	}
+	.tercio {
+		width: 100%;
+	}
 }
 
 /*
