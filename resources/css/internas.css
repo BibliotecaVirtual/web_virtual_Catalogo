@@ -169,6 +169,7 @@ ESTILOS GENERALES
 	font-size: 1.1em;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	letter-spacing: 0.2em;
 }
 
 .img-contenedor{
@@ -435,10 +436,6 @@ BOXES CONTENT
 
 .tercio-static .img-cuadro {
 	top: -115px;
-}
-
-.tercio-static .titulo-cuadros {
-	letter-spacing: 0.2em;
 }
 
 .catalogoList-left {
