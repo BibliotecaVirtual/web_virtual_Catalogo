@@ -118,7 +118,7 @@ ESTILOS GENERALES
 
 @media only screen and (max-width:480px) {
 	.subtitulo-bg {
-		font-size: 1.6em !important;
+		font-size: 1.3em !important;
 	}
 }
 
@@ -424,10 +424,11 @@ BOXES CONTENT
 	background: #F3F3F3;
 	border-top: 15px solid #005AA7;
 	float: left;
+	position: relative;
 }
 
 .contenedor-boxes-tercio .tercio-static {
-	height: 325px;
+	height: 285px;
 }
 
 .tercio-static .img-contenedor {
@@ -449,9 +450,11 @@ BOXES CONTENT
 }
 
 .catalogo-box aside {
-	float: right;
 	margin: 20px 10px 0;
 	font-family: 'OpenSans Semibold';
+	position: absolute;
+	bottom: -30px;
+	right: 0;
 }
 
 .catalogo-box aside a {
