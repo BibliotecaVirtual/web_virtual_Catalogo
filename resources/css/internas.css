@@ -104,10 +104,28 @@ ESTILOS GENERALES
 	border-bottom: 8px solid #017604;
 }
 
-.contendor-cuadros{
+.contenedor-cuadros{
     margin: 0 auto;
     width: 1200px;
-	padding-top: 100px;
+	padding-top: 60px;
+	    height: 350px;
+		clear:both;
+}
+
+.contenedor-tercios{
+	margin: 0 auto;
+    width: 710px;
+    padding-top: 60px;
+    height: 350px;
+    clear: both;	
+}
+
+.contenedor-grid{
+	margin: 0 auto;
+    width: 1200px;
+	padding-top: 60px;
+	    height: 350px;
+		clear:both;
 }
 
 .quinto{
@@ -121,6 +139,39 @@ ESTILOS GENERALES
     margin-right: 3px;
 	margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.cuartos-alt{
+	background: #FFFFFF;
+    width: 290px;
+    padding: 0 5px 1% 5px;
+    border: 2px solid #E6E5E3;
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;	
+	}
+
+.cuartos-alt-titulo{
+	font-weight: bold;
+    color: #696867;
+    margin: 10px 0 10px 0;
+    font-size: 1.2em;
+}
+
+.cuartos-alt-texto{
+	width: 60%;
+    position: relative;
+    float: left;
+    font-size: 0.7em;	
+}
+
+.cuartos-alt-img{
+	width: 37%;
+    float: right;
+    position: relative;
+    margin-top: 0px;	
 }
 
 .titulo-cuadros{
@@ -146,7 +197,12 @@ ESTILOS GENERALES
     border-radius: 50%;
 	}
 
-
+.precio{
+    color: #1659A2;
+    font-size: 1.1em;
+    float: left;
+    margin: 10px 0 10px 0;	
+}
 .requisitos{
 	width:100%;
 	float:left;	
@@ -158,12 +214,16 @@ ESTILOS GENERALES
 }
 
 @media only screen and (max-width: 1246px) {
-.contendor-cuadros{
+.contenedor-cuadros{
     width: 944px;
 	}
 	
 .quinto{
 	margin-top: 50px;
+	}
+	
+.contenedor-grid{
+	width: 890px;
 	}
 }
 
@@ -174,13 +234,17 @@ ESTILOS GENERALES
 }
 
 @media only screen and (max-width: 1006px) {
-.contendor-cuadros{
+.contenedor-cuadros{
     width: 708px;
+	}
+	
+.contenedor-grid{
+	width: 593px;
 	}
 }
 
 @media only screen and (max-width: 767px) {
-.contendor-cuadros{
+.contenedor-cuadros{
     width: 472px;
 	}
 	
@@ -189,13 +253,36 @@ ESTILOS GENERALES
     font-weight: bold;
     font-size: 1.5em !important;
 	}
+	
+.contenedor-tercios{
+	width: 475px;
+    clear: both;
+	}
 }
 
+@media only screen and (max-width: 647px){
+.contenedor-grid{
+	width: 100%;
+	min-width: 240px;
+	}
+.cuartos-alt{
+	width:100%;	
+}
+		
+}
 @media only screen and (max-width: 586px) {
-.contendor-cuadros{
+.contenedor-cuadros{
     width: 240px;
 	}	
 }
+
+@media only screen and (max-width: 525px) {
+.contenedor-tercios{
+	width: 236px;
+    clear: both;
+	}	
+}
+
 
 
 
