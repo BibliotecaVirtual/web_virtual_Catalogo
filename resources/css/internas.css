@@ -8,7 +8,6 @@ ESTILOS GENERALES
 .margen-internas {
 	max-width: 1260px;
 	margin: 0 auto;
-	/*padding: 80px 30px 0 30px;*/
 	padding: 3.5vw 30px 0 30px;
 }
 
@@ -53,6 +52,26 @@ ESTILOS GENERALES
 	padding: 12px;
 }
 
+.cuarto {
+	width: 25%;
+	float: left;
+	padding: 12px;
+}
+
+.tercio-static {
+	width: 313px;
+	padding: 15px;
+	margin: 0 10px;
+	font-family: 'OpenSans Regular';
+}
+
+.cuarto-static {
+	width: 280px;
+	padding: 15px;
+	margin: 0 10px;
+	font-family: 'OpenSans Regular';
+}
+
 /***************************************/
 
 .texto-cuadros{
@@ -80,6 +99,27 @@ ESTILOS GENERALES
   position: absolute;
   top: 25.5vw;
   left: 47vw;
+}
+
+@media only screen and (max-width:640px) {
+	.header-img {
+		display: none;
+	}
+	.margen-internas {
+		padding: 75px 30px 0 30px;
+	}
+	.searchBar-interno form {
+		width: 90% !important;
+	}
+	.texto-general {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.subtitulo-bg {
+		font-size: 1.3em !important;
+	}
 }
 
 .triangulo-general:after{
@@ -117,7 +157,7 @@ ESTILOS GENERALES
     width: 710px;
     padding-top: 60px;
     height: 350px;
-    clear: both;	
+    clear: both;
 }
 
 .contenedor-grid{
@@ -128,17 +168,18 @@ ESTILOS GENERALES
 		clear:both;
 }
 
+
 .quinto{
-    background: #E6E5E3;
-    width: 230px;
-    padding: 0 5px 1% 5px;
-    border-top: 15px solid #005AA7;
-    margin: 0 auto;
-    float: left;
+	background: #E6E5E3;
+	width: 230px;
+	padding: 0 5px 1% 5px;
+	border-top: 15px solid #005AA7;
+	margin: 0 auto;
+	float: left;
 	margin-left: 3px;
-    margin-right: 3px;
+	margin-right: 3px;
 	margin-top: 5px;
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .cuartos-alt{
@@ -150,7 +191,7 @@ ESTILOS GENERALES
     margin-left: 3px;
     margin-right: 3px;
     margin-top: 5px;
-    margin-bottom: 5px;	
+    margin-bottom: 5px;
 	}
 
 .cuartos-alt-titulo{
@@ -164,64 +205,65 @@ ESTILOS GENERALES
 	width: 60%;
     position: relative;
     float: left;
-    font-size: 0.7em;	
+    font-size: 0.7em;
 }
 
 .cuartos-alt-img{
 	width: 37%;
     float: right;
     position: relative;
-    margin-top: 0px;	
+    margin-top: 0px;
 }
 
 .titulo-cuadros{
 	text-align: center;
-    font-family: 'CaviarDreams';
-    font-size: 1.1em;
-    text-transform: uppercase;
-    margin-bottom: inherit;
+	font-family: 'CaviarDreams';
+	font-size: 1.1em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	letter-spacing: 0.2em;
 }
 
 .img-contenedor{
 	margin: 0 auto;
-    position: relative;
-    width: 50%;
-    overflow: visible;
-    margin-bottom: 60px;
-	}
+	position: relative;
+	width: 50%;
+	overflow: visible;
+	margin-bottom: 60px;
+}
 
 .img-cuadro{
 	position: absolute;
-    top: -55px;
+	top: -55px;
 	border: #BACEE0 solid 4px;
-    border-radius: 50%;
-	}
+	border-radius: 50%;
+}
 
 .precio{
     color: #1659A2;
     font-size: 1.1em;
     float: left;
-    margin: 10px 0 10px 0;	
+    margin: 10px 0 10px 0;
 }
 .requisitos{
 	width:100%;
-	float:left;	
+	float:left;
 }
 
 .requisitos-lista{
 	list-style:inherit;
-	list-style-position: inside;	
+	list-style-position: inside;
 }
 
 @media only screen and (max-width: 1246px) {
 .contenedor-cuadros{
     width: 944px;
 	}
-	
+
 .quinto{
 	margin-top: 50px;
 	}
-	
+
 .contenedor-grid{
 	width: 890px;
 	}
@@ -237,7 +279,7 @@ ESTILOS GENERALES
 .contenedor-cuadros{
     width: 708px;
 	}
-	
+
 .contenedor-grid{
 	width: 593px;
 	}
@@ -247,13 +289,13 @@ ESTILOS GENERALES
 .contenedor-cuadros{
     width: 472px;
 	}
-	
+
 .titulo-principal {
 	text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5em !important;
 	}
-	
+
 .contenedor-tercios{
 	width: 475px;
     clear: both;
@@ -266,21 +308,21 @@ ESTILOS GENERALES
 	min-width: 240px;
 	}
 .cuartos-alt{
-	width:100%;	
+	width:100%;
 }
-		
+
 }
 @media only screen and (max-width: 586px) {
 .contenedor-cuadros{
     width: 240px;
-	}	
+	}
 }
 
 @media only screen and (max-width: 525px) {
 .contenedor-tercios{
 	width: 236px;
     clear: both;
-	}	
+	}
 }
 
 
@@ -308,19 +350,6 @@ SITE MAP
 .site-map .left {
 	background: #a4a4a4;
 }
-
-/* A PEDIDO DE DAYSI 22/03 - 3:00pm
-.site-map .left::before {
-	content: '';
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 14px 0 14px 8px;
-	border-color: transparent transparent transparent #fff;
-	position: absolute;
-	top: 0;
-	left: 0;
-}*/
 
 .site-map .left::after {
 	content: '';
@@ -467,6 +496,114 @@ BODY
 	width: 250px;
 	height: 190px;
 }
+
+/*
+BOXES CONTENT
+----------------------------------*/
+
+/**TERCIO**/
+
+.contenedor-boxes-tercio {
+	max-width: 1000px;
+	margin: 140px auto 0;
+}
+
+.catalogo-box {
+	background: #F3F3F3;
+	border-top: 15px solid #005AA7;
+	float: left;
+	position: relative;
+}
+
+.contenedor-boxes-tercio .tercio-static {
+	height: 285px;
+}
+
+.tercio-static .img-contenedor {
+	margin-bottom: 30px;
+}
+
+.tercio-static .img-cuadro {
+	top: -115px;
+}
+
+.catalogoList-left {
+	width: 70%;
+	float: left;
+}
+
+.catalogoList-right {
+	width: 30%;
+	float: left;
+}
+
+.catalogo-box aside {
+	margin: 20px 10px 0;
+	font-family: 'OpenSans Semibold';
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+}
+
+.catalogo-box aside a {
+	color: #005AA7;
+}
+
+@media only screen and (max-width: 1080px) {
+	.contenedor-boxes-tercio {
+		max-width: 670px;
+	}
+	.contenedor-boxes-tercio .tercio-static {
+    margin-bottom: 110px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.contenedor-boxes-tercio {
+		max-width: 333px;
+	}
+}
+
+/**CUARTO**/
+
+.contenedor-boxes-cuarto {
+	max-width: 1200px;
+	margin: 140px auto 0;
+}
+
+.cuarto-static .img-contenedor {
+	margin-bottom: 30px;
+}
+
+.cuarto-static .img-cuadro {
+	top: -105px;
+}
+
+.contenedor-boxes-cuarto .cuarto-static {
+	height: 325px;
+}
+
+@media only screen and (max-width: 1280px) {
+	.contenedor-boxes-cuarto {
+		max-width: 900px;
+	}
+	.contenedor-boxes-cuarto .cuarto-static {
+		margin-bottom: 110px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.contenedor-boxes-cuarto {
+		max-width: 600px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.contenedor-boxes-cuarto {
+		max-width: 300px;
+	}
+}
+
 
 /*
 FOOTER
