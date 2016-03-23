@@ -24,8 +24,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="resources/css/internas.css">
     <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
-	<link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
-
+    <link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
+    <link rel="stylesheet" href="resources/css/flickity.css" media="screen"/>
 
 <!-- Script
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,10 +34,22 @@
     <script src="resources/js/jquery-ui.min.js"></script>
     <script src="resources/js/jquery.mobile.custom.min.js"></script>
     <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
-	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
-	<script src="resources/js/jquery.slimscroll.min.js"></script>
+  	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
+  	<script src="resources/js/jquery.slimscroll.min.js"></script>
+    <script src="resources/js/flickity.pkgd.min.js"></script>
 </head>
 <body>
+  <script>
+  $(document).ready(function(){
+    $('.catalogo-general-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      pageDots: false,
+      wrapAround: true,
+    });
+  });
+  </script>
     <header class="cd-main-header">
         <a class="cd-logo" href="#"></a>
         <ul class="cd-header-buttons">
@@ -66,6 +78,61 @@
       <div class="texto-general">
         <p>La Biblioteca Nacional del Perú facilita el acceso a diversos eventos culturales, entre Conferencias y Exposiciones, que se han dado lugar dentro de sus instalaciones dando la oportunidad, al público usurario.</p>
       </div>
+      <div>
+        <h1 class="subtitulo-bg">Los más vistos</h1>
+      </div>
+
+      <div class="catalogo-general-carousel">
+        <div class="general-celda">
+          <img src="resources/img/nov1.jpg" alt="" />
+        </div>
+        <div class="general-celda">
+          <img src="resources/img/nov2.jpg" alt="" />
+        </div>
+        <div class="general-celda">
+          <img src="resources/img/nov3.jpg" alt="" />
+        </div>
+        <div class="general-celda">
+          <img src="resources/img/nov4.jpg" alt="" />
+        </div>
+        <div class="general-celda">
+          <img src="resources/img/nov1.jpg" alt="" />
+        </div>
+        <div class="general-celda">
+          <img src="resources/img/nov2.jpg" alt="" />
+        </div>
+        <div class="general-celda">
+          <img src="resources/img/nov3.jpg" alt="" />
+        </div>
+        <div class="general-celda">
+          <img src="resources/img/nov4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-internas">
+      <div>
+        <div class="tercio">
+          <h2>¿Que hacemos?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sequi dolorem numquam ipsa perferendis placeat possimus, blanditiis quod cumque!</p>
+          <h2><a href="">Mapa de sitio >></a></h2>
+        </div>
+        <div class="tercio">
+          <h2>Organismos</h2>
+          <img src="resources/img/logo_bnp.png"/>
+          <img src="resources/img/logo_ministerio_cultura.jpg"/>
+          <img src="resources/img/logo_peru_progreso_para_todos.png"/>
+        </div>
+        <div class="tercio">
+          <h2>Preguntas frecuentes</h2>
+          <p class="footer-preguntas"><a href="#">• ¿Qué se necesita para entrar a la Biblioteca Virtual?</a></p>
+          <p class="footer-preguntas"><a href="#">• ¿Quién puede utilizar los servicios de la biblioteca?</a></p>
+          <p class="footer-preguntas"><a href="#">• ¿Quiénes son los usuarios o lectores externos autorizados para utilizar los servicios de la biblioteca?</a></p>
+          <p class="footer-preguntas"><a href="#">• ¿Cómo puedo hacer una donación?</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright &copy; 2016 Biblioteca Virtual de la Biblioteca Nacional del Perú</p>
     </div>
 </main>
 

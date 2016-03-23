@@ -160,7 +160,7 @@ SLIDER PLAY/PAUSE
 -----------------------------*/
 
 #slide1 {
-	background-image: url(../img/GIF_TEST_VS01.gif);
+	background-image: url(../img/banner_1.jpg);
 }
 
 #slide2 {
@@ -910,6 +910,10 @@ figure.effect-ruby:hover img {
 }
 
 /*Footer*/
+
+#section6 {
+	background: #e2e3df;
+}
 
 .tercio {
     width: 33.2%;
