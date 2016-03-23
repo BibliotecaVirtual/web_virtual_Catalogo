@@ -96,25 +96,6 @@ SLIDER PLAY/PAUSE
 	left: 0;
 }
 
-@media only screen and (max-width: 640px) {
-.btn-play-pause, .fp-slidesNav{
-	display: none;
-}
-
-.tercio {
-    width: 100%;
-    padding: 2% 1%;
-	float:left;
-}
-
-.p-footer{
-	 font-size:0.9em;
-}
-
-#section6 .margen-footer:nth-child(3) p{display:none;}
-
-}
-
 
 /* SILDER
 ------------------------*/
@@ -160,7 +141,7 @@ SLIDER PLAY/PAUSE
 -----------------------------*/
 
 #slide1 {
-	background-image: url(../img/GIF_TEST_VS01.gif);
+	background-image: url(../img/banner_1.jpg);
 }
 
 #slide2 {
@@ -911,9 +892,13 @@ figure.effect-ruby:hover img {
 
 /*Footer*/
 
+#section6 {
+	background: #e2e3df;
+}
+
 .tercio {
-    width: 33.2%;
-    padding: 0 1%;
+	width: 33.2%;
+	padding: 0 1%;
 	float:left;
 }
 
@@ -957,4 +942,22 @@ font-size: smaller;
 }
 .margen-footer img{
      margin: 10px 0 10px 15px;
+}
+@media only screen and (max-width: 640px) {
+.btn-play-pause, .fp-slidesNav{
+	display: none;
+}
+
+.tercio {
+	width: 100%;
+	padding: 2% 1%;
+	float:left;
+}
+
+.p-footer{
+	font-size:0.9em;
+}
+
+#section6 .margen-footer:nth-child(3) p{display:none;}
+
 }

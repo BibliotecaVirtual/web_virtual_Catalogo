@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*
+ESTILOS GENERALES
+-------------------------------*/
+
 .margen-internas {
 	max-width: 1260px;
 	margin: 0 auto;
@@ -43,10 +47,18 @@
 	margin: 0 auto;
 }
 
+.tercio {
+	width: 33.3%;
+	float: left;
+	padding: 12px;
+}
+
+/***************************************/
+
 .texto-cuadros{
-    font-family: 'OpenSans Regular';
-    color: #777;
-    text-align: center;
+  font-family: 'OpenSans Regular';
+  color: #777;
+  text-align: center;
 	font-size:0.85em;
 }
 .header-img {
@@ -116,7 +128,7 @@
     font-family: 'CaviarDreams';
     font-size: 1.1em;
     text-transform: uppercase;
-    margin-bottom: inherit;	
+    margin-bottom: inherit;
 }
 
 .img-contenedor{
@@ -331,4 +343,120 @@ SITE MAP
   margin: 0 auto;
   display: block;
 	width: 100%;
+}
+
+/*
+BODY
+--------------------------------*/
+
+.subtitulo-bg {
+	font-family: 'CaviarDreams';
+  background: #0A61A8;
+  color: #fff;
+  padding: 5px 15px;
+  display: table;
+  margin: 42px auto 35px;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+	text-align: center;
+}
+
+/****** CAROUSEL *****/
+
+.catalogo-general-carousel {
+	width: 90%;
+	height: 190px;
+	margin: 0 auto;
+	display: inherit;
+}
+
+.general-celda {
+	width: 280px;
+	height: 190px;
+}
+
+.general-celda img {
+	width: 250px;
+	height: 190px;
+}
+
+/*
+FOOTER
+----------------------------*/
+
+.footer-internas {
+	width: 100%;
+	background: #e2e3df;
+  margin-top: 70px;
+	font-family: 'OpenSans Regular';
+	color: #7d7d7d;
+	font-size: 0.9em;
+	letter-spacing: normal;
+	display: inline-block;
+	position: relative;
+	margin-bottom: -4px;
+}
+
+.footer-internas h2 {
+	font-size: 1.25em;
+	color: #404040;
+}
+
+.footer-internas>div {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-internas .tercio {
+	padding: 30px 50px 20px;
+}
+
+.footer-internas .tercio h2, .tercio p {
+	padding: 6px 0;
+}
+
+.tercio img {
+	float: left;
+	clear: both;
+	margin: 10px 0;
+}
+
+.footer-preguntas {
+	padding: 0 !important;
+}
+
+.footer-preguntas a {
+	color: #7d7d7d;
+}
+
+@media only screen and (max-width:800px) {
+	.footer-internas .tercio {
+		padding: 30px 30px 20px;
+	}
+}
+
+@media only screen and (max-width:640px) {
+	.footer-preguntas {
+		display: none;
+	}
+	.tercio {
+		width: 100%;
+	}
+}
+
+/*
+COPYRIGHT
+------------------------*/
+
+.footer-copyright {
+	background: #1a1c1f;
+	padding: 14px 0;
+}
+
+.footer-copyright p{
+color: #c1c1c1;
+font-family: 'OpenSans Light';
+font-size: 0.9em;
+text-align: center;
 }
