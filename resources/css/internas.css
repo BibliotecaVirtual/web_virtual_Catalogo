@@ -106,13 +106,30 @@ ESTILOS GENERALES
 		display: none;
 	}
 	.margen-internas {
-		padding: 75px 30px 0 30px;
+		padding: 105px 30px 0 30px;
 	}
 	.searchBar-interno form {
 		width: 90% !important;
 	}
 	.texto-general {
 		display: none;
+	}
+	.site-map {
+		position: absolute;
+		margin: 0 !important;
+		left: 0;
+		top: 50px;
+		width: 100%;
+	}
+	.site-map .left {
+		width: 30%;
+	}
+	.site-map .right {
+		width: 70%;
+	}
+	
+	.right:after{
+	 display:none;	
 	}
 }
 
