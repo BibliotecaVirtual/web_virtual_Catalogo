@@ -215,6 +215,10 @@ ESTILOS GENERALES
     margin-top: 0px;
 }
 
+.material-img{
+	fill: #A9A7A4;	
+}
+
 .titulo-cuadros{
 	text-align: center;
 	font-family: 'CaviarDreams';
