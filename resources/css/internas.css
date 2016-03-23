@@ -27,6 +27,14 @@
 	font-size: 1.2em !important;
 }
 
+.subtitulo-acenter{
+	font-family: 'CaviarDreams' !important;
+  	color:#005AA7;
+	letter-spacing: inherit;
+	font-size: 1.5em !important;
+	padding: 20px 0 25px 0;
+}
+
 .texto-general{
 	font-family: 'OpenSans Regular';
 	color: #777;
@@ -52,12 +60,12 @@
 }
 
 .header-img:after {
-	content: '';
+  content: '';
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 50px 0 50px;
-	position: absolute;
+  position: absolute;
   top: 25.5vw;
   left: 47vw;
 }
@@ -86,14 +94,14 @@
 
 .contendor-cuadros{
     margin: 0 auto;
-    width: 90%;
-    padding-top: 100px;
+    width: 1200px;
+	padding-top: 100px;
 }
 
 .quinto{
     background: #E6E5E3;
-    width: 19.4%;
-    padding: 0 1% 1% 1%;
+    width: 230px;
+    padding: 0 5px 1% 5px;
     border-top: 15px solid #005AA7;
     margin: 0 auto;
     float: left;
@@ -116,21 +124,69 @@
     position: relative;
     width: 50%;
     overflow: visible;
-    margin-bottom: 49px;
-}
+    margin-bottom: 60px;
+	}
 
 .img-cuadro{
 	position: absolute;
     top: -55px;
 	border: #BACEE0 solid 4px;
     border-radius: 50%;
+	}
+
+
+.requisitos{
+	width:100%;
+	float:left;	
+}
+
+.requisitos-lista{
+	list-style:inherit;
+	list-style-position: inside;	
+}
+
+@media only screen and (max-width: 1246px) {
+.contendor-cuadros{
+    width: 944px;
+	}
+	
+.quinto{
+	margin-top: 50px;
+	}
 }
 
 @media only screen and (max-width: 1169px) {
-	.header-img:after {
-		display:none;
+.header-img:after {
+  display:none;
 	}
 }
+
+@media only screen and (max-width: 1006px) {
+.contendor-cuadros{
+    width: 708px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+.contendor-cuadros{
+    width: 472px;
+	}
+	
+.titulo-principal {
+	text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em !important;
+	}
+}
+
+@media only screen and (max-width: 586px) {
+.contendor-cuadros{
+    width: 240px;
+	}	
+}
+
+
+
 
 /*
 SITE MAP
