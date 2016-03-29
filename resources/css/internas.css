@@ -877,15 +877,40 @@ CONFERENCIAS
 	padding: 7px 13px;
 	margin: 0 12px;
 	border-radius: 8px;
+	clear: both;
+  margin-bottom: 30px;
 }
 
 .doble>div {
 	margin-bottom: 26px;
 }
 
+.doble>div>div {
+	overflow: hidden;
+}
+
 .doble>div img {
 	float: left;
 	margin: 0 15px 0 0;
+}
+
+.doble h3 {
+	color: #d25e10;
+	font-family: 'OpenSans Semibold';
+}
+
+.doble p {
+	font-size: 0.9em;
+}
+
+@media only screen and (max-width: 900px) {
+	.doble>div img {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.doble>div>div {
+		overflow: inherit;
+	}
 }
 
 /*
