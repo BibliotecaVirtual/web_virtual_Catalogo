@@ -434,7 +434,7 @@ SITE MAP
 }
 
 .active-novedades {
-	background: #b06caf; 
+	background: #b06caf;
 }
 
 .active-novedades::after {
@@ -442,7 +442,7 @@ SITE MAP
 }
 
 .active-faq {
-	background: #48A2A3; 
+	background: #48A2A3;
 }
 
 .active-faq::after {
@@ -829,6 +829,17 @@ BOXES CONTENT
 	}
 }
 
+/*
+CONFERENCIAS
+--------------------------------*/
+
+.left-conferencia {
+	width: 20%;
+}
+
+.right-conferencia {
+	width: 80%;
+}
 
 /*
 FAQ
@@ -851,7 +862,7 @@ FAQ
 #nested .acc-selected {background:url(images/header_over.gif)}
 
 .acc li{
-    position: relative;	
+    position: relative;
 }
 
 .triangulito-faq{
