@@ -46,6 +46,12 @@ ESTILOS GENERALES
 	margin: 0 auto;
 }
 
+.doble {
+	width: 50%;
+	float: left;
+	padding: 12px;
+}
+
 .tercio {
 	width: 33.3%;
 	float: left;
@@ -832,6 +838,9 @@ BOXES CONTENT
 /*
 CONFERENCIAS
 --------------------------------*/
+.left-conferencia, .right-conferencia  *{
+	font-family: 'OpenSans Regular'
+}
 
 .left-conferencia {
 	width: 20%;
@@ -839,6 +848,44 @@ CONFERENCIAS
 
 .right-conferencia {
 	width: 80%;
+}
+
+.conferencia-head {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.conferencia-head h1 {
+	text-align: center;
+  font-family: 'OpenSans Semibold';
+  font-size: 2.1em;
+  color: #005AA7;
+	padding: 20px;
+}
+
+.conferencia-head img {
+	margin: 0 auto;
+	display: block;
+	/*temp*/
+	width: 470px;
+	height: 400px;
+}
+
+.conferencia-cronograma {
+	background: #005AA7;
+	color: #fff;
+	padding: 7px 13px;
+	margin: 0 12px;
+	border-radius: 8px;
+}
+
+.doble>div {
+	margin-bottom: 26px;
+}
+
+.doble>div img {
+	float: left;
+	margin: 0 15px 0 0;
 }
 
 /*
