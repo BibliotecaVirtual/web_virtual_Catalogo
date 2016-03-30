@@ -845,11 +845,26 @@ CONFERENCIAS
 .left-conferencia {
 	width: 20%;
 	float:left;
+	box-shadow: 1px 1px 7px rgba(23, 22, 22, 0.25);
 }
 
+.left-conferencia .acc-selected, .left-conferencia #nested h3, .left-conferencia #acc h3 {
+	font-family: 'CaviarDreams';
+    font-size: 1.4em;
+}
+
+.left-conferencia ul li div div ul li div>h3{
+font-family: 'OpenSans Regular' !important;
+font-size:1em !important;
+text-transform: inherit;
+}
+
+.left-conferencia #acc{
+ list-style:none !important;	
+}
 .right-conferencia {
 	width: 80%;
-	float:right;
+	float:left;
 }
 
 .conferencia-head {
@@ -933,7 +948,7 @@ FAQ
 #nested h3:hover {background:#F3F3F3;}
 #nested .acc-section {overflow:hidden; background:#fff}
 #nested .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#fff}
-#nested .acc-selected {background:#F3F3F3;}
+/*#nested .acc-selected {background:#F3F3F3;}*/
 
 #nested2 {width:100%; list-style:none; color:#797977; margin-bottom:15px}
 #nested2 h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff;}
