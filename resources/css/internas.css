@@ -844,10 +844,12 @@ CONFERENCIAS
 
 .left-conferencia {
 	width: 20%;
+	float:left;
 }
 
 .right-conferencia {
 	width: 80%;
+	float:right;
 }
 
 .conferencia-head {
@@ -899,14 +901,21 @@ FAQ
 #acc h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:pointer; background:#E2E3DF; padding-right: 30px; -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* Internet Explorer */ -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */ -webkit-user-select: none; /* Chrome, Safari, and Opera */ -webkit-touch-callout: none; /* Disable Android and iOS callouts*/}
 #acc h3:hover {background:#C7C7C4}
 #acc .acc-section {overflow:hidden; background:#fff}
-#acc .acc-content {width:100%; padding:15px; border-top:none; background:#fff}
+#acc .acc-content {width:100%; padding:10px; border-top:none; background:#fff}
 
-#nested {width:425px; list-style:none; color:#033; margin-bottom:15px}
-#nested h3 {width:411px; border:1px solid #9ac1c9; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:pointer; background:url(images/header.gif)}
-#nested h3:hover {background:url(images/header_over.gif)}
+#nested {width:100%; list-style:none; color:#797977; margin-bottom:15px}
+#nested h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff;}
+#nested h3:hover {background:#F3F3F3;}
 #nested .acc-section {overflow:hidden; background:#fff}
-#nested .acc-content {width:393px; padding:15px; border:1px solid #9ac1c9; border-top:none; background:#fff}
-#nested .acc-selected {background:url(images/header_over.gif)}
+#nested .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#fff}
+#nested .acc-selected {background:#F3F3F3;}
+
+#nested2 {width:100%; list-style:none; color:#797977; margin-bottom:15px}
+#nested2 h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff;}
+#nested2 h3:hover {background:#F3F3F3;}
+#nested2 .acc-section {overflow:hidden; background:#fff}
+#nested2 .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#fff}
+#nested2 .acc-selected {background:#F3F3F3;}
 
 .acc li{
     position: relative;
@@ -919,6 +928,23 @@ FAQ
     position: absolute;
     right: 5px;
     top: 10px;
+}
+
+.titulo-conferencia{
+font-family: 'CaviarDreams';
+    font-size: 1.4em;	
+}
+
+.h3-conferencia{
+    font-family: 'OpenSans Regular';
+    font-weight: bold;	
+}
+
+.lista-conferencia{
+	list-style-position: inside;
+    list-style: none;
+    margin-left: 15px;
+    font-family: 'OpenSans Regular';	
 }
 
 /*
