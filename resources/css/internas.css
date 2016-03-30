@@ -846,6 +846,8 @@ CONFERENCIAS
 	width: 20%;
 	float:left;
 	box-shadow: 1px 1px 7px rgba(23, 22, 22, 0.25);
+	background: #fff;
+	transform: translateX(0);
 }
 
 .left-conferencia .acc-selected, .left-conferencia #nested h3, .left-conferencia #acc h3 {
@@ -860,7 +862,7 @@ text-transform: inherit;
 }
 
 .left-conferencia #acc{
- list-style:none !important;	
+ list-style:none !important;
 }
 .right-conferencia {
 	width: 80%;
@@ -920,7 +922,11 @@ text-transform: inherit;
 	font-size: 0.9em;
 }
 
-@media only screen and (max-width: 900px) {
+#boton-filtros {
+	display: none;
+}
+
+@media only screen and (max-width: 960px) {
 	.doble>div img {
 		width: 100%;
 		margin-bottom: 15px;
@@ -928,7 +934,37 @@ text-transform: inherit;
 	.doble>div>div {
 		overflow: inherit;
 	}
+	/* FILTROS */
+	.right-conferencia {
+		width: 100%;
+	}
+	.left-conferencia {
+		min-width: 225px;
+		position: absolute;
+		transition: 0.35s;
+	}
+	#filtros-conferencia {
+		transform: translateX(-225px);
+	}
+	#boton-filtros {
+		position: absolute;
+    z-index: 4;
+    left: 236px;
+    width: 50px;
+    height: 45px;
+    background: #cecece;
+    top: 10px;
+    border-radius: 10px;
+		cursor: pointer;
+		display: inherit;
+	}
+	#svg-filtros {
+		margin: 7px auto;
+		width: 60%;
+		display: table-cell;
+	}
 }
+
 
 /*
 FAQ
@@ -972,19 +1008,19 @@ FAQ
 
 .titulo-conferencia{
 font-family: 'CaviarDreams';
-    font-size: 1.4em;	
+    font-size: 1.4em;
 }
 
 .h3-conferencia{
     font-family: 'OpenSans Regular';
-    font-weight: bold;	
+    font-weight: bold;
 }
 
 .lista-conferencia{
 	list-style-position: inside;
     list-style: none;
     margin-left: 15px;
-    font-family: 'OpenSans Regular';	
+    font-family: 'OpenSans Regular';
 }
 
 /*

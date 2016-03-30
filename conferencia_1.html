@@ -36,6 +36,31 @@
     <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
 	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
 	<script src="resources/js/jquery.slimscroll.min.js"></script>
+  <script>
+  var auxfiltro = 0;
+    $(document).ready(function(){
+      $("#btnFiltros").click(function(){
+        if(auxfiltro == 0){
+          $("#filtros-conferencia").css({'transform':'translateX(0px)'});
+          auxfiltro = 1;
+        }else{
+          $("#filtros-conferencia").css({'transform':'translateX(-225px)'});
+          auxfiltro = 0;
+        }
+      });
+    });
+    $(window).resize(function(event){
+      console.log();
+      var width = $( window ).width();
+      if(width > 960){
+        $("#filtros-conferencia").css({'transform':'translateX(0px)'});
+        auxfiltro = 1;
+      }else{
+        $("#filtros-conferencia").css({'transform':'translateX(-225px)'});
+        auxfiltro = 0;
+      }
+    })
+  </script>
 </head>
 <body>
     <header class="cd-main-header">
@@ -48,7 +73,12 @@
 <main class="cd-main-content">
   <div class="header-img triangulo-eventos" id="eventos-img">
   </div>
-  <div class="left-conferencia">
+  <div class="left-conferencia" id="filtros-conferencia">
+    <div id="btnFiltros">
+      <span id="boton-filtros">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-filtros" x="0" y="0" viewBox="0 0 630 630.6" xml:space="preserve" enable-background="new 0 0 630 630.6"><path fill="#868686" d="M262.8 2.8c-143.6 0-260 116.4-260 260s116.4 260 260 260 260-116.4 260-260S406.4 2.8 262.8 2.8zM262.8 456.8c-107.1 0-194-86.9-194-194s86.9-194 194-194 194 86.9 194 194S369.9 456.8 262.8 456.8zM610.2 529.4L496.5 416.6c0 0-11.4 21.5-34.2 46.5 -19.7 21.6-46.8 35.2-46.8 35.2l113.7 112.8c22.5 22.4 59 22.2 81.3-0.3C632.9 588.2 632.7 551.8 610.2 529.4z"/></svg>
+      </span>
+    </div>
   <ul class="acc" id="acc">
         <li>
 		<h3>Conferencias 2016<span class="triangulito-faq"></span></h3>
@@ -323,7 +353,7 @@
 			</div>
 		</div>
 	</li>
-        
+
         <li>
 		<h3>Conferencias Pasadas (2015)<span class="triangulito-faq"></span></h3>
 		<div class="acc-section">
@@ -598,7 +628,7 @@
 			</div>
 		</div>
 	</li>
-      
+
 	</ul>
   </div>
   <div class="right-conferencia">
