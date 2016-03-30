@@ -870,25 +870,26 @@ text-transform: inherit;
 }
 
 
-.box {
-  width: 190px;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
+.box-comment {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+  padding: 30px 0 40px;
+}
+
+.box-comment>div {
+	float: right;
 }
 
 .button {
-    font-size: 1em;
-    padding: 5px;
-    color: #797977;
-    border: 0.1px solid #FF9900;
-    border-radius: 39px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
+  font-size: 1em;
+  padding: 5px;
+  color: #797977;
+  border: 0.1px solid #FF9900;
+  border-radius: 39px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 .button:hover {
   background: #FF9900;
@@ -896,16 +897,16 @@ text-transform: inherit;
 }
 
 .btn-enviar {
-    font-size: 1em;
-    padding: 5px;
-    color: #797977;
+	font-size: 1em;
+	padding: 5px;
+	color: #797977;
 	background: #fff;
-    border: 0.1px solid #FF9900;
+	border: 0.1px solid #FF9900;
 	margin-top:20px;
-    border-radius: 39px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
+	border-radius: 39px/50px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
 }
 .btn-enviar:hover {
   background: #FF9900;
@@ -967,7 +968,7 @@ text-transform: inherit;
     width: 175px;
     min-width: 170px;
 	max-width:400px;
-	margin-top: 15px;	
+	margin-top: 15px;
 }
 
 @media screen and (max-width: 700px){
@@ -981,6 +982,7 @@ text-transform: inherit;
 .conferencia-head {
 	width: 100%;
 	margin-bottom: 50px;
+	clear: both;
 }
 
 .conferencia-head h1 {
@@ -1033,6 +1035,15 @@ text-transform: inherit;
 
 #boton-filtros {
 	display: none;
+}
+
+@media only screen and (max-width: 640px) {
+	.right-conferencia {
+		padding: 50px 15px;
+	}
+	#filtros-conferencia {
+		top: 75px;
+	}
 }
 
 @media only screen and (max-width: 960px) {

@@ -52,7 +52,7 @@
     $(window).resize(function(event){
       console.log();
       var width = $( window ).width();
-      if(width > 960){
+      if(width > 940){
         $("#filtros-conferencia").css({'transform':'translateX(0px)'});
         auxfiltro = 1;
       }else{
@@ -632,11 +632,12 @@
 	</ul>
   </div>
   <div class="right-conferencia">
-    
-    <div class="box">
-		<a class="button" href="#popup1">Comentarios</a>
+    <div class="box-comment">
+      <div>
+      <a class="button" href="#popup1">Comentarios</a>
+    </div>
 	</div>
-    
+
     <div id="popup1" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>
@@ -647,7 +648,7 @@
             <input type="submit" class="btn-enviar" value="Enviar">
         </div>
     </div>
-    
+
     <div class="conferencia-head">
       <h1>Título de la conferencia</h1>
       <img src="resources/img/img_1.jpg" alt="">
