@@ -536,7 +536,7 @@ BODY
 
 .active-fechas{
 background: #005AA7;
-color: #fff;	
+color: #fff;
 }
 
 /****** CAROUSEL *****/
@@ -729,9 +729,10 @@ figure.effect-roxy:hover p {
 		max-width: 285px;
 		max-height: 180px;
 	}
+	figure.effect-roxy figcaption {
+		padding: 2em 2.2em 1em;
+	}
 }
-
-
 
 /*
 BOXES CONTENT
@@ -1036,6 +1037,22 @@ text-transform: inherit;
 
 #boton-filtros {
 	display: none;
+}
+
+.filtros-overlay {
+	position: fixed;
+	z-index: 3;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	background-color: rgba(29, 30, 31, 0.8);
+	visibility: hidden;
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translateX(225px);
 }
 
 @media only screen and (max-width: 640px) {
