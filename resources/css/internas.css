@@ -889,9 +889,9 @@ text-transform: inherit;
 }
 
 .box-comment {
-	width: 70%;
-	margin: 0 auto;
-  padding: 30px 0 40px;
+width: 70%;
+margin: 0 auto;
+padding: 45px 0 40px;
 }
 
 .box-comment>div {
@@ -994,6 +994,13 @@ text-transform: inherit;
     width: 70%;
   }
 }
+
+
+.twitter-share-button{
+float: right;
+margin-left: 10px;	
+}
+
 .conferencia-head {
 	width: 100%;
 	margin-bottom: 50px;
