@@ -1079,7 +1079,7 @@ text-transform: inherit;
 	#svg-filtros {
 		margin: 7px auto;
 		width: 60%;
-		display: table-cell;
+		display: block;
 	}
 }
 
