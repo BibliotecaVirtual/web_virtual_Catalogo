@@ -44,14 +44,22 @@
       $("#btnFiltros").click(function(){
         if(auxfiltro == 0){
           $("#filtros-conferencia").css({'transform':'translateX(0px)'});
+          $(".filtros-overlay").css({'visibility':'visible'})
           auxfiltro = 1;
         }else{
           $("#filtros-conferencia").css({'transform':'translateX(-225px)'});
+          $(".filtros-overlay").css({'visibility':'hidden'})
           auxfiltro = 0;
         }
       });
+      $(".filtros-overlay").click(function(){
+        $("#filtros-conferencia").css({'transform':'translateX(-225px)'});
+        $(".filtros-overlay").css({'visibility':'hidden'})
+        auxfiltro = 0;
+      });
     });
     $(window).resize(function(event){
+      $(".filtros-overlay").css({'visibility':'hidden'})
       if(widthInicial != $( window ).width()){
 		  widthInicial =  $(window).width();
 		  var width = $( window ).width();
@@ -636,6 +644,7 @@
 	</ul>
   </div>
   <div class="right-conferencia">
+    <div class="filtros-overlay"></div>
     <div class="box-comment">
       <div>
       <a class="button" href="#popup1">Comentarios</a>
