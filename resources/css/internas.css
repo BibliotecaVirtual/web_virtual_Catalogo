@@ -1080,8 +1080,13 @@ text-transform: inherit;
 	}
 	#svg-filtros {
 		margin: 7px auto;
+<<<<<<< HEAD
 		width: 50%;
 		display: table-cell;
+=======
+		width: 60%;
+		display: block;
+>>>>>>> b59465cb170e298159bff7a4392eeeb77f23ffd8
 	}
 }
 
