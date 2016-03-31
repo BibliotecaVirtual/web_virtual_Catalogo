@@ -534,6 +534,11 @@ BODY
 	margin: 0 -5px 15px 10px;
 }
 
+.active-fechas{
+background: #005AA7;
+color: #fff;	
+}
+
 /****** CAROUSEL *****/
 
 .catalogo-general-carousel {
@@ -882,16 +887,13 @@ text-transform: inherit;
 .button {
   font-size: 1em;
   padding: 5px;
-  color: #797977;
-  border: 0.1px solid #FF9900;
-  border-radius: 39px/50px;
+  fill:#797977;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 .button:hover {
-  background: #FF9900;
-  color: #FFF;
+  fill:#FF9900;
 }
 
 .btn-enviar {
@@ -1078,7 +1080,7 @@ text-transform: inherit;
 	}
 	#svg-filtros {
 		margin: 7px auto;
-		width: 60%;
+		width: 50%;
 		display: table-cell;
 	}
 }
