@@ -888,6 +888,7 @@ text-transform: inherit;
   font-size: 1em;
   padding: 5px;
   fill:#797977;
+  padding-right: 25px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;

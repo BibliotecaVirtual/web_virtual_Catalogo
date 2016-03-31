@@ -15,6 +15,14 @@
 
     <link rel="icon" href="resources/img/icon.ico" type="image/ico">
 
+<!-- Facebook META
+-------------------------------------------------- -->
+	<meta property="og:url"           content="http://bvirtual.bnp.gob.pe" />
+	<meta property="og:type"          content="Biblioteca Virtual" />
+	<meta property="og:title"         content="Conferencia - Biblioteca Virtual" />
+	<meta property="og:description"   content="Quiero compartir esta conferencia" />
+	
+
 
 <!-- FONT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,6 +44,8 @@
     <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
 	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
 	<script src="resources/js/jquery.slimscroll.min.js"></script>
+    <script src="resources/js/fb-share.js"></script> <!-- Facebook share (capture link to share) -->
+    
   <script>
   var auxfiltro = 0;
   var widthInicial =  $(window).width();
@@ -70,13 +80,6 @@
 
 <!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
     
     
     
@@ -650,6 +653,10 @@
   </div>
   <div class="right-conferencia">
     <div class="box-comment">
+      
+      <!-- Your Facebook share button code -->
+	<div class="fb-share-button" data-layout="button"></div>
+      
       <div>
       <a class="button" href="#popup1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" height="30" id="Layer_1" version="1.1" viewBox="0 0 24 24" width="30" xml:space="preserve"><path clip-rule="evenodd" d="M10.7 18.6l6.8 5.3C17.6 24 17.7 24 17.7 24c0.2 0 0.2-0.1 0.2-0.3v-5c0-0.4 0.2-0.6 0.5-0.6L21 18c2.2 0 3-1.1 3-2s0-13 0-14 -0.7-2-3-2H3C0.8 0 0 1 0 2s0 13 0 14 0.8 2 3 2h6C9 18 10.3 18 10.7 18.6z" fill-rule="evenodd"/></svg></a>
     </div>
@@ -666,11 +673,7 @@
         </div>
     </div>
 	
-    <!-- Your Facebook share button code -->
-	<div class="fb-share-button" 
-		data-href="http://www.your-domain.com/your-page.html" 
-		data-layout="button_count">
-	</div>
+    
     
     <div class="conferencia-head">
       <h1>Título de la conferencia</h1>
