@@ -22,7 +22,7 @@
 
 .slide h1 {
 	font-size: 3.5em;
-	font-family: "CaviarDreams";
+		font-family: 'OpenSans Semibold';
 	color: #fff;
 	margin: 0;
 	padding: 0;
@@ -141,15 +141,15 @@ SLIDER PLAY/PAUSE
 -----------------------------*/
 
 #slide1 {
-	background-image: url(../img/banner_1.jpg);
+	background-image: url(../img/slide1.jpg);
 }
 
 #slide2 {
-	background-image: url(../img/banner_2.jpg);
+	background-image: url(../img/slide2.jpg);
 }
 
 #slide3 {
-	background-image: url(../img/banner_3.jpg);
+	background-image: url(../img/slide3.jpg);
 }
 
 
