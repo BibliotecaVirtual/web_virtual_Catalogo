@@ -161,6 +161,10 @@ ESTILOS GENERALES
 	border-color: #48A2A3 transparent transparent transparent;
 }
 
+.triangulo-noticias:after {
+	border-color: #653366 transparent transparent transparent;
+}
+
 #general-img {
 	background: url(../img/banner_2.jpg);
 	border-bottom: 8px solid #0A61A8;
@@ -180,6 +184,11 @@ ESTILOS GENERALES
 #eventos-img {
 	background: url(../img/banner_2.jpg);
 	border-bottom: 8px solid #FF9900;
+}
+
+#noticias-img {
+	background: url(../img/banner_2.jpg);
+	border-bottom: 8px solid #653366;
 }
 
 .contenedor-cuadros{
@@ -998,7 +1007,7 @@ padding: 45px 0 40px;
 
 .twitter-share-button{
 float: right;
-margin-left: 10px;	
+margin-left: 10px;
 }
 
 .conferencia-head {
