@@ -1118,16 +1118,16 @@ Main components
 
 @media only screen and (min-width: 1170px) {
   #btn-buscar{
-	  height: 70px;
+	  height: 60px;
 	  padding: 14px;
   }
   .cd-search {
-    height: 70px;
-    top: 65vh;
+    height: 60px;
+    top: 70vh;
   }
   .cd-search input {
     padding: 0 2em;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 300;
   }
 }

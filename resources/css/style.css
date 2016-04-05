@@ -43,7 +43,7 @@
 .social {
 	position: absolute; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
 	left: 0; /* Establecemos la barra en la izquierda */
-	top: 42vh; /* Bajamos la barra 200px de arriba a abajo */
+	top: 37vh; /* Bajamos la barra 200px de arriba a abajo */
 	z-index: 5; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
@@ -65,6 +65,8 @@
 
 	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
 	.social ul li .icon-youtube {background: #CC181E;}
+	.social ul li .icon-instagram {background: #9E7144;}
+	.social ul li .icon-pinterest {background: #EA3E43;}
 	.social ul li .icon-flickr {background: #ED1983;}
 
 	.social ul li a:hover {
