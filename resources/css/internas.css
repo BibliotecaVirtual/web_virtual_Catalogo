@@ -536,9 +536,6 @@ SITE MAP
 	width: 100%;
 }
 
-.oculto-general{
-display:none;	
-}
 
 /*
 BODY
@@ -1116,9 +1113,7 @@ margin-left: 10px;
 		top: 75px;
 	}
 	
-	.oculto-general{
-	display:block;	
-	}
+
 }
 
 @media only screen and (max-width: 960px) {
