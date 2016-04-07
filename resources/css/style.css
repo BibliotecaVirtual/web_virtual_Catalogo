@@ -43,7 +43,7 @@
 .social {
 	position: absolute; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
 	left: 0; /* Establecemos la barra en la izquierda */
-	top: 42vh; /* Bajamos la barra 200px de arriba a abajo */
+	top: 37vh; /* Bajamos la barra 200px de arriba a abajo */
 	z-index: 5; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
@@ -65,6 +65,8 @@
 
 	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
 	.social ul li .icon-youtube {background: #CC181E;}
+	.social ul li .icon-instagram {background: #9E7144;}
+	.social ul li .icon-pinterest {background: #EA3E43;}
 	.social ul li .icon-flickr {background: #ED1983;}
 
 	.social ul li a:hover {
@@ -124,7 +126,7 @@ SLIDER PLAY/PAUSE
 
   #titulo-movil{
 	color:#323131 !important;
-	top: 35%;
+	top: 30%;
 	position: absolute;
 	margin:0 auto;
 	padding: 0 30px;
@@ -145,7 +147,7 @@ SLIDER PLAY/PAUSE
 }
 
 #slide2 {
-	background-image: url(../img/slide2.jpg);
+	background-image: url(../img/slide2.gif);
 }
 
 #slide3 {
@@ -516,39 +518,6 @@ SLIDER PLAY/PAUSE
 
 	#facts-foot {
 		display: none;
-	}
-
-	#fact-foot-movil {
-		display: inherit;
-		width: 100%;
-		display: inline-block;
-		margin-top: 10vh;
-		background: #005AA7;
-		color: #fff;
-	}
-	.fact-vertical {
-		width: 85%;
-		height: 85px;
-		background: #005AA7;
-		border-bottom: 1px solid #fff;
-		margin: 0 auto;
-		padding: 25px 0 0 7%;
-	}
-	.fact-vertical p:first-child  {
-		display: table-cell;
-		margin-right: 10px;
-		font-family: 'OpenSans Semibold';
-		font-size: 2.5em;
-		vertical-align: middle;
-	}
-
-	.fact-vertical p:last-child {
-		display: table-cell;
-		padding-left: 15px;
-		vertical-align: middle;
-		font-family: 'OpenSans Light';
-		line-height: 1.2em;
-		text-align: left;
 	}
 
 	.titulo2 {

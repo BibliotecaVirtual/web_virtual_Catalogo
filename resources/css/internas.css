@@ -23,11 +23,12 @@ ESTILOS GENERALES
 
 .subtitulo{
 	font-family: 'CaviarDreams' !important;
-  text-transform: uppercase;
-  color:#005AA7;
+  	text-transform: uppercase;
+  	color:#005AA7;
 	text-align: center;
 	letter-spacing: inherit;
 	font-size: 1.2em !important;
+	margin: 60px 0 20px 0;
 }
 
 .subtitulo-acenter{
@@ -36,6 +37,17 @@ ESTILOS GENERALES
 	letter-spacing: inherit;
 	font-size: 1.5em !important;
 	padding: 20px 0 25px 0;
+}
+
+.subtitulo2{
+    font-family: 'CaviarDreams' !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #005AA7;
+    text-align: center;
+    letter-spacing: inherit;
+    font-size: 1.3em !important;
+    margin: 60px 0 20px 0;	
 }
 
 .texto-general{
@@ -81,15 +93,16 @@ ESTILOS GENERALES
 /***************************************/
 
 .texto-cuadros{
-  font-family: 'OpenSans Regular';
-  color: #777;
-  text-align: center;
+  	font-family: 'OpenSans Regular';
+  	color: #777;
+  	text-align: justify;
 	font-size:0.85em;
+	margin: 10px;
 }
 .header-img {
 	max-width: 100%;
 	height: 25.5vw;
-  min-height: 200px;
+  	min-height: 200px;
 	max-height:500px;
 	background-position: top center !important;
 	background-repeat: no-repeat !important;
@@ -219,6 +232,7 @@ ESTILOS GENERALES
 .quinto{
 	background: #E6E5E3;
 	width: 230px;
+	height: 254px;
 	padding: 0 5px 1% 5px;
 	border-top: 15px solid #005AA7;
 	margin: 0 auto;
@@ -304,6 +318,12 @@ ESTILOS GENERALES
 .requisitos-lista{
 	list-style:inherit;
 	list-style-position: inside;
+}
+
+.requisitos-link{
+	color: #3E403F;
+    text-decoration: none;
+    font-size: 0.8em;	
 }
 
 @media only screen and (max-width: 1246px) {
@@ -514,6 +534,10 @@ SITE MAP
   margin: 0 auto;
   display: block;
 	width: 100%;
+}
+
+.oculto-general{
+display:none;	
 }
 
 /*
@@ -1090,6 +1114,10 @@ margin-left: 10px;
 	}
 	#filtros-conferencia {
 		top: 75px;
+	}
+	
+	.oculto-general{
+	display:block;	
 	}
 }
 
