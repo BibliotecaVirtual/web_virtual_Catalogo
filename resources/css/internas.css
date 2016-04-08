@@ -47,7 +47,7 @@ ESTILOS GENERALES
     text-align: center;
     letter-spacing: inherit;
     font-size: 1.3em !important;
-    margin: 60px 0 20px 0;	
+    margin: 60px 0 20px 0;
 }
 
 .texto-general{
@@ -323,7 +323,7 @@ ESTILOS GENERALES
 .requisitos-link{
 	color: #3E403F;
     text-decoration: none;
-    font-size: 0.8em;	
+    font-size: 0.8em;
 }
 
 @media only screen and (max-width: 1246px) {
@@ -537,7 +537,7 @@ SITE MAP
 }
 
 .oculto-general{
-display:none;	
+display:none;
 }
 
 /*
@@ -1056,11 +1056,15 @@ margin-left: 10px;
 	height: 400px;
 }
 
+.right-conferencia .doble {
+	padding: 12px 50px;
+}
+
 .conferencia-cronograma {
 	background: #005AA7;
 	color: #fff;
 	padding: 7px 13px;
-	margin: 0 12px;
+	margin: 0 50px;
 	border-radius: 8px;
 	clear: both;
   margin-bottom: 30px;
@@ -1115,9 +1119,9 @@ margin-left: 10px;
 	#filtros-conferencia {
 		top: 75px;
 	}
-	
+
 	.oculto-general{
-	display:block;	
+	display:block;
 	}
 }
 
@@ -1137,6 +1141,15 @@ margin-left: 10px;
 		min-width: 225px;
 		position: absolute;
 		transition: 0.35s;
+	}
+	.conferencia-cronograma {
+		margin: 0 15px;
+	}
+	.right-conferencia .doble {
+		padding: 15px;
+	}
+	.conferencia-head img {
+    padding: 0 15px;
 	}
 	#filtros-conferencia {
 		transform: translateX(-225px);
@@ -1167,6 +1180,16 @@ CATALOGO BUSQUEDA
 	float: left;
 	width: 200px;
 	margin: 12px 25px;
+}
+
+.logo-bv>a {
+	position: inherit;
+	display: block;
+	background: url(../img/logotipo_bv.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 67px;
 }
 
 .catalogo-search {
@@ -1337,7 +1360,9 @@ CATALOGO BUSQUEDA
 }
 .item-filtro div img {
 	float: left;
-  width: 120px;
+  /*width: 120px;*/
+	max-width: 120px;
+	width: 30%;
 }
 
 .item-filtro div>div {
@@ -1355,13 +1380,30 @@ CATALOGO BUSQUEDA
 }
 
 .comments {
-	float: left;
+	float: right;
 	margin: 30px 20px 0;
 }
 
+.comments a{
+	float: left;
+	padding: 0 10px;
+}
+
+.comments p {
+	color: #777777;
+}
 .comments figcaption {
 	float: right;
 	padding: 15px 7px 0;
+}
+
+.comments figure path {
+	transition: 0.35s;
+}
+
+.comments figure:hover path {
+	fill: #fe9214;
+	transition: 0.35s;
 }
 
 /****** SVG FILTRO BOTON *******/
@@ -1383,6 +1425,7 @@ CATALOGO BUSQUEDA
 		float: inherit;
 		position: absolute;
 		transform: translateX(-230px);
+    transition: 0.35s;
 		z-index: 1;
 	}
 	.container2 {
@@ -1394,7 +1437,7 @@ CATALOGO BUSQUEDA
 	.col-1 #boton-filtros {
 		position: absolute;
     z-index: 4;
-    left: 236px;
+    left: 246px;
     width: 50px;
     height: 45px;
     background: #cecece;
@@ -1456,6 +1499,46 @@ CATALOGO BUSQUEDA
 	}
 	.col-2 .searchBar-interno {
 		width: 100%;
+	}
+	.comments figcaption {
+		display: none;
+	}
+	.logo-bv {
+		width: 140px;
+	}
+	.logo-bv>a {
+		background: url(../img/logotipo_bv_mobil.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 136px;
+	}
+}
+@media only screen and (max-width:480px) {
+	.container2 {
+		width: 100%;
+		font-size: 0.9em;
+	}
+	.resultados-filtro .item-filtro {
+		padding: 15px 12px;
+	}
+	.logo-bv .cd-logo {
+    width: 130px;
+	}
+	.searchBar-interno input {
+		width: 83%;
+	}
+	.btn-search-interno {
+		width: 17%;
+	}
+	.comments svg {
+		width: 22px;
+		height: 22px;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	.comments {
+		margin: 30px 10px 0;
 	}
 }
 
