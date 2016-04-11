@@ -53,7 +53,7 @@
 				});
 				$("#play").click(function(){
 
-					hiloSlider =  setInterval(function(){ FP.moveSlideRight(); }, 5000);
+					hiloSlider =  setInterval(function(){ FP.moveSlideRight(); }, 9000);
 					$("#play").fadeOut();
 					$("#pause").fadeIn();
 					auxSlider = 0;
@@ -148,20 +148,22 @@
             <div class="slide" id="slide2">
                 <h1>Biblioteca Virtual Nacional</h1>
                 <video autoplay loop muted id="myVideo2">
-                    <source src="resources/img/slider2.mp4" style="pointer-events:none;" type="video/mp4"/>
+                    <source src="resources/img/slider2.mov" type="video/mov"/>
+                    <source src="resources/img/slider2.mp4" type="video/mp4"/>
+                    <source src="resources/img/slider2.ogv" type="video/ogg"/>
                 </video>
             </div>
             <div class="slide" id="slide3">
                 <h1>Digitalizando la Historia</h1>
                 <video autoplay loop muted id="myVideo3">
-                    <source src="resources/img/slider3.mp4" style="pointer-events:none;" type="video/mp4"/>
+                    <source src="resources/img/slider3.mp4" type="video/mp4"/>
                 </video>
             </div>
             <div class="slide" id="slide4">
                <h1>Lima Antigua en 3D</h1>
                 <video autoplay loop muted id="myVideo">
-                    <source src="resources/img/video3d.mp4" style="pointer-events:none;" type="video/mp4"/>
-                    <source src="resources/img/video3d.webm" type="video/ogv"/>
+                    <source src="resources/img/video3d.mp4" type="video/mp4"/>
+                    <source src="resources/img/video3d.ogv" type="video/ogg"/>
                 </video>
             </div>
             </div>
@@ -405,12 +407,12 @@
                     <p>Libros Inscritos en la Memoria del Mundo - UNESCO</p>
                 </div>
                 <div class="facts">
-                    <p>90</p>
-                    <p>Archivos en el Fondo Antigüo</p>
+                    <p>5000</p>
+                    <p>Archivos Fotográficos Eugenio Courret</p>
                 </div>
                 <div class="facts" style="border: none;">
-                    <p>19</p>
-                    <p>Convenios Nacionales e Internacionales</p>
+                    <p>200</p>
+                    <p>Películas cinematográficas digitalizadas</p>
                 </div>
             </div>
         </div>
