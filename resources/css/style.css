@@ -116,13 +116,13 @@ SLIDER PLAY/PAUSE
 		transition:all 400ms ease; /* Establecemos una transición a todas las propiedades */
 	}
 
-	#sliders, .fp-slides, .fp-controlArrow{
+/*	#sliders, .fp-slides, .fp-controlArrow{
 		display:none;
 }
 
 	#section-movil{
 	 display:inherit;
-	}
+	}*/
 
   #titulo-movil{
 	color:#323131 !important;
