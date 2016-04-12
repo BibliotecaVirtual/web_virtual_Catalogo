@@ -107,6 +107,11 @@ SLIDER PLAY/PAUSE
 		background-position: center;
 }
 
+@media only screen and (max-width: 768px) {
+		#slide4 {
+			background-image: url(../img/slide-bv-nacional-2.jpg) !important;
+		}
+}
 
 @media only screen and (max-width: 640px) {
 	.social ul li a {
@@ -116,13 +121,13 @@ SLIDER PLAY/PAUSE
 		transition:all 400ms ease; /* Establecemos una transición a todas las propiedades */
 	}
 
-/*	#sliders, .fp-slides, .fp-controlArrow{
+	#sliders, .fp-slides, .fp-controlArrow{
 		display:none;
 }
 
 	#section-movil{
 	 display:inherit;
-	}*/
+	}
 
   #titulo-movil{
 	color:#323131 !important;
@@ -136,8 +141,8 @@ SLIDER PLAY/PAUSE
 	.cd-search {
 		top: 62vh !important;
 	}
+}
 
-	}
 
 /* Backgrounds for the slides
 -----------------------------*/
@@ -153,12 +158,13 @@ SLIDER PLAY/PAUSE
 }
 
 #slide3 {
-	/*background-image: url(../img/slide3.jpg);*/
+	background-image: url(../img/slide-bv-nacional-11.jpg);
 	position:relative;
 	overflow:hidden;
 }
 
 #slide4{
+	background-image: url(../img/slide-bv-nacional-22.jpg);
 	position:relative;
 	overflow:hidden;
 }
@@ -178,7 +184,7 @@ SLIDER PLAY/PAUSE
    		object-fit: cover; /*cover video background */
    		z-index:0;
 	}
-	
+
 	#myVideo2{
 		right: 0;
 		bottom: 0;
@@ -194,7 +200,7 @@ SLIDER PLAY/PAUSE
    		object-fit: cover; /*cover video background */
    		z-index:0;
 	}
-	
+
 	#myVideo3{
 		right: 0;
 		bottom: 0;
@@ -210,7 +216,7 @@ SLIDER PLAY/PAUSE
    		object-fit: cover; /*cover video background */
    		z-index:0;
 	}
-	
+
 #slide4 h1, #slide2 h1, #slide3 h1{
 	top:50%;
 	position:absolute;
