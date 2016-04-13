@@ -143,6 +143,19 @@ SLIDER PLAY/PAUSE
 	}
 }
 
+/*
+KEYFRAMES ANIMATION
+-----------------------------------*/
+
+@keyframes zoom {
+	from {
+		transform: scale(1,1);
+	}
+	to {
+		transform: scale(1.2,1.2);
+	}
+}
+
 
 /* Backgrounds for the slides
 -----------------------------*/

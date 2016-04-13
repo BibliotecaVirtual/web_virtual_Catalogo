@@ -1872,6 +1872,11 @@
 				$("#play").fadeOut();
 				$("#pause").fadeIn();
 			}
+        $("#slide1").css({'animation':''});
+      if(slideIndex == 0){
+        $("#slide1").css({'animation':'zoom 9s'});
+      }
+
 			slidesNav.find(ACTIVE_SEL).removeClass(ACTIVE);
             slidesNav.find('li').eq(slideIndex).find('a').addClass(ACTIVE);
         }
