@@ -1309,6 +1309,38 @@
         * Scrolls the site to the given element and scrolls to the slide if a callback is given.
         */
         function scrollPage(element, callback, isMovementUp){
+          if(element.index(SECTION_SEL) == 2 && auxTimer == 0){
+            auxTimer = 1;
+            jQuery(function($) {
+                $('.timer1').countTo({
+                    from: 0,
+                    to: 39,
+                    speed: 2000,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                        console.debug(this);
+                    }
+                });
+                $('.timer2').countTo({
+                    from: 1000,
+                    to: 5000,
+                    speed: 2000,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                        console.debug(this);
+                    }
+                });
+                $('.timer3').countTo({
+                    from: 40,
+                    to: 200,
+                    speed: 2000,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                        console.debug(this);
+                    }
+                });
+            });
+          }
             //requestAnimFrame is used in order to prevent a Chrome 44 bug (http://stackoverflow.com/a/31961816/1081396)
             requestAnimFrame(function(){
                 var dest = element.position();
