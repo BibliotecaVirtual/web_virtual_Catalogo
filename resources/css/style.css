@@ -108,7 +108,7 @@ SLIDER PLAY/PAUSE
 }
 
 @media only screen and (max-width: 768px) {
-		#slide4 {
+		#slide3 {
 			background-image: url(../img/slide-bv-nacional-2.jpg) !important;
 		}
 }
@@ -171,13 +171,13 @@ KEYFRAMES ANIMATION
 }
 
 #slide3 {
-	/*background-image: url(../img/slide-bv-nacional-11.jpg);*/
+	background-image: url(../img/slide-bv-nacional-22.jpg);
 	position:relative;
 	overflow:hidden;
 }
 
 #slide4{
-	background-image: url(../img/slide-bv-nacional-22.jpg);
+	/*background-image: url(../img/slide-bv-nacional-22.jpg);*/
 	position:relative;
 	overflow:hidden;
 }
