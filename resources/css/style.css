@@ -141,6 +141,10 @@ SLIDER PLAY/PAUSE
 	.cd-search {
 		top: 62vh !important;
 	}
+	
+	#section2 .fp-tableCell{
+	vertical-align:	middle  !important;
+	}
 }
 
 /*
@@ -848,7 +852,12 @@ figure.effect-ruby:hover img {
 	.novedades-galeria {
 		max-width: 600px;
 	}
+	
+	.novedades-galeria figure:last-child{
+	display:none;	
+	}
 }
+
 
 @media only screen and (max-width: 768px) {
 	#section4 .texto1, .novedades-galeria .novedades-effect:last-child {
