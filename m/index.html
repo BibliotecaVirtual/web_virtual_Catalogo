@@ -31,7 +31,7 @@
 <!-- Script
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!--<script src="js/jquery-1.12.0.js"></script>-->
-  
+
     <script src="resources/js/jquery.min.js"></script>
     <script src="resources/js/jquery-ui.min.js"></script>
     <script src="resources/js/jquery.mobile.custom.min.js"></script>
@@ -49,7 +49,7 @@
   	var hiloSlider;
   	var auxSlider = 0;
   		$(document).ready(function() {
-        $("#slide1").css({'animation':'zoom 9s'});
+        $("#slide1").css({'-webkit-animation':'zoom 9s forwards','animation':'zoom 9s forwards'});
   			$("#pause").click(function(){
   					clearInterval(hiloSlider);
   					$("#play").fadeIn();
@@ -147,20 +147,22 @@
             	<h1 class="titulo" id="titulo-movil">Bienvenido a la Biblioteca Virtual</h1>
             </div>
             <div id="sliders">
-            	<div class="slide" id="slide1">
-                <h1>Biblioteca Virtual</h1>
+            	<div class="slide">
+                  <h1>Biblioteca Virtual</h1>
+                  <div id="slide1"></div>
+              </div>
+              <div class="slide">
+                  <h1>Biblioteca Virtual Nacional</h1>
+                  <div id="slide2-pan"></div>
+              </div>
+              <div class="slide" id="slide3">
+                  <h1>Digitalizando la Historia</h1>
+                  <div id="slide3-pan"></div>
+              </div>
+              <div class="slide" id="slide4">
+                 <h1>Lima Antigua en 3D</h1>
+              </div>
             </div>
-            <div class="slide" id="slide2">
-                <h1>Biblioteca Virtual Nacional</h1>
-            </div>
-            <div class="slide" id="slide3">
-                <h1>Digitalizando la Historia</h1>
-            </div>
-            <div class="slide" id="slide4">
-               <h1>Lima Antigua en 3D</h1>
-            </div>
-            </div>
-
     </div>
 
     <div class="section" id="section1">
@@ -186,8 +188,10 @@
                         	<p>Ricardo Palma</p>
                         </div>
                         <div class="caption-color" id="img1">
+                          <div>
                             <h1>Ricardo Palma</h1>
                             <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                          </div>
                         </div></a>
                     </div>
                     <div class="galeria-effect">
@@ -196,8 +200,10 @@
                         	<p>Nicolas de Piérola</p>
                         </div>
                         <div class="caption-color" id="img2">
+                          <div>
                             <h1>Nicolas de Piérola</h1>
                             <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                          </div>
                         </div></a>
                     </div>
             	</div>
@@ -208,8 +214,10 @@
                         	<p>Hipólito Unanue</p>
                         </div>
                         <div class="caption-color" id="img3">
+                          <div>
                             <h1>Hipólito Unanue</h1>
                             <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                          </div>
                         </div></a>
                     </div>
                     <div class="galeria-effect">
@@ -218,8 +226,10 @@
                         	<p>Pedro Zulen</p>
                         </div>
                         <div class="caption-color" id="img4">
+                          <div>
                             <h1>Pedro Zulen</h1>
                             <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                          </div>
                         </div></a>
                     </div>
             	</div>
@@ -230,8 +240,10 @@
                         	<p>Eugenio Courret</p>
                         </div>
                         <div class="caption-color" id="img5">
+                          <div>
                             <h1>Eugenio Courret</h1>
                             <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                          </div>
                         </div></a>
                     </div>
                     <div class="galeria-effect">
@@ -240,8 +252,10 @@
                         	<p>Nicolás de Piérola</p>
                         </div>
                         <div class="caption-color" id="img6">
+                          <div>
                             <h1>Nicolás de Piérola</h1>
                             <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                          </div>
                         </div></a>
                     </div>
               </div>
@@ -252,8 +266,10 @@
                         	<p>Pedro Zulen</p>
                         </div>
                         <div class="caption-color" id="img7">
+                          <div>
                             <h1>Pedro Zulen</h1>
                             <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                          </div>
                         </div></a>
                     </div>
                     <div class="galeria-effect">
@@ -262,8 +278,10 @@
                         	<p>Emilio Garreaud</p>
                         </div>
                         <div class="caption-color" id="img8">
+                          <div>
                             <h1>Emilio Garreaud</h1>
                             <p>Lorem Ipsum, lorem ipsum lorem ipsum lorem ipsum</p>
+                          </div>
                         </div></a>
                     </div>
             </div>
