@@ -336,6 +336,88 @@ KEYFRAMES ANIMATION
 	display: none;
 }
 
+/* //////////////////////////////////////////////////////////////////// */
+@-webkit-keyframes PARALLAX-LIMA {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to { 
+		left: -10000px;
+		top: -2000px;
+	}
+}
+
+@-webkit-keyframes PARALLAX-LIMA {
+	from {
+		background-position: 1300% 0
+	}
+	to { 
+		background-position: 5% 0
+	}
+}
+
+#background {
+	background: black url(../img/slide4-1.png) repeat 5% 0;
+	position: absolute;
+	background-size: cover;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 100;
+	
+	-webkit-animation-name: PARALLAX-LIMA;
+	-webkit-animation-duration: 50s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#midground {
+	background: url(../img/slide4-2.png) repeat 20% 0;
+	position: absolute;
+	background-size: cover;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 200;
+	
+	-webkit-animation-name: PARALLAX-LIMA;
+	-webkit-animation-duration: 150s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#foreground {
+	background: url(../img/slide4-3.png) repeat 35% 0;
+	position: absolute;
+	background-size: cover;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 300;
+	
+	-webkit-animation-name: PARALLAX-LIMA;
+	-webkit-animation-duration: 100s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#foreground2 {
+	background: url(../img/slide4-4.png) repeat 65% 0;
+	position: absolute;
+	background-size: cover;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 300;
+	
+	-webkit-animation-name: PARALLAX-LIMA;
+	-webkit-animation-duration: 80s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 1260px) {
+	#background, #midground, #foreground, #foreground2 {
+		background-size: contain;
+		}
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
+
 @media only screen and (max-width: 1000px) and (min-width: 751px) {
 	.galeria-contenedor {
 		width: 750px;
