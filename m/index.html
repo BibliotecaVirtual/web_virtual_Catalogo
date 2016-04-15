@@ -40,6 +40,8 @@
 	<script src="resources/js/jquery.slimscroll.min.js"></script>
     <script src="resources/js/flickity.pkgd.min.js"></script>
     <script src="resources/js/conteo.js"></script>
+    <!--<script src="resources/js/jquery.backgroundpos.js"></script>-->
+
     <!--<script src="resources/js/device.js"></script>-->
 	<script type="text/javascript" src="resources/js/jquery.fullPage.js"></script>
     <script>
@@ -92,6 +94,33 @@
 
 	</script>
 
+     <script>
+	$(function(){
+
+	  $('#midground').css({backgroundPosition: '0px 0px'});
+	  $('#foreground').css({backgroundPosition: '0px 0px'});
+	   $('#foreground2').css({backgroundPosition: '0px 0px'});
+	  $('#background').css({backgroundPosition: '0px 0px'});
+
+		$('#midground').animate({
+			backgroundPosition:"(-10000px -2000px)"
+		}, 240000, 'linear');
+
+		$('#foreground').animate({
+			backgroundPosition:"(-10000px -2000px)"
+		}, 120000, 'linear');
+
+		$('#foreground2').animate({
+			backgroundPosition:"(-10000px -2000px)"
+		}, 230000, 'linear');
+
+		$('#background').animate({
+			backgroundPosition:"(-10000px -2000px)"
+		}, 480000, 'linear');
+
+	});
+</script>
+
 </head>
 <body>
 
@@ -142,6 +171,8 @@
 	.white-fill{fill:#FCFCFC;}
 </style><g id=""><path class="black-fill" d="M75.1 0C33.9-0.2 0.2 33.1 0 74.2c-0.2 41.5 33.2 75.2 74.6 75.2 41.2 0.1 74.8-33.3 74.9-74.5C149.6 33.8 116.3 0.2 75.1 0z"/></g><g id="Capa_2"><path class="white-fill" d="M63.8 47.5c-4.2 0-8.4 0-12.6 0 -3.7 0-5.5 1.7-5.5 5.6 0.1 7.9 0 15.8 0 23.7 0 8 0 16.1 0 24.1 0 3.4 1.6 5.2 4.9 5.2 4.5 0.1 9 0.1 13.4 0 3.3 0 5.1-1.8 5.1-5.1 0-16.1 0-32.2 0-48.3C69.2 49.2 67.3 47.6 63.8 47.5zM107.4 77.2c0-7.8 0-15.5 0-23.3 0-5-1.1-6.2-6-6.3 -4.1-0.1-8.1 0-12.2 0 -3.6 0-5.4 1.9-5.4 5.4 0 15.9 0 31.9 0 47.8 0 3.7 1.9 5.5 5.7 5.5 3.9 0 7.9 0.1 11.8 0 5-0.1 6.2-1.3 6.2-6.2C107.4 92.4 107.4 84.8 107.4 77.2z"/></g></svg>
 
+
+
             </figure>
             <div id="section-movil">
             	<h1 class="titulo" id="titulo-movil">Bienvenido a la Biblioteca Virtual</h1>
@@ -161,8 +192,12 @@
               </div>
               <div class="slide" id="slide4">
                  <h1>Lima Antigua en 3D</h1>
+                 <div id="background"></div>
+                 <div id="midground"></div>
+                 <div id="foreground"></div>
+                 <div id="foreground2"></div>
               </div>
-            </div>
+           </div>
     </div>
 
     <div class="section" id="section1">
