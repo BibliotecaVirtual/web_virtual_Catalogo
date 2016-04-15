@@ -184,10 +184,14 @@ ESTILOS GENERALES
 }
 
 #servicios-img {
-	background: url(../img/servicios_imagen.jpg);
+	background: url(../img/DIG-DOCUMENTOS.jpg);
 	border-bottom: 8px solid #017604;
 }
 
+#dig-audiovisual-img {
+	background: url(../img/DIG-AUDIOVISUAL.jpg);
+	border-bottom: 8px solid #017604;
+}
 
 #faq-img{
 	background: url(../img/servicios_imagen.jpg);
@@ -195,7 +199,7 @@ ESTILOS GENERALES
 }
 
 #eventos-img {
-	background: url(../img/banner_2.jpg);
+	background: url(../img/CONFERENCIAS.jpg);
 	border-bottom: 8px solid #FF9900;
 }
 
