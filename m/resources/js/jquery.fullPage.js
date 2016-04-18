@@ -1904,9 +1904,9 @@
 				$("#play").fadeOut();
 				$("#pause").fadeIn();
 			}
-        $("#slide1").css({'animation':''});
+        $("#slide1-zoom").css({'animation':''});
       if(slideIndex == 0){
-        $("#slide1").css({'-webkit-animation':'zoom 9s forwards','animation':'zoom 9s forwards'});
+        $("#slide1-zoom").css({'-webkit-animation':'zoom 9s forwards','animation':'zoom 9s forwards'});
       }
 
 			slidesNav.find(ACTIVE_SEL).removeClass(ACTIVE);

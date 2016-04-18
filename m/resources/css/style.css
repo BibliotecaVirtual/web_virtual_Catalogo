@@ -66,7 +66,7 @@
          transform: rotate(360deg);
      }
  }
- 
+
 
 .texto1 {
 	font-family: 'OpenSans Light';
@@ -234,15 +234,15 @@ KEYFRAMES ANIMATION FOR SLIDERS
 
 @keyframes paneoXY {
 	0% {
-		background-position: 0% 0;
+		background-position: 20% 0;
 		transform: scale(1,1);
 	}
 	50% {
-		background-position: 120% 0;
-		transform: scale(1.2,1.2);
+		background-position: 100% 0;
+		transform: scale(1.4,1.4);
 	}
 	100% {
-		background-position: 0% 0;
+		background-position: 20% 0;
 		transform: scale(1,1);
 	}
 }
@@ -262,8 +262,14 @@ KEYFRAMES ANIMATION FOR SLIDERS
 /* Backgrounds for the slides
 -----------------------------*/
 
-#slide1 {
+#slide1-zoom {
 	background-image: url(../img/slide1.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
 #slide2-pan {
@@ -273,7 +279,7 @@ KEYFRAMES ANIMATION FOR SLIDERS
   height: 100%;
   width: 100%;
   background-size: cover; /*200%*/
-  animation: paneoXY 50s infinite linear; /*50s*/
+  animation: paneoXY 40s infinite ease; /*50s*/
 }
 
 #slide3-pan {
@@ -283,7 +289,7 @@ KEYFRAMES ANIMATION FOR SLIDERS
   height: 100%;
   width: 100%;
   background-size: cover;
-  animation: paneoX 50s infinite linear; /*50s*/
+  animation: paneoX 50s infinite ease; /*50s*/
 }
 
 #slide4{
@@ -291,7 +297,7 @@ KEYFRAMES ANIMATION FOR SLIDERS
 }
 
 #slide4 h1{
-z-index:400;	
+z-index:400;
 }
 
 #slide1, #slide2, #slide3, #slide4 {

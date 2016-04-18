@@ -51,7 +51,7 @@
   	var hiloSlider;
   	var auxSlider = 0;
   		$(document).ready(function() {
-        $("#slide1").css({'-webkit-animation':'zoom 9s forwards','animation':'zoom 9s forwards'});
+        $("#slide1-zoom").css({'-webkit-animation':'zoom 9s forwards','animation':'zoom 9s forwards'});
   			$("#pause").click(function(){
   					clearInterval(hiloSlider);
   					$("#play").fadeIn();
@@ -195,7 +195,7 @@
             <div id="sliders">
             	<div class="slide">
                   <h1>Biblioteca Virtual</h1>
-                  <div id="slide1"></div>
+                  <div id="slide1-zoom"></div>
               </div>
               <div class="slide">
                   <h1>Biblioteca Virtual Nacional</h1>
