@@ -204,6 +204,11 @@ ESTILOS GENERALES
 	border-bottom: 8px solid #FF9900;
 }
 
+#exposiciones-img {
+	background: url(../img/EXPOSICIONES.jpg);
+	border-bottom: 8px solid #FF9900;
+}
+
 #noticias-img {
 	background: url(../img/banner_2.jpg);
 	border-bottom: 8px solid #653366;
@@ -297,16 +302,17 @@ ESTILOS GENERALES
 .img-contenedor{
 	margin: 0 auto;
 	position: relative;
-	width: 50%;
+	width: 45%;
 	overflow: visible;
 	margin-bottom: 60px;
+	max-width: 113px;
 }
 
 .img-cuadro{
 	position: absolute;
 	top: -55px;
-	border: #BACEE0 solid 4px;
-	border-radius: 50%;
+	/*border: #BACEE0 solid 4px;
+	border-radius: 50%;*/
 }
 
 .precio{
@@ -795,7 +801,7 @@ BOXES CONTENT
 }
 
 .tercio-static .img-cuadro {
-	top: -115px;
+	top: -105px;
 }
 
 .catalogoList-left {
