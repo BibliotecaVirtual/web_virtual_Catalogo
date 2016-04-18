@@ -87,6 +87,10 @@
 	display:inherit;
 }
 
+#h1-slide1 {
+  top: 80%;
+}
+
 .slide h1 {
 	font-size: 3.5em;
 	font-family: 'OpenSans Semibold';
@@ -263,7 +267,7 @@ KEYFRAMES ANIMATION FOR SLIDERS
 -----------------------------*/
 
 #slide1-zoom {
-	background-image: url(../img/slide1.jpg);
+	background-image: url(../img/slider-final-022.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   position: relative;
@@ -283,7 +287,7 @@ KEYFRAMES ANIMATION FOR SLIDERS
 }
 
 #slide3-pan {
-	background: url(../img/slide3.jpg);
+	background: url(../img/slide-bv-nacional-22.jpg);
 	background-repeat: no-repeat;
 	position: relative;
   height: 100%;
