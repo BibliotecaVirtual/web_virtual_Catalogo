@@ -87,6 +87,10 @@
 	display:inherit;
 }
 
+#h1-slide1 {
+  top: 80%;
+}
+
 .slide h1 {
 	font-size: 3.5em;
 	font-family: 'OpenSans Semibold';
@@ -263,7 +267,7 @@ KEYFRAMES ANIMATION FOR SLIDERS
 -----------------------------*/
 
 #slide1-zoom {
-	background-image: url(../img/slide1.jpg);
+	background-image: url(../img/slider-final-022.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   position: relative;
@@ -283,7 +287,7 @@ KEYFRAMES ANIMATION FOR SLIDERS
 }
 
 #slide3-pan {
-	background: url(../img/slide3.jpg);
+	background: url(../img/slide-bv-nacional-22.jpg);
 	background-repeat: no-repeat;
 	position: relative;
   height: 100%;
@@ -634,16 +638,16 @@ z-index:400;
 		width: 100%;
 	}
 
-	.caption-text {
-		background: #fff;
+  .caption-text {
+    position: fixed;
 		width: 100%;
-		padding: 9px 0;
-		bottom: 0;
+		bottom: 45px;
 		text-transform: uppercase;
-		color: #0A61A8;
-		font-family: 'OpenSans Regular';
+		color: #fff;
+		font-family: 'OpenSans Semibold';
+    text-shadow: 2px 2px 25px #000, 2px 2px 30px #000, 2px 2px 10px #000;
+    font-size: 1.1em;
 	}
-
 }
 
 /* SECTION 2

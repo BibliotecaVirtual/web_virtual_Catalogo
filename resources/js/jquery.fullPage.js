@@ -368,6 +368,13 @@
         */
 		//ACA ESTA :)
         FP.moveSlideRight = function(section){
+			if(auxSection3 == 0){
+				$("#section3").css({'background':'url(resources/img/servicios_doc.jpg)','background-size':'cover','background-position':'center'});
+				auxSection3 = 1;
+			}else if(auxSection3 == 1){
+				$("#section3").css({'background':'url(resources/img/servicios_imagen.jpg)','background-size':'cover','background-position':'center'});
+				auxSection3 = 0;
+			}
             moveSlide('next', section);
         };
 
@@ -376,6 +383,13 @@
         * Optional `section` param.
         */
         FP.moveSlideLeft = function(section){
+			if(auxSection3 == 0){
+				$("#section3").css({'background':'url(resources/img/servicios_doc.jpg)','background-size':'cover','background-position':'center'});
+				auxSection3 = 1;
+			}else if(auxSection3 == 1){
+				$("#section3").css({'background':'url(resources/img/servicios_imagen.jpg)','background-size':'cover','background-position':'center'});
+				auxSection3 = 0;
+			}
             moveSlide('prev', section);
 			clearInterval(hiloSlider);
         };
@@ -1309,6 +1323,13 @@
         * Scrolls the site to the given element and scrolls to the slide if a callback is given.
         */
         function scrollPage(element, callback, isMovementUp){
+			var auxNum = element.index(SECTION_SEL);
+			if(auxNum == 3){
+				clearInterval(hiloSlider);
+			}
+			if(auxNum == 0){
+				hiloSlider = setInterval(function(){ FP.moveSlideRight(); }, 9000);
+			}      
           if(element.index(SECTION_SEL) == 2 && auxTimer == 0){
             auxTimer = 1;
             jQuery(function($) {

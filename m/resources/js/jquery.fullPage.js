@@ -1899,7 +1899,7 @@
                 });
             }
 			clearInterval(hiloSlider);
-			hiloSlider = setInterval(function(){ FP.moveSlideRight(); }, 9000);
+			hiloSlider = setInterval(function(){ FP.moveSlideRight(); }, 12000);
             if(auxSlider == 1){
 				$("#play").fadeOut();
 				$("#pause").fadeIn();

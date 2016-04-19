@@ -521,15 +521,15 @@ z-index:400;
 	}
 
 	.caption-text {
-		background: #fff;
+    position: fixed;
 		width: 100%;
-		padding: 9px 0;
-		bottom: 0;
+		bottom: 45px;
 		text-transform: uppercase;
-		color: #0A61A8;
-		font-family: 'OpenSans Regular';
+		color: #fff;
+		font-family: 'OpenSans Semibold';
+    text-shadow: 2px 2px 25px #000, 2px 2px 30px #000, 2px 2px 10px #000;
+    font-size: 1.1em;
 	}
-
 }
 
 /* SECTION 2
