@@ -1309,6 +1309,13 @@
         * Scrolls the site to the given element and scrolls to the slide if a callback is given.
         */
         function scrollPage(element, callback, isMovementUp){
+			var auxNum = element.index(SECTION_SEL);
+			if(auxNum == 3){
+				clearInterval(hiloSlider);
+			}
+			if(auxNum == 0){
+				hiloSlider = setInterval(function(){ FP.moveSlideRight(); }, 9000);
+			}   
           if(element.index(SECTION_SEL) == 2 && auxTimer == 0){
             auxTimer = 1;
             jQuery(function($) {
