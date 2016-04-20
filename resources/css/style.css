@@ -551,7 +551,7 @@ z-index:400;
 }
 
 .titulo{
-    font-family:'CaviarDreams';
+    font-family:'CaviarDreams' !important;
 	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 6px;
