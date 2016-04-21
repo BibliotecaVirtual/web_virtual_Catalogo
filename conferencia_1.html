@@ -36,24 +36,44 @@
     <link rel="stylesheet" type="text/css" href="resources/css/internas.css">
     <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
     <link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
-
+    <link rel="stylesheet" href="resources/css/jquery.fancybox.css">
 
 <!-- Script
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!--<script src="js/jquery-1.12.0.js"></script>-->
-    <script src="resources/js/jquery.min.js"></script>
-    <script src="resources/js/jquery-ui.min.js"></script>
-    <script src="resources/js/jquery.mobile.custom.min.js"></script>
-    <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
-	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
-	<script src="resources/js/jquery.slimscroll.min.js"></script>
-    <script src="resources/js/fb-share.js"></script> <!-- Facebook share (capture link to share) -->
-    <script srC="resources/js/renato.js"></script>
+  <script src="resources/js/jquery.min.js"></script>
+  <script src="resources/js/jquery-ui.min.js"></script>
+  <script src="resources/js/jquery.mobile.custom.min.js"></script>
+  <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
+  <script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
+  <script src="resources/js/jquery.slimscroll.min.js"></script>
+  <script src="resources/js/fb-share.js"></script> <!-- Facebook share (capture link to share) -->
+  <script srC="resources/js/renato.js"></script>
+  <script src="resources/js/jquery.fancybox.pack.js" charset="utf-8"></script>
+  <script src="resources/js/jquery.fancybox.js" charset="utf-8"></script>
   <script>
   var auxfiltro = 0;
   var widthInicial =  $(window).width();
   var heightInicial = $(window).height();
     $(document).ready(function(){
+      $(".various").fancybox({
+    		maxWidth	: 800,
+    		maxHeight	: 600,
+    		fitToView	: false,
+    		width		: '70%',
+    		height		: '70%',
+    		autoSize	: false,
+    		closeClick : true,
+    		openEffect	: 'fade',
+    		closeEffect	: 'fade',
+        helpers : {
+        overlay : {
+            css : {
+                'background' : 'rgba(0, 0, 0, 0.65)'
+            }
+          }
+        }
+    	});
       $("#btnFiltros").click(function(){
         if(auxfiltro == 0){
           $("#filtros-conferencia").css({
@@ -722,7 +742,9 @@
     </div>
     <div class="doble">
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
@@ -731,7 +753,9 @@
         </div>
       </div>
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
@@ -740,7 +764,9 @@
         </div>
       </div>
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
@@ -751,7 +777,9 @@
     </div>
     <div class="doble">
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
@@ -760,7 +788,9 @@
         </div>
       </div>
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
@@ -774,7 +804,9 @@
     </div>
     <div class="doble">
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
@@ -783,7 +815,9 @@
         </div>
       </div>
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
@@ -794,7 +828,9 @@
     </div>
     <div class="doble">
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
@@ -803,7 +839,9 @@
         </div>
       </div>
       <div>
-        <img src="resources/img/miniatura-video.JPG" alt="">
+        <ul class="list">
+          <li><a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1"><img src="resources/img/miniatura-video.JPG" alt=""></a></li>
+        </ul>
         <div>
           <h3>Biblioteca Nacional / Ubicación / Distrito</h3>
           <p>9:00 - 9:15 hrs.</p>
