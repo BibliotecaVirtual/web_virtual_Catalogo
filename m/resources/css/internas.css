@@ -330,15 +330,109 @@ ESTILOS GENERALES
 	float:left;
 }
 
-.requisitos-lista{
-	list-style:inherit;
-	list-style-position: inside;
-}
-
 .requisitos-link{
 	color: #3E403F;
-    text-decoration: none;
-    font-size: 0.8em;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+#requisitos table, th, td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#requisitos td {
+	font-family: 'OpenSans Semibold';
+}
+
+#requisitos th {
+	font-family: 'OpenSans Regular';
+}
+
+#requisitos>table>tbody>tr:last-child>td:last-child {
+	font-family: 'OpenSans Regular';
+}
+
+#requisitos td {
+	padding: 14px 12px;
+}
+
+.inside-table {
+	padding: 0 !important;
+}
+
+#requisitos>table tr>td {
+	border: 1px solid #c2c2c2;
+}
+
+.table-precios td {
+	border: none !important;
+	font-size: 1.4em;
+	color: #6c6c6c;
+}
+
+#requisitos>table {
+	width: 80% !important;
+}
+
+#requisitos table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#requisitos>table>tbody>tr:last-child {
+	background: #ededed;
+}
+
+#requisitos tr>td:first-child {
+	width: 20%;
+}
+
+#requisitos th {
+	background: linear-gradient(to bottom, rgba(136,180,219,1) 0%, rgba(78,139,192,1) 100%);
+	color: #fff;
+	padding: 14px 2px;
+	border-right: 1px solid #d0d0d0;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.inside-table tr>th:last-child {
+	border-right: none !important;
+}
+
+.table-precios td {
+	border-right: 1px solid #d0d0d0 !important;
+}
+
+.table-precios td:last-child {
+	border-right: none !important;
+}
+
+#requisitos-audiov table, #requisitos-audiov th, #requisitos-audiov td {
+	border: 1px solid #adadad;
+  padding: 10px 20px;
+	text-align: left;
+}
+
+#requisitos-audiov table {
+	width: 100%;
+	max-width: 540px;
+	min-width: 300px;
+	font-family: 'OpenSans Semibold';
+	font-size: 1.1em;
+}
+
+#requisitos-audiov table tr>td:first-child {
+	color: #0d73c9;
+}
+
+#requisitos-audiov tr:last-child {
+	background: #e7e7e7;
+}
+
+#requisitos-audiov tr:last-child>td:last-child {
+	font-family: 'OpenSans Regular';
+	font-size: 0.85em;
 }
 
 @media only screen and (max-width: 1246px) {
