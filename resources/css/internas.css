@@ -259,15 +259,15 @@ ESTILOS GENERALES
 
 .cuartos-alt{
 	background: #FFFFFF;
-    width: 290px;
-    padding: 0 5px 1% 5px;
-    border: 2px solid #E6E5E3;
-    float: left;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-		height: 200px;
+  width: 290px;
+  padding: 6px 7px 1% 15px;
+  border: 2px solid #E6E5E3;
+  float: left;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+	height: 185px;
 	}
 
 .cuartos-alt-titulo{
@@ -320,15 +320,10 @@ ESTILOS GENERALES
 	border-radius: 50%;*/
 }
 
-.precio{
-    color: #1659A2;
-    font-size: 1.1em;
-    float: left;
-    margin: 10px 0 10px 0;
-}
 .requisitos{
 	width:100%;
-	float:left;
+	/*float:left;*/
+	clear: both;
 }
 
 .requisitos-link{
@@ -389,6 +384,10 @@ ESTILOS GENERALES
 	width: 20%;
 }
 
+#requisitos>table>tbody>tr>td:first-child {
+	color: #005AA8;
+}
+
 #requisitos th {
 	background: linear-gradient(to bottom, rgba(136,180,219,1) 0%, rgba(78,139,192,1) 100%);
 	color: #fff;
@@ -423,17 +422,48 @@ ESTILOS GENERALES
 	font-size: 1.1em;
 }
 
-#requisitos-audiov table tr>td:first-child {
+#requisitos-audiov table tr>td:first-child, #tabla-movil table tr>td:first-child {
 	color: #0d73c9;
 }
 
-#requisitos-audiov tr:last-child {
+#requisitos-audiov tr:last-child, #tabla-movil>table>tbody>tr:last-child {
 	background: #e7e7e7;
 }
 
 #requisitos-audiov tr:last-child>td:last-child {
 	font-family: 'OpenSans Regular';
 	font-size: 0.85em;
+}
+
+@media only screen and (max-width: 1246px) {
+	.subtitulo-acenter {
+		text-align: center;
+	}
+	#tabla-requisitos {
+		margin: 0 auto;
+	}
+}
+
+/****** TABLA MOVIL *********/
+
+#tabla-movil {
+	display: none;
+}
+
+#tabla-movil table {
+	width: 100%;
+}
+
+#tabla-movil>table {
+	border: 1px solid #c2c2c2;
+}
+
+#tabla-movil .inside-table table tr>td {
+	border-bottom: 1px solid #c2c2c2;
+}
+
+#tabla-movil .inside-table table tr:last-child>td {
+	border-bottom: none;
 }
 
 @media only screen and (max-width: 1246px) {
@@ -483,6 +513,15 @@ ESTILOS GENERALES
 	}
 }
 
+@media only screen and (max-width: 670px) {
+	#tabla-requisitos {
+		display: none;
+	}
+	#tabla-movil {
+		display: inherit;
+	}
+}
+
 @media only screen and (max-width: 647px){
 .contenedor-grid{
 	width: 100%;
@@ -505,6 +544,9 @@ ESTILOS GENERALES
 	width: 236px;
   clear: both;
 	}
+.contenedor-tercios .quinto:nth-child(2) {
+	height: 225px;
+}
 }
 
 
