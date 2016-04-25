@@ -386,6 +386,7 @@ ESTILOS GENERALES
 
 #requisitos>table>tbody>tr>td:first-child {
 	color: #005AA8;
+	text-align: left;
 }
 
 #requisitos th {
@@ -423,7 +424,7 @@ ESTILOS GENERALES
 }
 
 #requisitos-audiov table tr>td:first-child, #tabla-movil table tr>td:first-child {
-	color: #0d73c9;
+	color: #005AA8;
 }
 
 #requisitos-audiov tr:last-child, #tabla-movil>table>tbody>tr:last-child {
