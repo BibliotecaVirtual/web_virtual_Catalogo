@@ -466,6 +466,7 @@ ESTILOS GENERALES
 
 #tabla-movil .inside-table table tr>td {
 	border-bottom: 1px solid #c2c2c2;
+	font-size: 1.2em;
 }
 
 #tabla-movil .inside-table table tr:last-child>td {
