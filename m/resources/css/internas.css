@@ -280,7 +280,7 @@ ESTILOS GENERALES
 	width: 60%;
   position: relative;
   float: left;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .cuartos-alt-img{
@@ -408,6 +408,10 @@ ESTILOS GENERALES
   padding: 10px 20px;
 	text-align: left;
 	color: #6c6c6c;
+}
+
+#requisitos-audiov tr td:last-child {
+	font-size: 1.2em;
 }
 
 #requisitos-audiov table {
