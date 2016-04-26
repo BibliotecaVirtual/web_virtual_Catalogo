@@ -278,9 +278,9 @@ ESTILOS GENERALES
 
 .cuartos-alt-texto{
 	width: 60%;
-    position: relative;
-    float: left;
-    font-size: 0.7em;
+  position: relative;
+  float: left;
+  font-size: 0.8em;
 }
 
 .cuartos-alt-img{
@@ -323,12 +323,6 @@ ESTILOS GENERALES
 	width:100%;
 	/*float:left;*/
 	clear: both;
-}
-
-.requisitos-link{
-	color: #3E403F;
-  text-decoration: none;
-  font-size: 0.8em;
 }
 
 #requisitos table, th, td {
@@ -386,6 +380,7 @@ ESTILOS GENERALES
 #requisitos>table>tbody>tr>td:first-child {
 	color: #005AA8;
 	text-align: left;
+	font-size: 1.1em;
 }
 
 #requisitos th {
@@ -412,6 +407,7 @@ ESTILOS GENERALES
 	border: 1px solid #adadad;
   padding: 10px 20px;
 	text-align: left;
+	color: #6c6c6c;
 }
 
 #requisitos-audiov table {
@@ -424,6 +420,8 @@ ESTILOS GENERALES
 
 #requisitos-audiov table tr>td:first-child, #tabla-movil table tr>td:first-child {
 	color: #005AA8;
+	text-align: left;
+	font-size: 1.1em;
 }
 
 #requisitos-audiov tr:last-child, #tabla-movil>table>tbody>tr:last-child {
@@ -437,9 +435,13 @@ ESTILOS GENERALES
 
 @media only screen and (max-width: 1246px) {
 	.subtitulo-acenter {
-		text-align: center;
+		text-align: left;
 	}
-	#tabla-requisitos {
+	/*#tabla-requisitos {
+		margin: 0 auto;
+	}*/
+	#requisitos {
+		max-width: 890px;
 		margin: 0 auto;
 	}
 }
@@ -468,7 +470,7 @@ ESTILOS GENERALES
 
 @media only screen and (max-width: 1246px) {
 .contenedor-cuadros{
-    width: 944px;
+    width: 708px;
 	}
 
 .quinto{
@@ -477,6 +479,10 @@ ESTILOS GENERALES
 
 .contenedor-grid{
 	width: 890px;
+	}
+	#requisitos-audiov {
+		max-width: 890px;
+	  margin: 0 auto;
 	}
 }
 
@@ -490,9 +496,14 @@ ESTILOS GENERALES
 .contenedor-cuadros{
     width: 708px;
 	}
-
 .contenedor-grid{
 	width: 593px;
+	}
+	#requisitos {
+		max-width: 593px;
+	}
+	#requisitos-audiov {
+		max-width: 593px;
 	}
 }
 
@@ -519,6 +530,9 @@ ESTILOS GENERALES
 	}
 	#tabla-movil {
 		display: inherit;
+	}
+	.subtitulo-acenter {
+		text-align: center;
 	}
 }
 
