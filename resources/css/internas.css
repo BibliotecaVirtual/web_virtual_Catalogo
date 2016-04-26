@@ -887,6 +887,18 @@ figure.effect-expand:hover p {
   transition-delay: 0.1s;
 }
 
+@media only screen and (max-width:1024px) {
+	.catalogo-general-carousel {
+		max-width: 800px;
+	}
+}
+
+@media only screen and (max-width:770px) {
+	.catalogo-general-carousel {
+		max-width: 530px;
+	}
+}
+
 /*
 EVENTOS GALERIA
 ----------------------------------*/
