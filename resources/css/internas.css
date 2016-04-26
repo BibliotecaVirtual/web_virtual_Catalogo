@@ -215,29 +215,32 @@ ESTILOS GENERALES
 }
 
 .contenedor-cuadros{
-    margin: 0 auto;
-    width: 1200px;
+	margin: 0 auto;
+	width: 1200px;
 	padding-top: 60px;
-	    height: 350px;
-		clear:both;
+	height: 350px;
+	clear:both;
 }
 
 .contenedor-tercios{
 	margin: 0 auto;
-    width: 710px;
-    padding-top: 60px;
-    height: 350px;
-    clear: both;
+  width: 710px;
+  padding-top: 60px;
+  height: 350px;
+  clear: both;
 }
 
 .contenedor-grid{
 	margin: 0 auto;
-    width: 1200px;
+	width: 1200px;
 	padding-top: 60px;
-	    height: 350px;
-		clear:both;
+	height: 350px;
+	clear:both;
 }
 
+.contenedor-grid h3 {
+	margin-left: 3px;
+}
 
 .quinto{
 	background: #E6E5E3;
