@@ -1,5 +1,7 @@
 #jpreOverlay {
-	background-color: #FFF;
+	/*background-color: #FFF;*/
+	background:url(../img/fondo-cel-home.jpg);
+	background-size:cover;
 }
 #jpreSlide{
 	font-size:22px;
