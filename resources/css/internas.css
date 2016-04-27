@@ -214,6 +214,16 @@ ESTILOS GENERALES
 	border-bottom: 8px solid #653366;
 }
 
+.col-40 {
+	width: 40%;
+	float: left;
+}
+
+.col-60 {
+	width: 60%;
+	float: left;
+}
+
 .contenedor-cuadros{
 	margin: 0 auto;
 	width: 1200px;
@@ -1899,7 +1909,57 @@ CATALOGO BUSQUEDA
 	}
 }
 
-/*
+/***********************
+NOVEDADES
+***************************************/
+
+.novedades-header {
+	width: 90%;
+	height: 350px;
+	background: radial-gradient(circle at center, rgba(66,139,213,1) 0%, rgba(0,88,196,1) 100%);
+	position: relative;
+	margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.novedades-header>img {
+	position: absolute;
+	top: 30px;
+	right: -40px;
+}
+
+.novedades-header>div{
+	width: 80%;
+	height: 80%;
+	background: #fff;
+	padding: 30px 340px 0 0;
+}
+
+.novedades-header h1 {
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-family: 'OpenSans Semibold';
+	color: #8b8b8b;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.novedades-header + div {
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'OpenSans Regular';
+}
+
+.novedades-header + div .col-60>div {
+	margin-bottom: 40px;
+}
+
+.novedades-header + div .col-60>div img {
+	width: 100%;
+}
+
+
+/*************************
 FAQ
 -------------------------------*/
 #options {width:90%; margin:20px auto; text-align:right; color:#9ac1c9}
