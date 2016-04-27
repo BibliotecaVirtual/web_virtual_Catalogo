@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/internas.css">
     <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
     <link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
+    <link rel="stylesheet" href="resources/css/flickity.css" media="screen"/>
 
 
 <!-- Script
@@ -37,8 +38,18 @@
     <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
 	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
 	<script src="resources/js/jquery.slimscroll.min.js"></script>
+  <script src="resources/js/flickity.pkgd.min.js"></script>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <header class="cd-main-header">
         <a class="cd-logo" href="index.html"></a>
         <ul class="cd-header-buttons">
@@ -46,6 +57,31 @@
             <li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
         </ul> <!-- cd-header-buttons -->
     </header>
+    <script>
+    $(document).ready(function(){
+      $('.novedades-carousel-main').flickity({
+        cellAlign: 'center',
+        contain: true,
+        pageDots: false,
+        wrapAround: false,
+      });
+      // 2nd carousel, navigation
+      $('.novedades-carousel-nav').flickity({
+        asNavFor: '.novedades-carousel-main',
+        contain: true,
+        pageDots: false,
+        wrapAround: false,
+        // cellAlign: 'center',
+      });
+      $('.ultimasNoticias-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        pageDots: false,
+        wrapAround: true,
+      });
+    });
+    </script>
 <main class="cd-main-content">
   <div class="header-img triangulo-noticias" id="noticias-img">
   </div>
@@ -70,7 +106,7 @@
         <h1>Lanzamiento de la Biblioteca Virtual del Peru</h1>
       </div>
     </div>
-    <div>
+    <div class="clearfix">
       <div class="col-60">
         <div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repellat, dicta quis. Corrupti asperiores totam quasi fuga, soluta quo perferendis animi nisi nemo ipsam provident obcaecati aliquid laborum, quibusdam hic.</p>
@@ -78,10 +114,112 @@
           <p>At non magni iste quam cum laudantium quos obcaecati consectetur natus atque nihil, id architecto voluptate accusamus perferendis, maxime. Vero fugiat iste cum quidem voluptatum officia saepe, quia inventore eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolore impedit veritatis voluptatibus debitis illo autem pariatur accusantium, sint harum!</p>
         </div>
         <div>
-          <img src="resources/img/novedades-img2.jpg" alt="">
+          <div class="novedades-carousel-main">
+            <div class="novedades-celda">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+          </div>
+          <div class="novedades-carousel-nav">
+            <div class="novedades-celda-nav">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda-nav">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda-nav">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda-nav">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda-nav">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+            <div class="novedades-celda-nav">
+              <img src="resources/img/novedades-img2.jpg" alt="">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-40"></div>
+      <div class="col-40">
+        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="3"></div>
+      </div>
+    </div>
+    <div class="ultimas-noticias">
+      <div>
+        <h2>Últimas Noticias</h2>
+      </div>
+      <div class="ultimasNoticias-carousel">
+        <div class="ultimasNoticias-celda">
+          <figure>
+          <img src="resources/img/audios.jpg" alt="" />
+          <figcaption>
+            <h3>Exposiciones virtuales - Eventos</h3>
+            <a href="#">Leer Noticia</a>
+          </figcaption>
+        </figure>
+        </div>
+        <div class="ultimasNoticias-celda">
+          <figure>
+          <img src="resources/img/audios.jpg" alt="" />
+          <figcaption>
+            <h3>Exposiciones virtuales - Eventos</h3>
+            <a href="#">Leer Noticia</a>
+          </figcaption>
+        </figure>
+        </div>
+        <div class="ultimasNoticias-celda">
+          <figure>
+          <img src="resources/img/audios.jpg" alt="" />
+          <figcaption>
+            <h3>Exposiciones virtuales - Eventos</h3>
+            <a href="#">Leer Noticia</a>
+          </figcaption>
+        </figure>
+        </div>
+        <div class="ultimasNoticias-celda">
+          <figure>
+          <img src="resources/img/audios.jpg" alt="" />
+          <figcaption>
+            <h3>Exposiciones virtuales - Eventos</h3>
+            <a href="#">Leer Noticia</a>
+          </figcaption>
+        </figure>
+        </div>
+        <div class="ultimasNoticias-celda">
+          <figure>
+          <img src="resources/img/audios.jpg" alt="" />
+          <figcaption>
+            <h3>Exposiciones virtuales - Eventos</h3>
+            <a href="#">Leer Noticia</a>
+          </figcaption>
+        </figure>
+        </div>
+        <div class="ultimasNoticias-celda">
+          <figure>
+          <img src="resources/img/audios.jpg" alt="" />
+          <figcaption>
+            <h3>Exposiciones virtuales - Eventos</h3>
+            <a href="#">Leer Noticia</a>
+          </figcaption>
+        </figure>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer-internas">
