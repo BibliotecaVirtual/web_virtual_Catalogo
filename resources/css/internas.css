@@ -247,7 +247,7 @@ ESTILOS GENERALES
 
 .contenedor-tercios{
 	margin: 0 auto;
-  width: 710px;
+  width: 750px;
   padding-top: 60px;
   height: 350px;
   clear: both;
@@ -256,7 +256,7 @@ ESTILOS GENERALES
 .contenedor-grid{
 	margin: 0 auto;
 	width: 1200px;
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 	height: 350px;
 	clear:both;
 }
@@ -266,24 +266,21 @@ ESTILOS GENERALES
 }
 
 .quinto{
-	background: #E6E5E3;
+	background: #F3F3F3;
 	width: 230px;
 	height: 290px;
 	padding: 0 5px 1% 5px;
 	border-top: 15px solid #005AA7;
 	margin: 0 auto;
 	float: left;
-	margin-left: 3px;
-	margin-right: 3px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin: 5px 10px 70px;
 }
 
 .contenedor-tercios .quinto {
 	height: 340px;
 }
 
-.cuartos-alt{
+/*.cuartos-alt{
 	background: #FFFFFF;
   width: 290px;
   padding: 6px 7px 1% 15px;
@@ -294,13 +291,28 @@ ESTILOS GENERALES
   margin-top: 5px;
   margin-bottom: 5px;
 	height: 185px;
-	}
+}*/
+
+.cuartos-alt {
+	background: #FFFFFF;
+	width: 230px;
+	padding: 8px 15px;
+	border: 2px solid #E6E5E3;
+	float: left;
+	margin: 0 5px 15px;
+	height: 185px;
+}
+
+.cuartos-alt aside img {
+	width: 100%;
+}
 
 .cuartos-alt-titulo{
 	font-weight: bold;
   color: #696867;
   margin: 10px 0 10px 0;
   font-size: 1.2em;
+	text-align: center;
 }
 
 .cuartos-alt-texto{
@@ -342,6 +354,7 @@ ESTILOS GENERALES
 .img-cuadro{
 	position: absolute;
 	top: -65px;
+  width: 100%;
 	/*border: #BACEE0 solid 4px;
 	border-radius: 50%;*/
 }
@@ -501,7 +514,7 @@ ESTILOS GENERALES
 
 @media only screen and (max-width: 1246px) {
 .contenedor-cuadros{
-    width: 708px;
+    width: 948px;
 	}
 
 .quinto{
@@ -509,8 +522,9 @@ ESTILOS GENERALES
 	}
 
 .contenedor-grid{
-	width: 890px;
+	width: 960px;
 	}
+
 	#requisitos-audiov {
 		max-width: 890px;
 		margin: 0 auto;
@@ -528,7 +542,7 @@ ESTILOS GENERALES
     width: 708px;
 	}
 .contenedor-grid{
-		width: 593px;
+		width: 720px;
 	}
 	#requisitos {
 	  max-width: 593px;
@@ -552,6 +566,10 @@ ESTILOS GENERALES
 .contenedor-tercios{
 	width: 475px;
     clear: both;
+	}
+
+.contenedor-grid{
+		width: 480px;
 	}
 }
 
@@ -1170,6 +1188,7 @@ BOXES CONTENT
 	border-top: 15px solid #005AA7;
 	float: left;
 	position: relative;
+	margin-bottom: 90px;
 }
 
 .contenedor-boxes-tercio .tercio-static {
