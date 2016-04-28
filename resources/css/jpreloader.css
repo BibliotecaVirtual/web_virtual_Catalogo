@@ -1,5 +1,5 @@
 #jpreOverlay {
-	background-color: #FFF;
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(224,224,224,1) 100%);
 }
 #jpreSlide{
 	font-size:22px;
