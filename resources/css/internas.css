@@ -300,7 +300,7 @@ ESTILOS GENERALES
 	border: 2px solid #E6E5E3;
 	float: left;
 	margin: 0 5px 15px;
-	height: 185px;
+	height: 205px;
 }
 
 .cuartos-alt aside img {
@@ -1256,7 +1256,7 @@ BOXES CONTENT
 }
 
 .contenedor-boxes-cuarto .cuarto-static {
-	height: 305px;
+	height: 265px;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -2063,6 +2063,21 @@ NOVEDADES
 
 .ultimas-noticias figure img {
 	width: 100%;
+}
+
+.fb-container {
+	width: 90%;
+	max-height: 700px;
+	overflow-y: scroll;
+	margin: 0 auto;
+}
+
+/*MEDIA QUERIES NOTICIAS*/
+
+@media only screen and (max-width:1024px) {
+	.novedades-header {
+		
+	}
 }
 
 
