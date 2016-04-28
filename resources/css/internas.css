@@ -2074,12 +2074,55 @@ NOVEDADES
 
 /*MEDIA QUERIES NOTICIAS*/
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1080px) {
 	.novedades-header {
-		
+		height: 320px;
+	}
+	.novedades-header>img {
+		width: 55%;
+	}
+	.novedades-header>div {
+    padding: 30px 279px 0 0;
 	}
 }
 
+@media only screen and (max-width:948px) {
+	.novedades-header>div {
+		padding: 30px 220px 0 0;
+	}
+}
+
+@media only screen and (max-width:865px) {
+	.novedades-header>div {
+		background: rgba(255, 255, 255, 0);
+		padding: 50px;
+		margin: 0 auto;
+	}
+	.novedades-header h1 {
+		color: #fff;
+	}
+	.novedades-header>img {
+		display: none;
+	}
+	.novedades-header {
+		height: auto;
+	}
+	.col-60 {
+		width: 100%;
+		float: inherit;
+	}
+	.col-40 {
+		width: 100%;
+		float: inherit;
+	}
+}
+
+@media only screen and (max-width:640px) {
+	.ultimasNoticias-celda {
+		width: 48%;
+		margin: 0 3.5% 0 0;
+	}
+}
 
 
 /*************************
