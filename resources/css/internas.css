@@ -115,7 +115,7 @@ ESTILOS GENERALES
 .header-img {
 	max-width: 100%;
 	height: 25.5vw;
-  	min-height: 200px;
+	min-height: 200px;
 	max-height:500px;
 	background-position: top center !important;
 	background-repeat: no-repeat !important;
@@ -262,7 +262,7 @@ ESTILOS GENERALES
 }
 
 .contenedor-grid h3 {
-	margin-left: 3px;
+	margin-left: 5px;
 }
 
 .quinto{
@@ -363,6 +363,7 @@ ESTILOS GENERALES
 	width:100%;
 	/*float:left;*/
 	clear: both;
+	padding-left: 5px;
 }
 
 #requisitos table, th, td {
@@ -485,7 +486,7 @@ ESTILOS GENERALES
 		margin: 0 auto;
 	}*/
 	#requisitos {
-		max-width: 890px;
+		max-width: 960px;
 		margin: 0 auto;
 	}
 }
@@ -526,7 +527,7 @@ ESTILOS GENERALES
 	}
 
 	#requisitos-audiov {
-		max-width: 890px;
+		max-width: 960px;
 		margin: 0 auto;
 	}
 }
@@ -545,10 +546,10 @@ ESTILOS GENERALES
 		width: 720px;
 	}
 	#requisitos {
-	  max-width: 593px;
+	  max-width: 720px;
 	}
 	#requisitos-audiov {
-		max-width: 593px;
+		max-width: 720px;
 	}
 }
 
@@ -571,9 +572,17 @@ ESTILOS GENERALES
 .contenedor-grid{
 		width: 480px;
 	}
+
+	#requisitos {
+		max-width: 480px;
+	}
+
+	#requisitos-audiov {
+		max-width: 480px;
+	}
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 767px) {
 	#tabla-requisitos {
 		display: none;
 	}

@@ -238,7 +238,7 @@ ESTILOS GENERALES
 }
 
 .contenedor-grid h3 {
-	margin-left: 3px;
+	margin-left: 5px;
 }
 
 .quinto{
@@ -342,6 +342,7 @@ ESTILOS GENERALES
 	width:100%;
 	/*float:left;*/
 	clear: both;
+  padding-left: 5px;
 }
 
 #requisitos table, th, td {
@@ -456,6 +457,31 @@ ESTILOS GENERALES
 	font-size: 0.85em;
 }
 
+/****** TABLA MOVIL *********/
+
+#tabla-movil {
+	display: none;
+}
+
+#tabla-movil table {
+	width: 100%;
+}
+
+#tabla-movil>table {
+	border: 1px solid #c2c2c2;
+}
+
+#tabla-movil .inside-table table tr>td {
+	border-bottom: 1px solid #c2c2c2;
+	font-size: 1.2em;
+	color: #6c6c6c;
+}
+
+#tabla-movil .inside-table table tr:last-child>td {
+	border-bottom: none;
+}
+
+
 @media only screen and (max-width: 1246px) {
 .contenedor-cuadros{
     width: 948px;
@@ -468,9 +494,13 @@ ESTILOS GENERALES
 .contenedor-grid{
 	width: 960px;
 	}
+	#requisitos {
+  max-width: 960px;
+  margin: 0 auto;
+	}
 
 	#requisitos-audiov {
-		max-width: 890px;
+		max-width: 960px;
 		margin: 0 auto;
 	}
 }
@@ -489,10 +519,10 @@ ESTILOS GENERALES
 		width: 720px;
 	}
 	#requisitos {
-	  max-width: 593px;
+	  max-width: 720px;
 	}
 	#requisitos-audiov {
-		max-width: 593px;
+		max-width: 720px;
 	}
 }
 
@@ -514,6 +544,26 @@ ESTILOS GENERALES
 
 .contenedor-grid{
 		width: 480px;
+	}
+
+	#tabla-requisitos {
+    display: none;
+	}
+
+	#tabla-movil {
+    display: inherit;
+	}
+
+	#requisitos {
+    max-width: 480px;
+	}
+
+	.subtitulo-acenter {
+    text-align: center;
+	}
+
+	#requisitos-audiov {
+    max-width: 480px;
 	}
 }
 
@@ -555,32 +605,6 @@ ESTILOS GENERALES
 	height: 225px;
 	}
 }
-
-
-/****** TABLA MOVIL *********/
-
-#tabla-movil {
-	display: none;
-}
-
-#tabla-movil table {
-	width: 100%;
-}
-
-#tabla-movil>table {
-	border: 1px solid #c2c2c2;
-}
-
-#tabla-movil .inside-table table tr>td {
-	border-bottom: 1px solid #c2c2c2;
-	font-size: 1.2em;
-	color: #6c6c6c;
-}
-
-#tabla-movil .inside-table table tr:last-child>td {
-	border-bottom: none;
-}
-
 
 /*
 SITE MAP
@@ -1225,7 +1249,7 @@ BOXES CONTENT
 }
 
 .contenedor-boxes-cuarto .cuarto-static {
-	height: 305px;
+	height: 265px;
 }
 
 @media only screen and (max-width: 1080px) {
