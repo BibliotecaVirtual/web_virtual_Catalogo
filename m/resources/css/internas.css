@@ -1281,6 +1281,7 @@ BOXES CONTENT
 	}
 	.cuarto-static, .tercio-static {
 		margin: 0 0 110px;
+		height: auto !important;
 	}
 }
 
