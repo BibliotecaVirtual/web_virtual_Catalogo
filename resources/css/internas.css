@@ -458,7 +458,7 @@ ESTILOS GENERALES
 #requisitos-audiov table {
 	width: 100%;
 	max-width: 540px;
-	min-width: 300px;
+	min-width: 250px;
 	font-family: 'OpenSans Semibold';
 	font-size: 1.1em;
 }
@@ -595,19 +595,14 @@ ESTILOS GENERALES
 }
 
 @media only screen and (max-width: 647px){
-.contenedor-grid{
-	width: 100%;
+.contenedor-grid {
 	min-width: 240px;
-}
-.cuartos-alt{
-	width:100%;
-	height: auto;
+	}
 }
 
-}
-@media only screen and (max-width: 586px) {
-.contenedor-cuadros{
-    width: 240px;
+@media only screen and (max-width: 570px) {
+	.contenedor-cuadros {
+	    width: 240px;
 	}
 }
 
@@ -618,7 +613,14 @@ ESTILOS GENERALES
 	}
 .contenedor-tercios .quinto:nth-child(2) {
 	height: 225px;
-}
+	}
+.contenedor-grid {
+	width: 100%;
+	}
+	.cuartos-alt {
+		width: 100%;
+		height: auto;
+	}
 }
 
 
