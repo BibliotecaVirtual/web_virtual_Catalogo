@@ -335,6 +335,17 @@ KEYFRAMES ANIMATION FOR SLIDERS
 z-index:400 !important;
 }
 
+#slide5-pan {
+	background: url(../img/slide5.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  animation: paneoX 50s infinite ease; /*50s*/
+}
+
+
 #slide1, #slide2, #slide3, #slide4 {
 	position:relative;
 	overflow:hidden;
@@ -603,6 +614,7 @@ z-index:400 !important;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 }
+
 
 @media only screen and (min-width: 1260px) {
 	#background, #midground, #foreground, #foreground2 {
