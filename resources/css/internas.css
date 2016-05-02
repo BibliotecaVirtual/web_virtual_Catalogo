@@ -1292,7 +1292,7 @@ BOXES CONTENT
 
 @media only screen and (max-width: 580px) {
 	.contenedor-boxes-cuarto, .contenedor-boxes-tercio {
-    max-width: 250px;
+    max-width: 230px;
 	}
 	/*.cuarto-static, .tercio-static {
 		width: 255px;
