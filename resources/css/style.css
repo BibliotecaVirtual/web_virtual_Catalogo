@@ -93,16 +93,25 @@ vertical-align: middle;
 }
 
 .slide h1 {
-	font-size: 2.5em;
-	font-family: 'OpenSans Semibold';
-	color: #fff;
-	margin: 0;
-	padding: 0;
-	text-shadow: 0.3px 0.4px 7px rgba(0,0,0,0.5);
-	width: 90%;
-	margin: 0 auto;
-	line-height: 1.2em;
+	font-size: 2.2em;
+    font-family: 'OpenSans Semibold';
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0.3px 0.4px 7px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    line-height: 1.2em;
+   	position: inherit;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    padding: 0 10%;
 }
+#slide5 h1{
+position:absolute !important;
+transform:translateY(-50%);	
+}
+
 
 .slide p {
 	color: #fff;
@@ -219,8 +228,9 @@ SLIDER PLAY/PAUSE
 	}
 }
 
+
 /*
-KEYFRAMES ANIMATION
+KEYFRAMES ANIMATION FOR SLIDERS
 -----------------------------------*/
 
 @keyframes zoom {
@@ -229,6 +239,33 @@ KEYFRAMES ANIMATION
 	}
 	to {
 		transform: scale(1.2,1.2);
+	}
+}
+
+@keyframes paneoXY {
+	0% {
+		background-position: 20% 0;
+		transform: scale(1,1);
+	}
+	50% {
+		background-position: 100% 0;
+		transform: scale(1.4,1.4);
+	}
+	100% {
+		background-position: 20% 0;
+		transform: scale(1,1);
+	}
+}
+
+@keyframes paneoX {
+	0% {
+		background-position: 0% 0;
+	}
+	50% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0% 0;
 	}
 }
 
@@ -260,6 +297,16 @@ KEYFRAMES ANIMATION
 
 #slide4 h1{
 z-index:400;
+}
+
+#slide5-pan {
+	background: url(../img/slide5.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  animation: paneoX 50s infinite ease; /*50s*/
 }
 
 #myVideo{
@@ -310,7 +357,7 @@ z-index:400;
    		z-index:0;
 	}
 
-#slide4 h1, #slide2 h1, #slide3 h1{
+#slide5 h1, #slide4 h1, #slide2 h1, #slide3 h1{
 	top:50%;
 	position:absolute;
     width:100%;
