@@ -11,6 +11,11 @@ ESTILOS GENERALES
 	padding: 3.5vw 30px 0 30px;
 }
 
+.margen-conferencia{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 2.5vw 45px 15px;	
+}
 .titulo-principal {
 	font-family: 'CaviarDreams' !important;
   text-transform: uppercase;
@@ -1336,6 +1341,16 @@ text-transform: inherit;
 	float:left;
 }
 
+.conferencia-completa{
+    font-weight: bold;
+    color: #d25e10;
+    font-family: 'OpenSans Semibold';
+    text-decoration: underline;	
+}
+
+.oculto{
+color:#FFF;	
+}
 .box-comment {
 width: 70%;
 margin: 0 auto;
