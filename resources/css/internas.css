@@ -14,7 +14,7 @@ ESTILOS GENERALES
 .margen-conferencia{
     max-width: 1260px;
     margin: 0 auto;
-    padding: 2.5vw 45px 15px;	
+    padding: 2.5vw 45px 15px;
 }
 .titulo-principal {
 	font-family: 'CaviarDreams' !important;
@@ -365,10 +365,11 @@ ESTILOS GENERALES
 }
 
 .requisitos{
-	width:100%;
-	/*float:left;*/
+	/*width:100%;*/
 	clear: both;
 	padding-left: 5px;
+	max-width: 990px;
+  margin: 0 auto;
 }
 
 #requisitos table, th, td {
@@ -490,10 +491,6 @@ ESTILOS GENERALES
 	/*#tabla-requisitos {
 		margin: 0 auto;
 	}*/
-	#requisitos {
-		max-width: 960px;
-		margin: 0 auto;
-	}
 }
 
 /****** TABLA MOVIL *********/
@@ -526,15 +523,33 @@ ESTILOS GENERALES
 .quinto{
 	margin-top: 50px;
 	}
+}
 
-.contenedor-grid{
-	width: 960px;
-	}
+/**CUARTO**/
 
-	#requisitos-audiov {
-		max-width: 960px;
-		margin: 0 auto;
-	}
+.contenedor-boxes-cuarto {
+	max-width: 1000px;
+	margin: 140px auto 0;
+}
+
+.cuarto-static .img-contenedor {
+	margin-bottom: 30px;
+}
+
+.cuarto-static .img-cuadro {
+	top: -85px;
+}
+
+.contenedor-boxes-cuarto .cuarto-static {
+	height: 265px;
+}
+
+.searchBar-interno + .contenedor-boxes-cuarto .cuarto-static {
+	height: 285px;
+}
+
+.contenedor-boxes-cuarto + .contenedor-grid {
+	max-width: 990px;
 }
 
 @media only screen and (max-width: 1169px) {
@@ -543,18 +558,30 @@ ESTILOS GENERALES
 	}
 }
 
+@media only screen and (max-width: 1080px) {
+	.contenedor-boxes-cuarto {
+		max-width: 750px;
+	}
+	.contenedor-boxes-cuarto .cuarto-static {
+		margin-bottom: 110px;
+	}
+	.contenedor-boxes-cuarto + .contenedor-grid, #requisitos-audiov, #requisitos {
+		max-width: 740px;
+	}
+}
+
 @media only screen and (max-width: 1006px) {
 .contenedor-cuadros{
     width: 708px;
 	}
-.contenedor-grid{
+.contenedor-grid, #requisitos-audiov, #requisitos {
 		width: 720px;
 	}
-	#requisitos {
-	  max-width: 720px;
-	}
-	#requisitos-audiov {
-		max-width: 720px;
+}
+
+@media only screen and (max-width: 830px) {
+	.contenedor-boxes-cuarto {
+		max-width: 500px;
 	}
 }
 
@@ -585,9 +612,7 @@ ESTILOS GENERALES
 	#requisitos-audiov {
 		max-width: 480px;
 	}
-}
 
-@media only screen and (max-width: 767px) {
 	#tabla-requisitos {
 		display: none;
 	}
@@ -605,6 +630,19 @@ ESTILOS GENERALES
 	}
 }
 
+@media only screen and (max-width: 580px) {
+	.contenedor-boxes-cuarto, .contenedor-boxes-tercio {
+    max-width: 230px;
+	}
+	.cuarto-static .img-cuadro, .tercio-static .img-cuadro {
+    top: -95px;
+	}
+	.cuarto-static, .tercio-static {
+		margin: 0 0 110px;
+		height: auto !important;
+	}
+}
+
 @media only screen and (max-width: 570px) {
 	.contenedor-cuadros {
 	    width: 240px;
@@ -619,7 +657,7 @@ ESTILOS GENERALES
 .contenedor-tercios .quinto:nth-child(2) {
 	height: 225px;
 	}
-.contenedor-grid {
+.contenedor-grid, #requisitos-audiov, #requisitos {
 	width: 100%;
 	}
 	.cuartos-alt {
@@ -1256,57 +1294,6 @@ BOXES CONTENT
 	}
 }
 
-/**CUARTO**/
-
-.contenedor-boxes-cuarto {
-	max-width: 1000px;
-	margin: 140px auto 0;
-}
-
-.cuarto-static .img-contenedor {
-	margin-bottom: 30px;
-}
-
-.cuarto-static .img-cuadro {
-	top: -85px;
-}
-
-.contenedor-boxes-cuarto .cuarto-static {
-	height: 265px;
-}
-
-@media only screen and (max-width: 1080px) {
-	.contenedor-boxes-cuarto {
-		max-width: 750px;
-	}
-	.contenedor-boxes-cuarto .cuarto-static {
-		margin-bottom: 110px;
-	}
-}
-
-@media only screen and (max-width: 830px) {
-	.contenedor-boxes-cuarto {
-		max-width: 500px;
-	}
-}
-
-@media only screen and (max-width: 580px) {
-	.contenedor-boxes-cuarto, .contenedor-boxes-tercio {
-    max-width: 230px;
-	}
-	/*.cuarto-static, .tercio-static {
-		width: 255px;
-		margin: 0;
-	}*/
-	.cuarto-static .img-cuadro, .tercio-static .img-cuadro {
-    top: -95px;
-	}
-	.cuarto-static, .tercio-static {
-		margin: 0 0 110px;
-		height: auto !important;
-	}
-}
-
 /*
 CONFERENCIAS
 --------------------------------*/
@@ -1345,11 +1332,11 @@ text-transform: inherit;
     font-weight: bold;
     color: #d25e10;
     font-family: 'OpenSans Semibold';
-    text-decoration: underline;	
+    text-decoration: underline;
 }
 
 .oculto{
-color:#FFF;	
+color:#FFF;
 }
 .box-comment {
 width: 70%;
