@@ -27,6 +27,57 @@ a {
   text-decoration: none;
 }
 
+
+.left-img{
+    width: 60%;
+    float: left;	
+}
+
+.right-text{
+    width: 40%;
+    float: right;	
+}
+
+.ver-online{
+    background: #005AA7;
+    height: 55px;
+    margin-bottom: 15px;	
+}
+
+.ver-mas {
+	background-color: #005AA7;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'OpenSans Regular';
+    font-size: 13px;
+    margin: 5px 0 5px 0;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 15px;
+    border: 1px solid #fff;
+}
+.ver-mas:hover {
+	background-color:transparent;
+	border:1px solid #fff;
+}
+.ver-mas:active {
+	position:relative;
+	top:1px;
+}
+
+.sociales-joyas{
+float:right;
+margin-right: 15px;	
+}
+
+.textos-joyas{
+    padding: 0 15px;	
+}
+
 /* -------------------------------- 
 
 Main Components 
@@ -169,7 +220,7 @@ Main Components
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
-    margin: 6em auto;
+    margin: 4em auto;
   }
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -245,7 +296,7 @@ Main Components
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
-  margin: 2em 0;
+  /*margin: 2em 0;*/
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
@@ -298,7 +349,7 @@ Main Components
   animation-direction: reverse;
 }
 .cd-horizontal-timeline .events-content li > * {
-  max-width: 800px;
+  max-width: max-width: 100%;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-content h2 {
@@ -325,13 +376,13 @@ Main Components
 }
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
-    font-size: 7rem;
+    font-size: 4rem;
   }
   .cd-horizontal-timeline .events-content em {
     font-size: 2rem;
   }
   .cd-horizontal-timeline .events-content p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
