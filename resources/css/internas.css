@@ -998,7 +998,7 @@ figure.effect-expand:hover p {
 EVENTOS GALERIA
 ----------------------------------*/
 
-.eventos-galeria {
+.eventos-galeria, .novedades-galeria {
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -1015,7 +1015,7 @@ EVENTOS GALERIA
 	cursor: pointer;
 }
 
-.eventos-galeria figure img {
+.eventos-galeria figure img, .novedades-galeria figure img{
 	position: relative;
 	display: block;
 	min-height: 100%;
@@ -1023,7 +1023,7 @@ EVENTOS GALERIA
 	opacity: 1;
 }
 
-.eventos-galeria figure figcaption {
+.eventos-galeria figure figcaption, .novedades-galeria figure figcaption {
 	padding: 2em;
 	color: #fff;
 	font-size: 1em;
@@ -1033,11 +1033,13 @@ EVENTOS GALERIA
 }
 
 .eventos-galeria figure figcaption::before,
-.eventos-galeria figure figcaption::after {
+.eventos-galeria figure figcaption::after,
+.novedades-galeria figure figcaption::before,
+.novedades-galeria figure figcaption::after, {
 	pointer-events: none;
 }
 
-.eventos-galeria figure figcaption {
+.eventos-galeria figure figcaption, .novedades-galeria figure figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1045,7 +1047,7 @@ EVENTOS GALERIA
 	height: 100%;
 }
 
-.eventos-galeria figure figcaption > a {
+figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -1056,6 +1058,61 @@ EVENTOS GALERIA
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+/*********NOVEDADES GALERIA**********/
+
+.novedades-galeria figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 5px 5px;
+	width: 290px;
+	height: 200px;
+	background: #000;
+	cursor: pointer;
+	transition: 0.35s;
+}
+
+.novedades-galeria>div {
+	width: 300px;
+	float: left;
+}
+
+.novedades-galeria figure img {
+	width: 100%;
+	opacity: 0.5;
+}
+
+.novedades-galeria figcaption h2 {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	transition: 0.35s;
+	font-family: 'OpenSans Semibold';
+	font-size: 1.1em;
+}
+
+.novedades-galeria figcaption span {
+	font-family: 'OpenSans Regular';
+	font-size: 0.85em;
+}
+
+.novedades-effect:hover {
+	height: 410px;
+	width: 590px;
+	transition: 0.35s;
+}
+
+#nov-eff-2:hover, #nov-eff-3:hover, #nov-eff-4:hover {
+	margin-left: -295px;
+}
+
+.novedades-galeria figure:nth-child(3):hover + #nov-eff-4 + #nov-eff-5 + #nov-eff-6 {
+	margin-top: -205px;
+}
+
+.novedades-galeria figure:nth-child(4):hover + #nov-eff-5 {
+	margin-top: -205px;
 }
 
 /*********************************/
