@@ -75,7 +75,20 @@ margin-right: 15px;
 }
 
 .textos-joyas{
-    padding: 0 15px;	
+    padding: 0 15px;
+	max-height: 420px;
+    overflow: auto;
+	
+}
+
+.detalles-libro{
+    position: relative;
+    height: 100px;
+    width: 14%;
+    /* margin: 0 auto; */
+    background: #2C72AF;
+    float: left;
+	color: #fff;	
 }
 
 /* -------------------------------- 
@@ -102,10 +115,11 @@ Main Components
 }
 .cd-horizontal-timeline .timeline {
   position: relative;
-  height: 100px;
-  width: 90%;
-  margin: 0 auto;
-  background: #005AA7;
+    height: 100px;
+    width: 85%;
+    margin: 0 auto;
+    background: #005AA7;
+    float: left;
 }
 .cd-horizontal-timeline .events-wrapper {
   position: relative;
@@ -146,6 +160,30 @@ Main Components
   transition: transform 0.4s;
 }
 .cd-horizontal-timeline .filling-line {
+  /* this is used to create the green line filling the timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #58BFB6;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.cd-horizontal-timeline .filling-line2 {
   /* this is used to create the green line filling the timeline */
   position: absolute;
   z-index: 1;
