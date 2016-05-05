@@ -1919,8 +1919,12 @@
                     afterSlideLoads();
                 });
             }
-			clearInterval(hiloSlider);
-			hiloSlider = setInterval(function(){ FP.moveSlideRight(); }, 9000);
+			if(sectionIndex != 3){
+				clearInterval(hiloSlider);
+				hiloSlider = setInterval(function(){ FP.moveSlideRight(); }, 9000);
+			}else{
+				clearInterval(hiloSlider);
+			}
             if(auxSlider == 1){
 				$("#play").fadeOut();
 				$("#pause").fadeIn();
