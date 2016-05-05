@@ -816,8 +816,8 @@ BODY
 
 .subtitulo-bg {
 	font-family: 'CaviarDreams';
-  background: #0A61A8;
-  color: #fff;
+  /*background: #0A61A8;*/
+  color: #0A61A8;
   padding: 5px 15px;
   display: table;
   margin: 42px auto 35px;
@@ -1269,6 +1269,10 @@ BOXES CONTENT
 .catalogoList-right {
 	width: 30%;
 	float: left;
+}
+
+.catalogoList-right ul {
+	text-align: right;
 }
 
 .catalogo-box aside {

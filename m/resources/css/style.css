@@ -1294,6 +1294,7 @@ font-size: smaller;
 .margen-footer img{
      margin: 10px 0 10px 15px;
 }
+
 @media only screen and (max-width: 640px) {
 .btn-play-pause, #section0 .fp-slidesNav{
 	display: none;
@@ -1305,10 +1306,21 @@ font-size: smaller;
 	float:left;
 }
 
+.tercio br {
+  display: none;
+}
+
 .p-footer{
 	font-size:0.9em;
 }
 
-#section6 .margen-footer:nth-child(3) p{display:none;}
+#section6 .margen-footer:nth-child(3) p {
+  display:none;
+}
+}
 
+@media only screen and (max-width: 385px) {
+  .tercio br {
+    display: inherit;
+  }
 }
