@@ -79,14 +79,26 @@ html.fp-enabled,
 	/*hide arrows*/
 	display:none !important;
 }
+
+@media only screen and (max-width: 480px) {
+	.fp-controlArrow {
+	top: 74%;
+	}
+	
+	}
+
+
+#sliders-servicios .fp-controlArrow{
+display:block !important;	
+}
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    left: 8px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+	border-color: transparent #fff transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
+    right: 8px;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
 }
@@ -112,6 +124,7 @@ html.fp-enabled,
 #fp-nav.left {
     left: 17px;
 }
+
 .fp-slidesNav{
     position: absolute;
     z-index: 4;
@@ -213,5 +226,9 @@ html.fp-enabled,
 .fp-auto-height .fp-slide,
 .fp-auto-height .fp-tableCell{
     height: auto !important;
+}
+
+#section3 .fp-slidesNav{
+display:none !important;	
 }
 
