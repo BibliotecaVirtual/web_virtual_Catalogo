@@ -1070,12 +1070,7 @@ figure figcaption > a {
 	height: 200px;
 	background: #000;
 	cursor: pointer;
-	transition: 0.35s;
-}
-
-.novedades-galeria>div {
-	width: 300px;
-	float: left;
+	/*transition: 0.35s;*/
 }
 
 .novedades-galeria figure img {
@@ -1097,23 +1092,18 @@ figure figcaption > a {
 	font-size: 0.85em;
 }
 
-.novedades-effect:hover {
+.novedades-effect--width2 {
+	width: 590px !important;
+	display: none;
+}
+
+/*.novedades-effect:hover {
 	height: 410px;
 	width: 590px;
 	transition: 0.35s;
-}
-
-#nov-eff-2:hover, #nov-eff-3:hover, #nov-eff-4:hover {
+	z-index: 99;
 	margin-left: -295px;
-}
-
-.novedades-galeria figure:nth-child(3):hover + #nov-eff-4 + #nov-eff-5 + #nov-eff-6 {
-	margin-top: -205px;
-}
-
-.novedades-galeria figure:nth-child(4):hover + #nov-eff-5 {
-	margin-top: -205px;
-}
+}*/
 
 /*********************************/
 
