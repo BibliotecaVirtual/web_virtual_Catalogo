@@ -1,360 +1,386 @@
 <!DOCTYPE html>
 <html lang="es-PE">
+
 <head>
 
-<!-- Basic Page Needs
+    <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>Biblioteca Virtual</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
-<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="icon" href="resources/img/icon.ico" type="image/ico">
 
 
-<!-- FONT
+    <!-- FONT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,400' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,400' rel='stylesheet' type='text/css' />
 
-<!-- CSS
+    <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="resources/css/internas.css">
-    <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
-	<link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
-  <link rel="stylesheet" href="resources/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="resources/css/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="resources/css/menu-style.css" />
+    <!-- Resource style -->
+    <link rel="stylesheet" href="resources/css/jquery.fancybox.css">
 
 
-<!-- Script
+    <!-- Script
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!--<script src="js/jquery-1.12.0.js"></script>-->
     <script src="resources/js/jquery.min.js"></script>
     <script src="resources/js/jquery-ui.min.js"></script>
     <script src="resources/js/jquery.mobile.custom.min.js"></script>
-    <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
-	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
-	<script src="resources/js/jquery.slimscroll.min.js"></script>
-  <script src="resources/js/jquery.fancybox.pack.js" charset="utf-8"></script>
-  <script src="resources/js/jquery.fancybox.js" charset="utf-8"></script>
-  <script>
-    $(document).ready(function(){
-      $("#single_1").fancybox({
-        // maxWidth	: 800,
-        // maxHeight	: 600,
-        // fitToView	: false,
-        width		: '70%',
-        height		: '70%',
-        autoSize	: false,
-        closeClick : true,
-        openEffect	: 'fade',
-        closeEffect	: 'fade',
-        padding : 7,
-        helpers: {
-          title : {type : 'float'},
-          overlay : {css : {'background' : 'rgba(0, 0, 0, 0.65)'}}
-        }
-      });
-    });
-  </script>
+    <script src="resources/js/main-menu.js"></script>
+    <!-- Resource jQuery JS del Menu-->
+    <script src="resources/js/modernizr.js"></script>
+    <!-- Modernizr para el Menu-->
+    <script src="resources/js/jquery.slimscroll.min.js"></script>
+    <script src="resources/js/jquery.fancybox.pack.js" charset="utf-8"></script>
+    <script src="resources/js/jquery.fancybox.js" charset="utf-8"></script>
+    <script>
+        $(document).ready(function() {
+            $("#single_1").fancybox({
+                // maxWidth	: 800,
+                // maxHeight	: 600,
+                // fitToView	: false,
+                width: '70%',
+                height: '70%',
+                autoSize: false,
+                closeClick: true,
+                openEffect: 'fade',
+                closeEffect: 'fade',
+                padding: 7,
+                helpers: {
+                    title: {
+                        type: 'float'
+                    },
+                    overlay: {
+                        css: {
+                            'background': 'rgba(0, 0, 0, 0.65)'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </head>
+
 <body>
     <header class="cd-main-header">
         <a class="cd-logo" href="index.html"></a>
         <ul class="cd-header-buttons">
             <!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
             <li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
-        </ul> <!-- cd-header-buttons -->
+        </ul>
+        <!-- cd-header-buttons -->
     </header>
-<main class="cd-main-content">
-    <div class="header-img triangulo-servicios" id="servicios-img">
-    </div>
-
-    <div class="margen-internas">
-     <div class="site-map">
-        <a href="#"><div class="left"><p>Servicios</p></div></a>
-        <a href="#"><div class="right active-servicios"><p>Digitalización Documental</p></div></a>
-      </div>
-    	<h3 class="subtitulo">Servicios</h3>
-        <h1 class="titulo-principal">Digitalización Documental</h1>
-        <p class="texto-general">Contamos con equipos especializados en capturar imágenes de diversas dimensiones, provenientes de libros, periódicos, mapas, fotos, etc. Posteriormente se edita las imágenes escaneadas y se realiza un riguroso control de calidad para preservar la veracidad del material digitalizado, obteniendo así un producto final en los formatos JPG, TIF y PDF. Este servicio se extiende al público en general mediante un costo de acuerdo al material a digitalizar (tamaño, antigüedad, formato, calidad, etc.).</p>
-
-        <h3 class="subtitulo2">Material a digitalizar</h3>
-        <div class="contenedor-boxes-cuarto">
-        	<div class="catalogo-box cuarto-static">
-                 <div class="img-contenedor">
-                	<img src="resources/img/libros_circulo.png" alt="" class="img-cuadro">
-                </div>
-                <h2 class="titulo-cuadros">Libros</h2>
-                <p class="texto-cuadros">Libros que datan del siglo XIX, XX, XXI. De cualquier tamaño (A4, A3, A2) y grosor (1 cm, 2 cm, 5 cm, 10 cm, 12cm, etc.). Coordinar con Sala de Investigaciones.</p>
-            </div>
-
-             <div class="catalogo-box cuarto-static">
-                 <div class="img-contenedor">
-                	<img src="resources/img/periodicos_circulo.png" alt="" class="img-cuadro">
-                </div>
-                <h2 class="titulo-cuadros">Periódicos</h2>
-                <p class="texto-cuadros">Periódicos que datan del siglo XX, XXI. De cualquier tamaño (A4, A3, A2), grosor (1 cm, 2 cm, etc.) o grupos periodísticos (El Comercio, La República, El Peruano, Peru21, etc.). Coordinar con Hemeroteca.</p>
-            </div>
-
-             <div class="catalogo-box cuarto-static">
-                 <div class="img-contenedor">
-                	<img src="resources/img/mapas_circulo.png" alt="" class="img-cuadro">
-                </div>
-                <h2 class="titulo-cuadros">Mapas</h2>
-                <p class="texto-cuadros">De cualquier tamaño (A4, A3, A2, A1, A0), color (colores, escala grises, blanco y negro). Consultar en Mapoteca.</p>
-            </div>
-
-             <div class="catalogo-box cuarto-static">
-                 <div class="img-contenedor">
-                	<img src="resources/img/fotos_circulo.png" alt="" class="img-cuadro">
-                </div>
-                <h2 class="titulo-cuadros">Fotos</h2>
-                <p class="texto-cuadros">De cualquier tamaño (A4, A3, A2, A1, A0), color (colores, escala grises, blanco y negro). Coordinar con sala de Fotos y Afiches.</p>
-            </div>
-
-             <div class="catalogo-box cuarto-static">
-                 <div class="img-contenedor">
-                	<img src="resources/img/manuscritos_circulo.png" alt="" class="img-cuadro">
-                </div>
-                <h2 class="titulo-cuadros">Manuscritos</h2>
-                <p class="texto-cuadros">De cualquier tamaño (A4, A3, A2, A1, A0), color (colores, escala grises, blanco y negro). Coordinar con sala de Fotos y Afiches.</p>
-            </div>
-            <div class="catalogo-box cuarto-static">
-                <div class="img-contenedor">
-                 <img src="resources/img/partituras_circulo.png" alt="" class="img-cuadro">
-               </div>
-               <h2 class="titulo-cuadros">Partituras</h2>
-               <p class="texto-cuadros">De cualquier tamaño (A4, A3, A2, A1, A0), color (colores, escala grises, blanco y negro). Coordinar con sala de Fotos y Afiches.</p>
-           </div>
+    <main class="cd-main-content">
+        <div class="header-img triangulo-servicios" id="servicios-img">
         </div>
 
-        <div class="contenedor-grid">
-        	<h3 class="subtitulo-acenter">EQUIPO DE DIGITALIZACIÓN (ESCÁNER)</h3>
-          <div class="cuartos-alt">
-          	<aside>
-              <h1 class="cuartos-alt-titulo">Semiautomático</h1>
-              <a id="single_1" href="resources\img\semiautomatico-big.jpg" title="Escáner Semi Automático">
-            	<img src="resources\img\semiautomatico.jpg" alt="" /></a>
-            </aside>
-          </div>
-          <div class="cuartos-alt">
-          	<aside>
-              <h1 class="cuartos-alt-titulo">Planetario</h1>
-              <a id="single_1" href="resources\img\planetario-big.jpg" title="Escáner Planetario">
-            	<img src="resources\img\planetario.jpg" alt="" /></a>
-            </aside>
-          </div>
-          <div class="cuartos-alt">
-          	<aside>
-              <h1 class="cuartos-alt-titulo">Plano</h1>
-              <a id="single_1" href="resources\img\plano-big.jpg" title="Escáner Plano">
-            	<img src="resources\img\plano.jpg" alt="" /></a>
-            </aside>
-          </div>
-          <div class="cuartos-alt">
-          	<aside>
-              <h1 class="cuartos-alt-titulo">Multifuncional</h1>
-              <a id="single_1" href="resources\img\multifuncional-big.jpg" title="Escáner Multifuncional">
-            	<img src="resources\img\multifuncional.jpg" alt="" /></a>
-            </aside>
-          </div>
-        </div>
+        <div class="margen-internas">
+            <div class="site-map">
+                <a href="#">
+                    <div class="left">
+                        <p>Servicios</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="right active-servicios">
+                        <p>Digitalización Documental</p>
+                    </div>
+                </a>
+            </div>
+            <h3 class="subtitulo">Servicios</h3>
+            <h1 class="titulo-principal">Digitalización Documental</h1>
+            <p class="texto-general">Contamos con equipos especializados en capturar imágenes de diversas dimensiones, provenientes de libros, periódicos, mapas, fotos, etc. Posteriormente se edita las imágenes escaneadas y se realiza un riguroso control de calidad para preservar
+                la veracidad del material digitalizado, obteniendo así un producto final en los formatos JPG, TIF y PDF. Este servicio se extiende al público en general mediante un costo de acuerdo al material a digitalizar (tamaño, antigüedad, formato,
+                calidad, etc.).</p>
 
-        <div class="requisitos" id="requisitos">
-        	<h2 class="subtitulo-acenter">COSTOS DE DIGITALIZACIÓN</h2>
-          <table border="1" id="tabla-requisitos">
-            <tr>
-              <td>Documentos e impresos</td>
-              <td class="inside-table">
-                <table>
-                  <tr>
-                    <th>S.XX</th>
-                    <th>S.XIX</th>
-                    <th>S.XVIII</th>
-                    <th>S.XVII</th>
-                    <th>S.XVI</th>
-                  </tr>
-                  <tr class="table-precios">
-                    <td>S/.0.50</td>
-                    <td>S/.1.00</td>
-                    <td>S/.1.50</td>
-                    <td>S/.2.00</td>
-                    <td>S/.2.50</td>
-                  </tr>
+            <h3 class="subtitulo2">Material a digitalizar</h3>
+            <div class="contenedor-boxes-cuarto">
+                <div class="catalogo-box cuarto-static">
+                    <div class="img-contenedor">
+                        <img src="resources/img/libros_circulo.png" alt="" class="img-cuadro">
+                    </div>
+                    <h2 class="titulo-cuadros">Libros</h2>
+                    <p class="texto-cuadros">Libros que datan del siglo XIX, XX, XXI. De cualquier tamaño (A4, A3, A2) y grosor (1 cm, 2 cm, 5 cm, 10 cm, 12cm, etc.). Coordinar con Sala de Investigaciones.</p>
+                </div>
+
+                <div class="catalogo-box cuarto-static">
+                    <div class="img-contenedor">
+                        <img src="resources/img/periodicos_circulo.png" alt="" class="img-cuadro">
+                    </div>
+                    <h2 class="titulo-cuadros">Periódicos</h2>
+                    <p class="texto-cuadros">Periódicos que datan del siglo XX, XXI. De cualquier tamaño (A4, A3, A2), grosor (1 cm, 2 cm, etc.) o grupos periodísticos (El Comercio, La República, El Peruano, Peru21, etc.). Coordinar con Hemeroteca.</p>
+                </div>
+
+                <div class="catalogo-box cuarto-static">
+                    <div class="img-contenedor">
+                        <img src="resources/img/mapas_circulo.png" alt="" class="img-cuadro">
+                    </div>
+                    <h2 class="titulo-cuadros">Mapas</h2>
+                    <p class="texto-cuadros">De cualquier tamaño (A4, A3, A2, A1, A0), color (colores, escala grises, blanco y negro). Consultar en Mapoteca.</p>
+                </div>
+
+                <div class="catalogo-box cuarto-static">
+                    <div class="img-contenedor">
+                        <img src="resources/img/fotos_circulo.png" alt="" class="img-cuadro">
+                    </div>
+                    <h2 class="titulo-cuadros">Fotos</h2>
+                    <p class="texto-cuadros">De cualquier tamaño (A4, A3, A2, A1, A0), color (colores, escala grises, blanco y negro). Coordinar con sala de Fotos y Afiches.</p>
+                </div>
+
+                <div class="catalogo-box cuarto-static">
+                    <div class="img-contenedor">
+                        <img src="resources/img/manuscritos_circulo.png" alt="" class="img-cuadro">
+                    </div>
+                    <h2 class="titulo-cuadros">Manuscritos</h2>
+                    <p class="texto-cuadros">De cualquier tamaño (A4, A3, A2, A1, A0), color (colores, escala grises, blanco y negro). Coordinar con sala de Fotos y Afiches.</p>
+                </div>
+                <div class="catalogo-box cuarto-static">
+                    <div class="img-contenedor">
+                        <img src="resources/img/partituras_circulo.png" alt="" class="img-cuadro">
+                    </div>
+                    <h2 class="titulo-cuadros">Partituras</h2>
+                    <p class="texto-cuadros">De cualquier tamaño (A4, A3, A2, A1, A0), color (colores, escala grises, blanco y negro). Coordinar con sala de Fotos y Afiches.</p>
+                </div>
+            </div>
+
+            <div class="contenedor-grid">
+                <h3 class="subtitulo-acenter">EQUIPO DE DIGITALIZACIÓN (ESCÁNER)</h3>
+                <div class="cuartos-alt">
+                    <aside>
+                        <h1 class="cuartos-alt-titulo">Semiautomático</h1>
+                        <a id="single_1" href="resources\img\semiautomatico-big.jpg" title="Escáner Semi Automático">
+                            <img src="resources\img\semiautomatico.jpg" alt="" /></a>
+                    </aside>
+                </div>
+                <div class="cuartos-alt">
+                    <aside>
+                        <h1 class="cuartos-alt-titulo">Planetario</h1>
+                        <a id="single_1" href="resources\img\planetario-big.jpg" title="Escáner Planetario">
+                            <img src="resources\img\planetario.jpg" alt="" /></a>
+                    </aside>
+                </div>
+                <div class="cuartos-alt">
+                    <aside>
+                        <h1 class="cuartos-alt-titulo">Plano</h1>
+                        <a id="single_1" href="resources\img\plano-big.jpg" title="Escáner Plano">
+                            <img src="resources\img\plano.jpg" alt="" /></a>
+                    </aside>
+                </div>
+                <div class="cuartos-alt">
+                    <aside>
+                        <h1 class="cuartos-alt-titulo">Multifuncional</h1>
+                        <a id="single_1" href="resources\img\multifuncional-big.jpg" title="Escáner Multifuncional">
+                            <img src="resources\img\multifuncional.jpg" alt="" /></a>
+                    </aside>
+                </div>
+            </div>
+
+            <div class="requisitos" id="requisitos">
+                <h2 class="subtitulo-acenter">COSTOS DE DIGITALIZACIÓN</h2>
+                <table border="1" id="tabla-requisitos">
+                    <tr>
+                        <td>Documentos e impresos</td>
+                        <td class="inside-table">
+                            <table>
+                                <tr>
+                                    <th>S.XX</th>
+                                    <th>S.XIX</th>
+                                    <th>S.XVIII</th>
+                                    <th>S.XVII</th>
+                                    <th>S.XVI</th>
+                                </tr>
+                                <tr class="table-precios">
+                                    <td>S/.0.50</td>
+                                    <td>S/.1.00</td>
+                                    <td>S/.1.50</td>
+                                    <td>S/.2.00</td>
+                                    <td>S/.2.50</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Requisitos</td>
+                        <td>Visitante: DNI / Investigador: Carnet</td>
+                    </tr>
                 </table>
-              </td>
-            </tr>
-            <tr>
-              <td>Requisitos</td>
-              <td>Visitante: DNI / Investigador: Carnet</td>
-            </tr>
-          </table>
-          <div id="tabla-movil">
-            <table border="1">
-              <tr>
-                <td>Documentos e impresos</td>
-                <td class="inside-table">
-                  <table>
-                    <tr>
-                      <th>S.XX</th>
-                      <td>s/.0.50</td>
-                    </tr>
-                    <tr>
-                      <th>S.XIX</th>
-                      <td>s/.1.00</td>
-                    </tr>
-                    <tr>
-                      <th>S.XVIII</th>
-                      <td>s/.1.50</td>
-                    </tr>
-                    <tr>
-                      <th>S.XVII</th>
-                      <td>s/.2.00</td>
-                    </tr>
-                    <tr>
-                      <th>S.XVI</th>
-                      <td>s/.2.50</td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>Requisitos</td>
-                <td>Visitante: DNI / Investigador: Carnet</td>
-              </tr>
-            </table>
-          </div>
+                <div id="tabla-movil">
+                    <table border="1">
+                        <tr>
+                            <td>Documentos e impresos</td>
+                            <td class="inside-table">
+                                <table>
+                                    <tr>
+                                        <th>S.XX</th>
+                                        <td>s/.0.50</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S.XIX</th>
+                                        <td>s/.1.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S.XVIII</th>
+                                        <td>s/.1.50</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S.XVII</th>
+                                        <td>s/.2.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S.XVI</th>
+                                        <td>s/.2.50</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Requisitos</td>
+                            <td>Visitante: DNI / Investigador: Carnet</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-    </div>
 
-	<div class="footer-internas">
-      <div>
-        <div class="tercio">
-          <h2>¿Que hacemos?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sequi dolorem numquam ipsa perferendis placeat possimus, blanditiis quod cumque!</p>
-          <h2><a href="">Mapa de sitio >></a></h2>
+        <div class="footer-internas">
+            <div>
+                <div class="tercio">
+                    <h2>¿Que hacemos?</h2>
+                    <p>La Biblioteca Virtual organiza y gestiona acciones, programas y proyectos para la digitalización y difusión electrónica del patrimonio cultural documental y bibliográfico que custodia la Biblioteca Nacional del Perú, a fin de apoyar
+                        la formación integral de los miembros de la comunidad peruana y mundial.</p>
+                    <h2><a href="">Mapa de sitio >></a></h2>
+                </div>
+                <div class="tercio">
+                    <h2>Organismos</h2>
+                    <img src="resources/img/logo_bnp.png" />
+                    <img src="resources/img/logo_ministerio_cultura.jpg" />
+                    <img src="resources/img/logo_peru_progreso_para_todos.png" />
+                </div>
+                <div class="tercio">
+                    <a href="faq.html"><h2>Preguntas frecuentes</h2></a>
+                    <p class="footer-preguntas"><a href="faq.html">¿Qué es la Biblioteca Virtual?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Qué recursos tengo disponibles?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Cómo funciona el buscador de la BV?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Puedo descargar o imprimir los libros electrónicos del catálogo?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Dónde puedo contactarme para presentar un reclamo o sugerencia?</a></p>
+                </div>
+            </div>
         </div>
-        <div class="tercio">
-          <h2>Organismos</h2>
-          <img src="resources/img/logo_bnp.png"/>
-          <img src="resources/img/logo_ministerio_cultura.jpg"/>
-          <img src="resources/img/logo_peru_progreso_para_todos.png"/>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2016 Biblioteca Virtual de la Biblioteca Nacional del Perú</p>
         </div>
-        <div class="tercio">
-          <a href="faq.html"><h2>Preguntas frecuentes</h2></a>
-          <p class="footer-preguntas"><a href="faq.html">¿Qué se necesita para entrar a la Biblioteca Virtual?</a></p>
-          <p class="footer-preguntas"><a href="faq.html">¿Quién puede utilizar los servicios de la biblioteca?</a></p>
-          <p class="footer-preguntas"><a href="faq.html">¿Quiénes son los usuarios o lectores externos autorizados para utilizar los servicios de la biblioteca?</a></p>
-          <p class="footer-preguntas"><a href="faq.html">¿Cómo puedo hacer una donación?</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <p>Copyright &copy; 2016 Biblioteca Virtual de la Biblioteca Nacional del Perú</p>
-    </div>
-</main>
+    </main>
 
-<div class="cd-overlay"></div>
+    <div class="cd-overlay"></div>
 
-<!--
+    <!--
 -------------------------------------------------MENU Navegador  ----------------------------------------------------
 --->
-<nav class="cd-nav">
-    <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-        <li>
-            <a href="index.html">Inicio</a>
-        </li>
-        <li class="has-children">
-            <a href="#">Catálogo</a>
-            <ul class="cd-nav-gallery is-hidden" id="color-catalogo">
-                <li class="go-back"><a href="#">Menu</a></li>
-                <li>
-                    <a class="cd-nav-item" href="general.html">
-                        <img src="resources/img/catalago_general.png" alt="Product Image">
-                        <h3>General</h3>
-                        <p class="texto-menu">Accede a todo el material bibliográfico y audiovisual en formato digital.</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="cd-nav-item" href="documentos.html">
-                        <img src="resources/img/catalago_documentos.png" alt="Product Image">
-                        <h3>Documentos</h3>
-                        <p class="texto-menu">Libros, revistas, mapas y planos, folletos, partituras, cartas y manuscritos, etc.</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="cd-nav-item" href="multimedia.html">
-                        <img src="resources/img/catalago_multimedia.png" alt="Product Image">
-                        <h3>Multimedia</h3>
-                        <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.) y fotografías.</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="cd-nav-item" href="joyas.html">
-                        <img src="resources/img/img04.png" alt="Product Image">
-                        <h3>Joyas BNP</h3>
-                        <p class="texto-menu">39 documentos únicos inscritos en la Memoria del Mundo de la Unesco.</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="has-children">
-            <a href="#">Servicios</a>
-            <ul class="cd-nav-gallery is-hidden" id="color-servicios">
-                <li class="go-back"><a href="#">Menu</a></li>
-                <li class="li-doble">
-                    <a class="cd-nav-item" href="digitalizacion_documentos.html">
-                        <img src="resources/img/servicio_dig-documentos.png" alt="Product Image">
-                        <h3>Digitalización Documentos</h3>
-                        <p class="texto-menu">Del papel al soporte digital.</p>
-                    </a>
-                </li>
-                <li class="li-doble">
-                    <a class="cd-nav-item" href="digitalizacion_audiovisual.html">
-                        <img src="resources/img/servicio_dig-audiovisual.png" alt="Product Image">
-                        <h3>Digitalización Audiovisual</h3>
-                        <p class="texto-menu">De formatos analógicos a formatos multimedia.</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="has-children">
-            <a href="#">Eventos</a>
-            <ul class="cd-nav-gallery is-hidden" id="color-eventos">
-                <li class="go-back"><a href="#">Menu</a></li>
-                <li class="li-doble">
-                    <a class="cd-nav-item" href="conferencias.html">
-                        <img src="resources/img/evento_conferencias.png" alt="Product Image">
-                        <h3>Conferencias</h3>
-                        <p class="texto-menu">Seminarios, conversatorios, cursos, simposios, mesas redondas, conferencias magistrales, etc.</p>
-                    </a>
-                </li>
-                <li class="li-doble">
-                    <a class="cd-nav-item" href="exposiciones.html">
-                        <img src="resources/img/evento_exposiciones.png" alt="Product Image">
-                        <h3>Exposiciones</h3>
-                        <p class="texto-menu">Diversas exposiciones bibliográficas, históricas, artísticas, fotográficas, etc., llevadas a cabo en nuestras sedes.</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li><a href="novedades.html">Novedades</a></li>
-    </ul>
-    <!-- primary-nav -->
-</nav>
-<!--
+    <nav class="cd-nav">
+        <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="has-children">
+                <a href="#">Catálogo</a>
+                <ul class="cd-nav-gallery is-hidden" id="color-catalogo">
+                    <li class="go-back"><a href="#">Menu</a></li>
+                    <li>
+                        <a class="cd-nav-item" href="general.html">
+                            <img src="resources/img/catalago_general.png" alt="Product Image">
+                            <h3>General</h3>
+                            <p class="texto-menu">Accede a todo el material bibliográfico y audiovisual en formato digital.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cd-nav-item" href="documentos.html">
+                            <img src="resources/img/catalago_documentos.png" alt="Product Image">
+                            <h3>Documentos</h3>
+                            <p class="texto-menu">Libros, revistas, mapas y planos, folletos, partituras, cartas y manuscritos, etc.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cd-nav-item" href="multimedia.html">
+                            <img src="resources/img/catalago_multimedia.png" alt="Product Image">
+                            <h3>Multimedia</h3>
+                            <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.) y fotografías.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cd-nav-item" href="joyas.html">
+                            <img src="resources/img/img04.png" alt="Product Image">
+                            <h3>Joyas BNP</h3>
+                            <p class="texto-menu">39 documentos únicos inscritos en la Memoria del Mundo de la Unesco.</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <a href="#">Servicios</a>
+                <ul class="cd-nav-gallery is-hidden" id="color-servicios">
+                    <li class="go-back"><a href="#">Menu</a></li>
+                    <li class="li-doble">
+                        <a class="cd-nav-item" href="digitalizacion_documentos.html">
+                            <img src="resources/img/servicio_dig-documentos.png" alt="Product Image">
+                            <h3>Digitalización Documentos</h3>
+                            <p class="texto-menu">Del papel al soporte digital.</p>
+                        </a>
+                    </li>
+                    <li class="li-doble">
+                        <a class="cd-nav-item" href="digitalizacion_audiovisual.html">
+                            <img src="resources/img/servicio_dig-audiovisual.png" alt="Product Image">
+                            <h3>Digitalización Audiovisual</h3>
+                            <p class="texto-menu">De formatos analógicos a formatos multimedia.</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <a href="#">Eventos</a>
+                <ul class="cd-nav-gallery is-hidden" id="color-eventos">
+                    <li class="go-back"><a href="#">Menu</a></li>
+                    <li class="li-doble">
+                        <a class="cd-nav-item" href="conferencias.html">
+                            <img src="resources/img/evento_conferencias.png" alt="Product Image">
+                            <h3>Conferencias</h3>
+                            <p class="texto-menu">Seminarios, conversatorios, cursos, simposios, mesas redondas, conferencias magistrales, etc.</p>
+                        </a>
+                    </li>
+                    <li class="li-doble">
+                        <a class="cd-nav-item" href="exposiciones.html">
+                            <img src="resources/img/evento_exposiciones.png" alt="Product Image">
+                            <h3>Exposiciones</h3>
+                            <p class="texto-menu">Diversas exposiciones bibliográficas, históricas, artísticas, fotográficas, etc., llevadas a cabo en nuestras sedes.</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="novedades.html">Novedades</a></li>
+        </ul>
+        <!-- primary-nav -->
+    </nav>
+    <!--
 -------------------------------------------------FIN MENU Navegador  ----------------------------------------------------
 --->
 
 
 
 
-<!-- End Document
+    <!-- End Document
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 
 
 </body>
+
 </html>

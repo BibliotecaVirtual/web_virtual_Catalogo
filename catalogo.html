@@ -1,237 +1,358 @@
 <!DOCTYPE html>
 <html lang="es-PE">
+
 <head>
 
-<!-- Basic Page Needs
+    <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>Biblioteca Virtual</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
-<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="resources/img/icon.ico" type="image/ico">
 
-<!-- CSS
+    <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="resources/css/internas.css">
-    <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
-    <link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
+    <link rel="stylesheet" href="resources/css/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="resources/css/menu-style.css" />
+    <!-- Resource style -->
 
-<!-- Script
+    <!-- Script
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!--<script src="js/jquery-1.12.0.js"></script>-->
     <script src="resources/js/jquery.min.js"></script>
     <script src="resources/js/jquery-ui.min.js"></script>
     <script src="resources/js/jquery.mobile.custom.min.js"></script>
-    <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
-  	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
-  	<script src="resources/js/jquery.slimscroll.min.js"></script>
+    <script src="resources/js/main-menu.js"></script>
+    <!-- Resource jQuery JS del Menu-->
+    <script src="resources/js/modernizr.js"></script>
+    <!-- Modernizr para el Menu-->
+    <script src="resources/js/jquery.slimscroll.min.js"></script>
     <script src="resources/js/boton-filtro.js"></script>
     <script>
-      $(document).ready(function(){
-        $(".resultados-filtro").click(function(event){
-        var id = event.currentTarget.id;
-        $(".col-3").css({'background':'#005AA7'})
-        $(".flecha-filtros").css({'display':'none'})
-        $("#"+id+"_flecha").css({'display':'block'});
-})
-      })
+        $(document).ready(function() {
+            $(".resultados-filtro").click(function(event) {
+                var id = event.currentTarget.id;
+                $(".col-3").css({
+                    'background': '#005AA7'
+                })
+                $(".flecha-filtros").css({
+                    'display': 'none'
+                })
+                $("#" + id + "_flecha").css({
+                    'display': 'block'
+                });
+            })
+        })
     </script>
 </head>
+
 <body>
-  <div class="catalogo-search">
-    <div class="logo-bv">
-      <a href="index.html"></a>
-    </div>
-    <div class="searchBar-interno">
-      <form>
-        <input type="search" placeholder="Búsqueda multimedia..." class="searchBar-input">
-        <button type="submit" class="btn-search-interno" style="background: #0A61A8;">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="btn-lupa-interno" x="0" y="0" viewBox="0 0 630 630.6" xml:space="preserve" enable-background="new 0 0 630 630.6"><path fill="#fff" d="M262.8 2.8c-143.6 0-260 116.4-260 260s116.4 260 260 260 260-116.4 260-260S406.4 2.8 262.8 2.8zM262.8 456.8c-107.1 0-194-86.9-194-194s86.9-194 194-194 194 86.9 194 194S369.9 456.8 262.8 456.8zM610.2 529.4L496.5 416.6c0 0-11.4 21.5-34.2 46.5 -19.7 21.6-46.8 35.2-46.8 35.2l113.7 112.8c22.5 22.4 59 22.2 81.3-0.3C632.9 588.2 632.7 551.8 610.2 529.4z"/></svg>
-        </button>
-        </form>
-    </div>
-    <div class="comments">
-      <a href="#"><figure>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" height="30" id="Layer_1" version="1.1" viewBox="0 0 24 24" width="30" xml:space="preserve"><path fill="#005AA7" clip-rule="evenodd" d="M10.7 18.6l6.8 5.3C17.6 24 17.7 24 17.7 24c0.2 0 0.2-0.1 0.2-0.3v-5c0-0.4 0.2-0.6 0.5-0.6L21 18c2.2 0 3-1.1 3-2s0-13 0-14 -0.7-2-3-2H3C0.8 0 0 1 0 2s0 13 0 14 0.8 2 3 2h6C9 18 10.3 18 10.7 18.6z" fill-rule="evenodd"/></svg>
-        <figcaption>
-          <p>Comentarios</p>
-        </figcaption>
-      </figure></a>
-      <a href="#"><figure>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0" y="0" viewBox="0 0 24 24" width="30" xml:space="preserve" enable-background="new 0 0 24 24"><path fill="#005AA7" d="M12 0C5.4 0 0 5.4 0 12c0 6.6 5.4 12 12 12s12-5.4 12-12C24 5.4 18.6 0 12 0zM10 18c0-2 2.9-2 2.9 0S10 20 10 18zM12.7 12.7l-0.1 2c0 0.5-2.2 0.7-2.3 0l-0.1-2.6c0-0.6 0.2-1.2 0.9-1.2h0.1c1.9 0 2.9-2.3 1.5-3.7C12 6.6 10.9 6.6 10 6.9 9.7 7 8.4 7.8 8.3 7.2 7.7 4.9 10.2 4.6 12 4.7c2.3 0.2 4 1.8 4 4.1C16 10.9 14.7 12.5 12.7 12.7z"/></svg>
-        <figcaption>
-          <p>Ayuda</p>
-        </figcaption>
-      </figure></a>
-    </div>
-  </div>
-  <main class="contenido-catalogo">
-    <div class="container1">
-      <div class="col-1">
-        <div id="btnFiltros">
-          <span id="boton-filtros">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-filtros" x="0" y="0" width="32" height="32" viewBox="0 0 972 972" xml:space="preserve" enable-background="new 0 0 971.986 971.986"><path fill="#868686" d="M370.2 459.3c10.2 11.1 15.8 25.6 15.8 40.6v442c0 26.6 32.1 40.1 51.1 21.4l123.3-141.3c16.5-19.8 25.6-29.6 25.6-49.2V500c0-15 5.7-29.5 15.8-40.6L955.6 75.5c26.5-28.8 6.1-75.5-33.1-75.5h-873c-39.2 0-59.7 46.6-33.1 75.5L370.2 459.3z"/></svg>
-          </span>
+    <div class="catalogo-search">
+        <div class="logo-bv">
+            <a href="index.html"></a>
         </div>
-        <div>
-          <h3>Colecciones</h3>
-          <label><input type="checkbox" id="" value="">Todos</label><br>
-          <label><input type="checkbox" id="" value="">Ricardo Palma</label><br>
-          <label><input type="checkbox" id="" value="">Nicolas de Pierola</label><br>
-          <label><input type="checkbox" id="" value="">Hipolito Unanue</label><br>
-          <label><input type="checkbox" id="" value="">Pedro Zulen</label><br>
-          <label><input type="checkbox" id="" value="">F. Coronel Zegarra</label><br>
-          <label><input type="checkbox" id="" value="">Fondo Antiguo</label><br>
-          <label><input type="checkbox" id="" value="">Memoria del Mundo</label><br>
-          <label><input type="checkbox" id="" value="">Publicaciones BNP</label>
-        </div>
-        <div>
-          <h3>Materiales</h3>
-          <label><input type="checkbox" id="" value="">Todos</label><br>
-          <label><input type="checkbox" id="" value="">Libros</label><br>
-          <label><input type="checkbox" id="" value="">Publicaciones</label><br>
-          <label><input type="checkbox" id="" value="">Periodicas</label><br>
-          <label><input type="checkbox" id="" value="">Mapas y Planos</label><br>
-          <label><input type="checkbox" id="" value="">Folletos</label><br>
-          <label><input type="checkbox" id="" value="">Cartas y Manuscritos</label><br>
-          <label><input type="checkbox" id="" value="">Audios</label><br>
-          <label><input type="checkbox" id="" value="">Videos</label><br>
-          <label><input type="checkbox" id="" value="">Fotografia</label>
-        </div>
-        <div>
-          <h3>Lugares</h3>
-          <label><input type="checkbox" id="" value="">Todos</label><br>
-          <label><input type="checkbox" id="" value="">Peru</label><br>
-          <label><input type="checkbox" id="" value="">America</label><br>
-          <label><input type="checkbox" id="" value="">Europa</label><br>
-          <label><input type="checkbox" id="" value="">Asia</label>
-        </div>
-        <div>
-          <h3>Fechas</h3>
-          <label><input type="checkbox" id="" value="">Todos</label><br>
-          <label><input type="checkbox" id="" value="">Siglo XV</label><br>
-          <label><input type="checkbox" id="" value="">Siglo XVI</label><br>
-          <label><input type="checkbox" id="" value="">Siglo XVII</label><br>
-          <label><input type="checkbox" id="" value="">Siglo XVIII</label><br>
-          <label><input type="checkbox" id="" value="">Siglo XIX</label><br>
-          <label><input type="checkbox" id="" value="">Siglo XX</label>
-        </div>
-        <div>
-          <h3>Bibliotecas</h3>
-          <label><input type="checkbox" id="" value="">Todos</label><br>
-          <label><input type="checkbox" id="" value="">Biblioteca Nacional</label><br>
-          <label><input type="checkbox" id="" value="">Biblioteca Ricardo Palma</label><br>
-          <label><input type="checkbox" id="" value="">Biblioteca Jose de San Martin</label><br>
-          <label><input type="checkbox" id="" value="">Biblioteca</label><br>
-          <label><input type="checkbox" id="" value="">Biblioteca</label><br>
-          <label><input type="checkbox" id="" value="">Biblioteca</label>
-        </div>
-      </div>
-    </div>
-    <div class="container2">
-      <div class="filtros-overlay"></div>
-      <div class="col-2">
         <div class="searchBar-interno">
-          <form>
-            <input type="search" placeholder="Búsqueda multimedia..." class="searchBar-input">
-            <button type="submit" class="btn-search-interno" style="background: #0A61A8;">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="btn-lupa-interno" x="0" y="0" viewBox="0 0 630 630.6" xml:space="preserve" enable-background="new 0 0 630 630.6"><path fill="#fff" d="M262.8 2.8c-143.6 0-260 116.4-260 260s116.4 260 260 260 260-116.4 260-260S406.4 2.8 262.8 2.8zM262.8 456.8c-107.1 0-194-86.9-194-194s86.9-194 194-194 194 86.9 194 194S369.9 456.8 262.8 456.8zM610.2 529.4L496.5 416.6c0 0-11.4 21.5-34.2 46.5 -19.7 21.6-46.8 35.2-46.8 35.2l113.7 112.8c22.5 22.4 59 22.2 81.3-0.3C632.9 588.2 632.7 551.8 610.2 529.4z"/></svg>
-            </button>
+            <form>
+                <input type="search" placeholder="Búsqueda multimedia..." class="searchBar-input">
+                <button type="submit" class="btn-search-interno" style="background: #0A61A8;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="btn-lupa-interno" x="0" y="0" viewBox="0 0 630 630.6" xml:space="preserve" enable-background="new 0 0 630 630.6">
+                        <path fill="#fff" d="M262.8 2.8c-143.6 0-260 116.4-260 260s116.4 260 260 260 260-116.4 260-260S406.4 2.8 262.8 2.8zM262.8 456.8c-107.1 0-194-86.9-194-194s86.9-194 194-194 194 86.9 194 194S369.9 456.8 262.8 456.8zM610.2 529.4L496.5 416.6c0 0-11.4 21.5-34.2 46.5 -19.7 21.6-46.8 35.2-46.8 35.2l113.7 112.8c22.5 22.4 59 22.2 81.3-0.3C632.9 588.2 632.7 551.8 610.2 529.4z"
+                        />
+                    </svg>
+                </button>
             </form>
         </div>
-        <div class="orden-filtro">
-          <div class="resultados">
-            <p>5008 resultados</p>
-          </div>
-          <div class="orden">
-            <p>Ordenados por</p>
-            <select class="" name="">
-              <option value="titulo">Titulo</option>
-            </select>
-          </div>
-          <div class="forma">
-            <p>de forma</p>
-            <select class="" name="">
-              <option value="ascendente">Ascendente</option>
-              <option value="descendente">Descendente</option>
-            </select>
-          </div>
+        <div class="comments">
+            <a href="#">
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" height="30" id="Layer_1" version="1.1" viewBox="0 0 24 24" width="30" xml:space="preserve">
+                        <path fill="#005AA7" clip-rule="evenodd" d="M10.7 18.6l6.8 5.3C17.6 24 17.7 24 17.7 24c0.2 0 0.2-0.1 0.2-0.3v-5c0-0.4 0.2-0.6 0.5-0.6L21 18c2.2 0 3-1.1 3-2s0-13 0-14 -0.7-2-3-2H3C0.8 0 0 1 0 2s0 13 0 14 0.8 2 3 2h6C9 18 10.3 18 10.7 18.6z"
+                            fill-rule="evenodd" />
+                    </svg>
+                    <figcaption>
+                        <p>Comentarios</p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0" y="0" viewBox="0 0 24 24" width="30" xml:space="preserve" enable-background="new 0 0 24 24">
+                        <path fill="#005AA7" d="M12 0C5.4 0 0 5.4 0 12c0 6.6 5.4 12 12 12s12-5.4 12-12C24 5.4 18.6 0 12 0zM10 18c0-2 2.9-2 2.9 0S10 20 10 18zM12.7 12.7l-0.1 2c0 0.5-2.2 0.7-2.3 0l-0.1-2.6c0-0.6 0.2-1.2 0.9-1.2h0.1c1.9 0 2.9-2.3 1.5-3.7C12 6.6 10.9 6.6 10 6.9 9.7 7 8.4 7.8 8.3 7.2 7.7 4.9 10.2 4.6 12 4.7c2.3 0.2 4 1.8 4 4.1C16 10.9 14.7 12.5 12.7 12.7z"
+                        />
+                    </svg>
+                    <figcaption>
+                        <p>Ayuda</p>
+                    </figcaption>
+                </figure>
+            </a>
         </div>
-        <div id="LI_001" class="resultados-filtro" >
-          <div class="item-filtro">
-            <div>
-              <img src="resources\img\documentos.png" alt="" />
-              <div>
-                <h3>Biblioteca Nacional / Ubicacion / Distrito</h3>
-                <p><span>Este es el titulo del libro seleccionado</span></p>
-                <p>Palma, Ricardo</p>
-                <p><span>Editorial:</span> Biblioteca Nacional del Perú / Biblioteca Digital Andina</p>
-                <p><span>Material:</span> Libro</p>
-              </div>
-            </div>
-          </div>
-          <div class="flecha-filtros" id="LI_001_flecha"></div>
-        </div>
-        <div id="LI_002" class="resultados-filtro">
-          <div class="item-filtro">
-            <div>
-              <img src="resources\img\documentos.png" alt="" />
-              <div>
-                <h3>Biblioteca Nacional / Ubicacion / Distrito</h3>
-                <p><span>Este es el titulo del libro seleccionado</span></p>
-                <p>Palma, Ricardo</p>
-                <p><span>Editorial:</span> Biblioteca Nacional del Perú / Biblioteca Digital Andina</p>
-                <p><span>Material:</span> Libro</p>
-              </div>
-            </div>
-          </div>
-          <div class="flecha-filtros" id="LI_002_flecha"></div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div>
-          <a href="#"><p>Ver en linea</p></a>
-          <a href="#"><p>Recomendar</p></a>
-          <div>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0" y="0" viewBox="0 0 50 50" xml:space="preserve" enable-background="new 0 0 50 50"><style type="text/css">
-            	.redes-sociales{fill:#FFFFFF;}</style>
-              <path class="redes-sociales" d="M25 2.5C12.6 2.5 2.5 12.6 2.5 25S12.6 47.5 25 47.5 47.5 37.4 47.5 25 37.4 2.5 25 2.5zM34.1 21.3c0 0.2 0 0.4 0 0.6 0 6.2-4.7 13.2-13.2 13.2 -2.6 0-5.1-0.8-7.1-2.1 0.4 0.1 0.7 0.1 1.1 0.1 2.1 0 4.1-0.8 5.7-2 -2 0-3.7-1.4-4.3-3.2 0.3 0.1 0.6 0.1 0.9 0.1 0.4 0 0.8-0.1 1.2-0.2 -2.1-0.4-3.7-2.3-3.7-4.5v-0.1c0.6 0.4 1.3 0.6 2.1 0.6 -1.3-0.8-2.1-2.2-2.1-3.8 0-0.8 0.2-1.6 0.6-2.3 2.3 2.8 5.7 4.6 9.5 4.8 -0.1-0.4-0.1-0.7-0.1-1.1 0-2.5 2-4.6 4.6-4.6 1.4 0 2.6 0.6 3.4 1.5 1-0.2 2-0.6 2.9-1.1 -0.3 1.1-1 2-2 2.6 1-0.1 1.9-0.3 2.7-0.7C35.7 20 34.9 20.8 34.1 21.3z"/></svg></a>
-          </div>
-          <div>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0" y="0" viewBox="0 0 50 50" xml:space="preserve" enable-background="new 0 0 50 50"><style type="text/css">
-            	.redes-sociales{fill:#FFFFFF;}</style>
-              <path class="redes-sociales" d="M25 2.5C12.6 2.5 2.5 12.6 2.5 25S12.6 47.5 25 47.5 47.5 37.4 47.5 25 37.4 2.5 25 2.5zM30 21l-0.3 3.4h-3.5v11.7h-4.4V24.6h-2.3v-3.4h0.1 2.3v-2.3c0-1 0-2.5 0.7-3.5 0.8-1 1.8-1.7 3.6-1.7 2.9 0 4.2 0.4 4.2 0.4l-0.6 3.4c0 0-1-0.3-1.9-0.3 -0.9 0-1.7 0.3-1.7 1.2V21H30z"/></svg></a>
-          </div>
-        </div>
-        <div>
-          <p>Titulo:</p>
-          <p>Autor:</p>
-          <p>Publicacion:</p>
-          <p>Edicion:</p>
-          <p>Catalogo:</p>
-          <p>Titulo:</p>
-          <p>Autor:</p>
-          <p>Publicacion:</p>
-          <p>Edicion:</p>
-          <p>Catalogo:</p>
-        </div>
-        <div class="descripcion">
-          <h3>Descripción</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque maxime, vel consequuntur, ipsa corporis magni velit ratione tempore delectus provident temporibus ducimus optio officiis?<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio molestias hic, numquam dolorum incidunt quas.</p>
-        </div>
-      </div>
     </div>
-  </main>
+    <main class="contenido-catalogo">
+        <div class="container1">
+            <div class="col-1">
+                <div id="btnFiltros">
+                    <span id="boton-filtros">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-filtros" x="0" y="0" width="32" height="32" viewBox="0 0 972 972" xml:space="preserve" enable-background="new 0 0 971.986 971.986"><path fill="#868686" d="M370.2 459.3c10.2 11.1 15.8 25.6 15.8 40.6v442c0 26.6 32.1 40.1 51.1 21.4l123.3-141.3c16.5-19.8 25.6-29.6 25.6-49.2V500c0-15 5.7-29.5 15.8-40.6L955.6 75.5c26.5-28.8 6.1-75.5-33.1-75.5h-873c-39.2 0-59.7 46.6-33.1 75.5L370.2 459.3z"/></svg>
+          </span>
+                </div>
+                <div>
+                    <h3>Colecciones</h3>
+                    <label>
+                        <input type="checkbox" id="" value="">Todos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Ricardo Palma</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Nicolas de Pierola</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Hipolito Unanue</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Pedro Zulen</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">F. Coronel Zegarra</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Fondo Antiguo</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Memoria del Mundo</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Publicaciones BNP</label>
+                </div>
+                <div>
+                    <h3>Materiales</h3>
+                    <label>
+                        <input type="checkbox" id="" value="">Todos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Libros</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Publicaciones</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Periodicas</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Mapas y Planos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Folletos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Cartas y Manuscritos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Audios</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Videos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Fotografia</label>
+                </div>
+                <div>
+                    <h3>Lugares</h3>
+                    <label>
+                        <input type="checkbox" id="" value="">Todos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Peru</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">America</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Europa</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Asia</label>
+                </div>
+                <div>
+                    <h3>Fechas</h3>
+                    <label>
+                        <input type="checkbox" id="" value="">Todos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Siglo XV</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Siglo XVI</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Siglo XVII</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Siglo XVIII</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Siglo XIX</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Siglo XX</label>
+                </div>
+                <div>
+                    <h3>Bibliotecas</h3>
+                    <label>
+                        <input type="checkbox" id="" value="">Todos</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Biblioteca Nacional</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Biblioteca Ricardo Palma</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Biblioteca Jose de San Martin</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Biblioteca</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Biblioteca</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="" value="">Biblioteca</label>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="filtros-overlay"></div>
+            <div class="col-2">
+                <div class="searchBar-interno">
+                    <form>
+                        <input type="search" placeholder="Búsqueda multimedia..." class="searchBar-input">
+                        <button type="submit" class="btn-search-interno" style="background: #0A61A8;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="btn-lupa-interno" x="0" y="0" viewBox="0 0 630 630.6" xml:space="preserve" enable-background="new 0 0 630 630.6">
+                                <path fill="#fff" d="M262.8 2.8c-143.6 0-260 116.4-260 260s116.4 260 260 260 260-116.4 260-260S406.4 2.8 262.8 2.8zM262.8 456.8c-107.1 0-194-86.9-194-194s86.9-194 194-194 194 86.9 194 194S369.9 456.8 262.8 456.8zM610.2 529.4L496.5 416.6c0 0-11.4 21.5-34.2 46.5 -19.7 21.6-46.8 35.2-46.8 35.2l113.7 112.8c22.5 22.4 59 22.2 81.3-0.3C632.9 588.2 632.7 551.8 610.2 529.4z"
+                                />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="orden-filtro">
+                    <div class="resultados">
+                        <p>5008 resultados</p>
+                    </div>
+                    <div class="orden">
+                        <p>Ordenados por</p>
+                        <select class="" name="">
+                            <option value="titulo">Titulo</option>
+                        </select>
+                    </div>
+                    <div class="forma">
+                        <p>de forma</p>
+                        <select class="" name="">
+                            <option value="ascendente">Ascendente</option>
+                            <option value="descendente">Descendente</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="LI_001" class="resultados-filtro">
+                    <div class="item-filtro">
+                        <div>
+                            <img src="resources\img\documentos.png" alt="" />
+                            <div>
+                                <h3>Biblioteca Nacional / Ubicacion / Distrito</h3>
+                                <p><span>Este es el titulo del libro seleccionado</span></p>
+                                <p>Palma, Ricardo</p>
+                                <p><span>Editorial:</span> Biblioteca Nacional del Perú / Biblioteca Digital Andina</p>
+                                <p><span>Material:</span> Libro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flecha-filtros" id="LI_001_flecha"></div>
+                </div>
+                <div id="LI_002" class="resultados-filtro">
+                    <div class="item-filtro">
+                        <div>
+                            <img src="resources\img\documentos.png" alt="" />
+                            <div>
+                                <h3>Biblioteca Nacional / Ubicacion / Distrito</h3>
+                                <p><span>Este es el titulo del libro seleccionado</span></p>
+                                <p>Palma, Ricardo</p>
+                                <p><span>Editorial:</span> Biblioteca Nacional del Perú / Biblioteca Digital Andina</p>
+                                <p><span>Material:</span> Libro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flecha-filtros" id="LI_002_flecha"></div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div>
+                    <a href="#">
+                        <p>Ver en linea</p>
+                    </a>
+                    <a href="#">
+                        <p>Recomendar</p>
+                    </a>
+                    <div>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0" y="0" viewBox="0 0 50 50" xml:space="preserve" enable-background="new 0 0 50 50">
+                                <style type="text/css">
+                                    .redes-sociales {
+                                        fill: #FFFFFF;
+                                    }
+                                </style>
+                                <path class="redes-sociales" d="M25 2.5C12.6 2.5 2.5 12.6 2.5 25S12.6 47.5 25 47.5 47.5 37.4 47.5 25 37.4 2.5 25 2.5zM34.1 21.3c0 0.2 0 0.4 0 0.6 0 6.2-4.7 13.2-13.2 13.2 -2.6 0-5.1-0.8-7.1-2.1 0.4 0.1 0.7 0.1 1.1 0.1 2.1 0 4.1-0.8 5.7-2 -2 0-3.7-1.4-4.3-3.2 0.3 0.1 0.6 0.1 0.9 0.1 0.4 0 0.8-0.1 1.2-0.2 -2.1-0.4-3.7-2.3-3.7-4.5v-0.1c0.6 0.4 1.3 0.6 2.1 0.6 -1.3-0.8-2.1-2.2-2.1-3.8 0-0.8 0.2-1.6 0.6-2.3 2.3 2.8 5.7 4.6 9.5 4.8 -0.1-0.4-0.1-0.7-0.1-1.1 0-2.5 2-4.6 4.6-4.6 1.4 0 2.6 0.6 3.4 1.5 1-0.2 2-0.6 2.9-1.1 -0.3 1.1-1 2-2 2.6 1-0.1 1.9-0.3 2.7-0.7C35.7 20 34.9 20.8 34.1 21.3z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0" y="0" viewBox="0 0 50 50" xml:space="preserve" enable-background="new 0 0 50 50">
+                                <style type="text/css">
+                                    .redes-sociales {
+                                        fill: #FFFFFF;
+                                    }
+                                </style>
+                                <path class="redes-sociales" d="M25 2.5C12.6 2.5 2.5 12.6 2.5 25S12.6 47.5 25 47.5 47.5 37.4 47.5 25 37.4 2.5 25 2.5zM30 21l-0.3 3.4h-3.5v11.7h-4.4V24.6h-2.3v-3.4h0.1 2.3v-2.3c0-1 0-2.5 0.7-3.5 0.8-1 1.8-1.7 3.6-1.7 2.9 0 4.2 0.4 4.2 0.4l-0.6 3.4c0 0-1-0.3-1.9-0.3 -0.9 0-1.7 0.3-1.7 1.2V21H30z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p>Titulo:</p>
+                    <p>Autor:</p>
+                    <p>Publicacion:</p>
+                    <p>Edicion:</p>
+                    <p>Catalogo:</p>
+                    <p>Titulo:</p>
+                    <p>Autor:</p>
+                    <p>Publicacion:</p>
+                    <p>Edicion:</p>
+                    <p>Catalogo:</p>
+                </div>
+                <div class="descripcion">
+                    <h3>Descripción</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique atque maxime, vel consequuntur, ipsa corporis magni velit ratione tempore delectus provident temporibus ducimus optio officiis?
+                        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio molestias hic, numquam dolorum incidunt quas.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
-<!-- End Document
+    <!-- End Document
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 
 
 </body>
+
 </html>

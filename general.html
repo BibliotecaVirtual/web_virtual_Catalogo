@@ -1,355 +1,376 @@
 <!DOCTYPE html>
 <html lang="es-PE">
+
 <head>
 
-<!-- Basic Page Needs
+    <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>Biblioteca Virtual</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
-<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="icon" href="resources/img/icon.ico" type="image/ico">
 
 
-<!-- FONT
+    <!-- FONT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,400' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,400' rel='stylesheet' type='text/css' />
 
-<!-- CSS
+    <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="resources/css/internas.css">
-    <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
-    <link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
-    <link rel="stylesheet" href="resources/css/flickity.css" media="screen"/>
+    <link rel="stylesheet" href="resources/css/reset.css" />
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="resources/css/menu-style.css" />
+    <!-- Resource style -->
+    <link rel="stylesheet" href="resources/css/flickity.css" media="screen" />
 
-<!-- Script
+    <!-- Script
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!--<script src="js/jquery-1.12.0.js"></script>-->
     <script src="resources/js/jquery.min.js"></script>
     <script src="resources/js/jquery-ui.min.js"></script>
     <script src="resources/js/jquery.mobile.custom.min.js"></script>
-    <script src="resources/js/main-menu.js"></script> <!-- Resource jQuery JS del Menu-->
-  	<script src="resources/js/modernizr.js"></script> <!-- Modernizr para el Menu-->
-  	<script src="resources/js/jquery.slimscroll.min.js"></script>
+    <script src="resources/js/main-menu.js"></script>
+    <!-- Resource jQuery JS del Menu-->
+    <script src="resources/js/modernizr.js"></script>
+    <!-- Modernizr para el Menu-->
+    <script src="resources/js/jquery.slimscroll.min.js"></script>
     <script src="resources/js/flickity.pkgd.min.js"></script>
 </head>
+
 <body>
-  <script>
-  $(document).ready(function(){
-    $('.catalogo-general-carousel').flickity({
-      // options
-      cellAlign: 'left',
-      contain: true,
-      pageDots: false,
-      wrapAround: true,
-    });
-  });
-  </script>
+    <script>
+        $(document).ready(function() {
+            $('.catalogo-general-carousel').flickity({
+                // options
+                cellAlign: 'left',
+                contain: true,
+                pageDots: false,
+                wrapAround: true,
+            });
+        });
+    </script>
     <header class="cd-main-header">
         <a class="cd-logo" href="index.html"></a>
         <ul class="cd-header-buttons">
             <!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
             <li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
-        </ul> <!-- cd-header-buttons -->
+        </ul>
+        <!-- cd-header-buttons -->
     </header>
-<main class="cd-main-content">
-    <div class="header-img triangulo-general" id="general-img">
-    </div>
-    <div class="margen-internas">
-      <div class="site-map">
-        <a href="#"><div class="left"><p>Catálogo</p></div></a>
-        <a href="#"><div class="right active-general"><p>General</p></div></a>
-      </div>
-      <h3 class="subtitulo">Catálogo</h3>
-      <h1 class="titulo-principal">General</h1>
-      <div class="searchBar-interno">
-        <form>
-          <input type="search" placeholder="Búsqueda general..." class="searchBar-input">
-          <button type="submit" class="btn-search-interno" style="background: #0A61A8;">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="btn-lupa-interno" x="0" y="0" viewBox="0 0 630 630.6" xml:space="preserve" enable-background="new 0 0 630 630.6"><path fill="#fff" d="M262.8 2.8c-143.6 0-260 116.4-260 260s116.4 260 260 260 260-116.4 260-260S406.4 2.8 262.8 2.8zM262.8 456.8c-107.1 0-194-86.9-194-194s86.9-194 194-194 194 86.9 194 194S369.9 456.8 262.8 456.8zM610.2 529.4L496.5 416.6c0 0-11.4 21.5-34.2 46.5 -19.7 21.6-46.8 35.2-46.8 35.2l113.7 112.8c22.5 22.4 59 22.2 81.3-0.3C632.9 588.2 632.7 551.8 610.2 529.4z"/></svg>
-          </button>
-          </form>
-      </div>
-      <div class="texto-general">
-        <p>Consulta y accede a todo el material bibliográfico y audiovisual digitalizado disponible.</p>
-      </div>
-      <div>
-        <h1 class="subtitulo-bg">Los más vistos</h1>
-      </div>
+    <main class="cd-main-content">
+        <div class="header-img triangulo-general" id="general-img">
+        </div>
+        <div class="margen-internas">
+            <div class="site-map">
+                <a href="#">
+                    <div class="left">
+                        <p>Catálogo</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="right active-general">
+                        <p>General</p>
+                    </div>
+                </a>
+            </div>
+            <h3 class="subtitulo">Catálogo</h3>
+            <h1 class="titulo-principal">General</h1>
+            <div class="searchBar-interno">
+                <form>
+                    <input type="search" placeholder="Búsqueda general..." class="searchBar-input">
+                    <button type="submit" class="btn-search-interno" style="background: #0A61A8;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="btn-lupa-interno" x="0" y="0" viewBox="0 0 630 630.6" xml:space="preserve" enable-background="new 0 0 630 630.6">
+                            <path fill="#fff" d="M262.8 2.8c-143.6 0-260 116.4-260 260s116.4 260 260 260 260-116.4 260-260S406.4 2.8 262.8 2.8zM262.8 456.8c-107.1 0-194-86.9-194-194s86.9-194 194-194 194 86.9 194 194S369.9 456.8 262.8 456.8zM610.2 529.4L496.5 416.6c0 0-11.4 21.5-34.2 46.5 -19.7 21.6-46.8 35.2-46.8 35.2l113.7 112.8c22.5 22.4 59 22.2 81.3-0.3C632.9 588.2 632.7 551.8 610.2 529.4z"
+                            />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="texto-general">
+                <p>Consulta y accede a todo el material bibliográfico y audiovisual digitalizado disponible.</p>
+            </div>
+            <div>
+                <h1 class="subtitulo-bg">Los más vistos</h1>
+            </div>
 
-      <div class="catalogo-general-carousel">
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/fotografias_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/fotografias.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+            <div class="catalogo-general-carousel">
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/fotografias_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/fotografias.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/libros_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/libros.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/libros_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/libros.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/cartas_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/cartas.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/cartas_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/cartas.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/audios_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/audios.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/audios_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/audios.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/manuscritos_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/manuscritos.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/manuscritos_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/manuscritos.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/periodicos_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/periodicos.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/periodicos_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/periodicos.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/partituras_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/partituras.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/partituras_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/partituras.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/mapas_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/mapas.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/mapas_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/mapas.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/revistas_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/revistas.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/revistas_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/revistas.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="general-celda">
-          <figure class="effect-expand">
-            <img src="resources/img/videos_icono.png" alt="" class="icono-catalogo" />
-            <img src="resources/img/videos.jpg" alt="" />
-            <figcaption>
-              <div>
-                <div>
-                  <p>Refectorio escolar del Puente del Ejército</p>
+                <div class="general-celda">
+                    <figure class="effect-expand">
+                        <img src="resources/img/videos_icono.png" alt="" class="icono-catalogo" />
+                        <img src="resources/img/videos.jpg" alt="" />
+                        <figcaption>
+                            <div>
+                                <div>
+                                    <p>Refectorio escolar del Puente del Ejército</p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-              </div>
-              <a href="#"></a>
-            </figcaption>
-          </figure>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="footer-internas">
-      <div>
-        <div class="tercio">
-          <h2>¿Que hacemos?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sequi dolorem numquam ipsa perferendis placeat possimus, blanditiis quod cumque!</p>
-          <h2><a href="">Mapa de sitio >></a></h2>
+        <div class="footer-internas">
+            <div>
+                <div class="tercio">
+                    <h2>¿Que hacemos?</h2>
+                    <p>La Biblioteca Virtual organiza y gestiona acciones, programas y proyectos para la digitalización y difusión electrónica del patrimonio cultural documental y bibliográfico que custodia la Biblioteca Nacional del Perú, a fin de apoyar
+                        la formación integral de los miembros de la comunidad peruana y mundial.</p>
+                    <h2><a href="">Mapa de sitio >></a></h2>
+                </div>
+                <div class="tercio">
+                    <h2>Organismos</h2>
+                    <img src="resources/img/logo_bnp.png" />
+                    <img src="resources/img/logo_ministerio_cultura.jpg" />
+                    <img src="resources/img/logo_peru_progreso_para_todos.png" />
+                </div>
+                <div class="tercio">
+                    <a href="faq.html"><h2>Preguntas frecuentes</h2></a>
+                    <p class="footer-preguntas"><a href="faq.html">¿Qué es la Biblioteca Virtual?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Qué recursos tengo disponibles?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Cómo funciona el buscador de la BV?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Puedo descargar o imprimir los libros electrónicos del catálogo?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Dónde puedo contactarme para presentar un reclamo o sugerencia?</a></p>
+                </div>
+            </div>
         </div>
-        <div class="tercio">
-          <h2>Organismos</h2>
-          <img src="resources/img/logo_bnp.png"/>
-          <img src="resources/img/logo_ministerio_cultura.jpg"/>
-          <img src="resources/img/logo_peru_progreso_para_todos.png"/>
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2016 Biblioteca Virtual de la Biblioteca Nacional del Perú</p>
         </div>
-        <div class="tercio">
-          <a href="faq.html"><h2>Preguntas frecuentes</h2></a>
-          <p class="footer-preguntas"><a href="faq.html">¿Qué se necesita para entrar a la Biblioteca Virtual?</a></p>
-          <p class="footer-preguntas"><a href="faq.html">¿Quién puede utilizar los servicios de la biblioteca?</a></p>
-          <p class="footer-preguntas"><a href="faq.html">¿Quiénes son los usuarios o lectores externos autorizados para utilizar los servicios de la biblioteca?</a></p>
-          <p class="footer-preguntas"><a href="faq.html">¿Cómo puedo hacer una donación?</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <p>Copyright &copy; 2016 Biblioteca Virtual de la Biblioteca Nacional del Perú</p>
-    </div>
-</main>
+    </main>
 
-<div class="cd-overlay"></div>
+    <div class="cd-overlay"></div>
 
-<!--
+    <!--
 -------------------------------------------------MENU Navegador  ----------------------------------------------------
 --->
-<nav class="cd-nav">
-    <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-        <li>
-            <a href="index.html">Inicio</a>
-        </li>
-        <li class="has-children">
-            <a href="#">Catálogo</a>
-            <ul class="cd-nav-gallery is-hidden" id="color-catalogo">
-                <li class="go-back"><a href="#">Menu</a></li>
-                <li>
-                    <a class="cd-nav-item" href="general.html">
-                        <img src="resources/img/catalago_general.png" alt="Product Image">
-                        <h3>General</h3>
-                        <p class="texto-menu">Accede a todo el material bibliográfico y audiovisual en formato digital.</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="cd-nav-item" href="documentos.html">
-                        <img src="resources/img/catalago_documentos.png" alt="Product Image">
-                        <h3>Documentos</h3>
-                        <p class="texto-menu">Libros, revistas, mapas y planos, folletos, partituras, cartas y manuscritos, etc.</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="cd-nav-item" href="multimedia.html">
-                        <img src="resources/img/catalago_multimedia.png" alt="Product Image">
-                        <h3>Multimedia</h3>
-                        <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.) y fotografías.</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="cd-nav-item" href="joyas.html">
-                        <img src="resources/img/img04.png" alt="Product Image">
-                        <h3>Joyas BNP</h3>
-                        <p class="texto-menu">39 documentos únicos inscritos en la Memoria del Mundo de la Unesco.</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="has-children">
-            <a href="#">Servicios</a>
-            <ul class="cd-nav-gallery is-hidden" id="color-servicios">
-                <li class="go-back"><a href="#">Menu</a></li>
-                <li class="li-doble">
-                    <a class="cd-nav-item" href="digitalizacion_documentos.html">
-                        <img src="resources/img/servicio_dig-documentos.png" alt="Product Image">
-                        <h3>Digitalización Documentos</h3>
-                        <p class="texto-menu">Del papel al soporte digital.</p>
-                    </a>
-                </li>
-                <li class="li-doble">
-                    <a class="cd-nav-item" href="digitalizacion_audiovisual.html">
-                        <img src="resources/img/servicio_dig-audiovisual.png" alt="Product Image">
-                        <h3>Digitalización Audiovisual</h3>
-                        <p class="texto-menu">De formatos analógicos a formatos multimedia.</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="has-children">
-            <a href="#">Eventos</a>
-            <ul class="cd-nav-gallery is-hidden" id="color-eventos">
-                <li class="go-back"><a href="#">Menu</a></li>
-                <li class="li-doble">
-                    <a class="cd-nav-item" href="conferencias.html">
-                        <img src="resources/img/evento_conferencias.png" alt="Product Image">
-                        <h3>Conferencias</h3>
-                        <p class="texto-menu">Seminarios, conversatorios, cursos, simposios, mesas redondas, conferencias magistrales, etc.</p>
-                    </a>
-                </li>
-                <li class="li-doble">
-                    <a class="cd-nav-item" href="exposiciones.html">
-                        <img src="resources/img/evento_exposiciones.png" alt="Product Image">
-                        <h3>Exposiciones</h3>
-                        <p class="texto-menu">Diversas exposiciones bibliográficas, históricas, artísticas, fotográficas, etc., llevadas a cabo en nuestras sedes.</p>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li><a href="novedades.html">Novedades</a></li>
-    </ul>
-    <!-- primary-nav -->
-</nav>
-<!--
+    <nav class="cd-nav">
+        <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="has-children">
+                <a href="#">Catálogo</a>
+                <ul class="cd-nav-gallery is-hidden" id="color-catalogo">
+                    <li class="go-back"><a href="#">Menu</a></li>
+                    <li>
+                        <a class="cd-nav-item" href="general.html">
+                            <img src="resources/img/catalago_general.png" alt="Product Image">
+                            <h3>General</h3>
+                            <p class="texto-menu">Accede a todo el material bibliográfico y audiovisual en formato digital.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cd-nav-item" href="documentos.html">
+                            <img src="resources/img/catalago_documentos.png" alt="Product Image">
+                            <h3>Documentos</h3>
+                            <p class="texto-menu">Libros, revistas, mapas y planos, folletos, partituras, cartas y manuscritos, etc.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cd-nav-item" href="multimedia.html">
+                            <img src="resources/img/catalago_multimedia.png" alt="Product Image">
+                            <h3>Multimedia</h3>
+                            <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.) y fotografías.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cd-nav-item" href="joyas.html">
+                            <img src="resources/img/img04.png" alt="Product Image">
+                            <h3>Joyas BNP</h3>
+                            <p class="texto-menu">39 documentos únicos inscritos en la Memoria del Mundo de la Unesco.</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <a href="#">Servicios</a>
+                <ul class="cd-nav-gallery is-hidden" id="color-servicios">
+                    <li class="go-back"><a href="#">Menu</a></li>
+                    <li class="li-doble">
+                        <a class="cd-nav-item" href="digitalizacion_documentos.html">
+                            <img src="resources/img/servicio_dig-documentos.png" alt="Product Image">
+                            <h3>Digitalización Documentos</h3>
+                            <p class="texto-menu">Del papel al soporte digital.</p>
+                        </a>
+                    </li>
+                    <li class="li-doble">
+                        <a class="cd-nav-item" href="digitalizacion_audiovisual.html">
+                            <img src="resources/img/servicio_dig-audiovisual.png" alt="Product Image">
+                            <h3>Digitalización Audiovisual</h3>
+                            <p class="texto-menu">De formatos analógicos a formatos multimedia.</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <a href="#">Eventos</a>
+                <ul class="cd-nav-gallery is-hidden" id="color-eventos">
+                    <li class="go-back"><a href="#">Menu</a></li>
+                    <li class="li-doble">
+                        <a class="cd-nav-item" href="conferencias.html">
+                            <img src="resources/img/evento_conferencias.png" alt="Product Image">
+                            <h3>Conferencias</h3>
+                            <p class="texto-menu">Seminarios, conversatorios, cursos, simposios, mesas redondas, conferencias magistrales, etc.</p>
+                        </a>
+                    </li>
+                    <li class="li-doble">
+                        <a class="cd-nav-item" href="exposiciones.html">
+                            <img src="resources/img/evento_exposiciones.png" alt="Product Image">
+                            <h3>Exposiciones</h3>
+                            <p class="texto-menu">Diversas exposiciones bibliográficas, históricas, artísticas, fotográficas, etc., llevadas a cabo en nuestras sedes.</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="novedades.html">Novedades</a></li>
+        </ul>
+        <!-- primary-nav -->
+    </nav>
+    <!--
 -------------------------------------------------FIN MENU Navegador  ----------------------------------------------------
 --->
 
 
 
 
-<!-- End Document
+    <!-- End Document
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 
 
 </body>
+
 </html>
