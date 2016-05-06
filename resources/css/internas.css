@@ -2289,7 +2289,13 @@ FOOTER
 }
 
 .footer-preguntas {
-	padding: 0 !important;
+    padding: 0 0 3px 12px !important;
+}
+
+p.footer-preguntas::before {
+	content: "•";
+	position: absolute;
+	margin-left: -12px;
 }
 
 .footer-preguntas a {
