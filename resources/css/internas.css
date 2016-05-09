@@ -1241,6 +1241,103 @@ figure.effect-roxy:hover p {
 	transform: translate3d(0,0,0);
 }
 
+/****************************
+EFFECT CHICO
+******************************************/
+
+.figure-2013 {
+	background: #df7403 !important;
+}
+
+figure.effect-chico::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	background: #df7403;
+	bottom: 0;
+	opacity: 0.7;
+	transition: 0.2s;
+	transform: translateY(0);
+}
+
+figure.effect-chico figcaption>div {
+	width: 100%;
+	display: table;
+	height: 100%;
+}
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+	max-width: none;
+	/*width: 100%;*/
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/*figure.effect-chico figcaption {
+	padding: 3em;
+}*/
+
+figure.effect-chico figcaption::before {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	bottom: 15px;
+	left: 15px;
+	border: 2px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	opacity: 0;
+	transition: 0.35s;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+}
+
+figure.effect-chico p {
+	margin: 0 auto;
+	max-width: 200px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-chico:hover::after {
+	opacity: 0;
+	transition: 0.25s;
+	transform: translateY(20px);
+}
+
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p, figure.effect-chico:hover h2 {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+/*****************************************/
+
 @media only screen and (max-width: 1260px) {
 	.eventos-galeria {
 		max-width: 885px;
@@ -1504,8 +1601,9 @@ margin-left: 10px;
 
 .conferencia-head {
 	width: 100%;
-	margin-bottom: 50px;
 	clear: both;
+	margin: 0 auto 50px;
+	max-width: 880px;
 }
 
 .conferencia-head h1 {
@@ -1513,22 +1611,48 @@ margin-left: 10px;
   font-family: 'OpenSans Semibold';
   font-size: 2.1em;
   color: #005AA7;
-	padding: 20px;
+	padding: 20px 0;
+	/*margin-top: 20px;*/
+  margin: 20px 0 30px;
 }
 
 .conferencia-head img {
 	margin: 0 auto;
 	display: block;
 	float: left;
-    margin: 20px;
-	width: 220px;
+	width: 100%;
 }
 
-.titular{
-    width: 75%;
-    margin-left: 12.5%;	
+.conferencia-texto>img {
+	max-width: 250px;
+	min-width: 220px;
 }
 
+.titular {
+  width: 100%;
+}
+
+.conferencia-texto {
+	display: table;
+}
+
+.conferencia-texto>div {
+  padding: 0 20px;
+}
+
+.conferencia-texto p {
+	margin-bottom: 15px;
+}
+
+.conferencia-texto img, .conferencia-texto>div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.conferencia-texto>div img {
+	margin: 3px 15px 0 0;
+	max-width: 30px;
+}
 
 .right-conferencia .doble {
 	padding: 12px 50px;
