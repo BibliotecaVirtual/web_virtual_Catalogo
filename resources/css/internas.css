@@ -5,6 +5,10 @@
 ESTILOS GENERALES
 -------------------------------*/
 
+*:focus {
+	outline: none;
+}
+
 .margen-internas {
 	max-width: 1260px;
 	margin: 0 auto;
@@ -825,17 +829,23 @@ BODY
 
 .fechas {
 	display: inline-block;
-	padding: 3px 14px;
+	padding: 3px 14px !important;
 	border: 1px solid #005AA7;
-	border-radius: 20px;
 	font-family: 'OpenSans Regular';
 	color: #005AA7;
-	margin: 0 -5px 15px 10px;
+	background: none;
+	margin: 0 0 25px 5px;
 }
 
 .active-fechas{
 background: #005AA7;
 color: #fff;
+}
+
+.button-group {
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
 }
 
 /****** CAROUSEL *****/
@@ -1245,8 +1255,24 @@ figure.effect-roxy:hover p {
 EFFECT CHICO
 ******************************************/
 
-.figure-2013 {
+.figure-2013, figure.figure-2013::after {
 	background: #df7403 !important;
+}
+
+.figure-2014, figure.figure-2014::after {
+	background: #b80000 !important;
+}
+
+.figure-2015, figure.figure-2015::after {
+	background: #0d61c3 !important;
+}
+
+.figure-2016, figure.figure-2016::after {
+	background: #0e8808 !important;
+}
+
+.effect-chico {
+  height: 200px;
 }
 
 figure.effect-chico::after {
@@ -1254,7 +1280,6 @@ figure.effect-chico::after {
 	position: absolute;
 	width: 100%;
 	height: 20px;
-	background: #df7403;
 	bottom: 0;
 	opacity: 0.7;
 	transition: 0.2s;
@@ -1370,6 +1395,12 @@ figure.effect-chico:hover p, figure.effect-chico:hover h2 {
 	}
 }
 
+/*************************************/
+
+.grid-fillter{}
+
+
+
 /*
 BOXES CONTENT
 ----------------------------------*/
@@ -1449,17 +1480,34 @@ CONFERENCIAS
 	font-family: 'OpenSans Regular'
 }
 
+#filtros-conferencia-bg {
+	background: #fff;
+	width: 100%;
+	box-shadow: 1px 1px 7px rgba(23, 22, 22, 0.25);
+	position: absolute;
+  top: 0;
+  z-index: -2;
+	height: 5000px;
+}
+
+#conferencias-container-overfloW {
+	overflow: hidden;
+}
+
 .left-conferencia {
 	width: 20%;
 	float:left;
-	box-shadow: 1px 1px 7px rgba(23, 22, 22, 0.25);
-	background: #fff;
 	transform: translateX(0);
 }
 
-.left-conferencia .acc-selected, .left-conferencia #nested h3, .left-conferencia #acc h3 {
+.left-conferencia .acc-content ul li>h3::before {
+	content: '•';
+  margin-right: 8px;
+}
+
+.left-conferencia>ul>li>h3 {
 	font-family: 'CaviarDreams';
-    font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .left-conferencia ul li div div ul li div>h3{
@@ -1603,7 +1651,8 @@ margin-left: 10px;
 	width: 100%;
 	clear: both;
 	margin: 0 auto 50px;
-	max-width: 880px;
+	max-width: 9300px;
+  padding: 0 50px;
 }
 
 .conferencia-head h1 {
@@ -1742,12 +1791,17 @@ margin-left: 10px;
 	.right-conferencia .doble {
 		padding: 15px;
 	}
-	.conferencia-head img {
+	/*.conferencia-head img {
     padding: 0 15px;
+	}*/
+	#filtros-conferencia-bg {
+		display: none;
 	}
 	#filtros-conferencia {
-		transform: translateX(-225px);
-		-webkit-transform: translateX(-225px);
+	transform: translateX(-225px);
+	-webkit-transform: translateX(-225px);
+	box-shadow: 1px 1px 7px rgba(23, 22, 22, 0.25);
+	background: #fff;
 	}
 	#boton-filtros {
 		position: absolute;
@@ -2337,18 +2391,18 @@ FAQ
 #acc .acc-content {width:100%; padding:10px; border-top:none; background:#fff}
 
 #nested {width:100%; list-style:none; color:#797977; margin-bottom:15px}
-#nested h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff;}
+#nested h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff; font-family: 'OpenSans Light'; font-size: 1.1em;}
 #nested h3:hover {background:#F3F3F3;}
 #nested .acc-section {overflow:hidden; background:#fff}
 #nested .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#fff}
 /*#nested .acc-selected {background:#F3F3F3;}*/
 
-#nested2 {width:100%; list-style:none; color:#797977; margin-bottom:15px}
-#nested2 h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff;}
-#nested2 h3:hover {background:#F3F3F3;}
-#nested2 .acc-section {overflow:hidden; background:#fff}
-#nested2 .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#fff}
-#nested2 .acc-selected {background:#F3F3F3;}
+#nested2, #nested3, #nested4 {width:100%; list-style:none; color:#797977; margin-bottom:15px}
+#nested2 h3, #nested3 h3, #nested4 h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff; font-family: 'OpenSans Light'; font-size: 1.1em;}
+#nested2 h3:hover, #nested3 h3:hover, #nested4 h3:hover {background:#F3F3F3;}
+#nested2 .acc-section, #nested3 .acc-section, #nested4 .acc-section {overflow:hidden; background:#fff}
+#nested2 .acc-content, #nested3 .acc-content, #nested4 .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#fff}
+#nested2 .acc-selected, #nested3 .acc-selected, #nested4 .acc-selected {background:#F3F3F3;}
 
 .acc li{
     position: relative;
@@ -2457,6 +2511,8 @@ COPYRIGHT
 .footer-copyright {
 	background: #1a1c1f;
 	padding: 14px 0;
+	position: relative;
+	z-index: 15;
 }
 
 .footer-copyright p{
