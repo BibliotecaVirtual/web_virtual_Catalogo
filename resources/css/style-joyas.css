@@ -30,7 +30,8 @@ a {
 
 .left-img{
     width: 60%;
-    float: left;	
+    float: left;
+	height: calc(100vh - 180px);	
 }
 
 .right-text{
@@ -58,6 +59,7 @@ a {
     text-transform: uppercase;
     float: left;
     margin-left: 15px;
+	margin-top: 15px;
     border: 1px solid #fff;
 }
 .ver-mas:hover {
@@ -71,24 +73,44 @@ a {
 
 .sociales-joyas{
 float:right;
-margin-right: 15px;	
+margin-right: 100px;
+margin-top: 10px;	
+}
+
+.twitter{
+transform:translate(0);	
 }
 
 .textos-joyas{
     padding: 0 15px;
-	max-height: 420px;
+	max-height: calc(100vh - 260px);
     overflow: auto;
 	
 }
 
 .detalles-libro{
-    position: relative;
     height: 100px;
-    width: 14%;
+    width: 15%;
     /* margin: 0 auto; */
     background: #2C72AF;
     float: left;
-	color: #fff;	
+	color: #fff;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.arriba, .abajo{
+	height:50%;
+	display:table;
+	width:100%;	
+	}
+	
+.arriba p, .abajo p{
+	display:table-cell;
+	vertical-align:middle;
+	text-align: center;	
+	}
 }
 
 /* -------------------------------- 
@@ -111,15 +133,18 @@ Main Components
 .cd-horizontal-timeline.loaded {
   /* show the timeline after events position has been set (using JavaScript) */
   opacity: 1;
-  padding-top: 20px;
+  padding-top: 80px;
+  height: 100vh;
 }
 .cd-horizontal-timeline .timeline {
-  position: relative;
+  position: absolute;
     height: 100px;
     width: 85%;
     margin: 0 auto;
     background: #005AA7;
     float: left;
+	right: 0;
+	bottom: 0;
 }
 .cd-horizontal-timeline .events-wrapper {
   position: relative;
@@ -138,13 +163,11 @@ Main Components
 }
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
-  background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+  
 }
 .cd-horizontal-timeline .events-wrapper::after {
   right: 0;
-  background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+  
 }
 .cd-horizontal-timeline .events {
   /* this is the grey line/timeline */
@@ -258,7 +281,7 @@ Main Components
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
-    margin: 4em auto;
+   /* margin: 4em auto;*/
   }
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -339,6 +362,7 @@ Main Components
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
+  height: calc(100vh - 180px) !important;
 }
 .cd-horizontal-timeline .events-content li {
   position: absolute;
@@ -351,7 +375,7 @@ Main Components
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
-  padding: 0 5%;
+  padding: 0;
   opacity: 0;
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
@@ -412,6 +436,24 @@ Main Components
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
 }
+
+@media only screen and (max-width: 1170px) {
+.cd-horizontal-timeline.loaded {
+	padding-top: 50px;	
+	}
+
+.textos-joyas{
+    max-height: calc(100vh - 230px);
+    }
+.cd-horizontal-timeline .events-content {
+  height: calc(100vh - 150px) !important;
+	}
+	
+	  .left-img{
+    height: calc(100vh - 150px);	
+}
+}
+
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
     font-size: 4rem;
@@ -422,6 +464,39 @@ Main Components
   .cd-horizontal-timeline .events-content p {
     font-size: 1.5rem;
   }
+  
+}
+
+
+
+@media only screen and (max-width: 768px){
+.left-img {
+    width: 100%;
+    float: left;
+    height: auto;
+	}
+
+.right-text {
+    width: 100%;
+    float: right;
+	}
+	
+.cd-horizontal-timeline .events-content {
+  	overflow: auto;
+ 	}
+
+.textos-joyas {
+    overflow: hidden;
+	}
+	
+.detalles-libro {
+    display:none;
+	}
+
+.cd-horizontal-timeline .timeline {
+    width: 100%;
+    }
+
 }
 
 @-webkit-keyframes cd-enter-right {
@@ -499,4 +574,31 @@ Main Components
     -o-transform: translateX(0%);
     transform: translateX(0%);
   }
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #444;
+    margin: 0 auto;
+	overflow: hidden;
+}
+div img {
+  min-height: 100% !important;
+  min-width: 100% !important;
+  width: auto;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.royalSlider {
+  width: 100%;
+  height: 300px;
 }
