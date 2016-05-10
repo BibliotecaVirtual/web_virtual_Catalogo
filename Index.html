@@ -232,7 +232,15 @@ $(document).ready(function() {
     </div>
 
     <div class="section" id="section1">
-
+      <script>
+  			$('.galeria-carousel').flickity({
+  			  // options
+  			  cellAlign: 'left',
+  			  contain: true,
+  			  pageDots: false,
+  			  wrapAround: true,
+  			});
+      </script>
         <div class="margen-principal">
         	<div class="titulo-textos">
 				<h1 class="titulo">Destacados</h1>
@@ -542,14 +550,14 @@ $(document).ready(function() {
     <div class="section" id="section4">
 
     	<script>
-			$('.novedades-carousel').flickity({
-			  // options
-			  cellAlign: 'left',
-			  contain: true,
-			  pageDots: false,
-			  wrapAround: true,
-			});
-        </script>
+  			$('.novedades-carousel').flickity({
+  			  // options
+  			  cellAlign: 'left',
+  			  contain: true,
+  			  pageDots: false,
+  			  wrapAround: true,
+  			});
+      </script>
     	<div class="margen-principal">
             <div class="titulo-textos">
 				<h1 class="titulo">Novedades</h1>
