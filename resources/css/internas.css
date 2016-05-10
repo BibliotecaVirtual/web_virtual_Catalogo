@@ -5,6 +5,20 @@
 ESTILOS GENERALES
 -------------------------------*/
 
+.clearfix {
+  /*display: inline-block;*/
+  display: block;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  /*line-height: 0;
+  height: 0;*/
+}
+
 *:focus {
 	outline: none;
 }
@@ -830,12 +844,33 @@ BODY
 .fechas {
 	display: inline-block;
 	padding: 3px 14px !important;
-	border: 1px solid #005AA7;
+	border: 2px solid #005AA7;
 	font-family: 'OpenSans Regular';
 	color: #005AA7;
 	background: none;
 	margin: 0 0 25px 5px;
 }
+
+/* FECHAS BOTONES COLORES */
+
+#fecha2016 {
+	border: 2px solid #0e8808;
+	color: #0e8808;
+}
+#fecha2015 {
+	border: 2px solid #0d61c3;
+	color: #0d61c3;
+}
+#fecha2014 {
+	border: 2px solid #b80000;
+	color: #b80000;
+}
+#fecha2013 {
+	border: 2px solid #df7403;
+	color: #df7403;
+}
+
+/*************************/
 
 .active-fechas{
 background: #005AA7;
@@ -1481,7 +1516,7 @@ CONFERENCIAS
 }
 
 #filtros-conferencia-bg {
-	background: #fff;
+	background: #F7F7F7;
 	width: 100%;
 	box-shadow: 1px 1px 7px rgba(23, 22, 22, 0.25);
 	position: absolute;
@@ -1538,6 +1573,10 @@ color:#FFF;
 width: 70%;
 margin: 0 auto;
 padding: 45px 0 40px;
+}
+
+.box-comment .twitter-share-button img {
+  width: 50px;
 }
 
 .box-comment>div {
@@ -1651,7 +1690,7 @@ margin-left: 10px;
 	width: 100%;
 	clear: both;
 	margin: 0 auto 50px;
-	max-width: 9300px;
+	max-width: 980px;
   padding: 0 50px;
 }
 
@@ -1704,7 +1743,7 @@ margin-left: 10px;
 }
 
 .right-conferencia .doble {
-	padding: 12px 50px;
+	padding: 12px 30px;
 }
 
 .conferencia-cronograma {
@@ -1717,12 +1756,23 @@ margin-left: 10px;
   margin-bottom: 30px;
 }
 
+.row-cronograma {
+	width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
 .doble>div {
-	margin-bottom: 26px;
+	margin-bottom: 15px;
 }
 
 .doble>div>div {
 	overflow: hidden;
+}
+
+.right-conferencia .doble>div {
+	display: table;
+	width: 100%;
 }
 
 .doble>div img {
@@ -2387,22 +2437,22 @@ FAQ
 #acc {width:95%; list-style: inherit; list-style-position: inside; color:#797977; margin:0 auto 40px; font-size: 0.9em; font-family: 'OpenSans Regular';}
 #acc h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:pointer; background:#E2E3DF; padding-right: 30px; -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* Internet Explorer */ -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */ -webkit-user-select: none; /* Chrome, Safari, and Opera */ -webkit-touch-callout: none; /* Disable Android and iOS callouts*/}
 #acc h3:hover {background:#C7C7C4}
-#acc .acc-section {overflow:hidden; background:#fff}
-#acc .acc-content {width:100%; padding:10px; border-top:none; background:#fff}
+#acc .acc-section {overflow:hidden;}
+#acc .acc-content {width:100%; padding:10px; border-top:none;}
 
 #nested {width:100%; list-style:none; color:#797977; margin-bottom:15px}
-#nested h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff; font-family: 'OpenSans Light'; font-size: 1.1em;}
-#nested h3:hover {background:#F3F3F3;}
+#nested h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#F7F7F7; font-family: 'OpenSans Regular'; font-size: 1.1em; font-weight: 400;}
+#nested h3:hover {background:#e6e6e6;}
 #nested .acc-section {overflow:hidden; background:#fff}
 #nested .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#fff}
 /*#nested .acc-selected {background:#F3F3F3;}*/
 
 #nested2, #nested3, #nested4 {width:100%; list-style:none; color:#797977; margin-bottom:15px}
-#nested2 h3, #nested3 h3, #nested4 h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#fff; font-family: 'OpenSans Light'; font-size: 1.1em;}
-#nested2 h3:hover, #nested3 h3:hover, #nested4 h3:hover {background:#F3F3F3;}
+#nested2 h3, #nested3 h3, #nested4 h3 {width:100%; padding:6px 6px 8px; font-weight:bold; margin-top:5px; cursor:initial; background:#F7F7F7; font-family: 'OpenSans Regular'; font-size: 1.1em; font-weight: 400;}
+#nested2 h3:hover, #nested3 h3:hover, #nested4 h3:hover {background:#e6e6e6;}
 #nested2 .acc-section, #nested3 .acc-section, #nested4 .acc-section {overflow:hidden; background:#fff}
-#nested2 .acc-content, #nested3 .acc-content, #nested4 .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#fff}
-#nested2 .acc-selected, #nested3 .acc-selected, #nested4 .acc-selected {background:#F3F3F3;}
+#nested2 .acc-content, #nested3 .acc-content, #nested4 .acc-content {width:100%; padding:15px; border:1px solid #E8E6E6; border-top:none; background:#F7F7F7;}
+#nested2 .acc-selected, #nested3 .acc-selected, #nested4 .acc-selected {background:#e6e6e6;}
 
 .acc li{
     position: relative;

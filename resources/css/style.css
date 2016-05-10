@@ -109,7 +109,7 @@ vertical-align: middle;
 }
 #slide5 h1{
 position:absolute !important;
-transform:translateY(-50%);	
+transform:translateY(-50%);
 }
 
 
@@ -1242,6 +1242,21 @@ figure.effect-ruby:hover img {
 	font-size: 0.9em;
 	margin-left: 10px;
 
+}
+
+.footer-preguntas {
+    padding: 0 0 3px 12px !important;
+}
+
+p.footer-preguntas::before {
+	content: "•";
+	position: absolute;
+	margin-left: -12px;
+  color: #7d7d7d;
+}
+
+.footer-preguntas a {
+	color: #7d7d7d;
 }
 
 .margen-main-footer{
