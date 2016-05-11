@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es-PE">
 
 <head>
@@ -28,6 +27,8 @@
     <link rel="stylesheet" href="resources/css/reset.css" />
     <!-- CSS reset -->
     <link rel="stylesheet" href="resources/css/menu-style.css" />
+    <link rel="stylesheet" href="resources/css/masonry.css" />
+    <link rel="stylesheet" href="resources/css/flickity.css" media="screen"/>
     <!-- Resource style -->
 
 
@@ -42,6 +43,10 @@
     <script src="resources/js/modernizr.js"></script>
     <!-- Modernizr para el Menu-->
     <script src="resources/js/jquery.slimscroll.min.js"></script>
+    <script src="resources/js/jquery.masonry.min.js"></script>
+    <script src="resources/js/base.js"></script>
+    <script src="resources/js/flickity.pkgd.min.js"></script>
+
 </head>
 
 <body>
@@ -54,185 +59,180 @@
         <!-- cd-header-buttons -->
     </header>
     <main class="cd-main-content">
+      <script>
+        $(document).ready(function() {
+          $('.masonry-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true,
+            pageDots: false,
+            wrapAround: true,
+          });
+        });
+      </script>
         <div class="header-img triangulo-noticias" id="noticias-img">
         </div>
         <div class="margen-internas">
-            <!-- <div class="site-map">
-      <a href="#"><div class="left"><p>Eventos</p></div></a>
-      <a href="#"><div class="right active-eventos"><p>Noticias</p></div></a>
-    </div> -->
-            <!-- <h3 class="subtitulo">Eventos</h3> -->
             <h1 class="titulo-principal">Novedades</h1>
-            <!-- <div class="eventos-galeria">
-      <a href="#"><div class="fechas">
-        <p>2015</p>
-      </div></a>
-      <a href="#"><div class="fechas active-fechas">
-        <p>2016</p>
-      </div></a>
-    </div> -->
-            <div class="eventos-galeria">
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov1.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="conferencia_1.html?mes=02&conferencia=conferencia1">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov2.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov3.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov4.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov2.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov1.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov4.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov3.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov1.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov2.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov3.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov4.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov4.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov3.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov2.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
-                <figure class="effect-roxy">
-                    <img src="resources/img/nov1.jpg" alt="img15" />
-                    <figcaption>
-                        <h2>Titulo de la Conferencia<br><span>Fecha: 16/03/16</span></h2>
-                        <p>Expositores: Lorem ipsum.</p>
-                        <p>Organización: Lorem ipsum.</p>
-                        <p>Auditorio: Lorem ipsum.</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
+            <div class="w-inner content w-maestrias w-maestrias-home">
+                <div id="moEfect" class="masonry">
+                    <figure class="item mba masonry-brick">
+                        <img src="resources\img\nov2.jpg" alt="Bienvenido al MBA de la Pacífico">
+                        <figcaption class="det">
+                            <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                        </figcaption>
+                        <figure class="detail tleft">
+                            <figcaption class="detail-i">
+                                <p>Fecha: 22/04/2016</p>
+                                <h3>Título de la noticia</h3>
+                                <p>Resumen de la noticia
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam qui ducimus at, dolorum iusto.</p>
+                                <div class="w-btn"><a href="#" class="btn">Leer noticia</a></div>
+                            </figcaption>
+                            <a href="#" class="close"><span class="close2"></span><span class="close1"></span></a>
+                        </figure>
+                    </figure>
+                    <figure class="item mba masonry-brick">
+                        <img src="resources\img\nov2.jpg" alt="Bienvenido al MBA de la Pacífico">
+                        <figcaption class="det">
+                            <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                        </figcaption>
+                        <figure class="detail tleft">
+                            <figcaption class="detail-i">
+                                <p>Fecha: 22/04/2016</p>
+                                <h3>Título de la noticia</h3>
+                                <p>Resumen de la noticia
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam qui ducimus at, dolorum iusto.</p>
+                                <div class="w-btn"><a href="#" class="btn">Leer noticia</a></div>
+                            </figcaption>
+                            <a href="#" class="close"><span class="close2"></span><span class="close1"></span></a>
+                        </figure>
+                    </figure>
+                    <figure class="item mba masonry-brick">
+                        <img src="resources\img\nov2.jpg" alt="Bienvenido al MBA de la Pacífico">
+                        <figcaption class="det">
+                            <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                        </figcaption>
+                        <figure class="detail tleft">
+                            <figcaption class="detail-i">
+                                <p>Fecha: 22/04/2016</p>
+                                <h3>Título de la noticia</h3>
+                                <p>Resumen de la noticia
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam qui ducimus at, dolorum iusto.</p>
+                                <div class="w-btn"><a href="#" class="btn">Leer noticia</a></div>
+                            </figcaption>
+                            <a href="#" class="close"><span class="close2"></span><span class="close1"></span></a>
+                        </figure>
+                    </figure>
+                    <figure class="item mba masonry-brick">
+                        <img src="resources\img\nov2.jpg" alt="Bienvenido al MBA de la Pacífico">
+                        <figcaption class="det">
+                            <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                        </figcaption>
+                        <figure class="detail tleft">
+                            <figcaption class="detail-i">
+                                <p>Fecha: 22/04/2016</p>
+                                <h3>Título de la noticia</h3>
+                                <p>Resumen de la noticia
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam qui ducimus at, dolorum iusto.</p>
+                                <div class="w-btn"><a href="#" class="btn">Leer noticia</a></div>
+                            </figcaption>
+                            <a href="#" class="close"><span class="close2"></span><span class="close1"></span></a>
+                        </figure>
+                    </figure>
+                    <figure class="item mba masonry-brick">
+                        <img src="resources\img\nov2.jpg" alt="Bienvenido al MBA de la Pacífico">
+                        <figcaption class="det">
+                            <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                        </figcaption>
+                        <figure class="detail tleft">
+                            <figcaption class="detail-i">
+                                <p>Fecha: 22/04/2016</p>
+                                <h3>Título de la noticia</h3>
+                                <p>Resumen de la noticia
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam qui ducimus at, dolorum iusto.</p>
+                                <div class="w-btn"><a href="#" class="btn">Leer noticia</a></div>
+                            </figcaption>
+                            <a href="#" class="close"><span class="close2"></span><span class="close1"></span></a>
+                        </figure>
+                    </figure>
+                    <figure class="item mba masonry-brick">
+                        <img src="resources\img\nov2.jpg" alt="Bienvenido al MBA de la Pacífico">
+                        <figcaption class="det">
+                            <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                        </figcaption>
+                        <figure class="detail tleft">
+                            <figcaption class="detail-i">
+                                <p>Fecha: 22/04/2016</p>
+                                <h3>Título de la noticia</h3>
+                                <p>Resumen de la noticia
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam qui ducimus at, dolorum iusto.</p>
+                                <div class="w-btn"><a href="#" class="btn">Leer noticia</a></div>
+                            </figcaption>
+                            <a href="#" class="close"><span class="close2"></span><span class="close1"></span></a>
+                        </figure>
+                    </figure>
+                    <figure class="item mba masonry-brick">
+                        <img src="resources\img\nov2.jpg" alt="Bienvenido al MBA de la Pacífico">
+                        <figcaption class="det">
+                            <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                        </figcaption>
+                        <figure class="detail tleft">
+                            <figcaption class="detail-i">
+                                <p>Fecha: 22/04/2016</p>
+                                <h3>Título de la noticia</h3>
+                                <p>Resumen de la noticia
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam qui ducimus at, dolorum iusto.</p>
+                                <div class="w-btn"><a href="#" class="btn">Leer noticia</a></div>
+                            </figcaption>
+                            <a href="#" class="close"><span class="close2"></span><span class="close1"></span></a>
+                        </figure>
+                    </figure>
+                    <figure class="item mba masonry-brick">
+                        <img src="resources\img\nov2.jpg" alt="Bienvenido al MBA de la Pacífico">
+                        <figcaption class="det">
+                            <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                        </figcaption>
+                        <figure class="detail tleft">
+                            <figcaption class="detail-i">
+                                <p>Fecha: 22/04/2016</p>
+                                <h3>Título de la noticia</h3>
+                                <p>Resumen de la noticia
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quisquam qui ducimus at, dolorum iusto.</p>
+                                <div class="w-btn"><a href="#" class="btn">Leer noticia</a></div>
+                            </figcaption>
+                            <a href="#" class="close"><span class="close2"></span><span class="close1"></span></a>
+                        </figure>
+                    </figure>
+                </div>
             </div>
+            <div class="masonry-carousel">
+                <div class="masonry-celda">
+                    <div>
+                      <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                    </div>
+                    <img src="resources/img/nov2.jpg" alt=""/>
+                </div>
+                <div class="masonry-celda">
+                    <div>
+                      <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                    </div>
+                    <img src="resources/img/nov2.jpg" alt=""/>
+                </div>
+                <div class="masonry-celda">
+                    <div>
+                      <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                    </div>
+                    <img src="resources/img/nov2.jpg" alt=""/>
+                </div>
+                <div class="masonry-celda">
+                    <div>
+                      <h3>Título de la noticia<br><span>Fecha: 22/04/2016</span></h3>
+                    </div>
+                    <img src="resources/img/nov2.jpg" alt=""/>
+                </div>
+            </div>
+
         </div>
         <div class="footer-internas">
             <div>
@@ -249,10 +249,11 @@
                 </div>
                 <div class="tercio">
                     <a href="faq.html"><h2>Preguntas frecuentes</h2></a>
-                    <p class="footer-preguntas"><a href="faq.html">¿Qué se necesita para entrar a la Biblioteca Virtual?</a></p>
-                    <p class="footer-preguntas"><a href="faq.html">¿Quién puede utilizar los servicios de la biblioteca?</a></p>
-                    <p class="footer-preguntas"><a href="faq.html">¿Quiénes son los usuarios o lectores externos autorizados para utilizar los servicios de la biblioteca?</a></p>
-                    <p class="footer-preguntas"><a href="faq.html">¿Cómo puedo hacer una donación?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Qué es la Biblioteca Virtual?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Qué recursos tengo disponibles?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Cómo funciona el buscador de la BV?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Puedo descargar o imprimir los libros electrónicos del catálogo?</a></p>
+                    <p class="footer-preguntas"><a href="faq.html">¿Dónde puedo contactarme para presentar un reclamo o sugerencia?</a></p>
                 </div>
             </div>
         </div>
@@ -286,14 +287,14 @@
                         <a class="cd-nav-item" href="documentos.html">
                             <img src="resources/img/catalago_documentos.png" alt="Product Image">
                             <h3>Documentos</h3>
-                            <p class="texto-menu">Libros, revistas, mapas y planos, folletos, partituras, cartas y manuscritos, etc.</p>
+                            <p class="texto-menu">Libros, revistas, folletos, partituras, cartas y manuscritos, etc.</p>
                         </a>
                     </li>
                     <li>
                         <a class="cd-nav-item" href="multimedia.html">
                             <img src="resources/img/catalago_multimedia.png" alt="Product Image">
                             <h3>Multimedia</h3>
-                            <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.) y fotografías.</p>
+                            <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.), mapas y planos e imágenes.</p>
                         </a>
                     </li>
                     <li>

@@ -232,7 +232,15 @@ $(document).ready(function() {
     </div>
 
     <div class="section" id="section1">
-
+      <script>
+  			$('.galeria-carousel').flickity({
+  			  // options
+  			  cellAlign: 'left',
+  			  contain: true,
+  			  pageDots: false,
+  			  wrapAround: true,
+  			});
+      </script>
         <div class="margen-principal">
         	<div class="titulo-textos">
 				<h1 class="titulo">Destacados</h1>
@@ -542,14 +550,14 @@ $(document).ready(function() {
     <div class="section" id="section4">
 
     	<script>
-			$('.novedades-carousel').flickity({
-			  // options
-			  cellAlign: 'left',
-			  contain: true,
-			  pageDots: false,
-			  wrapAround: true,
-			});
-        </script>
+  			$('.novedades-carousel').flickity({
+  			  // options
+  			  cellAlign: 'left',
+  			  contain: true,
+  			  pageDots: false,
+  			  wrapAround: true,
+  			});
+      </script>
     	<div class="margen-principal">
             <div class="titulo-textos">
 				<h1 class="titulo">Novedades</h1>
@@ -753,14 +761,14 @@ $(document).ready(function() {
                     <a class="cd-nav-item" href="documentos.html">
                         <img src="resources/img/catalago_documentos.png" alt="Product Image">
                         <h3>Documentos</h3>
-                        <p class="texto-menu">Libros, revistas, mapas y planos, folletos, partituras, cartas y manuscritos, etc.</p>
+                        <p class="texto-menu">Libros, revistas, folletos, partituras, cartas y manuscritos, etc.</p>
                     </a>
                 </li>
                 <li>
                     <a class="cd-nav-item" href="multimedia.html">
                         <img src="resources/img/catalago_multimedia.png" alt="Product Image">
                         <h3>Multimedia</h3>
-                        <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.) y fotografías.</p>
+                        <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.), mapas y planos e imágenes.</p>
                     </a>
                 </li>
                 <li>
