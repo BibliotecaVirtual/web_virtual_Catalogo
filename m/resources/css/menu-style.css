@@ -166,7 +166,7 @@ Main components
   left: 5%;
   display: block;
   height: 67px;
-	background:url(../img/logotipo_bv.png);
+	background:url(../../../resources/img/logotipo_bv.png);
 	background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
@@ -184,7 +184,7 @@ Main components
   position: absolute;
   top: 5px;
   height: 40px;
-	background: url(../img/logotipo_mobile.png);
+	background: url(../../../resources/img/logotipo_mobile.png);
 	background-size: contain;
     background-repeat: no-repeat;
     width: 100px;
