@@ -531,9 +531,11 @@ ESTILOS GENERALES
 }
 
 .contenedor-boxes-cuarto .cuarto-static {
-	height: 265px;
+	height: 270px;
 }
-
+.contenedor-boxes-cuarto .cuarto-static2 {
+	height: 180px;
+}
 .searchBar-interno + .contenedor-boxes-cuarto .cuarto-static {
 	height: 285px;
 }

@@ -562,6 +562,10 @@ ESTILOS GENERALES
 	height: 290px;
 }
 
+.contenedor-boxes-cuarto .cuarto-static2 {
+	height: 180px;
+}
+
 .searchBar-interno + .contenedor-boxes-cuarto .cuarto-static {
 	height: 285px;
 }
