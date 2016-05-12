@@ -40,6 +40,16 @@ jQuery(document).ready(function($){
 				event.preventDefault();
 				timelineComponents['timelineEvents'].removeClass('selected');
 				$(this).addClass('selected');
+                                var indice = $(this).attr("data-indice");
+                                var tipo = $(this).attr("data-tipo");
+                                var texto = $(this).attr("data-texto");
+                                var paginas = $(this).attr("data-paginas");
+                                if(indice != undefined){
+                                    $("#dataindice").html(indice);
+                                    $("#datatipo").html(tipo);
+                                    $("#datatexto").html(texto);
+                                    $("#datapaginas").html(paginas);
+                                }
 				updateOlderEvents($(this));
 				updateFilling($(this), timelineComponents['fillingLine'], timelineTotWidth);
 				updateVisibleContent($(this), timelineComponents['eventsContent']);
