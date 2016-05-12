@@ -829,17 +829,45 @@ BODY
 
 .fechas {
 	display: inline-block;
-	padding: 3px 14px;
-	border: 1px solid #005AA7;
-	border-radius: 20px;
+	padding: 3px 14px !important;
+	border: 2px solid #005AA7;
 	font-family: 'OpenSans Regular';
 	color: #005AA7;
-	margin: 0 -5px 15px 10px;
+	background: none;
+	margin: 0 5px 10px 5px;
 }
+
+/* FECHAS BOTONES COLORES */
+
+#fecha2016 {
+	border: 2px solid #0e8808;
+	color: #0e8808;
+}
+#fecha2015 {
+	border: 2px solid #0d61c3;
+	color: #0d61c3;
+}
+#fecha2014 {
+	border: 2px solid #b80000;
+	color: #b80000;
+}
+#fecha2013 {
+	border: 2px solid #df7403;
+	color: #df7403;
+}
+
+/*************************/
 
 .active-fechas{
 background: #005AA7;
 color: #fff;
+}
+
+.button-group {
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 /****** CAROUSEL *****/
@@ -1196,6 +1224,102 @@ figure.effect-roxy:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+/****************************
+EFFECT CHICO
+******************************************/
+
+.figure-2013, figure.figure-2013::after {
+	background: #df7403 !important;
+}
+
+.figure-2014, figure.figure-2014::after {
+	background: #b80000 !important;
+}
+
+.figure-2015, figure.figure-2015::after {
+	background: #0d61c3 !important;
+}
+
+.figure-2016, figure.figure-2016::after {
+	background: #0e8808 !important;
+}
+
+.effect-chico {
+  height: 200px;
+}
+
+figure.effect-chico::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 180px;
+	top: 0;
+	opacity: 0.6;
+	transform: scale(1);
+	background: #000;
+	z-index: 3;
+}
+
+figure.effect-chico::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	bottom: 0;
+	opacity: 0.7;
+	transition: 0.2s;
+	transform: translateY(0);
+}
+
+figure.effect-chico figcaption>div {
+	width: 100%;
+	display: table;
+	height: 100%;
+	position: relative;
+	z-index: 4;
+}
+
+figure.effect-chico img {
+	max-width: none;
+	/*width: 100%;*/
+}
+
+figure.effect-chico figcaption::before {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	bottom: 15px;
+	left: 15px;
+	border: 2px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	transition: 0.35s;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+}
+
+figure.effect-chico p {
+	margin: 0 auto;
+	max-width: 200px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 @media only screen and (max-width: 1260px) {
