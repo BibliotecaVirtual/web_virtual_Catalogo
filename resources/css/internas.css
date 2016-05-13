@@ -1562,6 +1562,10 @@ text-transform: inherit;
 	width: 80%;
 	float:left;
 }
+.right-conferencia .site-map {
+  margin: 45px 50px;
+  float: left;
+}
 
 .conferencia-completa{
     font-weight: bold;
@@ -1575,9 +1579,8 @@ color:#FFF;
 }
 .box-comment {
 width: 100%;
-max-width: 980px;
 margin: 0 auto;
-padding: 45px 50px 40px 50px;
+padding: 45px 50px;
 }
 
 .box-comment>a {
@@ -1589,8 +1592,17 @@ padding: 45px 50px 40px 50px;
   width: 40px;
 }
 
-.box-comment>div {
-	float: right;
+.box-comment>* {
+	float: right !important;
+  margin-left: 10px !important;
+}
+
+#twitter-widget-0 {
+  margin-top: 2px;
+}
+
+#___plus_0 {
+  margin-top: 2px !important;
 }
 
 .button {
@@ -1860,6 +1872,7 @@ padding: 45px 50px 40px 50px;
 	-webkit-transform: translateX(-225px);
 	box-shadow: 1px 1px 7px rgba(23, 22, 22, 0.25);
 	background: #fff;
+  z-index: 99;
 	}
 	#boton-filtros {
 		position: absolute;
@@ -2036,7 +2049,7 @@ CATALOGO BUSQUEDA
 	margin: 0 6px;
 }
 
-.col-3 div {
+.col-3>div {
 	margin-bottom: 25px;
 }
 
@@ -2129,6 +2142,10 @@ CATALOGO BUSQUEDA
 .item-filtro h3 {
 	color: #EA5C00;
 	font-family: 'OpenSans Semibold';
+}
+
+.item-filtro div span {
+  font-family: 'OpenSans Semibold';
 }
 
 .col-2 .searchBar-interno {

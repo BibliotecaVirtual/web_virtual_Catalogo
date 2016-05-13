@@ -133,6 +133,29 @@
       }
     })
   </script>
+  <script>
+    $(document).ready(function() {
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+     
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+     
+      return t;
+    }(document, "script", "twitter-wjs"));
+  });
+  </script>
+  <script src="https://apis.google.com/js/platform.js" async defer>
+    {lang: 'es'}
+  </script>
 </head>
 
 <body>
@@ -301,20 +324,20 @@
       </div>
       <div class="right-conferencia">
         <div class="filtros-overlay"></div>
+        <div class="site-map">
+            <div class="left">
+                <p>Eventos</p>
+            </div>
+            <a href="conferencias.html">
+                <div class="right active-eventos">
+                    <p>Conferencias</p>
+                </div>
+            </a>
+        </div>
         <div class="box-comment">
-
-          <!-- Your Twitter shaber button code -->
-          <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-url="bvirtual.bnp.gob.pe" data-via="twitterdev" data-related="conferencias,twitter" data-hashtags="bv,conferencias" data-text="Conferencias de la Biblioteca Virtual">
-            <img src="resources\img\twitter-logo-small.png" alt="" />
-          </a>
-          <a href="#"><img src="resources\img\hyperlink-logo-small.png" alt="" /></a>
-          <a href="https://plus.google.com/share?url={URL}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="resources\img\google-logo-small.png" alt="Share on Google+"/></a>
-          <a href="mailto:example@tutorialspark.com"><img src="resources\img\email-logo-small.png" alt="" /></a>
-          <!-- Your Facebook share button code -->
-          <div>
-            <a href="#"><img src="resources\img\facebook-logo-small.png" alt=""></a>
-            <div class="fb-share-button" style="visibility: hidden; opacity: 0; position: absolute" data-layout="button"></div>
-          </div>
+          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
         </div>
 
         <div class="conferencia-head">
