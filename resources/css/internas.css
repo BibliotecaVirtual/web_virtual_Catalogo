@@ -1627,6 +1627,12 @@ CONFERENCIAS
   margin-left: 10px !important;
 }
 
+#novedades-content .box-comment {
+  width: 90%;
+  padding: 0px 0 15px;
+  border-bottom: 4px solid #E8E8E8;
+}
+
 #twitter-widget-0 {
   margin-top: 2px;
 }
@@ -1750,9 +1756,14 @@ CONFERENCIAS
   font-family: 'OpenSans Semibold';
   font-size: 2.1em;
   color: #005AA7;
-  padding: 20px 0;
-  /*margin-top: 20px;*/
-  margin: 20px 0 30px;
+  padding: 10px 0 20px;
+}
+
+.conferencia-head h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  color: #005AA7;
 }
 
 .conferencia-head img {
@@ -2386,33 +2397,32 @@ NOVEDADES
 
 .novedades-header {
   width: 90%;
-  height: 350px;
-  background: radial-gradient(circle at center, rgba(66, 139, 213, 1) 0%, rgba(0, 88, 196, 1) 100%);
   position: relative;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 30px;
   margin-bottom: 50px;
-}
-
-.novedades-header>img {
-  position: absolute;
-  top: 30px;
-  right: -40px;
+  margin-bottom: 50px;
+  border-bottom: 15px solid #005AA7;
+  padding-bottom: 30px;
 }
 
 .novedades-header>div {
-  width: 80%;
-  height: 80%;
-  background: #fff;
-  padding: 30px 340px 0 0;
+  width: 100%;
+  padding: 0 30% 0 0;
 }
 
 .novedades-header h1 {
   font-size: 2.5em;
   text-transform: uppercase;
-  font-family: 'OpenSans Semibold';
-  color: #8b8b8b;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  font-family: 'CaviarDreams';
+  font-weight: 700;
+  color: #005AA7;
+}
+
+.novedades-header h3 {
+  font-family: 'OpenSans Regular';
+  color: #696969;
+  margin-bottom: 15px;
 }
 
 .novedades-header + div {
@@ -2505,48 +2515,18 @@ NOVEDADES
 }
 
 .fb-container {
-  width: 90%;
+  width: 100%;
   max-height: 700px;
   overflow-y: scroll;
   margin: 0 auto;
+  padding-left: 30px;
 }
 
 
-/*MEDIA QUERIES NOTICIAS*/
+/*MEDIA QUERIES NOVEDADES*/
 
-@media only screen and (max-width:1080px) {
-  .novedades-header {
-    height: 320px;
-  }
-  .novedades-header>img {
-    width: 55%;
-  }
-  .novedades-header>div {
-    padding: 30px 279px 0 0;
-  }
-}
-
-@media only screen and (max-width:948px) {
-  .novedades-header>div {
-    padding: 30px 220px 0 0;
-  }
-}
 
 @media only screen and (max-width:865px) {
-  .novedades-header>div {
-    background: rgba(255, 255, 255, 0);
-    padding: 50px;
-    margin: 0 auto;
-  }
-  .novedades-header h1 {
-    color: #fff;
-  }
-  .novedades-header>img {
-    display: none;
-  }
-  .novedades-header {
-    height: auto;
-  }
   .col-60 {
     width: 100%;
     float: inherit;
@@ -2561,6 +2541,12 @@ NOVEDADES
   .ultimasNoticias-celda {
     width: 48%;
     margin: 0 3.5% 0 0;
+  }
+  .titulo-principal {
+    display: none;
+  }
+  .col-40 {
+    display: none;
   }
 }
 
