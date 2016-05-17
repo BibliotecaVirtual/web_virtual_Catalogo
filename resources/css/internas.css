@@ -238,9 +238,18 @@ ESTILOS GENERALES
   border-bottom: 8px solid #48A2A3;
 }
 
+#eventos-img-principal {
+  background: url(../img/CONFERENCIAS.jpg);
+  border-bottom: 8px solid #FF9900;
+}
+
 #eventos-img {
   background: url(../img/CONFERENCIAS.jpg);
   border-bottom: 8px solid #FF9900;
+}
+
+#eventos-img::after {
+  display: none;
 }
 
 #exposiciones-img {
@@ -1430,6 +1439,12 @@ figure.effect-chico:hover figcaption::before, figure.effect-chico:hover p, figur
   .eventos-galeria {
     max-width: 295px;
   }
+  #fecha2014 {
+    margin-left: 83px;
+  }
+  .button-group .button:first-child {
+    margin-left: 35px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1443,6 +1458,17 @@ figure.effect-chico:hover figcaption::before, figure.effect-chico:hover p, figur
   }
   figure.effect-roxy figcaption {
     padding: 2em 2.2em 1em;
+  }
+  #fecha2014 {
+    margin-left: 55px;
+  }
+  .button-group .button:first-child {
+    margin-left: 8px;
+  }
+  .grid-fillter figure {
+    max-width: 255px;
+    min-width: 255px;
+    max-height: 170px;
   }
 }
 
@@ -1924,8 +1950,8 @@ CONFERENCIAS
     display: none;
   }
   #filtros-conferencia {
-    transform: translateX(-225px);
-    -webkit-transform: translateX(-225px);
+    transform: translateX(-230px);
+    -webkit-transform: translateX(-230px);
     box-shadow: 1px 1px 7px rgba(23, 22, 22, 0.25);
     background: #fff;
     z-index: 99;
@@ -1933,17 +1959,17 @@ CONFERENCIAS
   #boton-filtros {
     position: absolute;
     z-index: 4;
-    left: 236px;
-    width: 40px;
-    height: 40px;
+    left: 250px;
+    width: 32px;
+    height: 32px;
     background: #cecece;
     top: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     cursor: pointer;
     display: inherit;
   }
   #svg-filtros {
-    margin: 7px auto;
+    margin: 2px auto;
     width: 55%;
     display: block;
   }
