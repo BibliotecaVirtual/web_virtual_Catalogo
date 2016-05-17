@@ -1610,7 +1610,8 @@ CONFERENCIAS
 .box-comment {
   width: 100%;
   margin: 0 auto;
-  padding: 45px 50px;
+  padding: 5px 50px;
+  margin-bottom: 70px;
 }
 
 .box-comment>a {
@@ -1753,14 +1754,17 @@ CONFERENCIAS
 
 .conferencia-head h1 {
   text-align: center;
-  font-family: 'OpenSans Semibold';
+  font-family: 'CaviarDreams';
+  font-weight: 700;
   font-size: 2.1em;
   color: #005AA7;
   padding: 10px 0 20px;
+  margin-bottom: 10px;
 }
 
 .conferencia-head h2 {
   text-align: center;
+  font-family: 'CaviarDreams';
   font-size: 1.5em;
   margin-bottom: 0;
   color: #005AA7;
@@ -1806,6 +1810,14 @@ CONFERENCIAS
 
 .right-conferencia .doble {
   padding: 12px 30px;
+}
+
+.right-conferencia .doble-100 {
+  width: 100%;
+}
+
+.right-conferencia .doble-100>div img {
+  min-width: 180px;
 }
 
 .conferencia-cronograma {
@@ -1884,6 +1896,9 @@ CONFERENCIAS
     width: 100%;
     margin-bottom: 15px;
   }
+  .doble-100>div img {
+    width: 30%;
+  }
   .doble>div>div {
     overflow: inherit;
   }
@@ -1919,8 +1934,8 @@ CONFERENCIAS
     position: absolute;
     z-index: 4;
     left: 236px;
-    width: 50px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     background: #cecece;
     top: 10px;
     border-radius: 10px;
@@ -1929,19 +1944,19 @@ CONFERENCIAS
   }
   #svg-filtros {
     margin: 7px auto;
-    width: 60%;
+    width: 55%;
     display: block;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .right-conferencia {
-    padding: 50px 15px;
+    padding: 50px 25px;
   }
   #filtros-conferencia {
     top: 75px;
   }
-  .conferencia-texto img {
+  .conferencia-texto>img {
     display: none;
   }
   #filtros-conferencia {
@@ -1950,8 +1965,34 @@ CONFERENCIAS
   .subtitulo {
     margin: 20px 0 20px 0;
   }
+  .conferencia-head h1 {
+    font-size: 1.6em;
+  }
+  .conferencia-head {
+    padding: 30px 10px 0;
+  }
+  .row-cronograma {
+    padding: 0;
+  }
+  .box-comment {
+     padding: 0;
+    margin-bottom: 90px;
+    margin-top: 55px;
+  }
 }
 
+@media only screen and (max-width: 480px) {
+  .right-conferencia .doble{
+    width: 100%;
+    padding: 15px 5px;
+  }
+  .row-cronograma {
+    padding: 0 10px;
+  }
+  .right-conferencia .doble-100>div img {
+    width: 100%;
+  }
+}
 
 /*
 CATALOGO BUSQUEDA
@@ -2720,6 +2761,10 @@ FAQ
 .h3-conferencia {
   font-family: 'OpenSans Regular';
   font-weight: bold;
+}
+
+.h3-conferencia-selected {
+  background: #e6e6e6 !important;
 }
 
 .lista-conferencia {
