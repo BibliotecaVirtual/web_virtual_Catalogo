@@ -2833,7 +2833,12 @@ FOOTER
 }
 
 .footer-internas .tercio h2, .tercio p {
+<<<<<<< HEAD
+	padding: 6px 0;
+	padding-bottom: 10px;
+=======
   padding: 6px 0;
+>>>>>>> 4ea42071627412e4cd86706aa95bf58c1b7db802
 }
 
 .tercio img {
@@ -2871,6 +2876,12 @@ p.footer-preguntas::before {
   }
 }
 
+<<<<<<< HEAD
+.tercio .footer-preguntas:nth-child(2) {
+margin-top:5px;	
+}
+=======
+>>>>>>> 4ea42071627412e4cd86706aa95bf58c1b7db802
 
 /*
 COPYRIGHT
