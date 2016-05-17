@@ -2583,6 +2583,7 @@ FOOTER
 
 .footer-internas .tercio h2, .tercio p {
 	padding: 6px 0;
+	padding-bottom: 10px;
 }
 
 .tercio img {
@@ -2618,6 +2619,10 @@ p.footer-preguntas::before {
 	.tercio {
 		width: 100%;
 	}
+}
+
+.tercio .footer-preguntas:nth-child(2) {
+margin-top:5px;	
 }
 
 /*

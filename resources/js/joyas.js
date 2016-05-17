@@ -1,4 +1,7 @@
 jQuery(document).ready(function($){
+    var urlInicial = window.location.href;
+    console.log(urlInicial);
+    var locationHref = "joyas.html";
 	var timelines = $('.cd-horizontal-timeline'),
 		eventsMinDistance = 60;
 
@@ -45,6 +48,7 @@ jQuery(document).ready(function($){
                                 var texto = $(this).attr("data-texto");
                                 var paginas = $(this).attr("data-paginas");
                                 if(indice != undefined){
+                                    window.location.href = locationHref + "#" + indice;
                                     $("#dataindice").html(indice);
                                     $("#datatipo").html(tipo);
                                     $("#datatexto").html(texto);
@@ -99,6 +103,18 @@ jQuery(document).ready(function($){
 			updateVisibleContent(newEvent, timelineComponents['eventsContent']);
 			newEvent.addClass('selected');
 			selectedDate.removeClass('selected');
+                        
+                        var indice = newEvent.attr("data-indice");
+                        var tipo = newEvent.attr("data-tipo");
+                        var texto = newEvent.attr("data-texto");
+                        var paginas = newEvent.attr("data-paginas");
+                        if(indice != undefined){
+                            window.location.href = locationHref + "#" + indice;
+                            $("#dataindice").html(indice);
+                            $("#datatipo").html(tipo);
+                            $("#datatexto").html(texto);
+                            $("#datapaginas").html(paginas);
+                        }
 			updateOlderEvents(newEvent);
 			updateTimelinePosition(string, newEvent, timelineComponents);
 		}
@@ -275,4 +291,8 @@ jQuery(document).ready(function($){
 		//check if mobile or desktop device
 		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
+        var indiceInicial = urlInicial.split("#");
+    if(indiceInicial.length==2){
+        document.querySelectorAll('[data-indice~="'+indiceInicial[1]+'"]')[0].click()
+    }
 });

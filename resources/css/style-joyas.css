@@ -42,7 +42,7 @@ a {
 .ver-online{
     background: #005AA7;
     height: 55px;
-    margin-bottom: 15px;	
+    margin-bottom: 5px;	
 }
 
 .ver-mas {
@@ -73,8 +73,9 @@ a {
 
 .sociales-joyas{
 float:right;
-margin-right: 100px;
-margin-top: 10px;	
+margin-right: 15px;
+margin-top: 10px;
+width: 270px;	
 }
 
 .twitter{
@@ -433,8 +434,14 @@ Main Components
   font-size: 1.4rem;
   color: #959595;
 }
+
+.cd-horizontal-timeline .events-content .right-text .site-map .left p, .cd-horizontal-timeline .events-content .right-text .site-map .right p {
+  font-size: 1.4rem;
+  color: #FFF;
+}
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
+      width: 100%;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -452,6 +459,11 @@ Main Components
 	  .left-img{
     height: calc(100vh - 150px);	
 }
+
+.ver-online {
+    height: 80px;
+    margin-bottom: 10px;
+}
 }
 
 @media only screen and (min-width: 768px) {
@@ -463,7 +475,7 @@ Main Components
   }
   .cd-horizontal-timeline .events-content p {
     font-size: 1.5rem;
-  }
+	}
   
 }
 
@@ -608,4 +620,126 @@ div img {
 .royalSlider {
   width: 100%;
   height: 300px;
+}
+
+/*.sitemap{
+	color: #FFF;
+    float: left;
+    height:100%;	
+	}
+	
+.sitemap-child{
+	float: left;
+    display: table;
+    height: 100%;
+    width: 80px;	
+	}
+	
+.catalogo{
+	display: table-cell;
+    vertical-align: middle;
+    background: #B5B7BA;
+    text-align: center;	
+	}
+	
+.joyas{
+	display: table-cell;
+    vertical-align: middle;
+    background: #096FC7;
+    text-align: center;	
+}*/
+
+/*
+SITE MAP
+------------------------------------*/
+
+.site-map {
+	margin: 0vw 0 10px;
+    position: relative;
+    width: 100%;
+    background: #FFF;
+    height: 35px;
+}
+
+.site-map div {
+	float: left;
+	padding: 5px 11px 5px 19px;
+	color: #fff;
+	position: relative;
+	font-family: 'OpenSans Regular';
+	font-size: 0.8em;
+}
+
+.site-map .left {
+	background: #a4a4a4;
+}
+
+.site-map .left::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 14px 0 14px 8px;
+	border-color: transparent transparent transparent #A4A4A4;
+	position: absolute;
+	top: 0;
+	right: -8px;
+	z-index: 2;
+}
+
+.site-map .right::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 14px 0 14px 8px;
+	position: absolute;
+	top: 0;
+	right: -8px;
+	z-index: 2;
+}
+
+.active-general {
+	background: #0A61A8;
+}
+
+.active-general::after {
+	border-color: transparent transparent transparent #0A61A8;
+}
+
+.active-servicios {
+	background: #017604;
+}
+
+.active-servicios::after {
+	border-color: transparent transparent transparent #017604;
+}
+
+.active-eventos {
+	background: #FF9900;
+}
+
+.active-eventos::after {
+	border-color: transparent transparent transparent #FF9900;
+}
+
+.active-novedades {
+	background: #b06caf;
+}
+
+.active-novedades::after {
+	border-color: transparent transparent transparent #b06caf;
+}
+
+.active-faq {
+	background: #48A2A3;
+}
+
+.active-faq::after {
+	border-color: transparent transparent transparent #48A2A3;
+}
+
+.ub {
+    width: 270px !important;
+    padding-top: 10px;
 }
