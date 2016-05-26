@@ -9,14 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <!-- Facebook META
-        -------------------------------------------------- -->
-        <meta property="og:url"           content="http://bvirtual.bnp.gob.pe" />
-        <meta property="og:type"          content="articulo" />
-        <meta property="og:title"         content="Joyas Biblioteca Virtual" />
-        <meta property="og:description"   content="Quiero compartir esta Joya" />
-        <meta property="og:location"   	  content="Peru" />
-
+        
         <!-- Mobile Specific Metas
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -34,7 +27,7 @@
         <link rel="stylesheet" href="resources/css/reset.css"/> <!-- CSS reset -->
         <link rel="stylesheet" href="resources/css/reset-joyas.css"> <!-- CSS reset -->
         <link rel="stylesheet" href="resources/css/menu-style.css"/> <!-- Resource style -->
-
+		
         <!-- Script
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <script src="resources/js/jquery.min.js"></script>
@@ -49,12 +42,21 @@
         <link href="resources/css/royalslider.css" rel="stylesheet"/>
         <link href="resources/css/rs-universal.css" rel="stylesheet"/>
         
-        <script src="https://apis.google.com/js/platform.js" async defer>
-        {lang: 'es'}
+        <!-- Google+ Inserta esta etiqueta en la sección "head" o justo antes de la etiqueta "body" de cierre. -->
+		<script src="https://apis.google.com/js/platform.js" async defer>
+          {lang: 'es'}
         </script>
-
-
-    </head>
+            
+            <script>
+			 $(document).ready(function(){
+				 $('.social-toggle').on('click', function() {
+			  $(this).next().toggleClass('open-menu');
+			});
+				 });
+        	</script>
+            
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </head>
     <body>
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
@@ -70,6 +72,38 @@
 
         <main class="cd-main-content">
 
+            <div class="share-button">
+                <a style="cursor:pointer;" class="social-toggle">
+                	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="share-button" class="share-button" width="512" height="512" viewBox="0 0 512 512">
+					<path d="M420 18.4h-328.1c-40.7 0-73.6 32.9-73.6 73.6v328.1c0 40.7 33 73.6 73.6 73.6h328.1c40.6 0 73.6-32.9 73.6-73.6v-328.1c0-40.6-33-73.5-73.6-73.5zM381.9 441c-47.9 0-86.7-38.8-86.7-86.6 0-2.6 0.2-5 0.4-7.6l-156.7-65.4c-8.8 4.4-18.8 6.9-29.3 6.9-36.5 0-66.1-29.6-66.1-66 0-36.5 29.6-66 66.1-66 17.4 0 33.3 6.9 45.1 17.9l112.5-59.7c1.5-0.8 3.1-1.4 4.6-2 4.7-23.7 25.5-41.5 50.6-41.5 28.5 0 51.5 23.1 51.5 51.5 0 28.5-23.1 51.5-51.5 51.5-14.9 0-28.3-6.4-37.8-16.6l-109.4 58c0.2 2.2 0.3 4.4 0.3 6.7 0 2.4-0.1 4.8-0.4 7.2l147.6 61.6c15.5-14.5 36.2-23.4 59.1-23.4 47.8 0 86.6 38.8 86.6 86.7 0 47.8-38.7 86.6-86.6 86.6zM162.4 224.1l12.7 5.3c0.3-2.4 0.4-4.8 0.4-7.2 0-2.3-0.1-4.5-0.3-6.7l-14.8 7.9c0.7 0.3 1.4 0.4 2.1 0.7z"/></svg>
+                </a>
+                
+                <div class="social-networks">
+                  <ul>
+                    <li class="social-twitter">
+                        <!-- Your Twitter shaber button code -->
+                        <a href="https://twitter.com/share" 
+                            class="twitter-share-button" 
+                            data-lang="es" 
+                            data-size="large" 
+                            data-hashtags="BVirtual,joyas,bnp" 
+                            data-text="Joyas de la Biblioteca Virtual">
+                            Twittear</a>
+							
+                    </li>
+                    <li class="social-facebook">
+                    	<!-- Your Facebook share button code -->
+                        <div class="fb-share-button" data-layout="box_count" data-mobile-iframe="true"></div>
+                    </li>
+                    <li class="social-gplus">
+                    	<!-- Inserta esta etiqueta donde quieras que aparezca Botón Compartir. -->
+						<div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60"></div>
+                    </li>
+                  </ul>
+                </div>
+   			</div>   
+          
+                   
             <section class="cd-horizontal-timeline">
                 <div class="events-content">
                     <ol>
@@ -77,47 +111,26 @@
                             <aside class="left-img">
                                 <div id="gallery-1" class="royalSlider rsUni galeria">
                                     <a class="rsImg" data-rsbigimg="resources/img/joyas/1.jpg" href="resources/img/joyas/1.jpg" data-rsw="400" data-rsh="500">
-                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/1.jpg"></a>
+                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/1.jpg"/></a>
 
                                     <a class="rsImg" data-rsbigimg="resources/img/joyas/6.jpg" href="resources/img/joyas/6.jpg" data-rsw="632" data-rsh="500">
-                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/6.jpg"></a>
+                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/6.jpg"/></a>
 
                                     <a class="rsImg" data-rsbigimg="resources/img/joyas/3.jpg" href="resources/img/joyas/3.jpg" data-rsw="336" data-rsh="500">
-                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/3.jpg"></a>
+                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/3.jpg"/></a>
 
                                     <a class="rsImg" data-rsbigimg="resources/img/joyas/4.jpg" href="resources/img/joyas/4.jpg" data-rsw="417" data-rsh="500">
-                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/4.jpg"></a>
+                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/4.jpg"/></a>
 
                                     <a class="rsImg" data-rsbigimg="resources/img/joyas/5.jpg" href="resources/img/joyas/5.jpg" data-rsw="601" data-rsh="500">
-                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/5.jpg"></a>
+                                        <img width="96" height="72" class="rsTmb" src="resources/img/joyas/5.jpg"/></a>
                                 </div>
                             </aside>
 
                             <aside class="right-text">
                                 <div class="ver-online">
-									
-                                    <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-lang="es"
-                                           data-size="default"
-                                           data-related="joyas,twitter"
-                                           data-hashtags="bvirtual,joyasBV"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-
-                                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
-
+									<a href="http://bvirtual.bnp.gob.pe/bnp/faces/pdf/memoria/1/index.html" target="_blank" class="ver-mas">ver en linea</a>
+                                    
                                 </div>
                                 <div class="site-map">
                                     <a href="#">
@@ -132,7 +145,7 @@
                                     </a>
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
-                                    <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
+                                    <strong style="font-weight:bold">Título:</strong> Doctrina christiana, y catecismo para instrvccion de los indios, y de las de mas per∫onas, que han de ∫er en∫eñadas en nue∫tra ∫ancta fé : con vn confessionario, y otras cosas nece∫∫arias.<br/>
                                     <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
                                     <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
                                     <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
@@ -164,25 +177,8 @@
                             <aside class="right-text">
                                 <div class="ver-online">
 
-                                    <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="bv,joyas"
-                                           data-text="Conferencias de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
-
+                                    <a href="http://bvirtual.bnp.gob.pe/bnp/faces/pdf/memoria/2/index.html" target="_blank" class="ver-mas">ver en linea</a>
+                                    
                                 </div>
                                 <div class="site-map">
                                     <a href="#">
@@ -196,12 +192,21 @@
                                         </div>
                                     </a>
                                 </div>
-                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
-                                    <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
-                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
-                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
-                                    <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
-                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</p>
+                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> III Concilio Limense<br/>
+                                    <strong style="font-weight:bold">Título:</strong> Tercero cathecismo y exposición de la doctrina christiana, por sermones para que los curas y otros ministros prediquen y enseñen a los Yndios y a las demas personas conforme a lo que en el sancto Concilio Prouincial de Lima proueyo. <br/>
+                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Ciudad de los Reyes: Impreso por Antonio Ricardo, 1585<br/>
+                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> 215 p. <br/>
+                                    <strong style="font-weight:bold">Código asignado:</strong> <br/>
+                                    <strong style="font-weight:bold">Otros ejemplares en la BNP:</strong> Fondo Antiguo- Caja Fuerte: 4000003608<br/>Fondo Antiguo- Caja Fuerte: 4000003609<br/>Fondo Antiguo- Caja Fuerte: 4000003610<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares:</strong> Bib. Central- PUCP: X3 27<br/>
+Bib. Nacional de España: R/39016(3)<br/>
+Yale University: Fzh K288 C278<br/>
+Biblioteca Nacional de Chile: 000064653<br/>		
+New Mexico State University: <br/>
+
+                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>En el periodo comprendido entre 1582 y 1583 se realizó en Lima el Tercer Concilio Provincial de Lima, convocada por Felipe II y Toribio de Mogrovejo, segundo arzobispo de Lima. El tercer concilio establecía las normas, según las cuales los sacerdotes misioneros y auxiliares debían de enseñar la fe cristiana en los idiomas originarios. Se dictaron leyes para regular la actividad pastoral y se publicaron adicionalmente tres libros de instrucción religiosa para el uso en las parroquias indígenas, en quechua y aimara, que a su vez debían ser repartidas por todo el arzobispado. Estos libros fueron: La Doctrina christiana y catecismo para instrucción de indios, publicada en 1584; Confessionario para los curas de indios, publicada en 1585; y por ultimo Tercero catecismo y exposición de la doctrina christiana por sermones, publicado también en 1585; este último  versa en torno a la manera en que se debe enseñar y predicar a los indios; presenta 31 sermones divididos en series que tratan sobre los misterios de la fe, la penitencia interior, los sacramentos, los mandamientos y oraciones, etc.(Vargas Ugarte, 1953, p. 13 entrada 3). El principal asesor de las publicitaciones fue el sacerdote jesuita José de Acosta, quien a su vez seria coautor de las publicaciones (Vargas Ugarte, 1954, pp. 88-95). El Concilio Provincial  celebrado por el arzobispo Diego Antonio de Parada en el año 1772, mando una nueva edición que salió en el año 1773, pero solo en quechua; esta misma edición fue reproducida en Paris en el año 1866. (Medina, 1958, p. 30 entrada 3). Estos impresos fueron llevados por Acosta a Salamanca y se encontraban en la biblioteca de la Real  Academia de la Historia de Madrid. <br/>
+									<strong style="font-weight:bold">Descripción física y estado de conservación:</strong> <br/>
+</p>
                             </aside>
 
                         </li>
@@ -230,25 +235,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Conferencias de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                    
                                 </div>
                                 
                                 <div class="site-map">
@@ -264,12 +251,12 @@
                                     </a>
                                 </div>
                                 
-                                <div class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
+                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
                                     <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
                                     <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
                                     <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
-                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</div>
+                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</p>
                             </aside>
 
                         </li>
@@ -298,24 +285,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Conferencias de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
+                                   
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -352,24 +322,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
+                                    
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -406,32 +359,25 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                    
                                 </div>
-                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
-                                    <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
-                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
-                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
-                                    <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
-                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</p>
+                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Belveder, Juan de<br/>
+                                    <strong style="font-weight:bold">Título:</strong> Libro general de las redvciones de plata, y oro de diferentes leyes y pesos, de menor à mayor cantidad, y de sus interesses à tanto por ciento, con otras reglas, y auisos muy necessarios para estos Reynos del Piru. Compvesto por Ioan de Belveder, natvral dela villa de Tahuste, enel Reyno de Aragon. Dirigido al doctor Ioan Rvyz de Prado, inquisidor apostolico destos Reynos del Piru…<br/>
+                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Lima: por Antonio Ricardi, 1597.<br/>
+                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> [8], 195 f.<br/>
+                                    <strong style="font-weight:bold">Código asignado:</strong> 4000003657<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares en la BNP:</strong> NO<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares:</strong> Bib. Daniel Cosío Villegas – El Colegio de México: 332.4985 B454l<br/>
+Biblioteca Nacional de España: R/4506<br/>
+Instituto de Cooperación Iberoamericana de la Agencia Española de Cooperación Internacional: 3Gr-7820<br/>
+Biblioteca Nacional de Maestros (Argentina): SA Sala del Tesoro ST 1-6<br/>
+                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Libro general de las redvciones de plata, y oro de diferentes leyes y pesos, de menor à mayor cantidad, y de sus interesses à tanto por ciento, con otras reglas, y auisos muy necessarios para estos Reynos del Piru. Compvesto por Ioan de Belveder, natvral dela villa de Tahuste, enel Reyno de Aragon. Dirigido al doctor Ioan Rvyz de Prado, inquisidor apostolico destos Reynos del Piru…
+Belveder, Juan de.
+Este manual de aritmética práctica, creado para facilitar las cuentas de los mercaderes, de los oficiales reales y de la población en general durante el siglo XVI peruano, pertenece al grupo de primeros títulos impresos en suelo americano, con la peculiaridad de no tratar temas religiosos puesto que la razón principal de instalar la imprenta en el Nuevo Mundo fue la evangelizar y catequizar. 
+El libro del aragonés Juan de Belveder, asentado en Lima desde 1584 para dedicarse a actividades comerciales, podría dividirse en tres secciones: la primera, dedicada al ensayo de los metales y a los pesos y finezas del oro y la plata; la segunda y más extensa, que contiene tablas de conversión y cálculos sobre los derechos que pagaban mercaderías y metales; y la tercera, que ofrece las reglas aritméticas empleadas en el diseño de las tablas y 42 problemas referidos a la regla de tres y al de la falsa posición (método de resolución de ecuaciones no lineales). 
+La obra de Belveder marca el hilo conductor de la historia de las matemáticas prácticas del Perú virreinal e instaura la tradición de imprimir en Lima manuales con tablas de conversión para facilitar las cuentas y actividades con metales.<br/>
+									<strong style="font-weight:bold">Descripción física y estado de conservación:</strong> Falta la portada y las dos últimas hojas foliadas con los números 196 y 197. Los folios 56 y 115, no aparecen y tienen signos de haber sido arrancados.<br/>
+</p>
                             </aside>
 
                         </li>
@@ -460,32 +406,26 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
+                                    
 
                                 </div>
-                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
-                                    <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
-                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
-                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
-                                    <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
-                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</p>
+                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Belveder, Juan de<br/>
+                                    <strong style="font-weight:bold">Título:</strong> Libro general de las redvciones de plata, y oro de diferentes leyes y pesos, de menor à mayor cantidad, y de sus interesses à tanto por ciento, con otras reglas, y auisos muy necessarios para estos Reynos del Piru. Compvesto por Ioan de Belveder, natvral dela villa de Tahuste, enel Reyno de Aragon. Dirigido al doctor Ioan Rvyz de Prado, inquisidor apostolico destos Reynos del Piru…<br/>
+                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Lima: por Antonio Ricardi, 1597.<br/>
+                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> [8], 195 f.<br/>
+                                    <strong style="font-weight:bold">Código asignado:</strong> 4000003657<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares en la BNP:</strong> NO<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares:</strong> Bib. Daniel Cosío Villegas – El Colegio de México: 332.4985 B454l<br/>
+Biblioteca Nacional de España: R/4506<br/>
+Instituto de Cooperación Iberoamericana de la Agencia Española de Cooperación Internacional: 3Gr-7820<br/>
+Biblioteca Nacional de Maestros (Argentina): SA Sala del Tesoro ST 1-6<br/>
+                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Libro general de las redvciones de plata, y oro de diferentes leyes y pesos, de menor à mayor cantidad, y de sus interesses à tanto por ciento, con otras reglas, y auisos muy necessarios para estos Reynos del Piru. Compvesto por Ioan de Belveder, natvral dela villa de Tahuste, enel Reyno de Aragon. Dirigido al doctor Ioan Rvyz de Prado, inquisidor apostolico destos Reynos del Piru…
+Belveder, Juan de.
+Este manual de aritmética práctica, creado para facilitar las cuentas de los mercaderes, de los oficiales reales y de la población en general durante el siglo XVI peruano, pertenece al grupo de primeros títulos impresos en suelo americano, con la peculiaridad de no tratar temas religiosos puesto que la razón principal de instalar la imprenta en el Nuevo Mundo fue la evangelizar y catequizar. 
+El libro del aragonés Juan de Belveder, asentado en Lima desde 1584 para dedicarse a actividades comerciales, podría dividirse en tres secciones: la primera, dedicada al ensayo de los metales y a los pesos y finezas del oro y la plata; la segunda y más extensa, que contiene tablas de conversión y cálculos sobre los derechos que pagaban mercaderías y metales; y la tercera, que ofrece las reglas aritméticas empleadas en el diseño de las tablas y 42 problemas referidos a la regla de tres y al de la falsa posición (método de resolución de ecuaciones no lineales). 
+La obra de Belveder marca el hilo conductor de la historia de las matemáticas prácticas del Perú virreinal e instaura la tradición de imprimir en Lima manuales con tablas de conversión para facilitar las cuentas y actividades con metales.<br/>
+									<strong style="font-weight:bold">Descripción física y estado de conservación:</strong> Falta la portada y las dos últimas hojas foliadas con los números 196 y 197. Los folios 56 y 115, no aparecen y tienen signos de haber sido arrancados.<br/>
+</p>
                             </aside>
 
                         </li>
@@ -514,32 +454,21 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                    
                                 </div>
-                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
-                                    <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
-                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
-                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
+                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Ore, Luis Jerónimo (1554-1630)<br/>
+                                    <strong style="font-weight:bold">Título:</strong> Symbolo Catholico indiano, en el cual se declaran los misterios dela fe contenidos en los tres símbolos Catholicos, apostólicos, niceo y de S. Athanasio. Contiene assi mesmo una descripción del nuevo orbe, y de los naturales del y un orden de enseñarles la doctrina christiana en las dos lenguas generales quichua y aymara con un confesionario breve y catecismo de la communion. Todo lo cual estaba aprobado por los reverendísimo señores arzobispo de los Reyes y obispos del Cusco y de Tucuman. Compueto por el padre Fray Luys Hieronymo de Ore, predicador de la orden de Sant Francisco dela provincia de los doze apóstoles del Piru.<br/>
+                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Lima: por Antonio Ricardo, 1598<br/>
+                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> 191 p.<br/>
                                     <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
-                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</p>
+                                    <strong style="font-weight:bold">Código asignado:</strong> 4000003657<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares en la BNP:</strong> Fondo Antiguo- Caja Fuerte 1: 4000003612<br/>Fondo Antiguo- Caja Fuerte 1: 4000003736<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares:</strong> Universidad de nuevo México: BX1525.A2 E37 200,CRL41
+<br/>Universidad de Nebraska: Z2682 .H5 rl. 101<br/>Biblioteca Nacional de Chile: 000062741<br/>
+									<strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Symbolo catholico indiano, en el qvual se declaran los mysterios de la Fé contenidos enlos tres symbolos catholicos, apostolico, niceno, y de S. Athanasio. Contiene assi mesmo vna descripcion del nueuo orbe, y delos naturales del; y vn orden de enseñarles la doctrina Christiana enlas dos lenguas generales, quichua y aymara, con vn confessionario breve y cathechismo dela communion...<br/>Symbolo Catholico Indiano<br/> Ore, Luis Gerónimo de<br/>
+Una de las obras cumbres en la evangelización indígena, fue impresa en Lima en 1598 por Antonio Ricardo, el primer impresor llegado al Perú. A pesar de haber pasado ya varios años del encuentro inicial entre españoles y naturales, aún los indígenas adoraban a sus huacas y dioses, especialmente en las doctrinas más alejadas de la capital. Por ello, las autoridades eclesiásticas vieron necesario evangelizar a la población indígena, predicando sermones, cantos y elaborando catecismo en su lengua natal. <br/>
+Luis Jerónimo de Ore, criollo nacido en Huamanga aprendió a hablar desde muy pequeño el quechua y el aimara. A los 25 años fueron reconocidas sus habilidades lingüísticas y participó en la elaboración de los catecismos del III Concilio Limense. Por ese manejo en ambas lenguas indígenas y su profundo conocimiento del Latín, elabora el Symbolo Catholico Indiano, escrito en quechua, aimara y latín, con el fin de evangelizar de manera más eficiente a la vasta población indígena y para que los curas doctrineros entendieran la necesidad de salvar el alma de los naturales.<br/>
+									<strong style="font-weight:bold">Descripción física y estado de conservación:</strong> <br/></p>
                             </aside>
 
                         </li>
@@ -568,25 +497,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                    
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
@@ -622,32 +533,23 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                   
                                 </div>
-                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
-                                    <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
-                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
-                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
-                                    <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
-                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</p>
+                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Martínez, Juan, Fray<br/>
+                                    <strong style="font-weight:bold">Título:</strong> Vocabvlario en la Lengva General del Perv llamada Quichua, y en la lengua Efpañola. Nuevamente emendado y añadido de algunas cosas que faltavan por el Padre Maestro Fray Juan Martinez Cathedratico de la Lengua. De la orden del Señor Sant Auguftin.<br/>
+                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> [Lima] En los Reyes. Por Antonio Ricardo. 1604<br/>
+                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> [540] p. ; 14 cm.<br/>
+                                    <strong style="font-weight:bold">Código asignado:</strong> PR 498.513 M26 C<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares en la BNP:</strong>Fondo Antiguo – Caja Fuerte 1: 4000003737<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares:</strong> <br/>
+									<strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Vocabvlario en la Lengva General del Perv llamada Quichua, y en la lengua Efpañola. Nuevamente emendado y añadido de algunas cosas que faltavan por el Padre Maestro Fray Juan Martinez Cathedratico de la Lengua. De la orden del Señor Sant Auguftin. <br/> 
+Martínez, Juan, Fray<br/>
+El historiador chileno José Toribio Medina extrae el objetivo de la salida a la luz de este texto, de palabras del propio Martínez: «Que considerando, la necesidad de que en estos reinos había, para la buena doctrina de los naturales y declaración del catecismo, confesionario y sermonario que por decreto del Santo Concilio Provincial se hizo en esta ciudad, he hecho este Vocabulario el más copioso que ser pudo, en la lengua quichua y española, con ánimo de hacer otro en la lengua aymara, que falta». (Medina, 1985, p. 91)<br/>
+El padre Rubén Vargas Ugarte, escribe en alusión a este texto, que es una reimpresión del Vocabulario impreso en 1586, según Vargas es probable que el padre Martínez no hiciera otra cosa que revisar la edición de 1586 y publicarla enmendada y añadida como se dice en el título. (Vargas Ugarte, 1957, p. 39). Al parecer, lo estipulado por Vargas Ugarte sobre la posibilidad de ser una reimpresión de un texto anteriormente publicado, se confirma con la información proveniente de la Provisión Real del texto, en la cual se autoriza y faculta la impresión de un Catecismo y Confesionario, hecho por la Compañía de Jesús, a Antonio Ricardo Piamontes: «esta orden se da en la Ciudad de los Reyes a doce días del mes de Agosto de 1584».<br/>
+Acerca de la vida de J. Martínez, Medina dice que solo conoce una carta de él, con fecha 20 de agosto de 1594, dirigida al Rey, en la que notifica que sucedió en la cátedra de Lengua Quechua a la muerte del Dr. Balboa en la Universidad de San Marcos y que desde hace 22 años reside en el Perú, doctrinando y predicando. (Medina, 1985, p. 93)<br/>
+La encuadernación es florentina y posee una inscripción en el lomo: «Arte y Lengua de Canto» hecho con marca de fuego. La portada esta provista de un sello oval de la Biblioteca Nacional Lima de color azul. Las primeras hojas previas a la primera parte del vocabulario son facsimilares.
+<br/>
+									<strong style="font-weight:bold">Descripción física y estado de conservación:</strong> <br/>La encuadernación es florentina, inscripción en el lomo: “Arte y Lengua de Canto” hecho con marca de fuego, la portada esta provista de un sello oval de la Biblioteca Nacional Lima de color azul. Las primeras hojas previas a la primera parte del vocabulario son facsimilares. En la Segunda parte del vocabulario en la sección palabras castellanas con “D”, contiene agujeros en la zona central superior de las hojas. En la página última contiene un sello oval de la Biblioteca Nacional Lima – Perú, acompañado del número “149458” en su lado superior.</p>
                             </aside>
 
                         </li>
@@ -676,25 +578,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                    
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
@@ -730,25 +614,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                    
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
@@ -784,25 +650,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                    
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
@@ -838,25 +686,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                   
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
@@ -892,25 +722,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                   
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
@@ -946,32 +758,25 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-                                        <!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas,twitter"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                        
-                                    </div>
-
+                                 
                                 </div>
-                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
-                                    <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
-                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
-                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
-                                    <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
-                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</p>
+                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Gonzalez Holguín, Diego<br/>
+                                    <strong style="font-weight:bold">Título:</strong> Vocabvlario de la Lengva General de todo el Perv llamada lengua Qquichua, o del Inca<br/>
+                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Impresso en la Ciudad de los Reyes. Por Francifco del Canto. 1608<br/>
+                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> 1018 p. [8], 375, [1], 332, [4] p. ; 20 cm.<br/>
+                                    <strong style="font-weight:bold">Código asignado:</strong> 4000003738<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares en la BNP:</strong> PR/37/C 498.513 G69 C<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares:</strong> Bib. Daniel Cosío Villegas – El Colegio de México: 332.4985 B454l<br/>
+Biblioteca Nacional de España: R/4506<br/>
+Instituto de Cooperación Iberoamericana de la Agencia Española de Cooperación Internacional: 3Gr-7820<br/>
+Biblioteca Nacional de Maestros (Argentina): SA Sala del Tesoro ST 1-6<br/>
+                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Vocabvlario de la Lengva General de todo el Perv llamada lengua Qquichua, o del Inca<br/>
+Gonzalez Holguín, Diego<br/>
+El historiador peruano Raúl Porras Barrenechea escribe sobre este texto que González Holguín era el iniciador de los estudios de fonética quechua. Su vocabulario representó además un avance fundamental en la adquisición de palabras, con relación a los anteriores repertorios. El caudal de palabras recogido por González Holguín cuadruplicó el número de vocablos conocidos del quechua, se esforzó en recoger frases usuales para explicar el sentido oscuro y metafórico de ciertas palabras, y en conservar la propiedad y la distinción de la lengua del Cuzco. Es un invaluable documento sobre el quechua primitivo hablado por la clase culta y cortesana. Asimismo, el valor de este Vocabulario está al nivel de la gramática de Nebrija para el habla castellana. (Porras Barrenechea, 1999, p. 177).<br/>
+Diego González de Holguín, natural de Cáceres, Extremadura (España), estudió en la Universidad de Alcalá de Henares, ingresó luego a la Compañía de Jesús y fue destinado a las misiones del Paraguay. Estuvo en América 47 años, los cuales dedicó principalmente a dominar la lengua de los indios, al punto que llegó a ser un conspicuo estudioso del Runasimi, la lengua imperial del Tahuantinsuyo incaico. (Porras Barrenechea, 1999, p. 176). 
+La encuadernación lleva como inscripción en el lomo «Vocabulario de la Lengua Qqichua». Está provisto de sellos ovales en la portada, en la sección C de la primera parte. Existen manuscritos que suman al vocabulario términos agregados por un lector conocedor de la lengua.<br/>
+									<strong style="font-weight:bold">Descripción física y estado de conservación:</strong> La encuadernación lleva como inscripción en el lomo: “Vocabulario de la Lengua Qqichua”. Provisto de sellos ovales en la portada, en la sección “C” de la primera parte. Existen manuscritos que suman al vocabulario, términos agregados por un lector conocedor de la lengua. <br/>
+</p>
                             </aside>
 
                         </li>
@@ -1000,24 +805,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
-
+                                  
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
@@ -1053,23 +841,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1106,23 +879,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1159,23 +917,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1212,23 +955,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1265,23 +992,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter shaber button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1318,23 +1030,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1371,23 +1068,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1424,23 +1106,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1477,23 +1144,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1530,23 +1182,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1583,23 +1220,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1636,23 +1258,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1689,23 +1296,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1742,31 +1334,27 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
-                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
-                                    <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
-                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Imprenta Liberal, 1882<br/>
-                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> xv, 400 p.<br/>
-                                    <strong style="font-weight:bold">Código asignado:</strong> Q1<br/>
-                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Es relevante por dos motivos: 1. Por presentar datos de primer orden, sacados de archivos conventuales, principalmente limeños, que el autor tuvo a la mano en el siglo XIX. El texto fue reeditado en el siglo XX.; 2. Presenta sellos de pertenencia de la Biblioteca de la Sociedad Geográfica de Lima. Se tenía por noticia general que la colección de libros y planos de esta institución, reputada como una de las más completas en su rubro, se perdió en su integridad durante el incendio de 1943. Consignado por Basadre pero sin dar mayor información (1971: II, 558, entrada 7314.</p>
+                                <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres, Agustin de, Fray<br/>
+                                    <strong style="font-weight:bold">Título:</strong> Relación verdadera de vna carta qve embio el padre Prior de la orden de Sancto Domingo, de la ciudad de Vbeda, al Abad mayor  de fan Salvador de la ciudad de Granada, de vn cafo digno de fer avifado, como aftuvo doze años una monja profeffa, la cual avia metido fu padre por fer cerrada, y no fer para cafada, y uv dia haciendo vn exercicio de fuerza fe le rompió una tela por donde le falio la naturaleza de hombre como las demás y lo que fe hizo para facalla del Convento: agora fucedido en efte año de mil y feyfcientos y diez y fiete. <br/>
+                                    <strong style="font-weight:bold">Pie de imprenta Lima:</strong> Lima, por Francisco de Canto. 1617<br/>
+                                    <strong style="font-weight:bold">N° páginas y/o detalles:</strong> 4 p.<br/>
+                                    <strong style="font-weight:bold">Código asignado:</strong> 4000003762<br/>
+                                    <strong style="font-weight:bold">Otros ejemplares en la BNP:</strong> Fondo Antiguo: Caja Fuerte 1 <br/>
+                                    <strong style="font-weight:bold">Otros ejemplares:</strong> Bib. Daniel Cosío Villegas – El Colegio de México: 332.4985 B454l<br/>
+Biblioteca Nacional de España: R/4506<br/>
+Instituto de Cooperación Iberoamericana de la Agencia Española de Cooperación Internacional: 3Gr-7820<br/>
+Biblioteca Nacional de Maestros (Argentina): SA Sala del Tesoro ST 1-6<br/>
+                                    <strong style="font-weight:bold">Relevancia ejemplar:</strong><br/>Relación verdadera de vna carta qve embio el padre Prior de la orden de Sancto Domingo, de la ciudad de Vbeda, al Abad mayor  de fan Salvador de la ciudad de Granada, de vn cafo digno de fer avifado, como aftuvo doze años una monja profeffa, la cual avia metido fu padre por fer cerrada, y no fer para cafada, y uv dia haciendo vn exercicio de fuerza fe le rompió una tela por donde le falio la naturaleza de hombre como las demás y lo que fe hizo para facalla del Convento: agora fucedido en efte año de mil y feyfcientos y diez y fiete.<br/>
+Torres, Agustin de, Fray<br/>
+Ejemplar originalmente impreso en Sevilla (Granada) por Francisco de Lyra con licencia del provisor Francisco de Ledesma y en 1617 en Lima por Francisco de Canto, quien fuera aprendiz de Antonio Ricardo Piamontes, primer impresor de la capital del Virreynato.<br/>
+El texto relata la situación de María Muñoz, una monja natural de Sabiote (Úbeda) al interior del Convento de la Coronada, quien a lo largo de doce años fuera recluida al parecer por su padre por considerarla «mujer varonil», acorde con los antecedentes escritos por Torres. Muñoz le confiesa a fray Agustín de Torres que es varón, el prior procede a verificar y halla las partes necesarias que conforman a un hombre, salvo la ausencia del falo característico, lo cual hace indicar un posible caso de hermafroditismo.<br/>
+Fray Agustín de Torres, como prior de la Orden de Santo Domingo de Guzmán, cumple con comunicar el asunto a fin de reunir a un consejo que aborde la situación peculiar que acontece en el convento a su cargo, el cual ocupaba el espacio del actual Mercado de Abastos en la Plaza del Iruelo en Úbeda, Jaén (Andalucía).<br/>
+									<strong style="font-weight:bold">Descripción física y estado de conservación:</strong> Encuadernación cartoné, lleva inscripciones manuscritas en la primera página, sello en la margen izquierda de la segunda página. La página cuatro contiene un manuscrito con tinta con una breve descripción de los hechos relatados en el texto. Acompañado de una sello oval azul con el número “015835”. <br/>
+</p>
                             </aside>
 
                         </li>
@@ -1795,23 +1383,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1848,23 +1421,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1901,23 +1459,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -1954,23 +1497,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -2007,23 +1535,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -2060,23 +1573,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -2113,23 +1611,8 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
+                                    
+
 
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
@@ -2166,24 +1649,7 @@
                                 <div class="ver-online">
 
                                     <a href="#" class="ver-mas">ver en linea</a>
-                                    <div class="sociales-joyas">
-                                        <!-- Your G-Plus share button code -->
-                                        <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-<!-- Your Twitter share button code -->
-                                        <a class="twitter-share-button"
-                                           href="https://twitter.com/share"
-                                           data-size="default"
-                                           data-related="joyas"
-                                           data-hashtags="BVirtual,joyas,bnp"
-                                           data-text="Joyas de la Biblioteca Virtual">
-                                        </a>
-                                        <!-- Your Facebook share button code -->
-                                        <div class="fb-share-button" 
-                                            data-href="http://www.your-domain.com/your-page.html" 
-                                            data-layout="button_count">
-                                        </div>
-                                    </div>
-
+                                    
                                 </div>
                                 <p class="textos-joyas"><strong style="font-weight:bold">Autor:</strong> Torres Saldamando, Enrique (1846-1896)<br/>
                                     <strong style="font-weight:bold">Título:</strong> Los antiguos jesuitas del Perú. Biografía y breves apuntes para su historia.<br/>
@@ -2197,61 +1663,49 @@
                     </ol>
                 </div> <!-- .events-content -->
 
-                <div class="detalles-libro">
-                    <aside style="width: 40%; height: 100%; float: left; background: #4E4848;">
-                        <div class="arriba" style="font-size: 2em;"><p id="dataindice">25</p></div>
-                        <div class="abajo" style="background: #292626; font-size: 1.5em;"><p id="datatipo">Libro</p></div>
-                    </aside>
-
-                    <aside style="width: 60%; height: 100%; float: left;">
-                        <div class="arriba"><p id="datatexto">lorem impsum</p></div>
-                        <div class="abajo" style="background:#1B507D;"><p id="datapaginas">250 páginas</p></div>
-                    </aside>
-                </div>
-
                 <div class="timeline">
                     <div class="events-wrapper">
                         <div class="events">
                             <ol>
-                                <li><a href="#0" data-date="10/01/2014" data-indice="1" data-texto="Texto n1" data-tipo="Libro" data-paginas="1" class="selected">1</a></li> <!--Fecha N° 1-->
-                                <li><a href="#0" data-date="20/01/2014" data-indice="2" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">2</a></li><!--Fecha N° 2-->
-                                <li><a href="#0" data-date="30/01/2014" data-indice="3" data-texto="Texto n3" data-tipo="Folleto" data-paginas="123">3</a></li><!--Fecha N° 3-->
-                                <li><a href="#0" data-date="10/02/2014" data-indice="4" data-texto="Texto n4" data-tipo="Video" data-paginas="184">4</a></li><!--Fecha N° 4-->
-                                <li><a href="#0" data-date="20/02/2014" data-indice="5" data-texto="Texto n5" data-tipo="Audio" data-paginas="484">5</a></li><!--Fecha N° 5-->
-                                <li><a href="#0" data-date="28/02/2014" data-indice="6" data-texto="Texto n6" data-tipo="Articulo" data-paginas="2">6</a></li><!--Fecha N° 6-->
-                                <li><a href="#0" data-date="10/03/2014" data-indice="7" data-texto="Texto n7" data-tipo="Articulo" data-paginas="2">7</a></li><!--Fecha N° 7-->
-                                <li><a href="#0" data-date="20/03/2014" data-indice="8" data-texto="Texto n8" data-tipo="Articulo" data-paginas="2">8</a></li><!--Fecha N° 8-->
-                                <li><a href="#0" data-date="30/03/2014" data-indice="9" data-texto="Texto n9" data-tipo="Articulo" data-paginas="2">9</a></li><!--Fecha N° 9-->
-                                <li><a href="#0" data-date="10/04/2014" data-indice="10" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">10</a></li><!--Fecha N° 10-->
-                                <li><a href="#0" data-date="20/04/2014" data-indice="11" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">11</a></li><!--Fecha N° 11-->
-                                <li><a href="#0" data-date="30/04/2014" data-indice="12" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">12</a></li><!--Fecha N° 12-->
-                                <li><a href="#0" data-date="10/05/2014" data-indice="13" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">13</a></li><!--Fecha N° 13-->
-                                <li><a href="#0" data-date="20/05/2014" data-indice="14" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">14</a></li><!--Fecha N° 14-->
-                                <li><a href="#0" data-date="30/05/2014" data-indice="15" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">15</a></li><!--Fecha N° 15-->
-                                <li><a href="#0" data-date="10/06/2014" data-indice="16" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">16</a></li><!--Fecha N° 16-->
-                                <li><a href="#0" data-date="20/06/2014" data-indice="17" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">17</a></li><!--Fecha N° 17-->
-                                <li><a href="#0" data-date="30/06/2014" data-indice="18" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">18</a></li><!--Fecha N° 18-->
-                                <li><a href="#0" data-date="10/07/2014" data-indice="19" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">19</a></li><!--Fecha N° 19-->
-                                <li><a href="#0" data-date="20/07/2014" data-indice="20" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">20</a></li><!--Fecha N° 20-->
-                                <li><a href="#0" data-date="30/07/2014" data-indice="21" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">21</a></li><!--Fecha N° 21-->
-                                <li><a href="#0" data-date="10/08/2014" data-indice="22" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">22</a></li><!--Fecha N° 22-->
-                                <li><a href="#0" data-date="20/08/2014" data-indice="23" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">23</a></li><!--Fecha N° 23-->
-                                <li><a href="#0" data-date="28/08/2014" data-indice="24" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">24</a></li><!--Fecha N° 24-->
-                                <li><a href="#0" data-date="10/09/2014" data-indice="25" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">25</a></li><!--Fecha N° 25-->
-                                <li><a href="#0" data-date="20/09/2014" data-indice="26" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">26</a></li><!--Fecha N° 26-->
-                                <li><a href="#0" data-date="30/09/2014" data-indice="27" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">27</a></li><!--Fecha N° 27-->
-                                <li><a href="#0" data-date="10/10/2014" data-indice="28" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">28</a></li><!--Fecha N° 28-->
-                                <li><a href="#0" data-date="20/10/2014" data-indice="29" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">29</a></li><!--Fecha N° 29-->
-                                <li><a href="#0" data-date="30/10/2014" data-indice="30" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">30</a></li><!--Fecha N° 30-->
-                                <li><a href="#0" data-date="10/11/2014" data-indice="31" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">31</a></li><!--Fecha N° 31-->
-                                <li><a href="#0" data-date="20/11/2014" data-indice="32" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">32</a></li><!--Fecha N° 32-->
-                                <li><a href="#0" data-date="30/11/2014" data-indice="33" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">33</a></li><!--Fecha N° 33-->
-                                <li><a href="#0" data-date="10/12/2014" data-indice="34" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">34</a></li><!--Fecha N° 34-->
-                                <li><a href="#0" data-date="20/12/2014" data-indice="35" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">35</a></li><!--Fecha N° 35-->
-                                <li><a href="#0" data-date="30/12/2014" data-indice="36" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">36</a></li><!--Fecha N° 36-->
-                                <li><a href="#0" data-date="10/01/2015" data-indice="37" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">37</a></li><!--Fecha N° 37-->
-                                <li><a href="#0" data-date="20/01/2015" data-indice="38" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">38</a></li><!--Fecha N° 38-->
-                                <li><a href="#0" data-date="30/01/2015" data-indice="39" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">39</a></li><!--Fecha N° 39-->
+                                <li><a href="#0" data-date="10/01/2014" data-indice="1" data-texto="Texto n1" data-tipo="Libro" data-paginas="1" class="selected">1584</a></li> <!--Fecha N° 1-->
+                                <li><a href="#0" data-date="20/01/2014" data-indice="2" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1585</a></li><!--Fecha N° 2-->
+                                <li><a href="#0" data-date="30/01/2014" data-indice="3" data-texto="Texto n3" data-tipo="Folleto" data-paginas="123">1585</a></li><!--Fecha N° 3-->
+                                <li><a href="#0" data-date="10/02/2014" data-indice="4" data-texto="Texto n4" data-tipo="Video" data-paginas="184">1586</a></li><!--Fecha N° 4-->
+                                <li><a href="#0" data-date="20/02/2014" data-indice="5" data-texto="Texto n5" data-tipo="Audio" data-paginas="484">1586</a></li><!--Fecha N° 5-->
+                                <li><a href="#0" data-date="28/02/2014" data-indice="6" data-texto="Texto n6" data-tipo="Articulo" data-paginas="2">1594</a></li><!--Fecha N° 6-->
+                                <li><a href="#0" data-date="10/03/2014" data-indice="7" data-texto="Texto n7" data-tipo="Articulo" data-paginas="2">1597</a></li><!--Fecha N° 7-->
+                                <li><a href="#0" data-date="20/03/2014" data-indice="8" data-texto="Texto n8" data-tipo="Articulo" data-paginas="2">1598</a></li><!--Fecha N° 8-->
+                                <li><a href="#0" data-date="30/03/2014" data-indice="9" data-texto="Texto n9" data-tipo="Articulo" data-paginas="2">1602</a></li><!--Fecha N° 9-->
+                                <li><a href="#0" data-date="10/04/2014" data-indice="10" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1604</a></li><!--Fecha N° 10-->
+                                <li><a href="#0" data-date="20/04/2014" data-indice="11" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1605</a></li><!--Fecha N° 11-->
+                                <li><a href="#0" data-date="30/04/2014" data-indice="12" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1605</a></li><!--Fecha N° 12-->
+                                <li><a href="#0" data-date="10/05/2014" data-indice="13" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1606</a></li><!--Fecha N° 13-->
+                                <li><a href="#0" data-date="20/05/2014" data-indice="14" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1607</a></li><!--Fecha N° 14-->
+                                <li><a href="#0" data-date="30/05/2014" data-indice="15" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1607</a></li><!--Fecha N° 15-->
+                                <li><a href="#0" data-date="10/06/2014" data-indice="16" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1608</a></li><!--Fecha N° 16-->
+                                <li><a href="#0" data-date="20/06/2014" data-indice="17" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1610</a></li><!--Fecha N° 17-->
+                                <li><a href="#0" data-date="30/06/2014" data-indice="18" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1610</a></li><!--Fecha N° 18-->
+                                <li><a href="#0" data-date="10/07/2014" data-indice="19" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1610</a></li><!--Fecha N° 19-->
+                                <li><a href="#0" data-date="20/07/2014" data-indice="20" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1610</a></li><!--Fecha N° 20-->
+                                <li><a href="#0" data-date="30/07/2014" data-indice="21" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1612</a></li><!--Fecha N° 21-->
+                                <li><a href="#0" data-date="10/08/2014" data-indice="22" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1612</a></li><!--Fecha N° 22-->
+                                <li><a href="#0" data-date="20/08/2014" data-indice="23" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1612</a></li><!--Fecha N° 23-->
+                                <li><a href="#0" data-date="28/08/2014" data-indice="24" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1612</a></li><!--Fecha N° 24-->
+                                <li><a href="#0" data-date="10/09/2014" data-indice="25" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1613</a></li><!--Fecha N° 25-->
+                                <li><a href="#0" data-date="20/09/2014" data-indice="26" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1613</a></li><!--Fecha N° 26-->
+                                <li><a href="#0" data-date="30/09/2014" data-indice="27" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1614</a></li><!--Fecha N° 27-->
+                                <li><a href="#0" data-date="10/10/2014" data-indice="28" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1614</a></li><!--Fecha N° 28-->
+                                <li><a href="#0" data-date="20/10/2014" data-indice="29" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1615</a></li><!--Fecha N° 29-->
+                                <li><a href="#0" data-date="30/10/2014" data-indice="30" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1616</a></li><!--Fecha N° 30-->
+                                <li><a href="#0" data-date="10/11/2014" data-indice="31" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1617</a></li><!--Fecha N° 31-->
+                                <li><a href="#0" data-date="20/11/2014" data-indice="32" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1617</a></li><!--Fecha N° 32-->
+                                <li><a href="#0" data-date="30/11/2014" data-indice="33" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1617</a></li><!--Fecha N° 33-->
+                                <li><a href="#0" data-date="10/12/2014" data-indice="34" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1617</a></li><!--Fecha N° 34-->
+                                <li><a href="#0" data-date="20/12/2014" data-indice="35" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1618</a></li><!--Fecha N° 35-->
+                                <li><a href="#0" data-date="30/12/2014" data-indice="36" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1618</a></li><!--Fecha N° 36-->
+                                <li><a href="#0" data-date="10/01/2015" data-indice="37" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1618</a></li><!--Fecha N° 37-->
+                                <li><a href="#0" data-date="20/01/2015" data-indice="38" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1619</a></li><!--Fecha N° 38-->
+                                <li><a href="#0" data-date="30/01/2015" data-indice="39" data-texto="Texto n2" data-tipo="Articulo" data-paginas="2">1619</a></li><!--Fecha N° 39-->
                             </ol>
 
                             <span class="filling-line" aria-hidden="true"></span>

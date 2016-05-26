@@ -1,6 +1,5 @@
 jQuery(document).ready(function($){
     var urlInicial = window.location.href;
-    console.log(urlInicial);
     var locationHref = "joyas.html";
 	var timelines = $('.cd-horizontal-timeline'),
 		eventsMinDistance = 60;
@@ -54,6 +53,8 @@ jQuery(document).ready(function($){
                                     $("#datatexto").html(texto);
                                     $("#datapaginas").html(paginas);
                                 }
+								urlCompartir = window.location.href;
+	$(".fb-share-button").attr({'data-href':urlCompartir});
 				updateOlderEvents($(this));
 				updateFilling($(this), timelineComponents['fillingLine'], timelineTotWidth);
 				updateVisibleContent($(this), timelineComponents['eventsContent']);
@@ -115,6 +116,8 @@ jQuery(document).ready(function($){
                             $("#datatexto").html(texto);
                             $("#datapaginas").html(paginas);
                         }
+						urlCompartir = window.location.href;
+	$(".fb-share-button").attr({'data-href':urlCompartir});
 			updateOlderEvents(newEvent);
 			updateTimelinePosition(string, newEvent, timelineComponents);
 		}

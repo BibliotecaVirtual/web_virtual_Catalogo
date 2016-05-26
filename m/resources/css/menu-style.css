@@ -1243,3 +1243,21 @@ support for no js
     display: -webkit-box;
 	padding: 5px 0 0 16px;
 }
+
+.servicios-m-grande{
+display:block;	
+}
+
+.servicios-m-chico{
+display:none;	
+}
+
+@media only screen and (max-width: 1170px) {
+	.servicios-m-grande{
+display:none;	
+}
+
+.servicios-m-chico{
+display:block;	
+}
+	}

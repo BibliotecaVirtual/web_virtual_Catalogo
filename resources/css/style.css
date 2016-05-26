@@ -245,6 +245,15 @@ KEYFRAMES ANIMATION FOR SLIDERS
 	}
 }
 
+@-moz-keyframes zoom {
+	from {
+		transform: scale(1,1);
+	}
+	to {
+		transform: scale(1.2,1.2);
+	}
+}
+
 @keyframes paneoXY {
 	0% {
 		background-position: 20% 0;
@@ -260,7 +269,33 @@ KEYFRAMES ANIMATION FOR SLIDERS
 	}
 }
 
+@-moz-keyframes paneoXY {
+	0% {
+		background-position: 20% 0;
+		transform: scale(1,1);
+	}
+	50% {
+		background-position: 100% 0;
+		transform: scale(1.4,1.4);
+	}
+	100% {
+		background-position: 20% 0;
+		transform: scale(1,1);
+	}
+}
+
 @keyframes paneoX {
+	0% {
+		background-position: 0% 0;
+	}
+	50% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0% 0;
+	}
+}
+@-moz-keyframes paneoX {
 	0% {
 		background-position: 0% 0;
 	}
@@ -336,10 +371,20 @@ z-index:400 !important;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 100;
 
+	animation-name: PARALLAX-LIMA;
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
 	-webkit-animation-name: PARALLAX-LIMA;
 	-webkit-animation-duration: 50s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
+	
+	-moz-animation-name: PARALLAX-LIMA;
+	-moz-animation-duration: 50s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
 }
 
 #midground {
@@ -349,10 +394,20 @@ z-index:400 !important;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 200;
 
+	animation-name: PARALLAX-LIMA;
+	animation-duration: 150s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
 	-webkit-animation-name: PARALLAX-LIMA;
 	-webkit-animation-duration: 150s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
+	
+	-moz-animation-name: PARALLAX-LIMA;
+	-moz-animation-duration: 150s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
 }
 
 #foreground {
@@ -362,10 +417,21 @@ z-index:400 !important;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 300;
 
+	animation-name: PARALLAX-LIMA;
+	animation-duration: 100s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
 	-webkit-animation-name: PARALLAX-LIMA;
 	-webkit-animation-duration: 100s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
+	
+	-moz-animation-name: PARALLAX-LIMA;
+	-moz-animation-duration: 100s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	
 }
 
 #foreground2 {
@@ -375,10 +441,21 @@ z-index:400 !important;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 300;
 
+	animation-name: PARALLAX-LIMA;
+	animation-duration: 80s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
 	-webkit-animation-name: PARALLAX-LIMA;
 	-webkit-animation-duration: 80s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
+	
+	-moz-animation-name: PARALLAX-LIMA;
+	-moz-animation-duration: 80s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	
 }
 
 
@@ -906,7 +983,7 @@ z-index:400 !important;
 
 .digitalizacion-texto p{
 	margin: 30px 15px 30px;
-	width:80%;
+	width:90%;
   text-align:left;
 }
 
@@ -1064,12 +1141,17 @@ figure.effect-ruby:hover img {
 	opacity: 1;
 }
 
-.novedades-galeria figure figcaption > a {
+.novedades-galeria figure > a {
 	z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
-    opacity: 1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .novedades-galeria figcaption h2 {
@@ -1151,7 +1233,7 @@ figure.effect-ruby:hover img {
     text-align: left;
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    margin: 0px 20px;
     font-family: 'OpenSans Semibold';
 }
 

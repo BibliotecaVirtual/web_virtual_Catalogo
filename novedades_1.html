@@ -65,6 +65,16 @@
       lang: 'es'
     }
   </script>
+  <script>
+    function copyToClipboard() {
+      var url = window.location.href;
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
 </head>
 
 <body>
@@ -84,6 +94,7 @@
         contain: true,
         pageDots: false,
         wrapAround: false,
+        imagesLoaded: true,
       });
       // 2nd carousel, navigation
       $('.novedades-carousel-nav').flickity({
@@ -91,6 +102,7 @@
         contain: true,
         pageDots: false,
         wrapAround: false,
+        imagesLoaded: true,
         // cellAlign: 'center',
       });
       $('.ultimasNoticias-carousel').flickity({
@@ -99,138 +111,128 @@
         contain: true,
         pageDots: false,
         wrapAround: true,
+        imagesLoaded: true,
       });
     });
   </script>
   <main class="cd-main-content">
-    <div class="header-img triangulo-noticias" id="noticias-img">
+    <div class="header-img triangulo-novedades" id="novedades-img">
     </div>
     <div class="margen-internas" id="novedades-content">
+      <div class="site-map clearfix">
+          <div class="left">
+              <p>Eventos</p>
+          </div>
+          <a href="novedades.html">
+              <div class="right active-novedades">
+                  <p>Novedades</p>
+              </div>
+          </a>
+      </div>
       <h1 class="titulo-principal">Novedades</h1>
       <div class="box-comment clearfix">
-        <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
-        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true" style="margin-top:2px"></div>
+        <div>
+          <a onclick="copyToClipboard()" style="cursor:pointer;"><img src="resources/img/copiar_enlace.png" alt=""/></a>
+          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true" style="margin-top:2px"></div>
+        </div>
       </div>
       <div class="novedades-header">
         <div>
           <h3>Lunes, 16 de mayo de 2016</h3>
-          <h1>Lanzamiento de la Biblioteca Virtual del Peru</h1>
+          <h1>BNP LANZA LA NUEVA Y MODERNA PÁGINA WEB DE BIBLIOTECA VIRTUAL</h1>
         </div>
       </div>
       <div class="clearfix">
         <div class="col-60">
           <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repellat, dicta quis. Corrupti asperiores totam quasi fuga, soluta quo perferendis animi nisi nemo ipsam provident obcaecati aliquid laborum, quibusdam hic.</p>
-            <p>Ratione illum quaerat voluptatum impedit expedita animi dolores. Rem, eaque, illo eum quae, laborum dolore esse nam eos nostrum necessitatibus quidem. Omnis quas, explicabo aspernatur nam, laboriosam earum nisi sit!</p>
-            <p>At non magni iste quam cum laudantium quos obcaecati consectetur natus atque nihil, id architecto voluptate accusamus perferendis, maxime. Vero fugiat iste cum quidem voluptatum officia saepe, quia inventore eius. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Vero dolore impedit veritatis voluptatibus debitis illo autem pariatur accusantium, sint harum!</p>
+            <p>Tras un periodo de rediseño y reestructuración para alinearse con las nuevas tendencias web, la Biblioteca Nacional del Perú lanza la nueva y moderna página de la Biblioteca Virtual, un portal de fácil acceso para el público en general a todo el patrimonio documental digitalizado en línea las 24 horas, los 365 días del año, desde cualquier dispositivo (computadora de escritorio, tablet o smartphone).</p>
+            <p>El catálogo pone a disposición de los usuarios libros, archivo audiovisual y sonoro, mapas y planos, cartas y manuscritos, publicaciones periódicas, fotografías e ilustraciones, entre otros tesoros, de los cuales algunos hasta el momento estaban reservados a investigadores o acreditados. Conforman el catálogo más de 5000 documentos (300 de los cuales están inscritos como Patrimonio Cultural Bibliográfico de la Nación), cifra que se planea superar a medida que se integren nuevas colecciones al catálogo. Gracias a su acceso gratuito y sin necesidad de registro previo, los usuarios podrán orientar su búsqueda por épocas, zonas geográficas, tipo de documento, colecciones, etc.</p>
+            <p>También se ofrece al usuario toda la información sobre los procesos de digitalización (tanto documental como audiovisual) que realiza la institución, así como las tarifas y requisitos para servicios a particulares.</p>
+            <p>Asimismo, se ha implementado diversas secciones de difusión de conferencias y exposiciones que fueron llevadas a cabo en los ambientes de la BNP en el pasado y que ahora serán permanentes gracias al streaming y a los recorridos virtuales en 3D.</p>
+            <p>Finalmente, cuenta con una sección de novedades donde se informará con alertas bibliográficas mensuales acerca de nuevos documentos ingresados al catálogo digital, actualizaciones de contenido en las redes sociales, información de actualidad sobre bibliotecas digitales, entre otras.</p>
+            <p>Desde luego, se ha involucrado el componente social en la creación de la página, por lo que diversas secciones de esta pueden ser compartidas en diversas redes sociales y de contenido en las cuales la BNP y la Biblioteca Virtual disponen de cuentas: <a href="https://www.facebook.com/biblioteca.nacional.peru">Facebook</a>, <a href="https://twitter.com/bibliotecabnp">Twitter</a>, <a href="https://plus.google.com/113668574979185414399">Google+</a>, <a href="https://www.youtube.com/channel/UC4xK01JRikS3iSt818L7dRQ">Youtube</a>, <a href="http://www.instagram.com/bvirtualbnp/">Instagram</a>, <a href="http://www.flickr.com/photos/bibliotecavirtualbnp/">Flickr</a> y <a href="http://es.pinterest.com/bvirtualbnp/">Pinterest</a>.</p>
+            <p>La importancia que reviste este sitio va mucho más allá del ámbito académico. Más que un mero compendio histórico en línea, despertará el interés de las nuevas generaciones que viven en un mundo audiovisual por conocer documentos y archivos de valor incalculable, inabordable y único que a partir de ahora serán de utilidad para cualquier usuario de la red de redes.</p>
           </div>
           <div>
             <div class="novedades-carousel-main">
               <div class="novedades-celda">
-                <img src="resources/img/novedades-img2.jpg" alt="">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-01-img01.jpg" alt="">
               </div>
               <div class="novedades-celda">
-                <img src="resources/img/novedades-img2.jpg" alt="">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-01-img02.jpg" alt="">
               </div>
               <div class="novedades-celda">
-                <img src="resources/img/novedades-img2.jpg" alt="">
-              </div>
-              <div class="novedades-celda">
-                <img src="resources/img/novedades-img2.jpg" alt="">
-              </div>
-              <div class="novedades-celda">
-                <img src="resources/img/novedades-img2.jpg" alt="">
-              </div>
-              <div class="novedades-celda">
-                <img src="resources/img/novedades-img2.jpg" alt="">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-01-img03.jpg" alt="">
               </div>
             </div>
             <div class="novedades-carousel-nav">
               <div class="novedades-celda-nav">
-                <img src="resources/img/novedades-img2.jpg" alt="">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-01-img01.jpg" alt="">
               </div>
               <div class="novedades-celda-nav">
-                <img src="resources/img/novedades-img2.jpg" alt="">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-01-img02.jpg" alt="">
               </div>
               <div class="novedades-celda-nav">
-                <img src="resources/img/novedades-img2.jpg" alt="">
-              </div>
-              <div class="novedades-celda-nav">
-                <img src="resources/img/novedades-img2.jpg" alt="">
-              </div>
-              <div class="novedades-celda-nav">
-                <img src="resources/img/novedades-img2.jpg" alt="">
-              </div>
-              <div class="novedades-celda-nav">
-                <img src="resources/img/novedades-img2.jpg" alt="">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-01-img03.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
         <div class="col-40">
           <div class="fb-container">
-            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="3"></div>
+            <div class="fb-comments" data-href="http://www.bvirtual.bnp.gob.pe/novedades_1.html" data-width="100%" data-numposts="3"></div>
           </div>
         </div>
       </div>
       <div class="ultimas-noticias">
         <div>
-          <h2>Últimas Noticias</h2>
+          <h2>Últimas novedades</h2>
         </div>
         <div class="ultimasNoticias-carousel">
           <div class="ultimasNoticias-celda">
             <figure>
-              <img src="resources/img/audios.jpg" alt="" />
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-01-thumb.jpg" alt="" />
               <figcaption>
-                <h3>Exposiciones virtuales - Eventos</h3>
-                <a href="#">Leer Noticia</a>
+                <h3>Lanzamiento de la nueva web de Biblioteca Virtual</h3>
+                <a href="novedades_1.html">Leer Noticia</a>
               </figcaption>
             </figure>
           </div>
           <div class="ultimasNoticias-celda">
             <figure>
-              <img src="resources/img/audios.jpg" alt="" />
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-02-thumb.jpg" alt="" />
               <figcaption>
-                <h3>Exposiciones virtuales - Eventos</h3>
-                <a href="#">Leer Noticia</a>
+                <h3>Lanzamiento del nuevo canal de Youtube de la BV</h3>
+                <a href="novedades_2.html">Leer Noticia</a>
               </figcaption>
             </figure>
           </div>
           <div class="ultimasNoticias-celda">
             <figure>
-              <img src="resources/img/audios.jpg" alt="" />
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-03-thumb.jpg" alt="" />
               <figcaption>
-                <h3>Exposiciones virtuales - Eventos</h3>
-                <a href="#">Leer Noticia</a>
+                <h3>Nueva sección: exposiciones virtuales</h3>
+                <a href="novedades_3.html">Leer Noticia</a>
               </figcaption>
             </figure>
           </div>
           <div class="ultimasNoticias-celda">
             <figure>
-              <img src="resources/img/audios.jpg" alt="" />
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-04-thumb.jpg" alt="" />
               <figcaption>
-                <h3>Exposiciones virtuales - Eventos</h3>
-                <a href="#">Leer Noticia</a>
+                <h3>Lanzamiento del Catálogo Virtual Nacional</h3>
+                <a href="novedades_4.html">Leer Noticia</a>
               </figcaption>
             </figure>
           </div>
           <div class="ultimasNoticias-celda">
             <figure>
-              <img src="resources/img/audios.jpg" alt="" />
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-05-thumb.jpg" alt="" />
               <figcaption>
-                <h3>Exposiciones virtuales - Eventos</h3>
-                <a href="#">Leer Noticia</a>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="ultimasNoticias-celda">
-            <figure>
-              <img src="resources/img/audios.jpg" alt="" />
-              <figcaption>
-                <h3>Exposiciones virtuales - Eventos</h3>
-                <a href="#">Leer Noticia</a>
+                <h3>Da un paseo virtual por la Plaza de Armas de Lima del siglo XIX</h3>
+                <a href="novedades_5.html">Leer Noticia</a>
               </figcaption>
             </figure>
           </div>

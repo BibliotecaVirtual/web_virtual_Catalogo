@@ -157,6 +157,16 @@
   <script src="https://apis.google.com/js/platform.js" async defer>
     {lang: 'es'}
   </script>
+  <script>
+    function copyToClipboard() {
+      var url = window.location.href;
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
 </head>
 
 <body>
@@ -220,23 +230,15 @@
                       <div class="acc-content">
                         <a href="conferencia2015_3.html"><h3 class="h3-conferencia">Garcilaso de la Vega, teólogo de los Incas</h3></a>
                         <a href="conferencia2015_2.html"><h3 class="h3-conferencia">Ecos de Huarochirí: tras las huella de lo indígena en las Américas</h3></a>
-                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">Simposio La hoja sagrada: usos y abusos</h3></a>
+                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">La hoja sagrada: usos y abusos</h3></a>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <h3 id="mesSelect">Febrero</h3>
+                    <h3 id="mesSelect">Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2015_5.html"><h3 class="h3-conferencia h3-conferencia-selected">IV Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
                       </div>
                     </div>
                   </li>
@@ -275,15 +277,7 @@
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
@@ -312,7 +306,7 @@
                     <h3>Agosto</h3>
                     <div class="acc-section">
                       <div class="acc-content">
-                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">Seminario internacional "La cultura del libro: aproximaciones desde la historia y el arte"</h3></a>
+                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">La cultura del libro: aproximaciones desde la historia y el arte</h3></a>
                       </div>
                     </div>
                   </li>
@@ -336,9 +330,12 @@
             </a>
         </div>
         <div class="box-comment">
-          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
-          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          <div>
+            <a onclick="copyToClipboard()" style="cursor:pointer;"><img src="resources/img/copiar_enlace.png" alt=""/></a>
+            <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          </div>
         </div>
 
         <div class="conferencia-head">
@@ -347,9 +344,9 @@
           <div class="titular conferencia-texto">
             <img src="resources/img/conferencia-ene-2015(1).png" alt="" />
             <div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nesciunt, velit numquam eius, dolorum animi vitae sint ea possimus quae alias distinctio necessitatibus suscipit consequuntur.</p>
+              <p>"La Biblioteca Nacional del Perú (BNP) organizó el IV Programa de Historia del Arte Peruano, del 26 enero al 20 de febrero, con el objetivo de dar a conocer a los docentes y público en general acerca del arte prehispánico, virreinal, republicano y contemporáneo.<br>En esta cuarta edición, la actividad educativa tuvo como ponentes a los destacados expertos Walter Alva, Luis Lumbreras, Kristof Makowski, Rafael Hastings, Constanza Toquica, entre otros, quienes desarrollaron un panorama general del arte peruano."</p>
               <p>Auditorio: Mario Vargas Llosa (San Borja)</p>
-              <a class="various fancybox.iframe conferencia-completa" href="https://www.youtube.com/watch?v=aJ2cdaqy8LA"><img src="resources\img\youtube_icon.png" alt="">Ver conferencia completa</a>
+              <a class="various fancybox.iframe conferencia-completa" href="https://www.youtube.com/embed/playlist?list=PLw-7dkDed4ov5KLqyEdCDF995VfzP5XqY"><img src="resources\img\youtube_icon.png" alt="">Ver conferencia completa</a>
             </div>
           </div>
 
@@ -366,11 +363,10 @@
                 </li>
               </ul>
               <div>
-                <h3>Sincretismo Religioso en el Perú Virreinal Andino (IV Programa de Historia del Arte Peruano)</h3>
-                <p>falta</p>
-                <p>Curso</p>
-                <p>El Director de la Biblioteca Nacional del Perú (BNP), Doctor Ramón Mujica Pinilla expuso la ponencia “Sincretismo religioso en el Perú virreinal andino” en el IV Programa de Historia del Arte Peruano que organiza la BNP con el auspicio de
-                  la Derrama Magisterial.</p>
+                <h3>Sincretismo Religioso en el Perú Virreinal Andino</h3>
+                <p>Ramón Mujica</p>
+                <p>Ponencia</p>
+                <p>El Director de la Biblioteca Nacional del Perú (BNP), Doctor Ramón Mujica Pinilla expuso la ponencia “Sincretismo religioso en el Perú virreinal andino” en el IV Programa de Historia del Arte Peruano que organiza la BNP con el auspicio de la Derrama Magisterial.</p>
               </div>
             </div>
           </div>

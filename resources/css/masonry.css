@@ -1,4 +1,3 @@
-
 /********************************
 ***********************************/
 
@@ -15,95 +14,96 @@
 }
 
 .item img {
-    width: 100%;
-    height: auto;
-    /*display: block;*/
-    opacity: 0.8;
+  width: 100%;
+  height: auto;
+  /*display: block;*/
+  /*opacity: 0.6;*/
 }
 
 .w-maestrias-home .item .det {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  backface-visibility: hidden;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 56%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
 }
 
 .w-maestrias-home .item .det h3 {
-    font-family: arial;
-    font-weight: lighter;
-    margin: 0;
-    font-size: 18px;
-    color: #fff;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    z-index: 3;
-    max-width: 250px;
+  font-family: arial;
+  font-weight: lighter;
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 3;
+  max-width: 250px;
 }
 
 .w-maestrias-home .item .detail {
-    width: 100%;
-    height: 100%;
-    display: block;
-    float: left;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    display: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: none;
 }
 
 .tleft {
-    text-align: left !important;
+  text-align: left !important;
 }
 
 .w-maestrias-home .item.mba .detail-i {
-    padding: 120px 20px 20px 20px;
+  padding: 120px 20px 20px 20px;
 }
 
 .w-maestrias-home .item .detail .detail-i {
   text-align: left;
   position: absolute;
   display: block;
-  height: auto;
-  bottom: 0;
-  padding: 0;
-  right: 0;
-  left: 0;
-  top: 0;
-  margin: 25px;
   color: #fff;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 .w-maestrias-home .item.mba .detail-i h3 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .w-maestrias-home .item .detail h3 {
-    font-family: arial;
-    font-size: 2em;
-    font-weight: lighter;
-    color: #fff;
+  font-family: arial;
+  font-size: 1.6em;
+  font-weight: lighter;
+  color: #fff;
 }
 
 .w-maestrias-home .item .detail .w-btn .btn {
-    padding: 5px 15px;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .w-maestrias-home .item .detail .close {
-    width: 45px;
-    height: 22px;
-    display: block;
-    position: absolute;
-    margin: 0 0 0 -11px;
-    top: 10px;
-    right: -260px;
+  width: 45px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  margin: 0 0 0 -11px;
+  top: 10px;
+  right: 5px;
 }
 
 .close1 {
@@ -130,21 +130,27 @@
   height: 410px;
   width: 590px;
 }
+
 .w-maestrias-home .item.explain .det {
   display: none;
 }
+
 .w-maestrias-home .item.explain .img {
   width: 100%;
 }
+
 .w-maestrias-home .item.explain .detail {
   display: block;
-  background: rgba(0, 0, 0, 0.47);
-  width: 320px;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  cursor: default;
 }
+
 .w-maestrias-home .row-l {
   float: left;
   width: 48%;
 }
+
 .w-maestrias-home .row-l .w-slide-events {
   display: block;
   height: auto;
@@ -164,4 +170,23 @@ figure {
 p, h3 {
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (min-width: 680px) {
+  #moEfect figure figcaption > a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #moEfect figure.tleft {
+    display: none;
+  }
+  .w-maestrias-home .item.explain {
+    width: 290px !important;
+    height: 200px !important;
+  }
+  .w-maestrias-home .item.explain .det {
+    display: inherit !important;
+  }
 }

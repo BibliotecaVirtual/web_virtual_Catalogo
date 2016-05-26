@@ -157,6 +157,16 @@
   <script src="https://apis.google.com/js/platform.js" async defer>
     {lang: 'es'}
   </script>
+  <script>
+    function copyToClipboard() {
+      var url = window.location.href;
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
 </head>
 
 <body>
@@ -222,20 +232,12 @@
                       <div class="acc-content">
                         <a href="conferencia2015_3.html"><h3 class="h3-conferencia">Garcilaso de la Vega, teólogo de los Incas</h3></a>
                         <a href="conferencia2015_2.html"><h3 class="h3-conferencia">Ecos de Huarochirí: tras las huella de lo indígena en las Américas</h3></a>
-                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">Simposio La hoja sagrada: usos y abusos</h3></a>
+                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">La hoja sagrada: usos y abusos</h3></a>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
@@ -277,18 +279,10 @@
                     </div>
                   </li>
                   <li>
-                    <h3 id="mesSelect">Febrero</h3>
+                    <h3 id="mesSelect">Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2014_4.html"><h3 class="h3-conferencia h3-conferencia-selected">III Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
                       </div>
                     </div>
                   </li>
@@ -314,7 +308,7 @@
                     <h3>Agosto</h3>
                     <div class="acc-section">
                       <div class="acc-content">
-                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">Seminario internacional "La cultura del libro: aproximaciones desde la historia y el arte"</h3></a>
+                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">La cultura del libro: aproximaciones desde la historia y el arte</h3></a>
                       </div>
                     </div>
                   </li>
@@ -338,18 +332,22 @@
             </a>
         </div>
         <div class="box-comment">
-          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
-          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          <div>
+            <a onclick="copyToClipboard()" style="cursor:pointer;"><img src="resources/img/copiar_enlace.png" alt=""/></a>
+            <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          </div>
         </div>
 
         <div class="conferencia-head">
           <h2>Curso</h2>
           <h1>III Programa de Historia del Arte Peruano</h1>
           <div class="titular conferencia-texto">
-            <img src="resources/img/conferencia-feb-2014(1).png" alt="" />
+            <img src="resources/img/conferencias/biblioteca-virtual-conferencia-2014-04.png" alt="" />
             <div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatum provident molestiae, incidunt id obcaecati, odit blanditiis voluptatem at sunt. Illo cum recusandae rem labore quia illum consequuntur!</p>
+              <p>Fecha: Del 27 de Enero al 21 de Febrero de 2014</p>
               <p>Auditorio: Mario Vargas Llosa (San Borja)</p>
               <a class="various fancybox.iframe conferencia-completa" href="http://www.youtube.com/embed/playlist?list=PLw-7dkDed4ovciK2_pV2Vm-gMhcJ_Zbuq"><img src="resources\img\youtube_icon.png" alt="">Ver conferencia completa</a>
               </p>
@@ -389,7 +387,7 @@
                 </li>
               </ul>
               <div>
-                <h3>Los tejidos peruanos precolombinos, el primer auténtico arte moderno (III Programa de Historia del Arte Peruano)</h3>
+                <h3>Los tejidos peruanos precolombinos, el primer auténtico arte moderno</h3>
                 <p>James W. Reid</p>
                 <p>Ponencia</p>
                 <p>El gran especialista en arte textil a nivel mundial James Reid revalorizó la textilería peruana y su legado a través del tiempo.</p>
@@ -407,7 +405,7 @@
                 <h3>La metalurgia ancestral precolombina: Investigaciones y estado de la cuestión</h3>
                 <p>Paloma Carcedo</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>La curadora e historiadora de Arte Paloma Carcedo abordó el tema de las investigaciones acerca de la obtención, transformación y manipulación de los metales en diversas culturas del Perú y de la América prehispánica.</p>
               </div>
             </div>
           </div>
@@ -426,7 +424,8 @@
               <div>
                 <h3>Perú, país megadiverso, pluricultural y multilingüe pero integrado desde la formación de Caral</h3>
                 <p>Ruth Shady</p>
-                <p>falta texto</p>
+                <p>Ponencia</p>
+                <p>La destacada arqueóloga y docente Ruth Shady expuso acerca de la diversidad geográfica, lingüística y social del Perú desde tiempos ancestrales, ante la cual la cultura Caral marcaría una ruptura mediante su integración a nivel social, política y cultural.</p>
               </div>
             </div>
           </div>
@@ -447,7 +446,7 @@
                 <h3>Lima milenaria, arqueología y gestión</h3>
                 <p>Mario Advíncula</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El arqueólogo Mario Advíncula versó acerca de la historia prehispánica de Lima desde el punto de vista territorial a través de las interacciones de la costa central peruana con otras regiones.</p>
               </div>
             </div>
           </div>
@@ -467,7 +466,7 @@
                 <h3>Iconografías y estilos del arte virreinal peruano: del manierismo europeo al renacimiento inca</h3>
                 <p>Cécile Michaud</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>La historiadora presentó sus estudios acerca de la pintura virreinal puntualizando la iconografía y el estilo presente en diversas obras de dicho periodo.</p>
               </div>
             </div>
           </div>
@@ -487,7 +486,7 @@
                 <h3>Lecturas raciales de lo indio, mestizo y criollo en la pintura virreinal peruana</h3>
                 <p>Ramón Mujica</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El director de la Biblioteca Nacional del Perú habló del mundo interpretativo de las pinturas virreinales, su realización por parte de pintores indígenas y mestizos, así como de los discursos contenidos en ellas.</p>
               </div>
             </div>
           </div>
@@ -507,7 +506,7 @@
                 <h3>Templos coloniales del Colca, Arequipa</h3>
                 <p>Luis Enrique Tord</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El historiador y narrador Luis Enrique Tord refirió parte de sus investigaciones en 16 templos católicos y una capilla renacentista erigidos en el Valle del Colca entre los siglos XVI y XIV.</p>
               </div>
             </div>
           </div>
@@ -527,7 +526,7 @@
                 <h3>La vida de San Agustín en la pintura cusqueña</h3>
                 <p>Ricardo Estabridis</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El doctor en Geografía e Historia Ricardo Estabridis Cárdenas abordó con especial atención la vida del santo católico plasmadas en dos series de obras realizadas por pintores cuzqueños en el siglo XVIII.</p>
               </div>
             </div>
           </div>
@@ -587,7 +586,7 @@
                 <h3>Luis Montero, los funerales de Atahualpa y el academicismo del siglo XIX</h3>
                 <p>Marco I. Cabrera Hernández</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El historiador de Arte y director del Instituto Cultural del Arte Peruano Marco I. Cabrera Hernández enfatizó la importancia de la obra del retratista peruano decimonónico cuya formación académica lo llevó a Florencia y fue injustamente incomprendido y opacado por la tradición vanguardista.</p>
               </div>
             </div>
           </div>
@@ -607,7 +606,7 @@
                 <h3>De la dicotomía virreinal al Estado Nación peruano: mirada de identidad en la pintura peruana del siglo XIX y XX</h3>
                 <p>Fernando Villegas</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El doctor en Historia del Arte invitó a dar una mirada a la construcción de un imaginario nacional peruano a partir de la independencia.</p>
               </div>
             </div>
           </div>
@@ -627,7 +626,7 @@
                 <h3>Fotografía, siglos XIX y XX</h3>
                 <p>Jorge Villacorta</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El genetista, crítico de arte y curador independiente expuso una investigación realizada de manera conjunta con el historiador de la fotografía Andrés Garay, tratando temas como la fotogenia evidenciada a fines del siglo XIX y principios del siguiente.</p>
               </div>
             </div>
           </div>
@@ -647,7 +646,7 @@
                 <h3>Museo Nacional de Arqueología, Antropología e Historia del Perú</h3>
                 <p>Alexander Ortegal, Manuel Merino y Jaime Mariazza</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El historiador Alexander Ortegal, el curador Manuel Merino y el docente sanmarquino Jaime Mariazza participaron en representación del Museo Nacional de Arqueología, Antropología e Historia del Perú y dialogaron sobre las colecciones con que cuenta este recinto.</p>
               </div>
             </div>
           </div>
@@ -667,7 +666,7 @@
                 <h3>Escultura funeraria en Lima, el Presbítero Maestro</h3>
                 <p>Alfonso Castrillón</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El crítico e historiador de Arte Alfonso Castrillón impartió sus conocimientos de la construcción y la simbología de las esculturas y otros motivos funerarios de uno de los cementerios históricos más famosos de América Latina.</p>
               </div>
             </div>
           </div>
@@ -687,7 +686,7 @@
                 <h3>El nacimiento del Arte Moderno</h3>
                 <p>Fernando de Szyszlo</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El célebre artista peruano Fernando de Szyszlo discutió el origen de esta nueva tendencia en la historia del Arte a partir de diversos descubrimientos científicos y circunstancias sociales a fines del siglo XIX.</p>
               </div>
             </div>
           </div>
@@ -707,7 +706,7 @@
                 <h3>Mario Urteaga y Juan Manuel Figuero Aznar</h3>
                 <p>Gustavo Buntinx</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El historiador, curador y crítico de Arte habló primordialmente sobre la figura y el legado artístico de Juan Manuel Figuero, pintor y fotógrafo peruano.</p>
               </div>
             </div>
           </div>
@@ -722,7 +721,7 @@
                 <h3>Del teatro a la calle: estrategias artísticas del siglo XX para reencantar la vida</h3>
                 <p>Patricia Ciriani</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>La historiadora del arte y de la arquitectura, periodista y curadora independiente intervino repasando el desarrollo del arte contemporáneo internacional y dio énfasis en cuanto a estrategias teatrales de amplia práctica local y mundial como el performance y el happening.</p>
               </div>
             </div>
           </div>
@@ -742,7 +741,7 @@
                 <h3>Pintura contemporánea de la selva</h3>
                 <p>María Eugenia Yllia</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>La coordinadora del Centro de Documentación de Arte Peruano Contemporáneo (CDAPC) amplió la visión de de los asistentes gracias a su ponencia acerca de las manifestaciones artísticas provenientes de la amazonía peruana.</p>
               </div>
             </div>
           </div>
@@ -757,7 +756,7 @@
                 <h3>Arte popular</h3>
                 <p>Jesús Urbano</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El maestro y artista ayacuchano, retablista de tierra adentro, Jesús Urbano Rojas falleció el 21 de mayo del presente año. Tres meses antes, el maestro Urbano participó en el III Curso de Historia del Arte Peruano.</p>
               </div>
             </div>
           </div>
@@ -777,7 +776,7 @@
                 <h3>Arte Contemporáneo</h3>
                 <p>Hernán Pazos</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>El artista visual Hernán Pazos narró anécdotas de su trayectoria vital y profesional durante las décadas de 1980 y 1990 tras su retorno al Perú, del cual manifestó que tuvo poco acceso a las tendencias artísticas de entonces.</p>
               </div>
             </div>
           </div>
@@ -792,7 +791,7 @@
                 <h3>Museo de Arte Contemporáneo</h3>
                 <p>Elisa Granda-Juan Peralta</p>
                 <p>Ponencia</p>
-                <p>falta texto</p>
+                <p>La educadora Elisa Granda y el historiador Juan Peralta explicaron la colección y los lineamientos del programa de exposiciones temporales del Museo de Arte Contemporáneo; así como el programa educativo que se ofrece alrededor de la colección de arte moderno y contemporáneo, y las dinámicas educativas alrededor de la programación de exposiciones de este recinto cultural.</p>
               </div>
             </div>
           </div>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+
+  <!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Biblioteca Virtual</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="resources/img/icon.ico" type="image/ico">
+
+  <!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,400' rel='stylesheet' type='text/css' />
+
+  <!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="resources/css/internas.css">
+  <link rel="stylesheet" href="resources/css/reset.css" />
+  <!-- CSS reset -->
+  <link rel="stylesheet" href="resources/css/menu-style.css" />
+  <!-- Resource style -->
+  <link rel="stylesheet" href="resources/css/flickity.css" media="screen" />
+
+  <!-- Script
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<script src="js/jquery-1.12.0.js"></script>-->
+  <script src="resources/js/jquery.min.js"></script>
+  <script src="resources/js/jquery-ui.min.js"></script>
+  <script src="resources/js/jquery.mobile.custom.min.js"></script>
+  <script src="resources/js/main-menu.js"></script>
+  <!-- Resource jQuery JS del Menu-->
+  <script src="resources/js/modernizr.js"></script>
+  <!-- Modernizr para el Menu-->
+  <script src="resources/js/jquery.slimscroll.min.js"></script>
+  <script src="resources/js/fb-share.js"></script>
+  <script src="resources/js/flickity.pkgd.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      window.twttr = (function(d, s, id) {  
+        var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};  
+        if (d.getElementById(id)) return t;  
+        js = d.createElement(s);  
+        js.id = id;  
+        js.src = "https://platform.twitter.com/widgets.js";  
+        fjs.parentNode.insertBefore(js, fjs);   
+        t._e = [];  
+        t.ready = function(f) {    
+          t._e.push(f);  
+        };   
+        return t;
+      }(document, "script", "twitter-wjs"));
+    });
+  </script>
+  <script src="https://apis.google.com/js/platform.js" async defer>
+    {
+      lang: 'es'
+    }
+  </script>
+  <script>
+    function copyToClipboard() {
+      var url = window.location.href;
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <header class="cd-main-header">
+    <a class="cd-logo" href="index.html"></a>
+    <ul class="cd-header-buttons">
+      <!--<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>-->
+      <li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+    </ul>
+    <!-- cd-header-buttons -->
+  </header>
+  <script>
+    $(document).ready(function() {
+      $('.novedades-carousel-main').flickity({
+        cellAlign: 'center',
+        contain: true,
+        pageDots: false,
+        wrapAround: false,
+        imagesLoaded: true,
+      });
+      // 2nd carousel, navigation
+      $('.novedades-carousel-nav').flickity({
+        asNavFor: '.novedades-carousel-main',
+        contain: true,
+        pageDots: false,
+        wrapAround: false,
+        imagesLoaded: true,
+        // cellAlign: 'center',
+      });
+      $('.ultimasNoticias-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        pageDots: false,
+        wrapAround: true,
+        imagesLoaded: true,
+      });
+    });
+  </script>
+  <main class="cd-main-content">
+    <div class="header-img triangulo-novedades" id="novedades-img">
+    </div>
+    <div class="margen-internas" id="novedades-content">
+      <div class="site-map">
+          <div class="left">
+              <p>Eventos</p>
+          </div>
+          <a href="novedades.html">
+              <div class="right active-novedades">
+                  <p>Novedades</p>
+              </div>
+          </a>
+      </div>
+      <h1 class="titulo-principal">Novedades</h1>
+      <div class="box-comment clearfix">
+        <div>
+          <a onclick="copyToClipboard()" style="cursor:pointer;"><img src="resources/img/copiar_enlace.png" alt=""/></a>
+          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true" style="margin-top:2px"></div>
+        </div>
+      </div>
+      <div class="novedades-header">
+        <div>
+          <h3>Lunes, 16 de mayo de 2016</h3>
+          <h1>NUEVA SECCIÓN ESPECIAL: LAS JOYAS DE LA BNP</h1>
+        </div>
+      </div>
+      <div class="clearfix">
+        <div class="col-60">
+          <div>
+            <p>Entre las novedades que trae consigo el lanzamiento de la nueva página web de la Biblioteca Virtual cobra especial relevancia la sección dedicada a las «Joyas» de la Biblioteca Nacional del Perú: una serie de 39 incunables, libros que se cuentan entre los primeros impresos del mundo y que gozan de una categoría especial entre las obras resguardadas en las bóvedas de la BNP. Dicha colección fue inscrita en su totalidad como Patrimonio de la Humanidad en la Memoria del Mundo de la Unesco.</p>
+            <p>Cada documento está contextualizado en una línea de tiempo que va desde 1584 hasta 1619, y aparece acompañado de una breve explicación de su contenido, especificaciones bibliográficas y su relevancia histórica, así como impactantes fotografías al detalle y la opción de leer los texto completos en línea.</p>
+            <p>Adicionalmente, se podrá compartir la información relativa a cada incunable y extractos del contenido mismo en diversas redes sociales.</p>
+            <p>Puede acceder sin necesidad de registro a esta sección <a href="http://bvirtual.bnp.gob.pe/joyas.html">haciendo clic aquí</a>.</p>
+          </div>
+          <div>
+            <div class="novedades-carousel-main">
+              <div class="novedades-celda">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-07-img01.jpg" alt="">
+              </div>
+              <div class="novedades-celda">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-07-img02.jpg" alt="">
+              </div>
+              <div class="novedades-celda">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-07-img03.jpg" alt="">
+              </div>
+            </div>
+            <div class="novedades-carousel-nav">
+              <div class="novedades-celda-nav">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-07-img01.jpg" alt="">
+              </div>
+              <div class="novedades-celda-nav">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-07-img02.jpg" alt="">
+              </div>
+              <div class="novedades-celda-nav">
+                <img src="resources/img/novedades/biblioteca-virtual-novedades-07-img03.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-40">
+          <div class="fb-container">
+            <div class="fb-comments" data-href="http://www.bvirtual.bnp.gob.pe/novedades_7.html" data-width="100%" data-numposts="3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ultimas-noticias">
+        <div>
+          <h2>Últimas novedades</h2>
+        </div>
+        <div class="ultimasNoticias-carousel">
+          <div class="ultimasNoticias-celda">
+            <figure>
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-01-thumb.jpg" alt="" />
+              <figcaption>
+                <h3>Lanzamiento de la nueva web de Biblioteca Virtual</h3>
+                <a href="novedades_1.html">Leer Noticia</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="ultimasNoticias-celda">
+            <figure>
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-02-thumb.jpg" alt="" />
+              <figcaption>
+                <h3>Lanzamiento del nuevo canal de Youtube de la BV</h3>
+                <a href="novedades_2.html">Leer Noticia</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="ultimasNoticias-celda">
+            <figure>
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-03-thumb.jpg" alt="" />
+              <figcaption>
+                <h3>Nueva sección: exposiciones virtuales</h3>
+                <a href="novedades_3.html">Leer Noticia</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="ultimasNoticias-celda">
+            <figure>
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-04-thumb.jpg" alt="" />
+              <figcaption>
+                <h3>Lanzamiento del Catálogo Virtual Nacional</h3>
+                <a href="novedades_4.html">Leer Noticia</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="ultimasNoticias-celda">
+            <figure>
+              <img src="resources/img/novedades/biblioteca-virtual-novedades-05-thumb.jpg" alt="" />
+              <figcaption>
+                <h3>Da un paseo virtual por la Plaza de Armas de Lima del siglo XIX</h3>
+                <a href="novedades_5.html">Leer Noticia</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+    </div>
+    <div class="footer-internas">
+      <div>
+        <div class="tercio">
+          <h2>¿Que hacemos?</h2>
+          <p>La Biblioteca Virtual organiza y gestiona acciones, programas y proyectos para la digitalización y difusión electrónica del patrimonio cultural documental y bibliográfico que custodia la Biblioteca Nacional del Perú, a fin de apoyar la formación
+            integral de los miembros de la comunidad peruana y mundial.</p>
+          <h2><a href="">Mapa de sitio >></a></h2>
+        </div>
+        <div class="tercio">
+          <h2>Organismos</h2>
+          <img src="resources/img/logo_bnp.png" />
+          <img src="resources/img/logo_ministerio_cultura.jpg" />
+          <img src="resources/img/logo_peru_progreso_para_todos.png" />
+        </div>
+        <div class="tercio">
+          <a href="faq.html"><h2>Preguntas frecuentes</h2></a>
+          <p class="footer-preguntas"><a href="faq.html">¿Qué es la Biblioteca Virtual?</a></p>
+          <p class="footer-preguntas"><a href="faq.html">¿Qué recursos tengo disponibles?</a></p>
+          <p class="footer-preguntas"><a href="faq.html">¿Cómo funciona el buscador de la BV?</a></p>
+          <p class="footer-preguntas"><a href="faq.html">¿Puedo descargar o imprimir los libros electrónicos del catálogo?</a></p>
+          <p class="footer-preguntas"><a href="faq.html">¿Dónde puedo contactarme para presentar un reclamo o sugerencia?</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright &copy; 2016 Biblioteca Virtual de la Biblioteca Nacional del Perú</p>
+    </div>
+  </main>
+
+  <div class="cd-overlay"></div>
+
+  <!--
+-------------------------------------------------MENU Navegador  ----------------------------------------------------
+--->
+  <nav class="cd-nav">
+    <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+      <li>
+        <a href="index.html">Inicio</a>
+      </li>
+      <li class="has-children">
+        <a href="#">Catálogo</a>
+        <ul class="cd-nav-gallery is-hidden" id="color-catalogo">
+          <li class="go-back"><a href="#">Menu</a></li>
+          <li>
+            <a class="cd-nav-item" href="general.html">
+              <img src="resources/img/catalago_general.png" alt="Product Image">
+              <h3>General</h3>
+              <p class="texto-menu">Accede a todo el material bibliográfico y audiovisual en formato digital.</p>
+            </a>
+          </li>
+          <li>
+            <a class="cd-nav-item" href="documentos.html">
+              <img src="resources/img/catalago_documentos.png" alt="Product Image">
+              <h3>Documentos</h3>
+              <p class="texto-menu">Libros, revistas, folletos, partituras, cartas y manuscritos, etc.</p>
+            </a>
+          </li>
+          <li>
+            <a class="cd-nav-item" href="multimedia.html">
+              <img src="resources/img/catalago_multimedia.png" alt="Product Image">
+              <h3>Multimedia</h3>
+              <p class="texto-menu">Audio (vinilo, casetes, etc.), video (nitrato, VHS, etc.), mapas y planos e imágenes.</p>
+            </a>
+          </li>
+          <li>
+            <a class="cd-nav-item" href="joyas.html">
+              <img src="resources/img/img04.png" alt="Product Image">
+              <h3>Joyas BNP</h3>
+              <p class="texto-menu">39 documentos únicos inscritos en la Memoria del Mundo de la Unesco.</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="has-children">
+        <a href="#">Servicios</a>
+        <ul class="cd-nav-gallery is-hidden" id="color-servicios">
+          <li class="go-back"><a href="#">Menu</a></li>
+          <li class="li-doble">
+            <a class="cd-nav-item" href="digitalizacion_documentos.html">
+              <img src="resources/img/servicio_dig-documentos.png" alt="Product Image">
+              <h3>Digitalización Documentos</h3>
+              <p class="texto-menu">Del papel al soporte digital.</p>
+            </a>
+          </li>
+          <li class="li-doble">
+            <a class="cd-nav-item" href="digitalizacion_audiovisual.html">
+              <img src="resources/img/servicio_dig-audiovisual.png" alt="Product Image">
+              <h3>Digitalización Audiovisual</h3>
+              <p class="texto-menu">De formatos analógicos a formatos multimedia.</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="has-children">
+        <a href="#">Eventos</a>
+        <ul class="cd-nav-gallery is-hidden" id="color-eventos">
+          <li class="go-back"><a href="#">Menu</a></li>
+          <li class="li-doble">
+            <a class="cd-nav-item" href="conferencias.html">
+              <img src="resources/img/evento_conferencias.png" alt="Product Image">
+              <h3>Conferencias</h3>
+              <p class="texto-menu">Seminarios, conversatorios, cursos, simposios, mesas redondas, conferencias magistrales, etc.</p>
+            </a>
+          </li>
+          <li class="li-doble">
+            <a class="cd-nav-item" href="exposiciones.html">
+              <img src="resources/img/evento_exposiciones.png" alt="Product Image">
+              <h3>Exposiciones</h3>
+              <p class="texto-menu">Diversas exposiciones bibliográficas, históricas, artísticas, fotográficas, etc., llevadas a cabo en nuestras sedes.</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="novedades.html">Novedades</a></li>
+    </ul>
+    <!-- primary-nav -->
+  </nav>
+  <!--
+-------------------------------------------------FIN MENU Navegador  ----------------------------------------------------
+--->
+
+  <!-- End Document
+––––––––––––––––––––––––––––––––––––––––––––––––––-->
+
+</body>
+
+</html>

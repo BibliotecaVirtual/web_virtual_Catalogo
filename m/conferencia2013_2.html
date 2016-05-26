@@ -156,6 +156,16 @@
   <script src="https://apis.google.com/js/platform.js" async defer>
     {lang: 'es'}
   </script>
+  <script>
+    function copyToClipboard() {
+      var url = window.location.href;
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
 </head>
 
 <body>
@@ -221,20 +231,12 @@
                       <div class="acc-content">
                         <a href="conferencia2015_3.html"><h3 class="h3-conferencia">Garcilaso de la Vega, teólogo de los Incas</h3></a>
                         <a href="conferencia2015_2.html"><h3 class="h3-conferencia">Ecos de Huarochirí: tras las huella de lo indígena en las Américas</h3></a>
-                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">Simposio La hoja sagrada: usos y abusos</h3></a>
+                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">La hoja sagrada: usos y abusos</h3></a>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
@@ -276,15 +278,7 @@
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
@@ -313,7 +307,7 @@
                     <h3 id="mesSelect">Agosto</h3>
                     <div class="acc-section">
                       <div class="acc-content">
-                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia h3-conferencia-selected">Seminario internacional "La cultura del libro: aproximaciones desde la historia y el arte"</h3></a>
+                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia h3-conferencia-selected">La cultura del libro: aproximaciones desde la historia y el arte</h3></a>
                       </div>
                     </div>
                   </li>
@@ -337,18 +331,22 @@
             </a>
         </div>
         <div class="box-comment">
-          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
-          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          <div>
+            <a onclick="copyToClipboard()" style="cursor:pointer;"><img src="resources/img/copiar_enlace.png" alt=""/></a>
+            <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          </div>
         </div>
 
         <div class="conferencia-head">
-          <h2>Seminario</h2>
-          <h1>Seminario internacional "La cultura del libro: aproximaciones desde la historia y el arte"</h1>
+          <h2>Seminario Internacional</h2>
+          <h1>La cultura del libro: aproximaciones desde la historia y el arte</h1>
           <div class="titular conferencia-texto">
             <img src="resources/img/conferencia-ago-2013(1).png" alt="" />
             <div>
               <p>Especialistas peruanos y extranjeros de alto nivel en el campo de las artes visuales e historia del arte precolombino y colonial así como en la historia del libro y la lectura, se reunieron en la Biblioteca Nacional del Perú.</p>
+              <p>Fecha: Del 22 al 23 de Agosto de 2013</p>
               <p>Auditorio: Mario Vargas Llosa (San Borja)</p>
               <a class="various fancybox.iframe conferencia-completa" href="http://www.youtube.com/embed/D4l_li6osdE?list=PLw-7dkDed4otquO27siwG9ZuOKBNgd9DV"><img src="resources\img\youtube_icon.png" alt="">Ver conferencia completa</a>
               </p>
@@ -356,7 +354,7 @@
           </div>
         </div>
         <div class="conferencia-cronograma">
-          <p>Jueves 22 de Agosto de 2013 / turno: mañana</p>
+          <p>Jueves 22 de Agosto de 2013 / Turno: mañana</p>
         </div>
         <div class="row-cronograma clearfix">
           <div class="doble">
@@ -368,6 +366,7 @@
               </ul>
               <div>
                 <h3>Inauguración del seminario internacional "La cultura del libro"</h3>
+                <p></p>
                 <p>La inauguración estuvo a cargo de Ramón Mujica, Biblioteca Nacional del Perú y Carlos Aguirre, Universidad de Oregon (EE.UU).</p>
               </div>
             </div>
@@ -421,7 +420,7 @@
           </div>
         </div>
         <div class="conferencia-cronograma">
-          <p>Jueves 22 de Agosto de 2013 / turno: tarde</p>
+          <p>Jueves 22 de Agosto de 2013 / Turno: tarde</p>
         </div>
         <div class="row-cronograma clearfix">
           <div class="doble">
@@ -489,7 +488,7 @@
           </div>
         </div>
         <div class="conferencia-cronograma">
-          <p>Viernes 23 de Agosto de 2013 / turno: mañana</p>
+          <p>Viernes 23 de Agosto de 2013 / Turno: mañana</p>
         </div>
         <div class="row-cronograma clearfix">
           <div class="doble">
@@ -524,7 +523,7 @@
           </div>
         </div>
         <div class="conferencia-cronograma">
-          <p>Viernes 23 de Agosto de 2013 / turno: mañana</p>
+          <p>Viernes 23 de Agosto de 2013 / Turno: mañana</p>
         </div>
         <div class="row-cronograma clearfix">
           <div class="doble">

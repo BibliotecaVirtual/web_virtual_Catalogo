@@ -723,7 +723,7 @@ z-index:400 !important;
 }
 
 .titulo{
-    font-family:'CaviarDreams';
+    font-family:'CaviarDreams' !important;
 	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 6px;
@@ -929,9 +929,9 @@ z-index:400 !important;
 
 .digitalizacion-texto p{
 	margin: 30px 15px 30px;
-	width:80%;
-  text-align:left;
-}
+	width:90%;
+  	text-align:left;
+	}
 
 .digitalizacion-video{
 	 width: 60%;
@@ -1024,6 +1024,15 @@ z-index:400 !important;
     margin-right: 10px;
     padding: 20px;
 }
+
+.alineacion-izq-1{
+margin-left:-6px;
+}
+
+.alineacion-izq-2{
+margin-left:-8px;
+}
+
 }
 
 /* SECTION 4
@@ -1087,12 +1096,17 @@ figure.effect-ruby:hover img {
 	opacity: 1;
 }
 
-.novedades-galeria figure figcaption > a {
+.novedades-galeria figure > a {
 	z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
     font-size: 0;
-    opacity: 1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .novedades-galeria figcaption h2 {
@@ -1174,7 +1188,7 @@ figure.effect-ruby:hover img {
     text-align: left;
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    margin: 0 20px;
     font-family: 'OpenSans Semibold';
 }
 

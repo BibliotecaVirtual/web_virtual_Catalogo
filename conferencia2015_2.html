@@ -157,6 +157,16 @@
   <script src="https://apis.google.com/js/platform.js" async defer>
     {lang: 'es'}
   </script>
+  <script>
+    function copyToClipboard() {
+      var url = window.location.href;
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
 </head>
 
 <body>
@@ -222,20 +232,12 @@
                       <div class="acc-content">
                         <a href="conferencia2015_3.html"><h3 class="h3-conferencia">Garcilaso de la Vega, teólogo de los Incas</h3></a>
                         <a href="conferencia2015_2.html"><h3 class="h3-conferencia h3-conferencia-selected">Ecos de Huarochirí: tras las huella de lo indígena en las Américas</h3></a>
-                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">Simposio La hoja sagrada: usos y abusos</h3></a>
+                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">La hoja sagrada: usos y abusos</h3></a>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
@@ -277,15 +279,7 @@
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
@@ -314,7 +308,7 @@
                     <h3>Agosto</h3>
                     <div class="acc-section">
                       <div class="acc-content">
-                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">Seminario internacional "La cultura del libro: aproximaciones desde la historia y el arte"</h3></a>
+                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">La cultura del libro: aproximaciones desde la historia y el arte</h3></a>
                       </div>
                     </div>
                   </li>
@@ -338,18 +332,21 @@
             </a>
         </div>
         <div class="box-comment">
-          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
-          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          <div>
+            <a onclick="copyToClipboard()" style="cursor:pointer;"><img src="resources/img/copiar_enlace.png" alt=""/></a>
+            <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          </div>
         </div>
 
         <div class="conferencia-head">
-          <h2>Conferencia</h2>
+          <h2>Seminario</h2>
           <h1>Ecos de Huarochirí: tras las huella de lo indígena en las Américas</h1>
           <div class="titular conferencia-texto">
-            <img src="resources/img/conferencia-jun2-2015(1).png" alt="" />
+            <img src="resources/img/conferencias/biblioteca-virtual-conferencia-2015-02.png" alt="" />
             <div>
-              <p>Conferencia en la Biblioteca Nacional del Perú (BNP) en el marco del Seminario Ecos de Huarochirí a cargo del historiador e investigador Dr. Pierre Duviols.</p>
+              <p>El seminario “Ecos de Huarochirí. Tras el rastro indígena en las Américas” reunió a intelectuales, artistas y estudiosos sobre este tema, con el objetivo de abrir el diálogo y la investigación sobre los manuscritos de Huarochirí, relatos traducidos al castellano por José María Arguedas.</p>
               <p>Auditorio: Mario Vargas Llosa (San Borja)</p>
               <a class="various fancybox.iframe conferencia-completa" href="https://www.youtube.com/watch?v=BBGTBVCB3pY"><img src="resources\img\youtube_icon.png" alt="">Ver conferencia completa</a>
             </div>
@@ -368,10 +365,10 @@
                 </li>
               </ul>
               <div>
-                <h3>Ecos de Huarochirí: tras las huella de lo indígena en las Américas</h3>
+                <h3>Memoria de una amistad y colaboración con Arguedas</h3>
                 <p>Pierre Duviols</p>
                 <p>Conferencia</p>
-                <p>Conferencia en la Biblioteca Nacional del Perú (BNP) en el marco del Seminario Ecos de Huarochirí a cargo del historiador e investigador Dr. Pierre Duviols.</p>
+                <p>El historiador Pierre Duviols, de la Universidad de Aix Marseille desarrolló el tema “Memoria de una amistad y colaboración con Arguedas. De la epopeya quechua de Huarochirí a la extirpación de idolatrías”. En su alocución, Duviols brindó referencias del libro Itinerarios Epistolares de Carmen María Pinilla, y reveló anécdotas y experiencias referidas a su amistad con Arguedas.</p>
               </div>
             </div>
           </div>

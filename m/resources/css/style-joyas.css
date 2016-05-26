@@ -74,8 +74,8 @@ a {
 .sociales-joyas{
 float:right;
 margin-right: 15px;
-margin-top: 10px;
-width: 270px;	
+margin-top: 15px;
+width: 280px;	
 }
 
 .twitter{
@@ -112,7 +112,6 @@ transform:translate(0);
 	vertical-align:middle;
 	text-align: center;	
 	}
-}
 
 /* -------------------------------- 
 
@@ -329,7 +328,8 @@ Main Components
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(../img/cd-arrow.svg) no-repeat 0 0;
+  background: url(../../../resources/img/cd-arrow.svg) no-repeat 0 0;
+  
 }
 .cd-timeline-navigation a.prev {
   left: 0;
@@ -412,7 +412,7 @@ Main Components
   animation-direction: reverse;
 }
 .cd-horizontal-timeline .events-content li > * {
-  max-width: max-width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-content h2 {

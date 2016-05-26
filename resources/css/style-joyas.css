@@ -53,7 +53,7 @@ a {
     cursor: pointer;
     color: #ffffff;
     font-family: 'OpenSans Regular';
-    font-size: 13px;
+    font-size: 12px;
     margin: 5px 0 5px 0;
     padding: 5px 20px;
     text-transform: uppercase;
@@ -74,8 +74,8 @@ a {
 .sociales-joyas{
 float:right;
 margin-right: 15px;
-margin-top: 10px;
-width: 270px;	
+margin-top: 15px;
+width: 300px;	
 }
 
 .twitter{
@@ -83,7 +83,7 @@ transform:translate(0);
 }
 
 .textos-joyas{
-    padding: 0 15px;
+    padding: 15px 18px;
 	max-height: calc(100vh - 260px);
     overflow: auto;
 	
@@ -112,7 +112,7 @@ transform:translate(0);
 	vertical-align:middle;
 	text-align: center;	
 	}
-}
+
 
 /* -------------------------------- 
 
@@ -121,7 +121,7 @@ Main Components
 -------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 2em auto;
+  margin: 0em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -140,7 +140,7 @@ Main Components
 .cd-horizontal-timeline .timeline {
   position: absolute;
     height: 100px;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     background: #005AA7;
     float: left;
@@ -191,7 +191,8 @@ Main Components
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #58BFB6;
+  height:50px;
+  background-color: rgba(88, 191, 182, 0.35);
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -235,7 +236,7 @@ Main Components
   bottom: 0;
   z-index: 2;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-bottom: 8px;
   color: #F7F4F4;
   /* fix bug on Safari - text flickering while timeline translates */
@@ -412,7 +413,7 @@ Main Components
   animation-direction: reverse;
 }
 .cd-horizontal-timeline .events-content li > * {
-  max-width: max-width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-content h2 {
@@ -432,7 +433,7 @@ Main Components
 }
 .cd-horizontal-timeline .events-content p {
   font-size: 1.4rem;
-  color: #959595;
+  color: #2e3233;
 }
 
 .cd-horizontal-timeline .events-content .right-text .site-map .left p, .cd-horizontal-timeline .events-content .right-text .site-map .right p {
@@ -440,7 +441,7 @@ Main Components
   color: #FFF;
 }
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
-  line-height: 1.6;
+  line-height: 1.3;
       width: 100%;
 }
 
@@ -450,7 +451,7 @@ Main Components
 	}
 
 .textos-joyas{
-    max-height: calc(100vh - 230px);
+    max-height: calc(100vh - 255px);
     }
 .cd-horizontal-timeline .events-content {
   height: calc(100vh - 150px) !important;
@@ -460,10 +461,6 @@ Main Components
     height: calc(100vh - 150px);	
 }
 
-.ver-online {
-    height: 80px;
-    margin-bottom: 10px;
-}
 }
 
 @media only screen and (min-width: 768px) {
@@ -499,7 +496,7 @@ Main Components
  	}
 
 .textos-joyas {
-    overflow: hidden;
+    overflow: auto;
 	}
 	
 .detalles-libro {
@@ -509,7 +506,9 @@ Main Components
 .cd-horizontal-timeline .timeline {
     width: 100%;
     }
-
+.cd-horizontal-timeline .events-content p {
+    font-size: 1.2rem;
+	}
 }
 
 @media only screen and (max-width: 480px){
@@ -612,9 +611,9 @@ div img {
   max-height: none;
   display: block;
   position: relative;
-  top: 50%;
+ /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
 
 .royalSlider {
@@ -742,4 +741,149 @@ SITE MAP
 .ub {
     width: 270px !important;
     padding-top: 10px;
+}
+
+/** /// cuadro de sociales */
+
+.share-button { 
+  position: fixed; 
+  top: 25%; 
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  line-height:2em;
+  z-index:4;
+ }
+
+.social-toggle {
+  display:block;
+  font-weight:bold;
+  font-size:90%;
+  text-align:center;
+  text-transform:uppercase;
+  transition:all 0.25s;
+  color:rgb(200,200,200);
+  background: #005AA7;
+    border: 2px solid #005AA7;
+	    height: 45px;
+    width: 45px;
+}
+
+.social-toggle:hover {
+  background: #C8C8C8;
+    color: #333;
+    border: 2px solid #C8C8C8;
+}
+
+.no-js .social-toggle, .no-js .social-toggle:hover {
+  cursor: default;
+  border:none;
+  background:transparent;
+  color:rgb(200,200,200);
+  pointer-events:none;
+}
+
+.social-networks {
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(0) translateY(10px);
+  transform: scale(0) translateY(10px);
+  opacity: 0;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  /* stops flickering */
+  -webkit-backface-visibility: hidden;
+}
+
+.social-gplus {
+  /*background: #e34429;*/
+}
+
+.social-twitter {
+  /*background: #6cdfea;*/
+  height: 32px !important;
+}
+
+.social-networks.open-menu, .no-js .social-networks {
+  -webkit-transform: scale(1) translateY(10px);
+  transform: scale(1) translateY(10px);
+  opacity:1;
+}
+
+
+.social-networks ul {
+  position: relative;
+top: 0;
+left: 0;
+width: 90px;
+height: 160px;
+color: #fff;
+background: #A8AAAD;
+margin: auto;
+padding: 0;
+list-style: none;
+}
+
+.social-networks ul:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.social-networks.open-menu ul:after, .no-js .social-networks ul:after {
+  margin: 35px auto;
+  /*border-top: 12px solid #3b5998;*/
+}
+  
+.social-networks li {
+  font-size: 90%;
+    width: 90px;
+    margin: 0;
+    text-align: center;
+    float: left;
+    display: block;
+    height: 65px;
+    line-height: 40px;
+    position: relative;
+    z-index: 2;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  transition: all .3s ease;
+}
+
+.share-button a {
+  text-decoration:none;
+}
+
+.social-networks a {
+  display:block;
+  color:white;
+}
+
+.social-networks a:hover {
+  color:#222;
+}
+
+#share-button{
+fill:#fff;	
+}
+
+#share-button:hover{
+fill:#005AA7;	
+}
+.share-button {
+    height: 45px;
+    margin: 0 auto;
+    display: block;
+    width: 45px;
+    fill: #fff;
 }

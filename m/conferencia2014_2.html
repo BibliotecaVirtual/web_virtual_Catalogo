@@ -157,6 +157,16 @@
   <script src="https://apis.google.com/js/platform.js" async defer>
     {lang: 'es'}
   </script>
+  <script>
+    function copyToClipboard() {
+      var url = window.location.href;
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
 </head>
 
 <body>
@@ -222,20 +232,12 @@
                       <div class="acc-content">
                         <a href="conferencia2015_3.html"><h3 class="h3-conferencia">Garcilaso de la Vega, teólogo de los Incas</h3></a>
                         <a href="conferencia2015_2.html"><h3 class="h3-conferencia">Ecos de Huarochirí: tras las huella de lo indígena en las Américas</h3></a>
-                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">Simposio La hoja sagrada: usos y abusos</h3></a>
+                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">La hoja sagrada: usos y abusos</h3></a>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
@@ -277,15 +279,7 @@
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
@@ -314,7 +308,7 @@
                     <h3>Agosto</h3>
                     <div class="acc-section">
                       <div class="acc-content">
-                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">Seminario internacional "La cultura del libro: aproximaciones desde la historia y el arte"</h3></a>
+                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">La cultura del libro: aproximaciones desde la historia y el arte</h3></a>
                       </div>
                     </div>
                   </li>
@@ -338,9 +332,12 @@
             </a>
         </div>
         <div class="box-comment">
-          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
-          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          <div>
+            <a onclick="copyToClipboard()" style="cursor:pointer;"><img src="resources/img/copiar_enlace.png" alt=""/></a>
+            <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          </div>
         </div>
 
         <div class="conferencia-head">
@@ -425,36 +422,36 @@
               </div>
             </div>
           </div>
-          <div class="row-cronograma clearfix">
-            <div class="doble">
+        </div>
+        <div class="row-cronograma clearfix">
+          <div class="doble">
+            <div>
+              <ul class="list">
+                <li>
+                  <a class="various fancybox.iframe" href="http://www.youtube.com/embed/ObvKxFyjLUo"><img src="http://i2.ytimg.com/vi/ObvKxFyjLUo/2.jpg" alt=""></a>
+                </li>
+              </ul>
               <div>
-                <ul class="list">
-                  <li>
-                    <a class="various fancybox.iframe" href="http://www.youtube.com/embed/ObvKxFyjLUo"><img src="http://i2.ytimg.com/vi/ObvKxFyjLUo/2.jpg" alt=""></a>
-                  </li>
-                </ul>
-                <div>
-                  <h3>Campaña de Sensibilización ACP Copallín (Amazonas)</h3>
-                  <p>Jessica Limo</p>
-                  <p>Conferencia</p>
-                  <p>La Lic. Jessica Limo, Comunicadora de la Oficina Chachapoyas de la Asociación Peruana para la Conservación de la Naturaleza (APECO) disertó sobre "Avances en la Campaña de Sensibilización para el cuidado de los Bosques y Pajonales del
-                    ACP Copallín (Amazonas)".</p>
-                </div>
+                <h3>Campaña de Sensibilización ACP Copallín (Amazonas)</h3>
+                <p>Jessica Limo</p>
+                <p>Conferencia</p>
+                <p>La Lic. Jessica Limo, Comunicadora de la Oficina Chachapoyas de la Asociación Peruana para la Conservación de la Naturaleza (APECO) disertó sobre "Avances en la Campaña de Sensibilización para el cuidado de los Bosques y Pajonales del
+                  ACP Copallín (Amazonas)".</p>
               </div>
             </div>
-            <div class="doble">
+          </div>
+          <div class="doble">
+            <div>
+              <ul class="list">
+                <li>
+                  <a class="various fancybox.iframe" href="http://www.youtube.com/embed/Y8sww8FAaoY"><img src="http://i2.ytimg.com/vi/Y8sww8FAaoY/2.jpg" alt=""></a>
+                </li>
+              </ul>
               <div>
-                <ul class="list">
-                  <li>
-                    <a class="various fancybox.iframe" href="http://www.youtube.com/embed/Y8sww8FAaoY"><img src="http://i2.ytimg.com/vi/Y8sww8FAaoY/2.jpg" alt=""></a>
-                  </li>
-                </ul>
-                <div>
-                  <h3>Biodiversidad submarina</h3>
-                  <p>Yuri Hooker</p>
-                  <p>Conferencia</p>
-                  <p>El Blgo. Yuri Hooker, Jefe de Laboratorio de Biología Marina de la Universidad Peruana Cayetano Heredia, disertó sobre "Biodiversidad submarina”.</p>
-                </div>
+                <h3>Biodiversidad submarina</h3>
+                <p>Yuri Hooker</p>
+                <p>Conferencia</p>
+                <p>El Blgo. Yuri Hooker, Jefe de Laboratorio de Biología Marina de la Universidad Peruana Cayetano Heredia, disertó sobre "Biodiversidad submarina”.</p>
               </div>
             </div>
           </div>

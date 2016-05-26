@@ -157,6 +157,16 @@
   <script src="https://apis.google.com/js/platform.js" async defer>
     {lang: 'es'}
   </script>
+  <script>
+    function copyToClipboard() {
+      var url = window.location.href;
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
 </head>
 
 <body>
@@ -220,31 +230,23 @@
                       <div class="acc-content">
                         <a href="conferencia2015_3.html"><h3 class="h3-conferencia">Garcilaso de la Vega, teólogo de los Incas</h3></a>
                         <a href="conferencia2015_2.html"><h3 class="h3-conferencia">Ecos de Huarochirí: tras las huella de lo indígena en las Américas</h3></a>
-                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">Simposio La hoja sagrada: usos y abusos</h3></a>
+                        <a href="conferencia2015_1.html"><h3 class="h3-conferencia">La hoja sagrada: usos y abusos</h3></a>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <h3>Enero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2015_5.html"><h3 class="h3-conferencia">IV Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
+
                 </ul>
               </div>
             </div>
           </li>
-
           <li>
             <h3>Conferencias 2014<span class="triangulito-faq"></span></h3>
             <div class="acc-section">
@@ -275,15 +277,7 @@
                     </div>
                   </li>
                   <li>
-                    <h3>Febrero</h3>
-                    <div class="acc-section">
-                      <div class="acc-content">
-                        <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Enero</h3>
+                    <h3>Enero - Febrero</h3>
                     <div class="acc-section">
                       <div class="acc-content">
                         <a href="conferencia2014_4.html"><h3 class="h3-conferencia">III Programa de Historia del Arte Peruano</h3></a>
@@ -312,7 +306,7 @@
                     <h3>Agosto</h3>
                     <div class="acc-section">
                       <div class="acc-content">
-                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">Seminario internacional "La cultura del libro: aproximaciones desde la historia y el arte"</h3></a>
+                        <a href="conferencia2013_2.html"><h3 class="h3-conferencia">La cultura del libro: aproximaciones desde la historia y el arte</h3></a>
                       </div>
                     </div>
                   </li>
@@ -336,9 +330,12 @@
           </a>
         </div>
         <div class="box-comment">
-          <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
-          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          <div>
+            <a onclick="copyToClipboard()" style="cursor:pointer;"><img src="resources/img/copiar_enlace.png" alt=""/></a>
+            <div class="g-plus" data-action="share" data-annotation="bubble" data-height="20"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-mobile-iframe="true"></div>
+          </div>
         </div>
 
         <div class="conferencia-head">
@@ -347,7 +344,7 @@
           <div class="titular conferencia-texto">
             <img src="resources/img/conferencia-nov-2013(1).png" alt="" />
             <div>
-              <p>El derecho de autor y el fomento de la lectura en la era digital: el derecho de autor como un medio para fomentar la creatividad y el acceso.</p>
+              <p>La conferencia "El derecho de autor y el fomento de la lectura en la era digital: el derecho de autor como un medio para fomentar la creatividad y el acceso" contó con la presencia de destacados expositores nacionales e internacionales.</p>
               <p>Auditorio: Mario Vargas Llosa (San Borja)</p>
               <a class="various fancybox.iframe conferencia-completa" href="http://www.youtube.com/embed/enZNU0JeIPg?list=PLw-7dkDed4otq6PzcsEe07Q98zXzguWZQ"><img src="resources\img\youtube_icon.png" alt="">Ver conferencia completa</a>
             </div>
@@ -366,9 +363,9 @@
                 </li>
               </ul>
               <div>
-                <h3>Conferencia, Ponencia</h3>
-                <p>9:00 - 9:45 hrs.</p>
-                <p>Inauguración.</p>
+                <h3>Bienvenida e inauguración</h3>
+                <p>Ramón Mujica</p>
+                <p>La apertura estuvo a cargo del Director Nacional de la BNP, doctor Ramón Mujica Pinilla; tuvo como propósito mostrar las formas en que las bibliotecas, los escritores, editores y organizaciones de derechos de reproducción, los colectivos en el sector de la impresión y publicación, puedan fomentar una cultura de la lectura en la era de la información digital y tecnologías de la comunicación.</p>
               </div>
             </div>
           </div>
@@ -380,8 +377,10 @@
                 </li>
               </ul>
               <div>
-                <h3>Marcos legales internacionales de apoyo a la lectura</h3>
-                <p>9:00 - 9:15 hrs.</p>
+                <h3>Informe de IFLA sobre tendencias futuras</h3>
+                <p>Ramón Mujica</p>
+                <p>Ponencia</p>
+                <p>El Director Nacional de la BNP continuó con una disertación sobre las nuevas tendencias y desafíos en cuanto a lectura en el contexto digital del siglo XXI.</p>
               </div>
             </div>
           </div>
@@ -395,9 +394,10 @@
                 </li>
               </ul>
               <div>
-                <h3>Informe de IFLA sobre tendencias futuras</h3>
-                <p>9:40 - 10:15 hrs.</p>
-                <p>Inauguración.</p>
+                <h3>Marcos legales internacionales de apoyo a la lectura</h3>
+                <p>Martin Moscoso</p>
+                <p>Ponencia</p>
+                <p>El tema "Marcos legales internacionales de apoyo a la lectura y a la cultura en el entorno digital: una visión general" estuvo a cargo de Martin Moscoso, director de Indecopi, quien hizo de moderador en la mesa de respuestas compuesta por Magdalena Iraizoz (Directora Ejecutiva de CADRA) Ellen Broad (Gerente de Proyectos Digitales y Política IFLA) y José Borghino (Gerente de Políticas UIE).</p>
               </div>
             </div>
           </div>
